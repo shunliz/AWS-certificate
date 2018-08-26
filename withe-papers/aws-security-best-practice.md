@@ -52,15 +52,11 @@ one company can have multiple account for each users.
 
 one account can have multiple users.
 
-
-
 **acount strategies:**![](/assets/accounts1.png)**sign-in credentials:**
 
 username/password
 
 Multi-factor authentication \(MFA\)
-
-
 
 **Access Credential Type:**
 
@@ -68,11 +64,7 @@ Access keys
 
 MFA for API calls
 
-
-
 **IAM temporary role and credential is used to delegate user access  in some cases.**
-
-
 
 **Identity Federation \(broker auth to AWS Security Token Service \(STS\)\)**![](/assets/idfd1.png)
 
@@ -81,8 +73,6 @@ MFA for API calls
 cloud-init for linux instance
 
 ec2config for windows instance
-
-
 
 ## Secure Your Data
 
@@ -110,33 +100,25 @@ encryption: windows EFS EFS is a extension to the NTFS file system that provides
 
 Windows Bitlocker  Windows BitLocker is a volume \(or partition, in the case of single drive\) encryption solution included in Windows Server 2008 and later operating systems
 
-Encryption: Linux dm- crypt 
+Encryption: Linux dm- crypt
 
 Encryption: TrueCrypt
 
 Encryption and integrity authentication: SafeNet ProtectV
 
-
-
 ### Protecting Data at Rest on Amazon RDS
 
 using database native encrypt function\(mysql, oracle & MSSQL\)
 
-
-
 ### Decommission Data and Media Securely
 
 AWS only mark block as deleted, not erase the data, so it maybe recovered. you need to manually erase the data if you want decommise it.
-
-
 
 ### Protect Data in Transit
 
 #### Managing Application and Administrative Access to AWS Public Cloud Services
 
 https/SSL/TLS/RDP/SSH/database support ssl
-
-
 
 #### Protecting Data in Transit when Managing AWS Services
 
@@ -146,21 +128,15 @@ AWS web console/API all use ssl/tls
 
 https for s3
 
-
-
 #### Protecting Data in Transit to Amazon RDS
 
 mysql&MS SQL use ssl/tls, AWS generate the x.509 cert
 
 orace use native network encryption
 
-
-
 #### Protecting Data in Transit to Amazon DynamoDB
 
 HTTP over SSL/TLS \(HTTPS\)
-
-
 
 #### Protecting Data in Transit to Amazon EMR
 
@@ -192,85 +168,96 @@ Recommendations include:
 
 • Use bastion hosts to enforce control and visibility
 
-
-
 ##### Creating Custom AMIs security guide:
 
-**Disable insecure applications**
+**Disable insecure applications  
+**
 
 Disable services and protocols that authenticate users in clear text over the network, or otherwise insecurely.
 
-**Minimize exposure**
+**Minimize exposure  
+**
 
 Disable non-essential network services on startup. Only administrative services \(SSH/RDP\) and the services required for essential applications should be started.
 
-**Protect credentials**
+**Protect credentials  
+**
 
 Securely delete all AWS credentials from disk and configuration files.
 
-**Protect credentials**
+**Protect credentials  
+**
 
 Securely delete any third-party credentials from disk and configuration files.
 
-**Protect credentials**
+**Protect credentials  
+**
 
 Securely delete all additional certificates or key material from the system.
 
-**Protect credentials**
+**Protect credentials  
+**
 
 Ensure that software installed does not use default internal accounts and passwords.
 
-**Use good governance**
+**Use good governance  
+**
 
-Ensure that the system does not violate the Amazon Web Services Acceptable Use Policy. Examples of violations include open SMTP relays or proxy servers. For more information, see the Amazon Web Services Acceptable Use Policy–http://aws.amazon.com/aup/.
-
-
+Ensure that the system does not violate the Amazon Web Services Acceptable Use Policy. Examples of violations include open SMTP relays or proxy servers. For more information, see the Amazon Web Services Acceptable Use Policy–[http://aws.amazon.com/aup/](http://aws.amazon.com/aup/).
 
 #### securing Linux AMIs
 
-**Secure services**
+**Secure services  
+**
 
 Configure sshd to allow only public key authentication. Set PubkeyAuthentication to Yes and PasswordAuthentication to No in sshd\_config.
 
-**Secure services**
+**Secure services  
+**
 
 Generate a unique SSH host key on instance creation. If the AMI uses cloud-init, it will handle this automatically.
 
-**Protect credentials**
+**Protect credentials  
+**
 
 Remove and disable passwords for all user accounts so that they cannot be used to log in and do not have a default password. Run passwd -l &lt;USERNAME&gt; for each account.
 
-**Protect credentials**
+**Protect credentials  
+**
 
 Securely delete all user SSH public and private key pairs.
 
-**Protect data**
+**Protect data  
+**
 
 Securely delete all shell history and system log files containing sensitive data.
 
 #### securing Windows AMIs
 
-**Protect credentials**
+**Protect credentials  
+**
 
 Ensure that all enabled user accounts have new randomly generated passwords upon instance creation. You can configure the EC2 Config Service to do this for the Administrator account upon boot, but you must explicitly do so before bundling the image.
 
-**Protect credentials**
+**Protect credentials  
+**
 
 Ensure that the Guest account is disabled.
 
-**Protect data**
+**Protect data  
+**
 
 Clear the Windows event logs.
 
-**Protect credentials**
+**Protect credentials  
+**
 
 Make sure the AMI is not a part of a Windows domain.
 
-**Minimizing exposure**
+**Minimizing exposure  
+**
 
 Do not enable any file sharing, print spooler, RPC, and other Windows services that are not essential but are enabled by default.
-
-
 
 ## Secure Your Infrastructure
 
@@ -282,7 +269,7 @@ You can leverage Amazon VPC-IPSec or VPC-AWS Direct Connect to seamlessly integr
 
 A network segment simply isolates one network from another,
 
- where a security zone creates a group of system components with similar security levels with common controls.
+where a security zone creates a group of system components with similar security levels with common controls.
 
 ## Strengthening Network Security
 
@@ -300,11 +287,9 @@ Best practices for network security in the AWS cloud include the following:
 
 • VPC Flow Logs provides further visibility as it enables you to capture information about the IP traffic going to and from network interfaces in your VPC.
 
-
-
 ### Building Threat Protection Layers![](/assets/layerednetwork1.png)
 
+#### Log security![](/assets/logpractice1.png)
 
 
-![](/assets/logpractice1.png)
 
