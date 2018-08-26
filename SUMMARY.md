@@ -23,4 +23,5 @@
   * CloudFormation
   * IAM
   * Lambda
+  * [CloutTrail](clouttrail.md)
 

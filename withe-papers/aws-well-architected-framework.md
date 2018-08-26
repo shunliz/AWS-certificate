@@ -4,6 +4,8 @@
 
 ---
 
+The AWS Well-Architected Framework helps you understand the pros and cons of decisions you make while building systems on AWS
+
 ### Definitions
 
 ### On Architecture
