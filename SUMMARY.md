@@ -24,4 +24,5 @@
   * IAM
   * Lambda
   * [CloutTrail](clouttrail.md)
+  * [Glacier](glacier.md)
 
