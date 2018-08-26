@@ -10,7 +10,7 @@
 
 ### General Design Principles
 
-
+## 
 
 ## The Five Pillars of the Well-Architected Framework
 
@@ -26,7 +26,7 @@
 
 ### Cost Optimization
 
-
+## 
 
 ## The Review Process
 
