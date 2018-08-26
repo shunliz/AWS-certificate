@@ -1,34 +1,42 @@
 # AWS Well-Architected Framework
 
+## Introduction
 
-
-## Introduction 
+---
 
 ### Definitions
 
-### On Architecture 
+### On Architecture
 
 ### General Design Principles
 
 
 
-## The Five Pillars of the Well-Architected Framework 
+## The Five Pillars of the Well-Architected Framework
 
-### Operational Excellence 
+---
 
-### Security 
+### Operational Excellence
 
-### Reliability 
+### Security
 
-### Performance Efficiency 
+### Reliability
 
-### Cost Optimization 
+### Performance Efficiency
+
+### Cost Optimization
 
 
 
 ## The Review Process
 
+---
+
+## 
+
 ## Conclusion
+
+---
 
 ## 
 
