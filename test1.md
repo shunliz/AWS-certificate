@@ -72,3 +72,12 @@
  1. [ ] Register the AMI.
  
  > > Refer to http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-instance-store.html
+ 
+ 9, The user just started an instance at 3 PM. Between 3 PM to 5 PM, he stopped and started the instance twice. During the same period, he has run the linux reboot command by ssh once and triggered reboot from AWS console once. For how many instance hours will AWS charge this user?
+ 
+  1. [ ] 3
+  1. [x] 4
+  1. [ ] 5
+  1. [ ] 2
+  
+  > > Refer to http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html
