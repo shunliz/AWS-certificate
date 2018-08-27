@@ -81,3 +81,13 @@
   1. [ ] 2
   
   > > Refer to http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html
+  
+ 10, Which service or feature provides the fastest method of getting the
+data into Amazon Glacier?
+You are working with a customer who has 10 TB of archival data that they want to migrate to Amazon Glacier. The customer has a 1Mbps connection to the Internet. Which service or feature provides the fastest method of getting the data into Amazon Glacier?
+A. Amazon Glacier multipart upload
+B. AWS Storage Gateway
+C. VM Import/Export
+D. AWS Import/Export
+
+Answer: D, mail the storage to AWS storage team to help import data.
