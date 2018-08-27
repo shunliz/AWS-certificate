@@ -47,3 +47,18 @@
  1. [x] You can have one Elastic IP (EIP) address associated with a running instance at no charge.
  > > Refer to http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html
 
+6, You have assigned one Elastic IP to your EC2 instance. Now we need to restart the VM without EIP changed. Which of below you should not do?
+
+ 1. [x] Reboot and stop/start both works.
+ 1. [ ] When the instance is in VPC public subnets, stop/start works.
+ 1. [ ] When the instance is in VPC private subnet, stop/start works.
+ 1. [ ] Reboot the instance.
+ 
+ > > Refer to http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html#lifecycle-differences
+ 
+ 7, EC2 role
+ 
+ 1. [ ] Setup an IAM group with restricted AWS API access and put the instance in the group at launch.
+ 1. [ ] Pass access AWS credentials in the User Data field when the instance is launched.
+ 1. [ ] Setup an IAM user for the instance to restrict access to AWS API and assign it at launch.
+ 1. [x] Launch an instance with an AWS Identity and Aceess Management (IAM) role to restrict AWS API access for the instance.
