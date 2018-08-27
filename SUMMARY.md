@@ -26,5 +26,5 @@
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
 * AWS Quiz
-  * [Test1](test1.md)
+  * [Solution Architect1](test1.md)
 

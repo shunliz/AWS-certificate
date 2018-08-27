@@ -62,3 +62,13 @@
  1. [ ] Pass access AWS credentials in the User Data field when the instance is launched.
  1. [ ] Setup an IAM user for the instance to restrict access to AWS API and assign it at launch.
  1. [x] Launch an instance with an AWS Identity and Aceess Management (IAM) role to restrict AWS API access for the instance.
+> > Refer to http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html
+
+8, Which of the below mentioned steps will not be performed while creating the AMI of instance stored-backend?
+
+ 1. [ ] Upload the bundled volume.
+ 1. [x] Define the AMI launch permissions.
+ 1. [ ] Bundle the volume.
+ 1. [ ] Register the AMI.
+ 
+ > > Refer to http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-instance-store.html
