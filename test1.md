@@ -21,3 +21,15 @@
 
 
 
+3,Placement Groups: enables applications to participate in a low-latency, 10 Gbps network. Which of below statements is false.
+
+1. [ ] Not all of the instance types that can be launched into a placement group.
+
+1. [x] You can move an existing instance into a placement group by specify parameter of placement group.
+1. [ ] A placement group can't span multiple Availability Zones.
+1. [ ] A placement group can span peered VPCs.
+
+> > Refer to https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
+
+
+
