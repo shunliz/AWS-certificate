@@ -10,6 +10,8 @@
 
 > If the IAM user is trying to perform some action on the object belonging to another AWS user’s bucket, S3 will verify whether the owner of the IAM user has given sufficient permission to him. It also verifies the policy for the bucket as well as the policy defined by the object owner.[http://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-auth-workflow-object-operation.html](http://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-auth-workflow-object-operation.html)
 
+
+
 2, Select the correct set of options. These are the initial settings for the default security group:
 
 1. [ ] Allow all inbound traffic, Allow no outbound traffic and Allow instances associated with this security group to talk to each other.
@@ -21,15 +23,28 @@
 
 
 
-3,Placement Groups: enables applications to participate in a low-latency, 10 Gbps network. Which of below statements is false.
+3, Placement Groups: enables applications to participate in a low-latency, 10 Gbps network. Which of below statements is false.
 
 1. [ ] Not all of the instance types that can be launched into a placement group.
 
-1. [x] You can move an existing instance into a placement group by specify parameter of placement group.
-1. [ ] A placement group can't span multiple Availability Zones.
-1. [ ] A placement group can span peered VPCs.
+2. [x] You can move an existing instance into a placement group by specify parameter of placement group.
 
-> > Refer to https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
+3. [ ] A placement group can't span multiple Availability Zones.
+4. [ ] A placement group can span peered VPCs.
+
+> > Refer to [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
+
+
+
+4, What about below is false for AWS SLA
+
+1. [ ] EC2 availability is guarantee to 99.95%.
+2. [x] S3 availability is guarantee to 99.95%.
+3. [ ] EBS availability is guarantee to 99.95%.
+4. [ ] RDS multi-AZ is guarantee to 99.95%.
+   S3 SLA is 99.9%. Refer to [http://aws.amazon.com/s3/sla/](http://aws.amazon.com/s3/sla/)
+
+
 
 
 
