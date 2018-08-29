@@ -29,35 +29,31 @@
 2. [ ] row
 2. [ ] columnar
 
-QUESTION 4
-Amazon's Redshift data warehouse allows enterprise IT pros to execute ________ against ____ data sets.
+5, Amazon's Redshift data warehouse allows enterprise IT pros to execute ________ against ____ data sets.
 
-simple SQL queries / small
-complex SQL queries / large
-simple SQL queries / large
-complex SQL queries / small
+2. [ ] simple SQL queries / small
+2. [ ] complex SQL queries / large
+2. [ ] simple SQL queries / large
+2. [ ] complex SQL queries / small
 
-QUESTION 5
-Redshift was designed to alleviate the frustrating, time-consuming challenges database clusters have imposed on _____ administrators?
+6, Redshift was designed to alleviate the frustrating, time-consuming challenges database clusters have imposed on _____ administrators?
 
-system
-database
-certified
-privilege
+2. [ ] system
+2. [ ] database
+2. [ ] certified
+2. [ ] privilege
 
-QUESTION 6
-True or False: Amazon Redshift is adept at handling data analysis workflows.
+7. True or False: Amazon Redshift is adept at handling data analysis workflows.
 
-True
-False
+2. [ ] True
+2. [ ] False
 
-QUESTION 7
-Adding nodes to a Redshift cluster provides _______ performance improvements.
+8, Adding nodes to a Redshift cluster provides _______ performance improvements.
 
-linear
-non-linear
-both
-neither
+2. [ ] linear
+2. [ ] non-linear
+2. [ ]  both
+2. [ ] neither
 
 QUESTION 8
 The preferred way to load data into Redshift is through ______ using the COPY command.
