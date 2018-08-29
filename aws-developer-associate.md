@@ -55,26 +55,23 @@
 2. [ ]  both
 2. [ ] neither
 
-QUESTION 8
-The preferred way to load data into Redshift is through ______ using the COPY command.
+9, The preferred way to load data into Redshift is through ______ using the COPY command.
 
-Remote hosts
-Simple Storage Service
-Elastic MapReduce
-All of the above
+2. [ ] Remote hosts
+2. [ ] Simple Storage Service
+2. [ ] Elastic MapReduce
+2. [ ] All of the above
 
-QUESTION 9
-Amazon Redshift has how many pricing components?
+10, Amazon Redshift has how many pricing components?
 
-4
-3
-2
-5
+2. [ ] 4
+2. [ ] 3
+2. [ ] 2
+2. [ ] 5
 
-QUESTION 10
-What type of API provides a management interface to manage data warehouse clusters programmatically?
+11, What type of API provides a management interface to manage data warehouse clusters programmatically?
 
-Query
-REST
-Management
-SOAP
+2. [ ] Query
+2. [ ] REST
+2. [ ] Management
+2. [ ] SOAP
