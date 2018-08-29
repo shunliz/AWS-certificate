@@ -1,6 +1,6 @@
 
 
-Amazon's EC2 is a main cog in the AWS machine, but what does it stand for?
+1, Amazon's EC2 is a main cog in the AWS machine, but what does it stand for?
 
 1. [x] Elastic Compute Cloud
 2. [ ] Elastic Central Computing
