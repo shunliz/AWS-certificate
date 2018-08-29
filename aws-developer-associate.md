@@ -8,29 +8,26 @@
 
 
 
-QUESTION 1
-Amazon Redshift is what type of data warehouse service?
+2, Amazon Redshift is what type of data warehouse service?
 
-Gigabyte-scale
-Exobyte-scale
-Petabyte-scale
-Terabyte-scale
+2. [ ] Gigabyte-scale
+2. [ ] Exobyte-scale
+2. [ ] Petabyte-scale
+2. [ ] Terabyte-scale
 
-QUESTION 2
-What does MPP stand for when referring to the type of architecture Redshift has?
+3, What does MPP stand for when referring to the type of architecture Redshift has?
 
-massively parallel processing
-massive protection policy
-massively parallel policy
-massive protection processing
+2. [ ] massively parallel processing
+2. [ ] massive protection policy
+2. [ ] massively parallel policy
+2. [ ] massive protection processing
 
-QUESTION 3
-Redshift can provide fast query performance by leveraging _______ storage approaches and technology.
+4, Redshift can provide fast query performance by leveraging _______ storage approaches and technology.
 
-key-value
-database
-row
-columnar
+2. [ ] key-value
+2. [ ] database
+2. [ ] row
+2. [ ] columnar
 
 QUESTION 4
 Amazon's Redshift data warehouse allows enterprise IT pros to execute ________ against ____ data sets.
