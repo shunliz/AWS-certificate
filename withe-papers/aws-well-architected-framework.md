@@ -60,7 +60,39 @@ workload.
 
 data to gain actionable insights quickly and securely.
 
+---
+
 ### Security
+
+#### Design Principles
+
+Implement a strong identity foundation
+
+Enable traceability
+
+Apply security at all layers:
+
+Automate security best practices
+
+Protect data in transit and at rest
+
+Keep people away from data
+
+Prepare for security events
+
+#### Definition
+
+1. Identity and Access Management
+
+2. Detective Controls
+
+3. Infrastructure Protection
+
+4. Data Protection
+
+5. Incident Response
+
+
 
 ### Reliability
 
