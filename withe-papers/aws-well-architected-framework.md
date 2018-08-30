@@ -116,7 +116,17 @@ Manage change in automation
 
 3. Failure Management
 
+---
+
 ### Performance Efficiency
+
+#### Design Principles
+
+Democratize advanced technologies
+
+Go global in minutes
+
+
 
 ### Cost Optimization
 
