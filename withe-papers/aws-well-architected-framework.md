@@ -52,8 +52,6 @@ Operate
 
 Evolve
 
-
-
 ### Security
 
 ### Reliability
