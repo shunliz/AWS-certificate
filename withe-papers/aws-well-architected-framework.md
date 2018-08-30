@@ -80,7 +80,7 @@ Keep people away from data
 
 Prepare for security events
 
-#### Definition
+#### Best Practices
 
 1. Identity and Access Management
 
@@ -92,9 +92,29 @@ Prepare for security events
 
 5. Incident Response
 
-
+---
 
 ### Reliability
+
+#### Design Principles
+
+Test recovery procedures
+
+Automatically recover from failure:
+
+Scale horizontally to increase aggregate system availability
+
+Stop guessing capacity
+
+Manage change in automation
+
+#### Best Practices
+
+1. Foundations
+
+2. Change Management
+
+3. Failure Management
 
 ### Performance Efficiency
 
