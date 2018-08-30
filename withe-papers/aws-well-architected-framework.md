@@ -142,6 +142,8 @@ Mechanical sympathy
 
 4. Tradeoffs
 
+---
+
 ### Cost Optimization
 
 ## 
