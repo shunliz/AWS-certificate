@@ -132,7 +132,15 @@ Experiment more often:
 
 Mechanical sympathy
 
+#### Best Practices
 
+1. Selection
+
+2. Review
+
+3. Monitoring
+
+4. Tradeoffs
 
 ### Cost Optimization
 
