@@ -42,13 +42,15 @@ Refine operations procedures frequently
 
 Anticipate failure:
 
-
-
 Learn from all operational failures
 
 #### Best Practices
 
-Prepare
+Prepare: AWS Config and AWS Config rules can be used to create standards for
+
+workloads and to determine if environments are compliant with those standards
+
+before being put into production.
 
 Operate
 
