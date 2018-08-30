@@ -46,15 +46,19 @@ Learn from all operational failures
 
 #### Best Practices
 
-Prepare: AWS Config and AWS Config rules can be used to create standards for
+**Prepare:** AWS Config and AWS Config rules can be used to create standards for
 
 workloads and to determine if environments are compliant with those standards
 
 before being put into production.
 
-Operate
+**Operate ** Amazon CloudWatch allows you to monitor the operational health of a
 
-Evolve
+workload.
+
+**Evolve  **Amazon Elasticsearch Service \(Amazon ES\) allows you to analyze your log
+
+data to gain actionable insights quickly and securely.
 
 ### Security
 
