@@ -24,8 +24,6 @@ Drive architectures using data
 
 Improve through game days
 
-
-
 ## The Five Pillars of the Well-Architected Framework
 
 ---
@@ -45,6 +43,14 @@ Refine operations procedures frequently
 Anticipate failure:
 
 Learn from all operational failures
+
+#### Best Practices
+
+Prepare
+
+Operate
+
+Evolve
 
 
 
