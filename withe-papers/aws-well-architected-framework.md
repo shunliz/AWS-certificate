@@ -146,6 +146,10 @@ Mechanical sympathy
 
 ### Cost Optimization
 
+#### Design Principles
+
+
+
 ## 
 
 ## The Review Process
