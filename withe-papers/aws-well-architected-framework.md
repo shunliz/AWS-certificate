@@ -42,6 +42,8 @@ Refine operations procedures frequently
 
 Anticipate failure:
 
+
+
 Learn from all operational failures
 
 #### Best Practices
