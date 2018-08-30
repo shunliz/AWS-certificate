@@ -126,6 +126,12 @@ Democratize advanced technologies
 
 Go global in minutes
 
+Use serverless architectures
+
+Experiment more often:
+
+Mechanical sympathy
+
 
 
 ### Cost Optimization
