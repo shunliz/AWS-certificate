@@ -148,6 +148,26 @@ Mechanical sympathy
 
 #### Design Principles
 
+Adopt a consumption model
+
+Measure overall efficiency
+
+Stop spending money on data center operations
+
+Analyze and attribute expenditure
+
+Use managed and application level services to reduce cost of ownership
+
+#### Best Practices
+
+1. Cost-Effective Resources
+
+2. Matching supply and demand
+
+3. Expenditure Awareness
+
+4. Optimizing Over Time
+
 
 
 ## 
