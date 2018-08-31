@@ -168,9 +168,7 @@ Use managed and application level services to reduce cost of ownership
 
 4. Optimizing Over Time
 
-
-
-## 
+---
 
 ## The Review Process
 
