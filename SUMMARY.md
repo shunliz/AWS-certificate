@@ -5,7 +5,7 @@
   * [AWS security best practice](withe-papers/aws-security-best-practice.md)
   * [AWS well-architected framework](withe-papers/aws-well-architected-framework.md)
   * [Architecting for the Cloud AWS Best Practices](withe-papers/architecting-for-the-cloud-aws-best-practices.md)
-  * Practicing Continuous Integration and Continuous Delivery on AWS Accelerating Software Delivery with DevOps
+  * [Practicing Continuous Integration and Continuous Delivery on AWS Accelerating Software Delivery with DevOps](withe-papers/practicing-continuous-integration-and-continuous-delivery-on-aws-accelerating-software-delivery-with-devops.md)
   * Microservices on AWS
   * Serverless Architectures with AWS Lambda
   * Optimizing Enterprise Economics with Serverless Architectures
