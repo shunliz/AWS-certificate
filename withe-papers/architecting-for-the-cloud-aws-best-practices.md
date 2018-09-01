@@ -1,16 +1,16 @@
 # Architecting for the Cloud: AWS Best Practices
 
-## The Cloud Computing Difference 
+## The Cloud Computing Difference
 
-IT Assets Become Programmable Resources 
+IT Assets Become Programmable Resources
 
-Global, Available, and Unlimited Capacity 
+Global, Available, and Unlimited Capacity
 
-Higher Level Managed Services 
+Higher Level Managed Services
 
-Security Built In 
+Security Built In
 
-## Design Principles 
+## Design Principles
 
 **Scalability **
 
@@ -20,13 +20,15 @@ Security Built In
 
 **Scaling Horizontally**：
 
-1， Stateless Applications： 
+1， Stateless Applications：
 
-1.1 distribute load to multiple nodes: 
+1.1 distribute load to multiple nodes:
 
-      Push model:ELB& Route53
+```
+  Push model:ELB& Route53
 
-     Pull model: Amazon SQS& Amazon Kinesis
+ Pull model: Amazon SQS& Amazon Kinesis
+```
 
 1.2 Stateless Components
 
@@ -36,17 +38,13 @@ Amazon DynamoDB, Amazon EFS ,Amazon SWF
 
 How to implement session affinity:“sticky sessions” feature of ELB, and  client side implement health check and distribute request.
 
-
-
 **Distributed Processing**
 
 By dividing a task and its data into many small fragments of work, you can execute each of them in any of a larger set of available compute resources
 
-Offline Batch job:Amazon EMR 
+Offline Batch job:Amazon EMR
 
 real-time processing of streaming data:Amazon Kinesis
-
-
 
 **Disposable Resources Instead of Fixed Servers **
 
@@ -62,8 +60,6 @@ real-time processing of streaming data:Amazon Kinesis
 
 **Infrastructure as Code: AWS CloudFormation**
 
-
-
 **Automation**
 
 ---
@@ -76,13 +72,11 @@ Auto Scaling
 
 Amazon CloudWatch Alarms
 
- Amazon CloudWatch Events
+Amazon CloudWatch Events
 
 AWS OpsWorks Lifecycle events
 
 AWS Lambda Scheduled events
-
-
 
 **Loose Coupling **
 
@@ -90,27 +84,35 @@ AWS Lambda Scheduled events
 
 Well-Defined  API:** **API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale
 
-Service Discovery: 
+Service Discovery:
 
 Asynchronous Integration
 
 Graceful Failure
 
-
-
 **Services, Not Servers **
 
 ---
 
-Databases 
+Managed Services
 
-Removing Single Points of Failure 
-
-Optimize for Cost 
-
-Caching 
-
-Security 
+Serverless Architectures
 
 
+
+**Databases**
+
+---
+
+
+
+
+
+Removing Single Points of Failure
+
+Optimize for Cost
+
+Caching
+
+Security
 
