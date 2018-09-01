@@ -172,15 +172,23 @@ Use managed and application level services to reduce cost of ownership
 
 **OPS 1 What factors drive your operational priorities?**
 
+> _Operational priorities are the focus areas of your operations efforts. Clearly define and agree to_
+>
+> _your operations priorities to maximize the benefits of your operations efforts._
+
 Evaluate business needs
 
 Evaluate compliance requirements
 
 Evaluate risk
 
-
-
 **OPS 2 How do you design your workload to enable operability?**
+
+> _The majority of the lifetime of a workload is typically spent in an operating state. Consider_
+>
+> _operations needs as a part of system design to help you enable long term sustainment of your_
+>
+> _workload._
 
 Share design standards
 
@@ -195,6 +203,10 @@ Implement practices that reduce defects, ease remediation, and improve flow:
 Mitigate deployment risks
 
 **OPS 3 How do you know that you are ready to support a workload?**
+
+> _Evaluate the operational readiness of your workload, processes and procedures, and personnel_
+>
+> _to help you understand the operational risks related to your workload._
 
 Continuous improvement culture
 
@@ -213,6 +225,50 @@ Use playbooks
 Practice recovery
 
 **OPS 4 What factors drive your understanding of operational health?**
+
+> _Define metrics for the evaluation of your workload and processes to help you understand_
+>
+> _operations effectiveness in supporting business outcomes. Capture and analyze metrics to gain_
+>
+> _visibility to processes and events so that you can take appropriate action._
+
+Define expected business and customer outcomes
+
+Identify success metrics
+
+Identify workload metrics
+
+Identify operations metrics
+
+Established baselines
+
+Collect and analyze metrics
+
+Validate insights
+
+Business-level view of operations
+
+**OPS 5 How do you manage operational events?**
+
+> _Prepare and validate procedures to respond to operational events to help you minimize their_
+>
+> _potential disruption to your workload._
+
+Determine priority of operational events based on business impact
+
+Processes for event, incident, and problem management
+
+Process per alert
+
+Identify decision makers
+
+Defined escalation paths
+
+Push notifications
+
+Communicate status through dashboards
+
+Process for root cause analysis
 
 
 
