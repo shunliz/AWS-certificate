@@ -110,8 +110,6 @@ Data Warehouse\(AWS Redshift\)
 
 Search:Amazon CloudSearch and Amazon Elasticsearch Service \(Amazon ES\)
 
-
-
 **Removing Single Points of Failure**
 
 ---
@@ -124,15 +122,45 @@ Durable Data Storage
 
 Automated Multi-Data Center Resilience
 
+Fault Isolation and Traditional Horizontal Scaling
 
 
 
+**Optimize for Cost**
+
+---
+
+Right Sizing
+
+Elasticity
+
+Take Advantage of the Variety of Purchasing Options\(Reserved Capacity \)
 
 
 
-Optimize for Cost
+**Caching**
 
-Caching
+---
 
-Security
+Application Data Caching
+
+Edge Caching
+
+
+
+**Security**
+
+---
+
+Utilize AWS Features for Defense in Depth
+
+Offload Security Responsibility to AWS
+
+Reduce Privileged Access
+
+Security as Code
+
+Real-Time Auditing
+
+
 
