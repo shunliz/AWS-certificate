@@ -170,17 +170,53 @@ Use managed and application level services to reduce cost of ownership
 
 ---
 
-## The Review Process
+**OPS 1 What factors drive your operational priorities?**
+
+Evaluate business needs
+
+Evaluate compliance requirements
+
+Evaluate risk
+
+
+
+**OPS 2 How do you design your workload to enable operability?**
+
+Share design standards
+
+Design for cloud operations e.g. elasticity, on-demand scalability, pay-as-you-go pricing, automation
+
+Provide insights into workload behavior
+
+Provide insights into customer behavior:
+
+Implement practices that reduce defects, ease remediation, and improve flow:
+
+Mitigate deployment risks
+
+**OPS 3 How do you know that you are ready to support a workload?**
+
+Continuous improvement culture
+
+Share understanding of the value to the business:
+
+Ensure personnel capability
+
+Documented accessible governance and guidance
+
+Use checklists
+
+Use runbooks
+
+Use playbooks
+
+Practice recovery
+
+**OPS 4 What factors drive your understanding of operational health?**
 
 
 
 
-
----
-
-## 
-
-## Conclusion
 
 ---
 
