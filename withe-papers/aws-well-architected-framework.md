@@ -170,9 +170,18 @@ Use managed and application level services to reduce cost of ownership
 
 ---
 
+## Best Practices
+
+---
+
+### Operational Excellence
+
+---
+
 **OPS 1 What factors drive your operational priorities?**
 
-> _Operational priorities are the focus areas of your operations efforts. Clearly define and agree to_
+> _Operational priorities are the focus areas of your operations efforts. Clearly define and agree to  
+> _
 >
 > _your operations priorities to maximize the benefits of your operations efforts._
 
@@ -184,9 +193,11 @@ Evaluate risk
 
 **OPS 2 How do you design your workload to enable operability?**
 
-> _The majority of the lifetime of a workload is typically spent in an operating state. Consider_
+> _The majority of the lifetime of a workload is typically spent in an operating state. Consider  
+> _
 >
-> _operations needs as a part of system design to help you enable long term sustainment of your_
+> _operations needs as a part of system design to help you enable long term sustainment of your  
+> _
 >
 > _workload._
 
@@ -204,7 +215,8 @@ Mitigate deployment risks
 
 **OPS 3 How do you know that you are ready to support a workload?**
 
-> _Evaluate the operational readiness of your workload, processes and procedures, and personnel_
+> _Evaluate the operational readiness of your workload, processes and procedures, and personnel  
+> _
 >
 > _to help you understand the operational risks related to your workload._
 
@@ -226,9 +238,11 @@ Practice recovery
 
 **OPS 4 What factors drive your understanding of operational health?**
 
-> _Define metrics for the evaluation of your workload and processes to help you understand_
+> _Define metrics for the evaluation of your workload and processes to help you understand  
+> _
 >
-> _operations effectiveness in supporting business outcomes. Capture and analyze metrics to gain_
+> _operations effectiveness in supporting business outcomes. Capture and analyze metrics to gain  
+> _
 >
 > _visibility to processes and events so that you can take appropriate action._
 
@@ -248,9 +262,10 @@ Validate insights
 
 Business-level view of operations
 
-**OPS 5 How do you manage operational events?**
+**OPS 5 How do you manage operational events?  
+**
 
-> _Prepare and validate procedures to respond to operational events to help you minimize their_
+> _Prepare and validate procedures to respond to operational events to help you minimize their_
 >
 > _potential disruption to your workload._
 
@@ -272,11 +287,357 @@ Process for root cause analysis
 
 
 
+**OPS 6 How do you evolve operations?**
 
+> Dedicate time and resources for continuous incremental improvement to help evolve the
+>
+> effectiveness and efficiency of your operations.
+
+Process for continuous improvement
+
+Define drivers for improvement
+
+Implement Feedback loops
+
+Document and share lessons learned
+
+Perform operations metrics reviews
+
+
+
+### Security
 
 ---
 
-## 
+**SEC 1 How do you manage credentials for your workload?**
+
+> _Credentials include passwords, tokens, and keys that grant access directly or indirectly to_
+>
+> _manage your workload. Protect credentials with appropriate mechanisms to help you reduce_
+>
+> _the risk of accidental or malicious use._
+
+Enforce use of multi-factor authentication
+
+Enforce password requirements
+
+Rotate credentials regularly
+
+Audit credentials periodically
+
+Using centralized identity provider
+
+
+
+**SEC 2 How do you control human access to services?**
+
+> _Control human access to services with appropriately defined, limited, and segregated access to_
+>
+> _help you reduce the risk of unauthorized access._
+
+---
+
+Credentials are not shared
+
+User life-cycle managed
+
+Minimum privileges
+
+Access requirements clearly defined
+
+Access is granted through roles or federation
+
+
+
+**SEC 3 How do you control programmatic access to services?**
+
+> _Control programmatic or automated access to services with appropriately limited short-term_
+>
+> _credentials and roles to help you reduce the risk of unauthorized access._
+
+Credentials are not shared
+
+Dynamic authentication
+
+Minimum privileges
+
+Access requirements clearly defined
+
+
+
+**SEC 4 How are you aware of security events in your workload?**
+
+> _Capture and analyze logs and metrics to gain visibility to security threats and events so that_
+>
+> _you can take appropriate action._
+
+Logging enabled where available
+
+Analyzing AWS CloudTrail
+
+Analyzing logs centrally
+
+Monitoring and alerting for key metrics and events
+
+AWS marketplace or APN partner solution enabled:
+
+
+
+**SEC 5 How do you protect your networks?**
+
+> _Public and private networks and services require multiple layers of defense to help protect your_
+>
+> _workloads from network-based threats._
+
+Controlling traffic in Virtual Private Cloud \(VPC\)
+
+Controlling traffic at the boundary
+
+Controlling traffic using available features:
+
+AWS marketplace or APN partner solution enabled
+
+
+
+**SEC 6 How do you stay up to date with AWS security features and industry security threats?**
+
+> _Staying up to date and implementing AWS and industry best practices including services and_
+>
+> _features can improve the security of your workload. Being aware of the latest security threats_
+>
+> _will help you build a threat model to identify and implement protective controls_.
+
+Evaluating new security services and features
+
+Using security services and features
+
+
+
+**SEC 7 How do you protect your compute resources?**
+
+> _Configure compute resources with manageable components to protect and monitor their_
+>
+> _integrity so that you can take appropriate action._
+
+Hardening default configurations
+
+Checking file integrity
+
+Intrusion detection enabled
+
+AWS marketplace or APN partner solution enabled
+
+Configuration management tool
+
+Patching and scanning for vulnerabilities
+
+
+
+**SEC 8 How do you classify your data?**
+
+> _Classification provides a way to categorize data, based on levels of sensitivity, to help you_
+>
+> _determine appropriate protective controls._
+
+Use a data classification schema
+
+Data classification applied
+
+
+
+**SEC 9 How do you manage data protection mechanisms?**
+
+> _Data protection mechanisms include services and keys that protect data in transit and at rest._
+>
+> _Protect these services and keys to help you reduce the risk of unauthorized access to systems_
+>
+> _and data._
+
+Use a secure key management service
+
+Use service level controls
+
+Use client side key management
+
+AWS Marketplace or APN Partner solution
+
+
+
+**SEC 10 How do you prepare to respond to an incident?**
+
+> _Prepare to investigate and respond to security incidents to help you minimize potential_
+>
+> _disruptions to your workload._
+
+Pre-provisioned access
+
+Pre-deployed tools
+
+Run game days
+
+
+
+### Reliability
+
+---
+
+**REL 1 How are you managing AWS service limits for your accounts?**
+
+> _AWS accounts are provisioned with default service limits to prevent new users from_
+>
+> _accidentally provisioning more resources than they need. There also limits on how often you_
+>
+> _can call APIs to protect AWS infrastructure. Evaluate your AWS service needs and request_
+>
+> _appropriate changes to your limits for each region._
+
+Active monitoring and managing limits
+
+Implemented automated monitoring and management of limits
+
+Aware of fixed service limits
+
+Ensure there is a sufficient gap between the current service limit and the max usage to accommodate for fail over
+
+Service limits are managed across all relevant accounts and regions
+
+
+
+**REL 2 How do you plan your network topology on AWS?**
+
+> _Applications can exist in one or more environments: EC2-Classic, the default VPC, or VPC\(s\)_
+>
+> _created by you. Network considerations such as system connectivity, Elastic IP address and_
+>
+> _public IP address management, VPC and private address management, and name resolution_
+>
+> _are fundamental to using resources in the cloud. Well planned and documented deployments_
+>
+> _are essential to reduce the risk of overlap and contention._
+
+Connectivity back to data center is not needed:
+
+Highly available connectivity between AWS and on-premises environment is implemented
+
+Highly available network connectivity for the users of the workload is implemented
+
+Using non-overlapping private IP address ranges in multiple VPCs
+
+IP subnet allocation accounts for expansion and availability
+
+
+
+**REL 3 How does your system adapt to changes in demand?**
+
+> _A scalable system provides elasticity to add and remove resources automatically so that they_
+>
+> _closely match the current demand at any given point in time._
+
+Workload scales automatically
+
+Workload is load tested
+
+
+
+**REL 4 How do you monitor AWS resources?**
+
+> _Logs and metrics are a powerful tool for gaining insight into the health of your workloads. You_
+>
+> _can configure your system to monitor logs and metrics and send notifications when thresholds_
+>
+> _are crossed or significant events occur. Ideally, when low-performance thresholds are crossed or_
+>
+> _failures occur, the system has been architected to automatically self-heal or scale in response._
+
+Monitoring the workload in all tiers
+
+Notifications are sent based on the monitoring
+
+Automated responses are performed for events
+
+Reviews are conducted regularly
+
+
+
+**REL 6 How do you back up data?**
+
+> _Back up data, applications, and operating environments \(defined as operating systems_
+>
+> _configured with applications\) to meet requirements for mean time to recovery \(MTTR\) and_
+>
+> _recovery point objectives \(RPO\)._
+
+Data is backed up manually
+
+Data is backed up using automated processes
+
+Periodic recovery of the data is done to verify backup integrity and processes
+
+Backups are secured and encrypted
+
+
+
+**REL 7 How does your system withstand component failures?**
+
+> _If your workloads have a requirement, implicit or explicit, for high availability and low mean_
+>
+> _time to recovery \(MTTR\), architect your workloads for resiliency and distribute your workloads_
+>
+> _to withstand outages._
+
+Monitoring is done at all layers of the workload to detect failures
+
+Deployed to multiple Availability Zones; Multiple AWS Regions if required
+
+Has loosely coupled dependencies
+
+Has implemented graceful degradation
+
+Automated healing implemented on all layers
+
+Notifications are sent upon availability impacting events
+
+
+
+**REL 8 How do you test resilience?**
+
+> _Test the resilience of your workload to help you find latent bugs that only surface in_
+>
+> _production. Exercise these tests regularly._
+
+Use a playbook
+
+Inject failures to test
+
+Schedule game days
+
+Conduct root cause analysis \(RCA\)
+
+
+
+**REL 9 How do you plan for disaster recovery?**
+
+> _Data recovery \(DR\) is critical should restoration of data be required from backup methods. Your_
+>
+> _definition of and execution on the objectives, resources, locations, and functions of this data_
+>
+> _must align with RTO and RPO objectives._
+
+Recovery objectives are defined
+
+Recovery strategy is defined
+
+Configuration drift is managed
+
+Test and validate disaster recovery implementation
+
+Recovery is automated
+
+
+
+### Performance Efficiency
+
+---
 
 
 
