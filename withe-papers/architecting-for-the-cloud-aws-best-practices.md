@@ -98,17 +98,37 @@ Managed Services
 
 Serverless Architectures
 
-
-
 **Databases**
 
 ---
 
+Relational Databases\(RDS\)
+
+NoSQL Databases
+
+Data Warehouse\(AWS Redshift\)
+
+Search:Amazon CloudSearch and Amazon Elasticsearch Service \(Amazon ES\)
+
+
+
+**Removing Single Points of Failure**
+
+---
+
+Introducing Redundancy
+
+Detect Failure
+
+Durable Data Storage
+
+Automated Multi-Data Center Resilience
 
 
 
 
-Removing Single Points of Failure
+
+
 
 Optimize for Cost
 
