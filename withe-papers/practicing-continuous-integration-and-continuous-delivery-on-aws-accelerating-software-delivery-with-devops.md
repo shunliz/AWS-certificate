@@ -90,15 +90,11 @@ or one Region before deploying code to the entire production environment.
 
 ### Pipeline Integration with AWS CodeBuild
 
-Software can be built through the inclusion of a buildspec.yml file that identifies  
- each of the build steps, including pre- and post- build actions, or specified  
- actions through the CodeBuild tool
+Software can be built through the inclusion of a buildspec.yml file that identifies each of the build steps, including pre- and post- build actions, or specified actions through the CodeBuild tool
 
 ### Pipeline Integration with Jenkins
 
-**the AWS Code Pipeline Plugin.--** The Pipeline plugin allows complex  
- workflows to be described using Groovy-like domain-specific language and can  
- be used to orchestrate complex pipelines.
+**the AWS Code Pipeline Plugin.--** The Pipeline plugin allows complex workflows to be described using Groovy-like domain-specific language and can be used to orchestrate complex pipelines.
 
 ## Deployment Methods
 
