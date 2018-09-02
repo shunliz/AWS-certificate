@@ -15,16 +15,25 @@
   * EC2
   * RDS
   * SNS
-  * SQS
   * VPC
   * EBS
   * S3
-  * [DynamoDB](bigdata-specialty/dynamodb.md)
   * CloudFormation
   * IAM
   * Lambda
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
+  * [bigdata-specialty-notes]()
+    * [DynamoDB](bigdata-specialty/dynamodb.md)
+    * [AWS-data-pipeline](bigdata-specialty/aws_data_pipeline.md)
+    * [Elastic-search](bigdata-specialty/elasticsearch.md)
+    * [AWS-EMR](bigdata-specialty/emr.md)
+    * [AWS-glacier](bigdata-specialty/glacier.md)
+    * [AWS-iot](bigdata-specialty/iot.md)
+    * [AWS-kinesis](bigdata-specialty/kinesis.md)
+    * [AWS-redshift](bigdata-specialty/redshift.md)
+    * [AWS-SQS](bigdata-specialty/sqs.md)
+    * [AWS-visualization](bigdata-specialty/visualization.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
