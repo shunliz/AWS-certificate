@@ -1,38 +1,42 @@
 # Microservices on AWS
 
-
-
-## Introduction 
+## Introduction
 
 ---
 
-### Characteristics of Microservices 
+### Characteristics of Microservices
 
-### Benefits of Microservices 
+Decentralized
 
-### Challenges of Microservices 
+Independent
 
-### Microservices and the Cloud 
+Do one thing well
 
+Polyglot
 
+Black box
 
+You build it; you run it
 
+![](/assets/devops1.png)
 
-## Microservices on AWS 
+### Benefits of Microservices
+
+### Challenges of Microservices
+
+### Microservices and the Cloud
+
+## Microservices on AWS
 
 ---
 
-### Simple Microservices Architecture on AWS 
+### Simple Microservices Architecture on AWS
 
-### Reducing Operational Complexity 
+### Reducing Operational Complexity
 
-### Distributed Systems Components 
+### Distributed Systems Components
 
-
-
-
-
-## Conclusion 
+## Conclusion
 
 ---
 
