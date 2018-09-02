@@ -19,7 +19,7 @@
   * VPC
   * EBS
   * S3
-  * DynamoDB
+  * [DynamoDB](bigdata-specialty/dynamodb.md)
   * CloudFormation
   * IAM
   * Lambda
