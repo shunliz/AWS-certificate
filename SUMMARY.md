@@ -23,7 +23,7 @@
   * Lambda
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
-  * [bigdata-specialty-notes]()
+  * bigdata-specialty-notes
     * [DynamoDB](bigdata-specialty/dynamodb.md)
     * [AWS-data-pipeline](bigdata-specialty/aws_data_pipeline.md)
     * [Elastic-search](bigdata-specialty/elasticsearch.md)
@@ -39,6 +39,7 @@
     * [AWS developer associate](aws-developer-associate.md)
     * [AWS developer2](aws-developer2.md)
     * [quiz3](quiz3.md)
+    * [simplifysearch quiz](simplifysearch-quiz.md)
   * [AWS solution architect Quiz](aws-solution-architect-quiz.md)
     * [solution architect3](solution-architect3.md)
     * [solution architect2](solution-architect2.md)
