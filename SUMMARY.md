@@ -25,8 +25,10 @@
   * Lambda
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
-* AWS Quiz
+* [AWS Quiz](aws-quiz.md)
   * [Solution Architect1](test1.md)
   * [AWS developer associate](aws-developer-associate.md)
+  * [solution architect2](solution-architect2.md)
+  * [solution architect3](solution-architect3.md)
 * [References](references.md)
 
