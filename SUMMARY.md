@@ -11,7 +11,7 @@
   * Optimizing Enterprise Economics with Serverless Architectures
   * Running Containerized Microservices on AWS
   * Blue/Green Deployments on AWS
-* AWS doc
+* [AWS doc](aws-doc.md)
   * EC2
   * RDS
   * SNS
@@ -25,10 +25,13 @@
   * Lambda
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
-* [AWS Quiz](aws-quiz.md)
-  * [Solution Architect1](test1.md)
-  * [AWS developer associate](aws-developer-associate.md)
-  * [solution architect2](solution-architect2.md)
-  * [solution architect3](solution-architect3.md)
+* [AWS quiz]()
+  * [AWS developer Quiz](aws-quiz.md)
+    * [AWS developer associate](aws-developer-associate.md)
+    * [AWS developer2](aws-developer2.md)
+  * [AWS solution architect Quiz](aws-solution-architect-quiz.md)
+    * [solution architect3](solution-architect3.md)
+    * [solution architect2](solution-architect2.md)
+    * [Solution Architect1](test1.md)
 * [References](references.md)
 
