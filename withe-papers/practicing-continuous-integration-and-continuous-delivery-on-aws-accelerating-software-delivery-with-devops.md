@@ -100,19 +100,95 @@ Software can be built through the inclusion of a buildspec.yml file that identif
 
 ---
 
-### All at Once \(In-Place Deployment\)
+![](/assets/demploymethodt.png)
 
-### Rolling Deployment
+All at Once \(In-Place Deployment\)
 
-### Immutable and Blue/Green Deployment
+Rolling Deployment
+
+Immutable and Blue/Green Deployment
 
 ## Database Schema Changes
 
 ---
 
+**In general, those tools employ some variant of the following methods:**
+
+* Add a table to the database where a database version is stored.
+*  Keep track of database change commands and bunch them together in   versioned change sets. In the case of Liquibase, these changes are stored   in XML files. Flyway employs a slightly different method where the   change sets are handled as separate SQL files or occasionally as separate   Java classes for more complex transitions.
+* When Liquibase is being asked to upgrade a database, it looks at the   metadata table and determines which change sets to run in order to   make the database up-to-date with the latest version.
+
+
+
 ## Summary of Best Practices
 
 ---
+
+**Do:**
+
+1. Treat your infrastructure as code
+
+o Use version control for your infrastructure code.
+
+o Make use of bug tracking/ticketing systems.
+
+o Have peers review changes before applying them.
+
+o Establish infrastructure code patterns/designs.
+
+o Test infrastructure changes like code changes.
+
+2.  Put developers into integrated teams of no more than 12 self-sustaining members.
+
+3,  Have all developers commit code to the main trunk frequently, with no long-running feature branches.
+
+4, Consistently adopt a build system such as Maven or Gradle across your organization and standardize builds.
+
+5,  Have developers build unit tests toward 100% coverage of the code base.
+
+6,  Ensure that unit tests are 70% of the overall testing in duration, number, and scope.
+
+7,  Ensure that unit tests are up-to-date and not neglected. Unit test failures should be fixed, not bypassed.
+
+8, Treat your continuous delivery configuration as code.
+
+9, Establish role-based security controls \(that is, who can do what and when\).
+
+o Monitor/track every resource possible.
+
+o Alert on services, availability, and response times.
+
+o Capture, learn, and improve.
+
+o Share access with everyone on the team.
+
+o Plan metrics and monitoring into the lifecycle.
+
+10,  Keep and track standard metrics.
+
+o Number of builds.
+
+o Number of deployments.
+
+o Average time for changes to reach production.
+
+o Average time from first pipeline stage to each stage.
+
+o Number of changes reaching production.
+
+o Average build time.
+
+1, Use multiple distinct pipelines for each branch and team.
+
+**Don’t:**
+
+ Have long-running branches with large complicated merges.
+
+ Have manual tests.
+
+ Have manual approval processes, gates, code reviews, and security reviews.
+
+
 
 ## Conclusion
 
