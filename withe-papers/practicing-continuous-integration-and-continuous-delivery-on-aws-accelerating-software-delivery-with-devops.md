@@ -66,45 +66,59 @@ Deliver Updates Faster
 
 ![](/assets/teststage.png)
 
-**Unit Testing** – Tests a specific section of code to ensure the code does what it is expected to do. The unit testing is performed by software developers during the development phase. At this stage, a static code analysis, data flow analysis, code coverage, and other software verification processes can be applied.
+**Unit Testing** – Tests a specific section of code to ensure the code does what it  
+ is expected to do. The unit testing is performed by software developers during  
+ the development phase. At this stage, a static code analysis, data flow analysis,  
+ code coverage, and other software verification processes can be applied.
 
+**Integration Testing **– Verifies the interfaces between components against  
+ software design. Integration testing is an iterative process and facilitates  
+ building robust interfaces and system integrity.
 
+**Component Testing **– Tests message passing between various components  
+ and their outcomes. A key goal of this testing could be idempotency in  
+ component testing. Tests can include extremely large data volumes, or edge  
+ situations and abnormal inputs.
 
-**Integration Testing **– Verifies the interfaces between components against software design. Integration testing is an iterative process and facilitates building robust interfaces and system integrity.
+**System Testing **– Tests the system end-to-end and verifies if the software  
+ satisfies the business requirement. This might include testing the UI, API,  
+ backend logic, and end state.
 
+**Performance Testing** – Determines the responsiveness and stability of a  
+ system as it performs under a particular workload. Performance testing also is  
+ used to investigate, measure, validate, or verify other quality attributes of the  
+ system, such as scalability, reliability, and resource usage. Types of performance  
+ tests might include load tests, stress tests, and spike tests. Performance tests are  
+ used for benchmarking against predefined criteria.
 
+**Compliance Testing** – Checks whether the code change complies with the  
+ requirements of a nonfunctional specification and/or regulations. It determines  
+ if you are implementing and meeting the defined standards.
 
-**Component Testing **– Tests message passing between various components and their outcomes. A key goal of this testing could be idempotency in component testing. Tests can include extremely large data volumes, or edge situations and abnormal inputs.
+**User Acceptance Testing** – Validates the end-to-end business flow. This  
+ testing is executed by an end user in a staging environment and  
+ confirms whether the system meets the requirements of the requirement  
+ specification. Typically, customers employ alpha and beta testing methodologies  
+ at this stage.
 
-
-
-**System Testing **– Tests the system end-to-end and verifies if the software satisfies the business requirement. This might include testing the UI, API, backend logic, and end state.
-
-
-
-**Performance Testing** – Determines the responsiveness and stability of a system as it performs under a particular workload. Performance testing also is used to investigate, measure, validate, or verify other quality attributes of the system, such as scalability, reliability, and resource usage. Types of performance tests might include load tests, stress tests, and spike tests. Performance tests are used for benchmarking against predefined criteria.
-
-
-
-**Compliance Testing** – Checks whether the code change complies with the requirements of a nonfunctional specification and/or regulations. It determines if you are implementing and meeting the defined standards.
-
-
-
-**User Acceptance Testing** – Validates the end-to-end business flow. This testing is executed by an end user in a staging environment and confirms whether the system meets the requirements of the requirement specification. Typically, customers employ alpha and beta testing methodologies at this stage.
-
-
-
-**Canary test** -- can be completed by deploying the new code only on a small subset of servers or even one server,
+**Canary test** -- can be completed  
+ by deploying the new code only on a small subset of servers or even one server,
 
 or one Region before deploying code to the entire production environment.
 
-
-
 ### Building the Pipeline
+
+![](/assets/budpipline.png)
 
 ### Pipeline Integration with AWS CodeBuild
 
+Software can be built through the inclusion of a buildspec.yml file that identifies each of the build steps, including pre- and post- build actions, or specified actions through the CodeBuild tool
+
 ### Pipeline Integration with Jenkins
+
+**the AWS Code Pipeline Plugin.--** The Pipeline plugin allows complex workflows to be described using Groovy-like domain-specific language and can be used to orchestrate complex pipelines.
+
+
 
 ## Deployment Methods
 
