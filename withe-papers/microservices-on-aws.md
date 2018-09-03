@@ -48,7 +48,7 @@ Organization
 
 ![](/assets/microservicecomplex1.png)**Operational Complexity**
 
-
+..................................
 
 ### Microservices and the Cloud
 
