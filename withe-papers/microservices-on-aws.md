@@ -22,6 +22,8 @@ You build it; you run it
 
 ### Benefits of Microservices
 
+
+
 ### Challenges of Microservices
 
 ### Microservices and the Cloud
