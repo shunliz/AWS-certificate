@@ -44,11 +44,11 @@ Versions
 
 Organization
 
-
-
 **Architectural Complexity**
 
-![](/assets/microservicecomplex1.png)
+![](/assets/microservicecomplex1.png)**Operational Complexity**
+
+
 
 ### Microservices and the Cloud
 
