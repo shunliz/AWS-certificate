@@ -32,9 +32,23 @@ Scalability
 
 Availability
 
-
-
 ### Challenges of Microservices
+
+**problems**
+
+Distributed Systems
+
+Migration
+
+Versions
+
+Organization
+
+
+
+**Architectural Complexity**
+
+![](/assets/microservicecomplex1.png)
 
 ### Microservices and the Cloud
 
