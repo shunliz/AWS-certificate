@@ -22,6 +22,16 @@ You build it; you run it
 
 ### Benefits of Microservices
 
+Agility
+
+Innovation
+
+Quality
+
+Scalability
+
+Availability
+
 
 
 ### Challenges of Microservices
