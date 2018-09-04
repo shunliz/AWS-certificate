@@ -52,6 +52,22 @@ Organization
 
 ### Microservices and the Cloud
 
+On-demand resources
+
+Experiment with low cost and risk
+
+ Programmability
+
+Infrastructure as code
+
+Continuous Delivery
+
+Managed services
+
+Service orientation
+
+Polyglot
+
 ## Microservices on AWS
 
 ---
