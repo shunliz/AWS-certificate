@@ -78,6 +78,8 @@ Polyglot
 
 ### Reducing Operational Complexity
 
+API Implementation
+
 ### Distributed Systems Components
 
 ## Conclusion
