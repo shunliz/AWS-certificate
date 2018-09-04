@@ -95,7 +95,7 @@ API Implementation
 > _hardcode the IP address of the target as part of the configuration of the  
 > communication source_
 
-**Application Load Balancer-Based Service Discovery        
+**Application Load Balancer-Based Service Discovery          
 **
 
 > > _One of the advantages of Application Load Balancing is that it provides health checks and automatic registration/de-registration of backend services in failure cases. The Application Load Balancer also offers path- and host-based routing approaches. Combining these features with DNS capabilities, it’s possible to build a simple service discovery solution with minimum efforts and low cost_
@@ -122,7 +122,7 @@ HashiCorp Consul, etcd, or Netflix Eureka
 
 **event sourcing **
 
-> _The core idea behind event sourcing is to represent and persist every application change as an        
+> _The core idea behind event sourcing is to represent and persist every application change as an          
 > _
 >
 > _event record. Instead of persisting application state, data is stored as a stream of events_
@@ -139,8 +139,9 @@ HashiCorp Consul, etcd, or Netflix Eureka
 
 **Asynchronous Messaging**
 
-> _Amazon SQS is a fast, reliable, scalable, fully managed queuing service that makes it simple and cost effective to decouple the components of a cloud application.49_
-
+> _Amazon SQS is a fast, reliable, scalable, fully managed queuing service that makes it simple and cost effective to decouple the components of a cloud application.49  
+> _
+>
 > _Amazon SNS is fully managed notification service that provides developers with a highly scalable, flexible, and cost-effective capability to publish messages from an application and immediately deliver them to subscribers or other applications.50_
 
 ![](/assets/message1.png)**Orchestration and State Management**
@@ -153,7 +154,13 @@ HashiCorp Consul, etcd, or Netflix Eureka
 
 Monitoring
 
-Centralizing Logs, Most AWS services already centralize log files![](/assets/centrallogs.png)
+Centralizing Logs, Most AWS services already centralize log files![](/assets/centrallogs.png)**Distributed Tracing**
+
+> _AWS X-Ray provides an end-to-end view of requests as they travel through your application and shows a map of your application’s underlying components._
+
+**Options for Log Analysis on AWS**
+
+> _Amazon ES makes it easy to deploy, operate, and scale Elasticsearch for log analytics, application monitoring, interactive search, and more._
 
 ## Conclusion
 
