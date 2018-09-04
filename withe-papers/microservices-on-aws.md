@@ -86,17 +86,17 @@ API Implementation
 
 > _AWS Lambda lets you run code without provisioning or managing servers.27 You pay only for the compute time you consume – there is no charge when your code is not running. With Lambda, you can run code for virtually any type of application or backend service – all with zero administration_
 
-
-
 ### Distributed Systems Components
 
 #### Service Discovery
 
 **Client-Side Service Discovery**
 
-> _hardcode the IP address of the target as part of the configuration of thecommunication source_
+> _hardcode the IP address of the target as part of the configuration of the  
+> communication source_
 
-**Application Load Balancer-Based Service Discovery**
+**Application Load Balancer-Based Service Discovery  
+**
 
 > > _One of the advantages of Application Load Balancing is that it provides health checks and automatic registration/de-registration of backend services in failure cases. The Application Load Balancer also offers path- and host-based routing approaches. Combining these features with DNS capabilities, it’s possible to build a simple service discovery solution with minimum efforts and low cost_
 
@@ -118,21 +118,22 @@ API Implementation
 
 HashiCorp Consul, etcd, or Netflix Eureka
 
-
-
 #### Distributed Data Management
 
 **event sourcing **
 
-> _The core idea behind event sourcing is to represent and persist every application change as an_
+> _The core idea behind event sourcing is to represent and persist every application change as an  
+> _
 >
 > _event record. Instead of persisting application state, data is stored as a stream of events_
-
-
-
+>
 > _Kinesis Streams enables you to build custom applications that process or analyze streaming data for specialized needs.48 Kinesis Streams can continuously capture and store terabytes of data per hour from hundreds of thousands of sources, such as website clickstreams, financial transactions, social media feeds, IT logs, and location-tracking events._
 
-![](/assets/eventsource1.png)
+![](/assets/eventsource1.png)CQRS
+
+![](/assets/cqrs1.png)
+
+
 
 ## Conclusion
 
