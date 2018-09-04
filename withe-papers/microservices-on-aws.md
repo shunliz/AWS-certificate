@@ -56,7 +56,7 @@ On-demand resources
 
 Experiment with low cost and risk
 
- Programmability
+Programmability
 
 Infrastructure as code
 
@@ -73,6 +73,8 @@ Polyglot
 ---
 
 ### Simple Microservices Architecture on AWS
+
+![](/assets/simplemicroservice.png)
 
 ### Reducing Operational Complexity
 
