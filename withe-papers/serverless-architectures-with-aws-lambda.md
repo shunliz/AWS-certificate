@@ -44,6 +44,10 @@ When your Lambda function is invoked in one of the supported languages, one of t
 
 **The Context Object**
 
+{RequestId:'xxxx', RemainingTime:300, Logging:'CloudWatch Logs'}
+
+**Writing Code for AWS Lambda—Statelessness and Reuse**
+
 
 
 ### Lambda Function Event Sources
