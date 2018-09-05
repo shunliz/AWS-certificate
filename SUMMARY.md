@@ -7,7 +7,7 @@
   * [Architecting for the Cloud AWS Best Practices](withe-papers/architecting-for-the-cloud-aws-best-practices.md)
   * [Practicing Continuous Integration and Continuous Delivery on AWS Accelerating Software Delivery with DevOps](withe-papers/practicing-continuous-integration-and-continuous-delivery-on-aws-accelerating-software-delivery-with-devops.md)
   * [Microservices on AWS](withe-papers/microservices-on-aws.md)
-  * Serverless Architectures with AWS Lambda
+  * [Serverless Architectures with AWS Lambda](withe-papers/serverless-architectures-with-aws-lambda.md)
   * Optimizing Enterprise Economics with Serverless Architectures
   * Running Containerized Microservices on AWS
   * Blue/Green Deployments on AWS
