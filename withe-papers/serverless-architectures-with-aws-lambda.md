@@ -24,13 +24,15 @@ No idle capacity
 
 ![](/assets/serverless1.png)
 
-
-
 ## AWS Lambda—Diving Deeper
 
 ---
 
 ### Lambda Function Code
+
+**The Function Code Package**
+
+
 
 ### Lambda Function Event Sources
 
