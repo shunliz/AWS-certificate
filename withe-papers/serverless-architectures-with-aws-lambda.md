@@ -38,6 +38,14 @@ The function code package contains all of the assets you want to have available 
 
 The handler is a specific code method \(Java, C\#\) or function \(Node.js, Python\) that you’ve created and included in your package
 
+**The Event Object**
+
+When your Lambda function is invoked in one of the supported languages, one of the parameters provided to your handler function is an event object
+
+**The Context Object**
+
+
+
 ### Lambda Function Event Sources
 
 ### Lambda Function Configuration
