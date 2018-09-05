@@ -30,13 +30,13 @@ No idle capacity
 
 ### Lambda Function Code
 
-**The Function Code Package** 
+**The Function Code Package**
 
 The function code package contains all of the assets you want to have available locally upon execution of your code
 
 **The Handler**
 
-
+The handler is a specific code method \(Java, C\#\) or function \(Node.js, Python\) that you’ve created and included in your package
 
 ### Lambda Function Event Sources
 
