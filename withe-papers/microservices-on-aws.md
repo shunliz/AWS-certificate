@@ -95,7 +95,7 @@ API Implementation
 > _hardcode the IP address of the target as part of the configuration of the  
 > communication source_
 
-**Application Load Balancer-Based Service Discovery              
+**Application Load Balancer-Based Service Discovery                
 **
 
 > > _One of the advantages of Application Load Balancing is that it provides health checks and automatic registration/de-registration of backend services in failure cases. The Application Load Balancer also offers path- and host-based routing approaches. Combining these features with DNS capabilities, it’s possible to build a simple service discovery solution with minimum efforts and low cost_
@@ -122,7 +122,7 @@ HashiCorp Consul, etcd, or Netflix Eureka
 
 **event sourcing **
 
-> _The core idea behind event sourcing is to represent and persist every application change as an              
+> _The core idea behind event sourcing is to represent and persist every application change as an                
 > _
 >
 > _event record. Instead of persisting application state, data is stored as a stream of events_
@@ -139,7 +139,7 @@ HashiCorp Consul, etcd, or Netflix Eureka
 
 **Asynchronous Messaging**
 
-> _Amazon SQS is a fast, reliable, scalable, fully managed queuing service that makes it simple and cost effective to decouple the components of a cloud application.49      
+> _Amazon SQS is a fast, reliable, scalable, fully managed queuing service that makes it simple and cost effective to decouple the components of a cloud application.49        
 > _
 >
 > _Amazon SNS is fully managed notification service that provides developers with a highly scalable, flexible, and cost-effective capability to publish messages from an application and immediately deliver them to subscribers or other applications.50_
@@ -164,7 +164,7 @@ Centralizing Logs, Most AWS services already centralize log files![](/assets/cen
 
 ![](/assets/awsesfig1.png)
 
-> _Amazon Redshift is a fast, fully managed, petabyte-scale data warehouse service that makes it simple and cost-effective to analyze all your data using your existing business intelligence tools.59  
+> _Amazon Redshift is a fast, fully managed, petabyte-scale data warehouse service that makes it simple and cost-effective to analyze all your data using your existing business intelligence tools.59    
 > _
 >
 > _Amazon QuickSight is a fast, cloud-powered business analytics service to build visualizations, perform ad-hoc analysis, and quickly get business insights from your data.60_
@@ -189,7 +189,7 @@ Audit Trail
 
 > > AWS Config is a fully managed service that provides you with an AWS resource inventory, configuration history, and configuration change notifications to enable security and governance.66 The AWS Config rules feature enables you to create rules that automatically check the configuration of AWS resources recorded by AWS Config.
 
-## 
+![](/assets/awscomplaince.png)
 
 ## Conclusion
 
