@@ -30,7 +30,11 @@ No idle capacity
 
 ### Lambda Function Code
 
-**The Function Code Package**
+**The Function Code Package** 
+
+The function code package contains all of the assets you want to have available locally upon execution of your code
+
+**The Handler**
 
 
 
