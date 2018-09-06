@@ -106,13 +106,17 @@ Here are some example suggestions for Lambda aliases and how you might use them:
 #### Network Configuration
 
 * Default – Your Lambda function communicates from inside a virtual private cloud \(VPC\) that is managed by Lambda. It can connect to the internet, but not to any privately deployed resources running within your own VPCs.
-*  VPC – Your Lambda function communicates through an Elastic Network Interface \(ENI\) that is provisioned within the VPC and subnets you choose within your own account. These ENIs can be assigned security groups, and traffic will route based on the route tables of the subnets those ENIs are placed within—just the same as if an EC2 instance were placed in the same subnet.
+* VPC – Your Lambda function communicates through an Elastic Network Interface \(ENI\) that is provisioned within the VPC and subnets you choose within your own account. These ENIs can be assigned security groups, and traffic will route based on the route tables of the subnets those ENIs are placed within—just the same as if an EC2 instance were placed in the same subnet.
 
 #### Environment Variables
 
 #### Dead Letter Queues
 
+If an exception occurs when trying to invoke your function in these models, the invocation will be attempted two more times \(with back-off between the retries\). After the third attempt, the event is either discarded or placed onto a dead letter queue, if you configured one for the function.
 
+#### Timeout
+
+The maximum timeout for a Lambda function is 300 seconds
 
 ### Serverless Best Practices
 
@@ -120,7 +124,11 @@ Here are some example suggestions for Lambda aliases and how you might use them:
 
 ### Serverless Architecture Best Practices
 
-### Serverless Development Best Practices
+#### Security Best Practices
+
+
+
+#### Serverless Development Best Practices
 
 ## Sample Serverless Architectures
 
