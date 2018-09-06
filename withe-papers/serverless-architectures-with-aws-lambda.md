@@ -74,9 +74,33 @@ S3 event, SNS message, APIgateway call, Cloud Formation.......
 
 ### Lambda Function Configuration
 
+**Function Memory**
+
+Not only will function memory dictate the amount of memory available to your function code during execution, but the same dial will also influence the CPU and network resources available to your function.
+
+**Versions and Aliases**
+
+Amazon Resource Name \(ARN\): 
+
+> arn:aws:lambda:\[region\]:\[account\]:function:\[fn\_name\]:\[version\]
+
+Each and every Lambda function has a default version built in: $LATEST
+
+It’s important to know that a Lambda function container is specific to a particular version of your function
+
+**Lambda aliases** should be used here, instead. A function alias allows you to invoke and point event sources to a specific Lambda function version.
 
 
-## Serverless Best Practices
+
+Here are some example suggestions for Lambda aliases and how you might use them:
+
+**• live/prod/active** – This could represent the Lambda function version that your production triggers or that clients are integrating with.
+
+**• blue/green** – Enable the blue/green deployment pattern through use of aliases.
+
+**• debug** – If you’ve created a testing stack to debug your applications, it can integrate with an alias like this when you need to perform a deeper analysis.
+
+### Serverless Best Practices
 
 ---
 
