@@ -48,11 +48,33 @@ When your Lambda function is invoked in one of the supported languages, one of t
 
 **Writing Code for AWS Lambda—Statelessness and Reuse**
 
+> _**your code cannotmake assumptions about state**_
 
+![](/assets/lambdacode1.png)
 
 ### Lambda Function Event Sources
 
+S3 event, SNS message, APIgateway call, Cloud Formation.......
+
+**Invocation Patterns: Push Model&Pull Model**
+
+**Push Model Event Sources:**
+
+* Amazon S3
+* Amazon API Gateway
+* Amazon SNS
+* AWS CloudFormation
+* Amazon CloudWatch Events
+* Amazon Alexa
+
+**Pull Model Event Sources**
+
+* Amazon DynamoDB
+* Amazon Kinesis Streams
+
 ### Lambda Function Configuration
+
+
 
 ## Serverless Best Practices
 
