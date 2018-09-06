@@ -101,6 +101,17 @@ Here are some example suggestions for Lambda aliases and how you might use them:
 
 #### **IAM Role**
 
+#### Lambda Function Permissions
+
+#### Network Configuration
+
+* Default – Your Lambda function communicates from inside a virtual private cloud \(VPC\) that is managed by Lambda. It can connect to the internet, but not to any privately deployed resources running within your own VPCs.
+*  VPC – Your Lambda function communicates through an Elastic Network Interface \(ENI\) that is provisioned within the VPC and subnets you choose within your own account. These ENIs can be assigned security groups, and traffic will route based on the route tables of the subnets those ENIs are placed within—just the same as if an EC2 instance were placed in the same subnet.
+
+#### Environment Variables
+
+#### Dead Letter Queues
+
 
 
 ### Serverless Best Practices
