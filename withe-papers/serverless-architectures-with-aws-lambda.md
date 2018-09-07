@@ -133,7 +133,7 @@ ensure security best practices through writing secure application code, tight ac
 * Persisting Secrets
 * Using Secrets
 * API Authorization
-* VPC Security
+* * VPC Security
 * Deployment Access Control
 
 #### Reliability Best Practices
