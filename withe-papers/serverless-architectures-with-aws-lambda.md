@@ -188,9 +188,19 @@ Event Source Selection
 
 ##### Coding and Code Management Best Practices
 
-###### Coding Best Practices:
+###### **Coding Best Practices:**
 
 Business Logic outside the Handler
+
+Warm Containers—Caching/Keep-Alive/Reuse
+
+Control Dependencies
+
+Fail Fast
+
+#### Code Management Best Practices
+
+
 
 ## Sample Serverless Architectures
 
