@@ -200,7 +200,14 @@ Fail Fast
 
 #### Code Management Best Practices
 
+Code Repository Organization
 
+Release Branches
+
+Testing
+
+* Unit Tests
+* Integration Testing
 
 ## Sample Serverless Architectures
 
