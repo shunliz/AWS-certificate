@@ -152,6 +152,24 @@ Language Runtime Performance
 
 Optimizing Your Code
 
+Understanding Your Application Performance
+
+#### Operational Excellence Best Practices
+
+Logging
+
+**Metrics and Monitoring**: integrate cloudwatch API and log metrics in lambda code
+
+**Deployment: **
+
+* Parallel version invocations
+* Deployment schedule
+* Rollback
+
+**Load Testing**
+
+**Triage and Debugging**
+
 #### Serverless Development Best Practices
 
 ## Sample Serverless Architectures
