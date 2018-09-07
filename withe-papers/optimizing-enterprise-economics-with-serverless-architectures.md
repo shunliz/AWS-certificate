@@ -1,44 +1,44 @@
-# Optimizing Enterprise Economics with Serverless Architectures
+# Optimizing Enterprise Economics with Serverless Architectures
 
 ---
 
 ---
 
-## Introduction 
+## Introduction
 
 ---
 
-## Understanding Serverless Applications 
+## Understanding Serverless Applications
 
 ---
 
-### Serverless Application Use Cases 
+### Serverless Application Use Cases
 
-### Is Serverless Always Appropriate? 
+### Is Serverless Always Appropriate?
 
-## Evaluating a Cloud Vendor’s Serverless Platform 
-
----
-
-### The AWS Serverless Platform 
-
-### AWS Serverless Platform Capabilities 
-
-## Case Studies 
+## Evaluating a Cloud Vendor’s Serverless Platform
 
 ---
 
-### Serverless Websites, Web Apps, and Mobile Backends 
+### The AWS Serverless Platform
 
-### IoT Backends 
+### AWS Serverless Platform Capabilities
 
-### Data Processing 
+## Case Studies
 
-### Big Data 
+---
 
-### IT Automation 
+### Serverless Websites, Web Apps, and Mobile Backends
 
-### Additional Use Cases 
+### IoT Backends
+
+### Data Processing
+
+### Big Data
+
+### IT Automation
+
+### Additional Use Cases
 
 
 
