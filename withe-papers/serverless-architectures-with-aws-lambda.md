@@ -126,7 +126,31 @@ The maximum timeout for a Lambda function is 300 seconds
 
 #### Security Best Practices
 
+ensure security best practices through writing secure application code, tight access control over source code changes, and following AWS security best practices for each of the services that your Lambda functions integrate with
 
+* One IAM Role per Function
+* Temporary AWS Credentials
+* Persisting Secrets
+* Using Secrets
+* API Authorization
+* VPC Security
+* Deployment Access Control
+
+#### Reliability Best Practices
+
+High Availability
+
+Fault Tolerance
+
+Recovery
+
+#### Performance Efficiency Best Practices
+
+Choosing the Optimal Memory Size
+
+Language Runtime Performance
+
+Optimizing Your Code
 
 #### Serverless Development Best Practices
 

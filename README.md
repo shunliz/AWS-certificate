@@ -2,7 +2,6 @@
 
 AWS certificate preparation notes.
 
-
 * [Introduction](README.md)
 * [Withe papers](withe-papers.md)
   * [AWS security best practice](withe-papers/aws-security-best-practice.md)
@@ -48,8 +47,6 @@ AWS certificate preparation notes.
     * [solution architect2](solution-architect2.md)
     * [Solution Architect1](test1.md)
 * [References](references.md)
-
-
 
 
 
