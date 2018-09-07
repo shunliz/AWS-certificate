@@ -170,11 +170,33 @@ Logging
 
 **Triage and Debugging**
 
+#### Cost Optimization Best Practices
+
+Right-Sizing
+
+Distributed and Asynchronous Architectures
+
+Batch Size
+
+Event Source Selection
+
 #### Serverless Development Best Practices
+
+##### Infrastructure as Code – the AWS Serverless Application Model \(AWS SAM\)
+
+##### Local Testing – AWS SAM Local
+
+##### Coding and Code Management Best Practices
+
+###### Coding Best Practices:
+
+Business Logic outside the Handler
 
 ## Sample Serverless Architectures
 
 ---
+
+### 
 
 ## Conclusion
 
