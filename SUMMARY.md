@@ -8,7 +8,7 @@
   * [Practicing Continuous Integration and Continuous Delivery on AWS Accelerating Software Delivery with DevOps](withe-papers/practicing-continuous-integration-and-continuous-delivery-on-aws-accelerating-software-delivery-with-devops.md)
   * [Microservices on AWS](withe-papers/microservices-on-aws.md)
   * [Serverless Architectures with AWS Lambda](withe-papers/serverless-architectures-with-aws-lambda.md)
-  * Optimizing Enterprise Economics with Serverless Architectures
+  * [Optimizing Enterprise Economics with Serverless Architectures](withe-papers/optimizing-enterprise-economics-with-serverless-architectures.md)
   * Running Containerized Microservices on AWS
   * Blue/Green Deployments on AWS
 * [AWS doc](aws-doc.md)
