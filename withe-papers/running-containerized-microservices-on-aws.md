@@ -54,8 +54,6 @@
 
 12. Admin processes - Run admin/management tasks as one-off processes
 
-
-
 ## Componentization Via Services
 
 ## Organized Around Business Capabilities
@@ -101,6 +99,8 @@
 • Strategy defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
 
 • Iterator provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+
+![](/assets/awsdockerbg.png)
 
 ## Conclusion
 
