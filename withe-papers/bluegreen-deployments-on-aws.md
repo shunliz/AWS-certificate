@@ -10,9 +10,19 @@
 
 ### Blue/Green Deployment Methodology
 
+The fundamental idea behind blue/green deployment is to shift traffic between two identical environments that are running different versions of your application
+
 ### Benefits of Blue/Green
 
+simply roll traffic back to the still-operating blue environment is a key benefit of blue/green deployments
+
+Blue/green deployments also fit well with continuous integration and continuous deployment \(CI/CD\) workflows, in many cases limiting their complexity.
+
+blue/green deployments also provide cost optimization benefits
+
 ### Define the Environment Boundary
+
+where have things changed and what needs to be deployed to make those changes live.
 
 ## AWS Tools and Services Enabling Blue/Green Deployments
 
