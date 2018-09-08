@@ -10,7 +10,7 @@
   * [Serverless Architectures with AWS Lambda](withe-papers/serverless-architectures-with-aws-lambda.md)
   * [Optimizing Enterprise Economics with Serverless Architectures](withe-papers/optimizing-enterprise-economics-with-serverless-architectures.md)
   * [Running Containerized Microservices on AWS](withe-papers/running-containerized-microservices-on-aws.md)
-  * Blue/Green Deployments on AWS
+  * [Blue/Green Deployments on AWS](withe-papers/bluegreen-deployments-on-aws.md)
 * [AWS doc](aws-doc.md)
   * EC2
   * RDS
