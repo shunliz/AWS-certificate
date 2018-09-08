@@ -22,7 +22,7 @@ blue/green deployments also provide cost optimization benefits
 
 ### Define the Environment Boundary
 
-where have things changed and what needs to be deployed to make those changes live.
+where have things changed and what needs to be deployed to make those changes live.
 
 ## AWS Tools and Services Enabling Blue/Green Deployments
 
