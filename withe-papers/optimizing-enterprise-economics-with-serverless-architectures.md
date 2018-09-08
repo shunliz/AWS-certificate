@@ -33,9 +33,39 @@ below is not appropriate:
 
 ---
 
+### ![](/assets/awsserverless1.png)
+
 ### The AWS Serverless Platform
 
+![](/assets/awsserverless2.png)
+
 ### AWS Serverless Platform Capabilities
+
+•  Amazon API Gateway – HTTP endpoints for Lambda functions, including a full range of API proxy and API management capabilities.
+
+• Amazon S3 – Lambda functions can be used as automatic event triggers when an object is created, copied, or deleted.
+
+• Amazon DynamoDB – Lambda functions can be used to process any or all of the changes made to a database table.
+
+• Amazon SNS – Messages can be routed to Lambda functions for processing, adding the ability to dynamically respond to published content.
+
+Optimizing Enterprise Economics with Serverless Architectures
+
+Page 12
+
+• Amazon SQS – Messages in queues can be easily processed by Lambda functions.
+
+• Amazon Kinesis Streams – In-order record processing of streaming data is provided by Lambda functions, making it easy to build near real-time analytics engines.
+
+• Amazon Kinesis Firehose – Lambda functions can be applied automatically to the records ingested by a Firehose, making it easy to add transformation, filtering, and analysis capabilities to a data stream.
+
+• Amazon Athena –Lambda functions can be automatically triggered for each object in a query’s result set.
+
+• AWS Step Functions – Multiple Lambda functions can be orchestrated to create long-running workflows for both human-centric and automated processes.
+
+• Amazon CloudWatch Events – Lambda functions can be used to automatically respond to events, including third-party events.
+
+• Amazon Aurora – Database triggers can be written as Lambda functions.
 
 ## Case Studies
 
