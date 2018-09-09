@@ -40,6 +40,7 @@
     * [AWS developer2](aws-developer2.md)
     * [quiz3](quiz3.md)
     * [simplifysearch quiz](simplifysearch-quiz.md)
+    * [lead2pass questions](lead2pass-questions.md)
   * [AWS solution architect Quiz](aws-solution-architect-quiz.md)
     * [solution architect3](solution-architect3.md)
     * [solution architect2](solution-architect2.md)
