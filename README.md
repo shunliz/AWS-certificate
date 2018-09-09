@@ -1,6 +1,7 @@
 # AWS-certificate
 
 AWS certificate preparation notes.
+# Summary
 
 * [Introduction](README.md)
 * [Withe papers](withe-papers.md)
@@ -10,9 +11,9 @@ AWS certificate preparation notes.
   * [Practicing Continuous Integration and Continuous Delivery on AWS Accelerating Software Delivery with DevOps](withe-papers/practicing-continuous-integration-and-continuous-delivery-on-aws-accelerating-software-delivery-with-devops.md)
   * [Microservices on AWS](withe-papers/microservices-on-aws.md)
   * [Serverless Architectures with AWS Lambda](withe-papers/serverless-architectures-with-aws-lambda.md)
-  * Optimizing Enterprise Economics with Serverless Architectures
-  * Running Containerized Microservices on AWS
-  * Blue/Green Deployments on AWS
+  * [Optimizing Enterprise Economics with Serverless Architectures](withe-papers/optimizing-enterprise-economics-with-serverless-architectures.md)
+  * [Running Containerized Microservices on AWS](withe-papers/running-containerized-microservices-on-aws.md)
+  * [Blue/Green Deployments on AWS](withe-papers/bluegreen-deployments-on-aws.md)
 * [AWS doc](aws-doc.md)
   * EC2
   * RDS
@@ -47,6 +48,8 @@ AWS certificate preparation notes.
     * [solution architect2](solution-architect2.md)
     * [Solution Architect1](test1.md)
 * [References](references.md)
+
+
 
 
 
