@@ -96,11 +96,25 @@ benstalk support switch app url. basically it's like DNS switch.
 
 ### Decoupling Schema Changes from Code Changes
 
+![](/assets/bgdatabaseschemachange1.png)
+
+need sufficient test as this approache may break production when the schema change failed.
+
 ### When Blue/Green Deployments Are Not Recommended
+
+when the blue and green environments are in geographically disparate regions
+
+application need to be “deployment aware”
+
+commercial off-the-shelf \(COTS\) application come with a predefined update/upgrade process that isn’t blue/green deployment friendly
 
 ## Conclusion
 
 ---
 
+Comparsion of the blue/green deployment methods
 
+![](/assets/bgdeploytable1.png)
+
+![](/assets/bgdeploytable2.png)
 
