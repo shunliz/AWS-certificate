@@ -1,5 +1,4 @@
-**QUESTION 1    
-**
+**QUESTION 1    **
 
 A user plans to use RDS as a managed DB platform. Which of the below mentioned features is
 
@@ -15,8 +14,7 @@ D. Automated software patching
 
 **Answer: B  **
 
-**Explanation:    
-**
+**Explanation:    **
 
 AWS RDS provides a managed DB platform, which offers features, such as automated backup,
 
@@ -24,11 +22,10 @@ patch management, automated failure detection and recovery.
 
 The scaling is not automated and the user needs to plan it with a few clicks.
 
-[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html    
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html      
 ](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
-**QUESTION 2    
-**
+**QUESTION 2    **
 
 A user has not enabled versioning on an S3 bucket. What will be the version ID of the object
 
@@ -42,9 +39,8 @@ C. Null
 
 D. Blank
 
-**Answer: C    
-Explanation:    
-**
+**Answer: C  
+Explanation:    **
 
 S3 objects stored in the bucket before the user has set the versioning state have a version ID of
 
@@ -52,15 +48,13 @@ null. When the user enables versioning, the objects in the bucket do not change 
 
 remains null.
 
-[http://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht    
-](/h ttp://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht  ml)
+[http://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht    ](/h ttp://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht  ml)
 
 [ml](/h ttp://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht  ml)
 
 
 
-**QUESTION 3    
-**
+**QUESTION 3    **
 
 A user has created a queue named "myqueue" with SQS. There are four messages published to
 
@@ -80,8 +74,7 @@ D. It will delete the queue
 
 **Answer: D  **
 
-**Explanation:    
-**
+**Explanation:    **
 
 SQS allows the user to move data between distributed components of applications so they can
 
@@ -93,8 +86,7 @@ note that queues retain messages for a set period of time. By default, a queue r
 
 for four days.
 
-[http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept    
-](/h ttp://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept  s.html)
+[http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept    ](/h ttp://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept  s.html)
 
 [s.html](/h ttp://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept  s.html)
 
@@ -118,8 +110,7 @@ D. requests above your provisioned capacity will be throttled and you will recei
 
 **Answer: D**
 
-**Explanation:  
-**
+**Explanation:  **
 
 Speaking about DynamoDB, if your application performs more reads/second or writes/second
 
@@ -143,8 +134,7 @@ D. AWS cannot guarantee that you will receive messages in the exact order you se
 
 **Answer: D**
 
-**Explanation:  
-**
+**Explanation:  **
 
 Amazon SQS makes a best effort to preserve order in messages, but due to the distributed
 
@@ -155,8 +145,4 @@ you sent them. You typically place sequencing information or timestamps in your 
 that you can reorder them upon receipt.
 
 [https://aws.amazon.com/items/1343?externalID=1343](https://aws.amazon.com/items/1343?externalID=1343)
-
-
-
-
 
