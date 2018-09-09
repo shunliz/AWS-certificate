@@ -22,7 +22,7 @@ patch management, automated failure detection and recovery.
 
 The scaling is not automated and the user needs to plan it with a few clicks.
 
-[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html      
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html        
 ](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
 **QUESTION 2    **
