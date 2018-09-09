@@ -135,10 +135,10 @@ that you can reorder them upon receipt.
 
 ---
 
-**QUESTION 6  
-**
+**QUESTION 6    
+**An organization has launched two applications: one for blogging and one for ECM on the same
 
-An organization has launched two applications: one for blogging and one for ECM on the same _**\*\***_AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
+AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
 
 IPs \(primary and secondary\) to the above mentioned instance. The organization wants the
 
@@ -160,9 +160,9 @@ D. Use the ec2-ip-utility package which can update the routing tables as well as
 
 secondary IP using DHCP.
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 A Virtual Private Cloud \(VPC\) is a virtual network dedicated to the user's AWS account. It enables
 
@@ -185,4 +185,8 @@ network interfaces that the user can attach while the instance is running, refre
 addresses during DHCP lease renewal, and updates the related routing rules.
 
 [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html)
+
+---
+
+
 
