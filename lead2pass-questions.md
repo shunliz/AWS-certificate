@@ -1,4 +1,4 @@
-**QUESTION 1    **
+**QUESTION 1**
 
 A user plans to use RDS as a managed DB platform. Which of the below mentioned features is
 
@@ -22,8 +22,9 @@ patch management, automated failure detection and recovery.
 
 The scaling is not automated and the user needs to plan it with a few clicks.
 
-[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html        
-](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html        ](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+
+---
 
 **QUESTION 2    **
 
@@ -52,7 +53,7 @@ remains null.
 
 [ml](/h ttp://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht  ml)
 
-
+---
 
 **QUESTION 3    **
 
@@ -90,7 +91,7 @@ for four days.
 
 [s.html](/h ttp://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept  s.html)
 
-
+---
 
 **QUESTION 4**
 
@@ -118,7 +119,7 @@ than your table's provisioned throughput capacity allows, requests above your pr
 
 capacity will be throttled and you will receive 400 error codes.
 
-
+---
 
 **QUESTION 5**
 
@@ -145,4 +146,8 @@ you sent them. You typically place sequencing information or timestamps in your 
 that you can reorder them upon receipt.
 
 [https://aws.amazon.com/items/1343?externalID=1343](https://aws.amazon.com/items/1343?externalID=1343)
+
+---
+
+
 
