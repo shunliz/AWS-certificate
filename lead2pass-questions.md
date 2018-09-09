@@ -1,8 +1,6 @@
 **QUESTION 1**
 
-A user plans to use RDS as a managed DB platform. Which of the below mentioned features is
-
-not supported by RDS?
+A user plans to use RDS as a managed DB platform. Which of the below mentioned features is not supported by RDS?
 
 A. Automated backup
 
@@ -16,9 +14,7 @@ D. Automated software patching
 
 **Explanation:    **
 
-AWS RDS provides a managed DB platform, which offers features, such as automated backup,
-
-patch management, automated failure detection and recovery.
+AWS RDS provides a managed DB platform, which offers features, such as automated backup, patch management, automated failure detection and recovery.
 
 The scaling is not automated and the user needs to plan it with a few clicks.
 
@@ -28,9 +24,7 @@ The scaling is not automated and the user needs to plan it with a few clicks.
 
 **QUESTION 2    **
 
-A user has not enabled versioning on an S3 bucket. What will be the version ID of the object
-
-inside that bucket?
+A user has not enabled versioning on an S3 bucket. What will be the version ID of the object inside that bucket?
 
 A. 0
 
@@ -43,15 +37,9 @@ D. Blank
 **Answer: C  
 Explanation:    **
 
-S3 objects stored in the bucket before the user has set the versioning state have a version ID of
+S3 objects stored in the bucket before the user has set the versioning state have a version ID of null. When the user enables versioning, the objects in the bucket do not change and their ID remains null.
 
-null. When the user enables versioning, the objects in the bucket do not change and their ID
-
-remains null.
-
-[http://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht    ](/h ttp://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht  ml)
-
-[ml](/h ttp://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht  ml)
+[http://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht](/h ttp://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht  ml)[ml](/h ttp://docs.aws.amazon.com/AmazonS3/latest/dev/AddingObjectstoVersionSuspendedBuckets.ht  ml)
 
 ---
 
@@ -87,9 +75,7 @@ note that queues retain messages for a set period of time. By default, a queue r
 
 for four days.
 
-[http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept    ](/h ttp://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept  s.html)
-
-[s.html](/h ttp://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept  s.html)
+[http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept](/h ttp://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept  s.html)[s.html](/h ttp://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/SQSConcept  s.html)
 
 ---
 
