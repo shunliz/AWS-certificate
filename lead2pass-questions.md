@@ -135,5 +135,54 @@ that you can reorder them upon receipt.
 
 ---
 
+**QUESTION 6  
+**
 
+An organization has launched two applications: one for blogging and one for ECM on the same _**\*\***_AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
+
+IPs \(primary and secondary\) to the above mentioned instance. The organization wants the
+
+instance OS to recognize the secondary IP address. How can the organization configure this?
+
+A. Use the ec2-net-utility package which updates routing tables, uses DHCP to refresh the
+
+secondary IP and adds the network interface.
+
+B. Use the ec2-net-utils package which will configure an additional network interface and update
+
+the routing table
+
+C. Use the ec2-ip-update package which can configure the network interface as well as update the
+
+secondary IP with DHCP.
+
+D. Use the ec2-ip-utility package which can update the routing tables as well as refresh the
+
+secondary IP using DHCP.
+
+Answer: B
+
+Explanation:
+
+A Virtual Private Cloud \(VPC\) is a virtual network dedicated to the user's AWS account. It enables
+
+the user to launch AWS resources into a virtual network that the user has defined. With VPC the
+
+user can specify multiple private IP addresses for his instances. The number of network
+
+interfaces and private IP addresses that a user can specify for an instance depends on the
+
+instance type. This scenario helps when the user wants to host multiple websites on a single EC2
+
+instance. After the user has assigned a secondary private IP address to his instance, he needs to
+
+configure the operating system on that instance to recognize the secondary private IP address.
+
+For AWS Linux, the ec2-net-utils package can take care of this step. It configures additional
+
+network interfaces that the user can attach while the instance is running, refreshes secondary IP
+
+addresses during DHCP lease renewal, and updates the related routing rules.
+
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html)
 
