@@ -38,7 +38,7 @@ Elastic Load Balancing distributes incoming application traffic across designate
 
 ### Auto Scaling
 
-Auto Scaling helps maintain application availability and lets customers scale EC2 capacity up or down automatically according to defined conditions 
+Auto Scaling helps maintain application availability and lets customers scale EC2 capacity up or down automatically according to defined conditions
 
 ### AWS Elastic Beanstalk
 
