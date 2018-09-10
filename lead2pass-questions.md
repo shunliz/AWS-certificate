@@ -135,7 +135,7 @@ that you can reorder them upon receipt.
 
 ---
 
-**QUESTION 6                
+**QUESTION 6                  
 **An organization has launched two applications: one for blogging and one for ECM on the same
 
 AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
@@ -200,10 +200,10 @@ C. Dynamic Database
 
 D. Document Database
 
-**Answer: B        
+**Answer: B          
 **
 
-**Explanation:        
+**Explanation:          
 **
 
 DynamoDB is a fast, fully managed NoSQL database service.
@@ -212,7 +212,7 @@ DynamoDB is a fast, fully managed NoSQL database service.
 
 ---
 
-**QUESTION 8      
+**QUESTION 8        
 **
 
 In relation to Amazon SQS, how many queues and messages can you have per queue for each
@@ -241,7 +241,7 @@ have been in the queue for more than 4 days.
 
 ---
 
-**QUESTION 9    
+**QUESTION 9      
 **
 
 Doug has created a VPC with CIDR 10.201.0.0/16 in his AWS account. In this VPC he has
@@ -262,10 +262,10 @@ C. Private address IP 10.201.31.6 is currently assigned to another interface.
 
 D. Private IP address 10.201.31.6 is reserved by Amazon for IP networking purposes.
 
-**Answer: C    
+**Answer: C      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 In Amazon VPC, you can assign any Private IP address to your instance as long as it is:
@@ -280,7 +280,7 @@ Not currently assigned to another interface
 
 ---
 
-**QUESTION 10  
+**QUESTION 10    
 **
 
 Regarding Amazon SQS, are there restrictions on the names of Amazon SQS queues?
@@ -299,10 +299,10 @@ D. Yes. Queue names are limited to 80 characters but queue names do not need to 
 
 within an AWS account
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 Queue names are limited to 80 characters. Alphanumeric characters plus hyphens \(-\) and
@@ -315,7 +315,8 @@ After you delete a queue, you can reuse the queue name.
 
 ---
 
-**QUESTION 11**
+**QUESTION 11  
+**
 
 A user is planning to host a web server as well as an app server on a single EC2 instance which
 
@@ -337,9 +338,11 @@ D. Launch a VPC with ELB such that it redirects requests to separate VPC instanc
 
 subnet.
 
-**Answer: C**
+**Answer: C  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 If you need to host multiple websites\(with different IPs\) on a single EC2 instance, the following is
 
@@ -358,6 +361,48 @@ operating network appliances, such as firewalls or load balancers that have mult
 addresses for each network interface.
 
 [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html)
+
+---
+
+**QUESTION 12**
+
+An online gaming site asked you if you can deploy a database that is a fast, highly scalable
+
+NoSQL database service in AWS for a new site that he wants to build. Which database should
+
+you recommend?
+
+A. Amazon Redshift
+
+B. Amazon SimpleDB
+
+C. Amazon DynamoDB
+
+D. Amazon RDS
+
+**Answer: C**
+
+**Explanation:**
+
+Amazon DynamoDB is ideal for database applications that require very low latency and
+
+predictable performance at any scale but don't need complex querying capabilities like joins or
+
+transactions. Amazon DynamoDB is a fully-managed NoSQL database service that offers high
+
+performance, predictable throughput and low cost. It is easy to set up, operate, and scale. With
+
+Amazon DynamoDB, you can start small, specify the throughput and storage you need, and
+
+easily scale your capacity requirements on the fly. Amazon DynamoDB automatically partitions
+
+data over a number of servers to meet your request capacity. In addition, DynamoDB
+
+automatically replicates your data synchronously across multiple Availability Zones within an
+
+AWS Region to ensure high-availability and data durability.
+
+[https://aws.amazon.com/running\_databases/\#dynamodb\_anchor](https://aws.amazon.com/running_databases/#dynamodb_anchor)
 
 ---
 
