@@ -135,7 +135,7 @@ that you can reorder them upon receipt.
 
 ---
 
-**QUESTION 6        
+**QUESTION 6          
 **An organization has launched two applications: one for blogging and one for ECM on the same
 
 AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
@@ -200,11 +200,43 @@ C. Dynamic Database
 
 D. Document Database
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 DynamoDB is a fast, fully managed NoSQL database service.
 
 [http://aws.amazon.com/dynamodb/](http://aws.amazon.com/dynamodb/)
+
+---
+
+**QUESTION 8**
+
+In relation to Amazon SQS, how many queues and messages can you have per queue for each
+
+user?
+
+A. Unlimited
+
+B. 10
+
+C. 256
+
+D. 500
+
+Answer: A
+
+Explanation:
+
+Amazon SQS supports an unlimited number of queues and unlimited number of messages per
+
+queue for each user. Please be aware that Amazon SQS automatically deletes messages that
+
+have been in the queue for more than 4 days.
+
+[https://aws.amazon.com/items/1343?externalID=1343](https://aws.amazon.com/items/1343?externalID=1343)
+
+---
 
