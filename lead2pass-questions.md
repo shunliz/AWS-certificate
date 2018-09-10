@@ -135,7 +135,7 @@ that you can reorder them upon receipt.
 
 ---
 
-**QUESTION 6      
+**QUESTION 6        
 **An organization has launched two applications: one for blogging and one for ECM on the same
 
 AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
@@ -188,5 +188,23 @@ addresses during DHCP lease renewal, and updates the related routing rules.
 
 ---
 
+QUESTION 7
 
+What kind of service is provided by AWS DynamoDB?
+
+A. Relational Database
+
+B. NoSQL Database
+
+C. Dynamic Database
+
+D. Document Database
+
+**Answer: B**
+
+**Explanation:**
+
+DynamoDB is a fast, fully managed NoSQL database service.
+
+[http://aws.amazon.com/dynamodb/](http://aws.amazon.com/dynamodb/)
 
