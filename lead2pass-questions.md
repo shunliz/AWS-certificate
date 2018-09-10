@@ -135,7 +135,7 @@ that you can reorder them upon receipt.
 
 ---
 
-**QUESTION 6          
+**QUESTION 6            
 **An organization has launched two applications: one for blogging and one for ECM on the same
 
 AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
@@ -200,10 +200,10 @@ C. Dynamic Database
 
 D. Document Database
 
-**Answer: B  
+**Answer: B    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 DynamoDB is a fast, fully managed NoSQL database service.
@@ -212,7 +212,8 @@ DynamoDB is a fast, fully managed NoSQL database service.
 
 ---
 
-**QUESTION 8**
+**QUESTION 8  
+**
 
 In relation to Amazon SQS, how many queues and messages can you have per queue for each
 
@@ -239,4 +240,42 @@ have been in the queue for more than 4 days.
 [https://aws.amazon.com/items/1343?externalID=1343](https://aws.amazon.com/items/1343?externalID=1343)
 
 ---
+
+**QUESTION 9**
+
+Doug has created a VPC with CIDR 10.201.0.0/16 in his AWS account. In this VPC he has
+
+created a public subnet with CIDR block 10.201.31.0/24. While launching a new EC2 from the
+
+console, he is not able to assign the private IP address 10.201.31.6 to this instance. Which is the
+
+most likely reason for this issue?
+
+A. Private IP address 10.201.31.6 is not part of the associated subnet's IP address range.
+
+B. Private IP address 10.201.31.6 is blocked via ACLs in Amazon infrastructure as a part of
+
+platform security.
+
+C. Private address IP 10.201.31.6 is currently assigned to another interface.
+
+D. Private IP address 10.201.31.6 is reserved by Amazon for IP networking purposes.
+
+**Answer: C**
+
+**Explanation:**
+
+In Amazon VPC, you can assign any Private IP address to your instance as long as it is:
+
+Part of the associated subnet's IP address range
+
+Not reserved by Amazon for IP networking purposes
+
+Not currently assigned to another interface
+
+[http://aws.amazon.com/vpc/faqs/](http://aws.amazon.com/vpc/faqs/)
+
+---
+
+
 
