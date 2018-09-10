@@ -135,7 +135,7 @@ that you can reorder them upon receipt.
 
 ---
 
-**QUESTION 6              
+**QUESTION 6                
 **An organization has launched two applications: one for blogging and one for ECM on the same
 
 AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
@@ -200,10 +200,10 @@ C. Dynamic Database
 
 D. Document Database
 
-**Answer: B      
+**Answer: B        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 DynamoDB is a fast, fully managed NoSQL database service.
@@ -212,7 +212,7 @@ DynamoDB is a fast, fully managed NoSQL database service.
 
 ---
 
-**QUESTION 8    
+**QUESTION 8      
 **
 
 In relation to Amazon SQS, how many queues and messages can you have per queue for each
@@ -241,7 +241,7 @@ have been in the queue for more than 4 days.
 
 ---
 
-**QUESTION 9  
+**QUESTION 9    
 **
 
 Doug has created a VPC with CIDR 10.201.0.0/16 in his AWS account. In this VPC he has
@@ -262,10 +262,10 @@ C. Private address IP 10.201.31.6 is currently assigned to another interface.
 
 D. Private IP address 10.201.31.6 is reserved by Amazon for IP networking purposes.
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 In Amazon VPC, you can assign any Private IP address to your instance as long as it is:
@@ -280,7 +280,8 @@ Not currently assigned to another interface
 
 ---
 
-**QUESTION 10**
+**QUESTION 10  
+**
 
 Regarding Amazon SQS, are there restrictions on the names of Amazon SQS queues?
 
@@ -298,9 +299,11 @@ D. Yes. Queue names are limited to 80 characters but queue names do not need to 
 
 within an AWS account
 
-**Answer: C**
+**Answer: C  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 Queue names are limited to 80 characters. Alphanumeric characters plus hyphens \(-\) and
 
@@ -311,6 +314,50 @@ After you delete a queue, you can reuse the queue name.
 [https://aws.amazon.com/sqs/faqs/](https://aws.amazon.com/sqs/faqs/)
 
 ---
+
+**QUESTION 11**
+
+A user is planning to host a web server as well as an app server on a single EC2 instance which
+
+is a part of the public subnet of a VPC. How can the user setup to have two separate public IPs
+
+and separate security groups for both the application as well as the web server?
+
+A. Launch a VPC instance with two network interfaces. Assign a separate security group to each
+
+and AWS will assign a separate public IP to them.
+
+B. Launch VPC with two separate subnets and make the instance a part of both the subnets.
+
+C. Launch a VPC instance with two network interfaces. Assign a separate security group and
+
+elastic IP to them.
+
+D. Launch a VPC with ELB such that it redirects requests to separate VPC instances of the public
+
+subnet.
+
+**Answer: C**
+
+**Explanation:**
+
+If you need to host multiple websites\(with different IPs\) on a single EC2 instance, the following is
+
+the suggested method from AWS.
+
+Launch a VPC instance with two network interfaces
+
+Assign elastic IPs from VPC EIP pool to those interfaces \(Because, when the user has attached
+
+more than one network interface with an instance, AWS cannot assign public IPs to them.\) Assign
+
+separate Security Groups if separate Security Groups are needed This scenario also helps for
+
+operating network appliances, such as firewalls or load balancers that have multiple private IP
+
+addresses for each network interface.
+
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/MultipleIP.html)
 
 ---
 
