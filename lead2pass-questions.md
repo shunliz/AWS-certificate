@@ -135,7 +135,7 @@ that you can reorder them upon receipt.
 
 ---
 
-**QUESTION 6            
+**QUESTION 6              
 **An organization has launched two applications: one for blogging and one for ECM on the same
 
 AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
@@ -200,10 +200,10 @@ C. Dynamic Database
 
 D. Document Database
 
-**Answer: B    
+**Answer: B      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 DynamoDB is a fast, fully managed NoSQL database service.
@@ -212,7 +212,7 @@ DynamoDB is a fast, fully managed NoSQL database service.
 
 ---
 
-**QUESTION 8  
+**QUESTION 8    
 **
 
 In relation to Amazon SQS, how many queues and messages can you have per queue for each
@@ -241,7 +241,8 @@ have been in the queue for more than 4 days.
 
 ---
 
-**QUESTION 9**
+**QUESTION 9  
+**
 
 Doug has created a VPC with CIDR 10.201.0.0/16 in his AWS account. In this VPC he has
 
@@ -261,9 +262,11 @@ C. Private address IP 10.201.31.6 is currently assigned to another interface.
 
 D. Private IP address 10.201.31.6 is reserved by Amazon for IP networking purposes.
 
-**Answer: C**
+**Answer: C  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 In Amazon VPC, you can assign any Private IP address to your instance as long as it is:
 
@@ -274,6 +277,40 @@ Not reserved by Amazon for IP networking purposes
 Not currently assigned to another interface
 
 [http://aws.amazon.com/vpc/faqs/](http://aws.amazon.com/vpc/faqs/)
+
+---
+
+**QUESTION 10**
+
+Regarding Amazon SQS, are there restrictions on the names of Amazon SQS queues?
+
+A. No
+
+B. Yes. Queue names must be unique within an AWS account and you cannot use hyphens \(-\)
+
+and underscores \(\_\)
+
+C. Yes. Queue names are limited to 80 characters and queue names must be unique within an
+
+AWS account
+
+D. Yes. Queue names are limited to 80 characters but queue names do not need to be unique
+
+within an AWS account
+
+**Answer: C**
+
+**Explanation:**
+
+Queue names are limited to 80 characters. Alphanumeric characters plus hyphens \(-\) and
+
+underscores \(\_\) are allowed. Queue names must be unique within an AWS account.
+
+After you delete a queue, you can reuse the queue name.
+
+[https://aws.amazon.com/sqs/faqs/](https://aws.amazon.com/sqs/faqs/)
+
+---
 
 ---
 
