@@ -135,7 +135,7 @@ that you can reorder them upon receipt.
 
 ---
 
-**QUESTION 6                  
+**QUESTION 6                    
 **An organization has launched two applications: one for blogging and one for ECM on the same
 
 AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
@@ -200,10 +200,10 @@ C. Dynamic Database
 
 D. Document Database
 
-**Answer: B          
+**Answer: B            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 DynamoDB is a fast, fully managed NoSQL database service.
@@ -212,7 +212,7 @@ DynamoDB is a fast, fully managed NoSQL database service.
 
 ---
 
-**QUESTION 8        
+**QUESTION 8          
 **
 
 In relation to Amazon SQS, how many queues and messages can you have per queue for each
@@ -241,7 +241,7 @@ have been in the queue for more than 4 days.
 
 ---
 
-**QUESTION 9      
+**QUESTION 9        
 **
 
 Doug has created a VPC with CIDR 10.201.0.0/16 in his AWS account. In this VPC he has
@@ -262,10 +262,10 @@ C. Private address IP 10.201.31.6 is currently assigned to another interface.
 
 D. Private IP address 10.201.31.6 is reserved by Amazon for IP networking purposes.
 
-**Answer: C      
+**Answer: C        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 In Amazon VPC, you can assign any Private IP address to your instance as long as it is:
@@ -280,7 +280,7 @@ Not currently assigned to another interface
 
 ---
 
-**QUESTION 10    
+**QUESTION 10      
 **
 
 Regarding Amazon SQS, are there restrictions on the names of Amazon SQS queues?
@@ -299,10 +299,10 @@ D. Yes. Queue names are limited to 80 characters but queue names do not need to 
 
 within an AWS account
 
-**Answer: C    
+**Answer: C      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 Queue names are limited to 80 characters. Alphanumeric characters plus hyphens \(-\) and
@@ -315,7 +315,7 @@ After you delete a queue, you can reuse the queue name.
 
 ---
 
-**QUESTION 11  
+**QUESTION 11    
 **
 
 A user is planning to host a web server as well as an app server on a single EC2 instance which
@@ -338,10 +338,10 @@ D. Launch a VPC with ELB such that it redirects requests to separate VPC instanc
 
 subnet.
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 If you need to host multiple websites\(with different IPs\) on a single EC2 instance, the following is
@@ -364,7 +364,8 @@ addresses for each network interface.
 
 ---
 
-**QUESTION 12**
+**QUESTION 12  
+**
 
 An online gaming site asked you if you can deploy a database that is a fast, highly scalable
 
@@ -380,9 +381,11 @@ C. Amazon DynamoDB
 
 D. Amazon RDS
 
-**Answer: C**
+**Answer: C  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 Amazon DynamoDB is ideal for database applications that require very low latency and
 
@@ -403,6 +406,34 @@ automatically replicates your data synchronously across multiple Availability Zo
 AWS Region to ensure high-availability and data durability.
 
 [https://aws.amazon.com/running\_databases/\#dynamodb\_anchor](https://aws.amazon.com/running_databases/#dynamodb_anchor)
+
+---
+
+**QUESTION 13**
+
+How long are the messages kept on an SQS queue by default?
+
+A. If a message is not read, it is never deleted
+
+B. 2 weeks
+
+C. 1 day
+
+D. 4 days
+
+**Answer: D**
+
+**Explanation:**
+
+The SQS message retention period is configurable and can be set anywhere from 1 minute to 2
+
+weeks. The default is 4 days and once the message retention limit is reached your messages will
+
+be automatically deleted. The option for longer message retention provides greater flexibility to
+
+allow for longer intervals between message production and consumption.
+
+[https://aws.amazon.com/sqs/faqs/](https://aws.amazon.com/sqs/faqs/)
 
 ---
 
