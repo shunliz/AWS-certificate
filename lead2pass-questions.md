@@ -135,7 +135,7 @@ that you can reorder them upon receipt.
 
 ---
 
-**QUESTION 6                            
+**QUESTION 6                              
 **An organization has launched two applications: one for blogging and one for ECM on the same
 
 AWS Linux EC2 instance running in the AWS VPC. The organization has attached two private
@@ -200,10 +200,10 @@ C. Dynamic Database
 
 D. Document Database
 
-**Answer: B                    
+**Answer: B                      
 **
 
-**Explanation:                    
+**Explanation:                      
 **
 
 DynamoDB is a fast, fully managed NoSQL database service.
@@ -212,7 +212,7 @@ DynamoDB is a fast, fully managed NoSQL database service.
 
 ---
 
-**QUESTION 8                  
+**QUESTION 8                    
 **
 
 In relation to Amazon SQS, how many queues and messages can you have per queue for each
@@ -241,7 +241,7 @@ have been in the queue for more than 4 days.
 
 ---
 
-**QUESTION 9                
+**QUESTION 9                  
 **
 
 Doug has created a VPC with CIDR 10.201.0.0/16 in his AWS account. In this VPC he has
@@ -262,10 +262,10 @@ C. Private address IP 10.201.31.6 is currently assigned to another interface.
 
 D. Private IP address 10.201.31.6 is reserved by Amazon for IP networking purposes.
 
-**Answer: C                
+**Answer: C                  
 **
 
-**Explanation:                
+**Explanation:                  
 **
 
 In Amazon VPC, you can assign any Private IP address to your instance as long as it is:
@@ -280,7 +280,7 @@ Not currently assigned to another interface
 
 ---
 
-**QUESTION 10              
+**QUESTION 10                
 **
 
 Regarding Amazon SQS, are there restrictions on the names of Amazon SQS queues?
@@ -299,10 +299,10 @@ D. Yes. Queue names are limited to 80 characters but queue names do not need to 
 
 within an AWS account
 
-**Answer: C              
+**Answer: C                
 **
 
-**Explanation:              
+**Explanation:                
 **
 
 Queue names are limited to 80 characters. Alphanumeric characters plus hyphens \(-\) and
@@ -315,7 +315,7 @@ After you delete a queue, you can reuse the queue name.
 
 ---
 
-**QUESTION 11            
+**QUESTION 11              
 **
 
 A user is planning to host a web server as well as an app server on a single EC2 instance which
@@ -338,10 +338,10 @@ D. Launch a VPC with ELB such that it redirects requests to separate VPC instanc
 
 subnet.
 
-**Answer: C            
+**Answer: C              
 **
 
-**Explanation:            
+**Explanation:              
 **
 
 If you need to host multiple websites\(with different IPs\) on a single EC2 instance, the following is
@@ -364,7 +364,7 @@ addresses for each network interface.
 
 ---
 
-**QUESTION 12          
+**QUESTION 12            
 **
 
 An online gaming site asked you if you can deploy a database that is a fast, highly scalable
@@ -381,10 +381,10 @@ C. Amazon DynamoDB
 
 D. Amazon RDS
 
-**Answer: C          
+**Answer: C            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 Amazon DynamoDB is ideal for database applications that require very low latency and
@@ -409,7 +409,7 @@ AWS Region to ensure high-availability and data durability.
 
 ---
 
-**QUESTION 13        
+**QUESTION 13          
 **
 
 How long are the messages kept on an SQS queue by default?
@@ -422,10 +422,10 @@ C. 1 day
 
 D. 4 days
 
-**Answer: D        
+**Answer: D          
 **
 
-**Explanation:        
+**Explanation:          
 **
 
 The SQS message retention period is configurable and can be set anywhere from 1 minute to 2
@@ -440,7 +440,7 @@ allow for longer intervals between message production and consumption.
 
 ---
 
-**QUESTION 14      
+**QUESTION 14        
 **
 
 Regarding Amazon SWF, the coordination logic in a workflow is contained in a software program
@@ -455,10 +455,10 @@ C. Cordinator
 
 D. Worker
 
-**Answer: B      
+**Answer: B        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 In Amazon SWF, the coordination logic in a workflow is contained in a software program called a
@@ -473,7 +473,7 @@ workflow when the objective has been completed.
 
 ---
 
-**QUESTION 15    
+**QUESTION 15      
 **
 
 A user has attached one RDS security group with 5 RDS instances. The user has changed the
@@ -488,10 +488,10 @@ C. Authorizing
 
 D. It is not possible to assign a single group to multiple DB instances
 
-**Answer: C    
+**Answer: C      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 When the user makes any changes to the RDS security group the rule status will be authorizing
@@ -502,7 +502,7 @@ Once the changes are propagated the rule status will change to authorized.
 
 ---
 
-**QUESTION 16    
+**QUESTION 16      
 **
 
 A user has attached an EBS volume to a running Linux instance as a "/dev/sdf" device. The user
@@ -519,10 +519,10 @@ C. The volume is not attached as a root device
 
 D. The volume is not mounted
 
-**Answer: D    
+**Answer: D      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 When a user creates an EBS volume and attaches it as a device, it is required to mount the
@@ -533,7 +533,7 @@ device. If the device/volume is not mounted it will not be available in the list
 
 ---
 
-**QUESTION 17  
+**QUESTION 17    
 **
 
 An account owner has created an IAM user with the name examkiller. The account owner wants
@@ -550,10 +550,10 @@ C. Create an IAM policy and define the region in the condition
 
 D. It is not possible to provide access based on the region
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 The IAM policy is never region specific. If the user wants to configure the region specific setting,
@@ -564,7 +564,7 @@ he needs to provide conditions as part of the policy.
 
 ---
 
-**QUESTION 18  
+**QUESTION 18    
 **
 
 What is the maximum time messages can be stored in SQS?
@@ -577,10 +577,10 @@ C. 4 days
 
 D. 7 days
 
-**Answer: A  
+**Answer: A    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 A message can be stored in the Simple Queue Service \(SQS\) from 1 minute up to a maximum of
@@ -589,7 +589,8 @@ A message can be stored in the Simple Queue Service \(SQS\) from 1 minute up to 
 
 ---
 
-**QUESTION 19**
+**QUESTION 19  
+**
 
 In DynamoDB, the default table size is:
 
@@ -601,9 +602,11 @@ C. 10 GB
 
 D. There is no table size
 
-**Answer: D**
+**Answer: D  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 DynamoDB has seamless scalability with no table size limits and unlimited storage, so you
 
@@ -615,7 +618,8 @@ data requirement changes.
 
 ---
 
-**QUESTION 20**
+**QUESTION 20  
+**
 
 A user is launching an AWS RDS instance with MySQL. The user wants to enable the Multi AZ
 
@@ -629,9 +633,11 @@ C. DB subnet group
 
 D. Database port
 
-**Answer: A**
+**Answer: A  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 If the user is launching RDS with Multi AZ the user cannot provision the Availability Zone. RDS is
 
@@ -640,4 +646,348 @@ launched automatically instead
 [https://console.aws.amazon.com/rds/](https://console.aws.amazon.com/rds/)
 
 ---
+
+**QUESTION 21**
+
+You want to have multiple versions of your application running at the same time, with all versions
+
+launched via AWS Elastic Beanstalk. Is this possible?
+
+A. No. However if you have 2 AWS accounts this can be done
+
+B. No. AWS Elastic Beanstalk is not designed to support multiple running environments
+
+C. Yes. AWS Elastic Beanstalk is designed to support a number of multiple running environments
+
+D. Yes. However AWS Elastic Beanstalk is designed to support only 2 multiple running
+
+environments
+
+**Answer: C**
+
+**Explanation:**
+
+AWS Elastic Beanstalk is designed to support multiple running environments. As an example you
+
+could have one for integration testing, one for pre-production, and one for production, with each
+
+environment independently configured and running on its own separate AWS resources.
+
+[https://aws.amazon.com/elasticbeanstalk/faqs/](https://aws.amazon.com/elasticbeanstalk/faqs/)
+
+---
+
+**QUESTION 22**
+
+A user has launched an EBS backed Linux instance. How can a user detach the root device and
+
+attach it to another instance as a secondary volume?
+
+A. Unmount the root volume first and then detach it
+
+B. It is not possible to mount the root volume to some other instance
+
+C. Stop the first instance and then attach instance's root volume as a new volume to the other
+
+instance
+
+D. It is not possible to mount the root device as a secondary volume on the other instance
+
+**Answer: C**
+
+**Explanation:**
+
+If an Amazon EBS volume is the root device of an instance, it cannot be detached unless the
+
+instance is in the stopped state.
+
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html)
+
+---
+
+**QUESTION 23**
+
+When using Amazon SQS how much data can you store in a message?
+
+A. 8 KB
+
+B. 2 KB
+
+C. 16 KB
+
+D. 4 KB
+
+**Answer: A**
+
+**Explanation:**
+
+With Amazon SQS version 2008-01-01, the maximum message size for both SOAP and Query
+
+requests is 8KB.
+
+If you need to send messages to the queue that are larger than 8 KB, AWS recommends that you
+
+split the information into separate messages. Alternatively, you could use Amazon S3 or Amazon
+
+SimpleDB to hold the information and include the pointer to that information in the Amazon SQS
+
+message. If you send a message that is larger than 8KB to the queue, you will receive a
+
+MessageTooLong error with HTTP code 400.
+
+[https://aws.amazon.com/items/1343?externalID=1343](https://aws.amazon.com/items/1343?externalID=1343)
+
+---
+
+**QUESTION 24**
+
+A user has launched one EC2 instance in the US West region. The user wants to access the
+
+RDS instance launched in the US East region from that EC2 instance. How can the user
+
+configure the access for that EC2 instance?
+
+A. It is not possible to access RDS of the US East region from the US West region
+
+B. Open the security group of the US West region in the RDS security group's ingress rule
+
+C. Configure the IP range of the US West region instance as the ingress security rule of RDS
+
+D. Create an IAM role which has access to RDS and launch an instance in the US West region
+
+with it
+
+**Answer: C**
+
+**Explanation:**
+
+The user cannot authorize an Amazon EC2 security group if it is in a different AWS Region than
+
+the RDS DB instance. The user can authorize an IP range or specify an Amazon EC2 security
+
+group in the same region that refers to an IP address in another region.
+
+---
+
+**QUESTION 25**
+
+In regard to AWS CloudFormation, what is a stack?
+
+A. The set of AWS templates that are created and managed as a template
+
+B. The set of AWS resources that are created and managed as a template
+
+C. The set of AWS resources that are created and managed as a single unit
+
+D. The set of AWS templates that are created and managed as a single unit
+
+**Answer: C**
+
+**Explanation:**
+
+A stack is the set of AWS resources that are created and managed as a single unit when AWS
+
+CloudFormation initiates a template.
+
+[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/concept-stack.html](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/concept-stack.html)
+
+---
+
+**QUESTION 26**
+
+In regard to DynamoDB, what is the Global secondary index?
+
+A. An index with a hash and range key that can be different from those on the table.
+
+B. An index that has the same range key as the table, but a different hash key
+
+C. An index that has the same hash key and range key as the table
+
+D. An index that has the same hash key as the table, but a different range key
+
+**Answer: A**
+
+**Explanation:**
+
+Global secondary index -- an index with a hash and range key that can be different from those on
+
+the table.
+
+[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html)
+
+---
+
+**QUESTION 27**
+
+Which of the below mentioned options is not a best practice to securely manage the AWS access
+
+credentials?
+
+A. Enable MFA for privileged users
+
+B. Create individual IAM users
+
+C. Keep rotating your secure access credentials at regular intervals
+
+D. Create strong access key and secret access key and attach to the root account
+
+**Answer: D**
+
+**Explanation:**
+
+It is a recommended approach to avoid using the access and secret access keys of the root
+
+account. Thus, do not download or delete it. Instead make the IAM user as powerful as the root
+
+account and use its credentials. The user cannot generate their own access and secret access
+
+keys as they are always generated by AWS.
+
+[http://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html)
+
+---
+
+**QUESTION 28**
+
+You have been given a scope to deploy some AWS infrastructure for a large organisation. The
+
+requirements are that you will have a lot of EC2 instances but may need to add more when the
+
+average utilization of your Amazon EC2 fleet is high and conversely remove them when CPU
+
+utilization is low. Which AWS services would be best to use to accomplish this?
+
+A. Amazon CloudFront, Amazon CloudWatch and Elastic Load Balancing.
+
+B. Auto Scaling, Amazon CloudWatch and AWS CloudTrail.
+
+C. Auto Scaling, Amazon CloudWatch and Elastic Load Balancing.
+
+D. Auto Scaling, Amazon CloudWatch and AWS Elastic Beanstalk
+
+**Answer: C**
+
+**Explanation:**
+
+Auto Scaling enables you to follow the demand curve for your applications closely, reducing the
+
+need to manually provision Amazon EC2 capacity in advance. For example, you can set a
+
+condition to add new Amazon EC2 instances in increments to the Auto Scaling group when the
+
+average utilization of your Amazon EC2 fleet is high; and similarly, you can set a condition to
+
+remove instances in the same increments when CPU utilization is low. If you have predictable
+
+load changes, you can set a schedule through Auto Scaling to plan your scaling activities. You
+
+can use Amazon CloudWatch to send alarms to trigger scaling activities and Elastic Load
+
+Balancing to help distribute traffic to your instances within Auto Scaling groups. Auto Scaling
+
+enables you to run your Amazon EC2 fleet at optimal utilization.
+
+[http://aws.amazon.com/autoscaling/](http://aws.amazon.com/autoscaling/)
+
+---
+
+**QUESTION 29**
+
+You are building an online store on AWS that uses SQS to process your customer orders.
+
+Your backend system needs those messages in the same sequence the customer orders have
+
+been put in. How can you achieve that?
+
+A. You can do this with SQS but you also need to use SWF
+
+B. Messages will arrive in the same order by default
+
+C. You can use sequencing information on each message
+
+D. It is not possible to do this with SQS
+
+**Answer: C**
+
+**Explanation:**
+
+Amazon SQS is engineered to always be available and deliver messages. One of the resulting
+
+tradeoffs is that SQS does not guarantee first in, first out delivery of messages. For many
+
+distributed applications, each message can stand on its own, and as long as all messages are
+
+delivered, the order is not important. If your system requires that order be preserved, you can
+
+place sequencing information in each message, so that you can reorder the messages when the
+
+queue returns them.
+
+---
+
+**QUESTION 30**
+
+A user has launched an EC2 instance and installed a website with the Apache webserver. The
+
+webserver is running but the user is not able to access the website from the internet. What can be
+
+the possible reason for this failure?
+
+A. The security group of the instance is not configured properly.
+
+B. The instance is not configured with the proper key-pairs.
+
+C. The Apache website cannot be accessed from the internet.
+
+D. Instance is not configured with an elastic IP.
+
+**Answer: A**
+
+**Explanation:**
+
+In Amazon Web Services, when a user has configured an instance with Apache, the user needs
+
+to ensure that the ports in the security group are opened as configured in Apache config. E.g.
+
+If Apache is running on port 80, the user should open port 80 in the security group.
+
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html)
+
+---
+
+**QUESTION 31**
+
+When you use the AWS Elastic Beanstalk console to deploy a new application you'll need to
+
+upload a source bundle and it should \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+
+A. Consist of a single .zip file
+
+B. Consist of a single .war file
+
+C. Consist of a single .zip file or .war file
+
+D. Consist of a folder with all files
+
+**Answer: C**
+
+**Explanation:**
+
+When you use the AWS Elastic Beanstalk console to deploy a new application or an application
+
+version, you'll need to upload a source bundle. Your source bundle must meet the following
+
+requirements:
+
+Consist of a single .zip file or .war file
+
+Not exceed 512 MB
+
+Not include a parent folder or top-level directory \(subdirectories are fine\)
+
+[http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deployment.source.html](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deployment.source.html)
+
+---
+
+
 
