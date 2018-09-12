@@ -1,4 +1,4 @@
-**QUESTION 75          
+**QUESTION 75            
 **
 
 A user wants to access RDS from an EC2 instance using IP addresses. Both RDS and EC2 are
@@ -15,10 +15,10 @@ C. Configuring the elastic IP of the instance in RDS security group
 
 D. Configure the Public IP of the instance in RDS security group
 
-**Answer: A          
+**Answer: A            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 If the user is going to specify an IP range in RDS security group, AWS recommends using the
@@ -31,7 +31,7 @@ for the data sent outside of the Amazon network.
 
 ---
 
-**QUESTION 76        
+**QUESTION 76          
 **
 
 A user is creating a snapshot of an EBS volume. Which of the below statements is incorrect in
@@ -46,10 +46,10 @@ C. It is stored in the same AZ as the volume
 
 D. It is a point in time backup of the EBS volume
 
-**Answer: C        
+**Answer: C          
 **
 
-**Explanation:        
+**Explanation:          
 **
 
 The EBS snapshots are a point in time backup of the EBS volume. It is an incremental snapshot,
@@ -62,7 +62,7 @@ stored in the same AZ as the volume" is incorrect.
 
 ---
 
-**QUESTION 77      
+**QUESTION 77        
 **
 
 A user is planning to use EBS for his DB requirement. The user already has an EC2 instance
@@ -83,10 +83,10 @@ D. The user can specify the same subnet while creating EBS and then attach it to
 
 instance.
 
-**Answer: B      
+**Answer: B        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 A Virtual Private Cloud \(VPC\) is a virtual network dedicated to the user's AWS account. The user
@@ -109,7 +109,7 @@ running instance.
 
 ---
 
-**QUESTION 78      
+**QUESTION 78        
 **
 
 Which of the following groups is AWS Elastic Beanstalk best suited for?
@@ -124,10 +124,10 @@ applications as required
 
 D. Those who want to model, visualize, and automate the steps required to release software
 
-**Answer: A      
+**Answer: A        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 AWS Elastic Beanstalk is best suited for those groups who want to deploy and manage their
@@ -136,12 +136,12 @@ applications within minutes in the AWS cloud. As a bonus, you don't even need ex
 
 cloud computing to get started.
 
-[https://aws.amazon.com/elasticbeanstalk/faqs/      
+[https://aws.amazon.com/elasticbeanstalk/faqs/        
 ](https://aws.amazon.com/elasticbeanstalk/faqs/)
 
 ---
 
-**QUESTION 79      
+**QUESTION 79        
 **
 
 You are using Amazon SQS and are getting a "Queue Deleted Recently" error. What is wrong?
@@ -156,10 +156,10 @@ D. If you delete a queue, you need to wait for at least 60 seconds before creati
 
 same name
 
-**Answer: D      
+**Answer: D        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 If you delete a queue, you need to wait for at least 60 seconds before creating a queue with the
@@ -172,12 +172,12 @@ period. For example, a SendMessage request might succeed, but after 60 seconds t
 
 and that message you sent no longer exists.
 
-[https://aws.amazon.com/items/1343?externalID=1343      
+[https://aws.amazon.com/items/1343?externalID=1343        
 ](https://aws.amazon.com/items/1343?externalID=1343)
 
 ---
 
-**QUESTION 80      
+**QUESTION 80        
 **
 
 Your manager has requested you to tag EC2 instances to organize and manage a load balancer.
@@ -192,10 +192,10 @@ C. Tag keys and values are case sensitive.
 
 D. The maximum number of tags per load balancer is 20.
 
-**Answer: D      
+**Answer: D        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 Tags help you to categorize your load balancers in different ways, for example, by purpose,
@@ -218,7 +218,7 @@ prefix. Tags with this prefix do not count against your tags per resource limit.
 
 ---
 
-**QUESTION 81      
+**QUESTION 81        
 **
 
 A user is trying to find the state of an S3 bucket with respect to versioning. Which of the below
@@ -233,10 +233,10 @@ C. unversioned
 
 D. versioned
 
-**Answer: D      
+**Answer: D        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 S3 buckets can be in one of the three states: unversioned \(the default\), versioning-enabled or
@@ -253,7 +253,7 @@ version ID.
 
 ---
 
-**QUESTION 82      
+**QUESTION 82        
 **
 
 What is the maximum number of tags that a user can assign to an EC2 instance?
@@ -266,10 +266,10 @@ C. 5
 
 D. 25
 
-**Answer: B      
+**Answer: B        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 To help manage EC2 instances as well as their usage in a better way, the user can tag the
@@ -278,12 +278,12 @@ instances. The tags are metadata assigned by the user which consists of a key an
 
 One resource can have a maximum of 10 tags.
 
-[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using\_Tags.html      
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using\_Tags.html        
 ](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html)
 
 ---
 
-**QUESTION 83    
+**QUESTION 83      
 **
 
 How do you configure SQS to support longer message retention?
@@ -296,10 +296,10 @@ C. You can't. It is set to 14 days and cannot be changed
 
 D. You need to request it from AWS
 
-**Answer: A    
+**Answer: A      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 To configure the message retention period, set the MessageRetentionPeriod attribute using the
@@ -332,10 +332,10 @@ C. Run the command: as-max-account-limits
 
 D. Run the command: as-list-account-limits
 
-**Answer: A    
+**Answer: A      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 A user can see the number of AutoScaling resources currently allowed for the AWS account
@@ -348,7 +348,7 @@ action.
 
 ---
 
-**QUESTION 85    
+**QUESTION 85      
 **
 
 An organization is hosting an application as part of the free usage tier. The organization wants to
@@ -365,10 +365,10 @@ C. Do not create more than 100 users as it will cost the organization.
 
 D. Create IAM users for each employee as it does not cost
 
-**Answer: D    
+**Answer: D      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 IAM is a free service. You can create as many IAM users or groups as desired free of cost.
@@ -377,7 +377,7 @@ IAM is a free service. You can create as many IAM users or groups as desired fre
 
 ---
 
-**QUESTION 86  
+**QUESTION 86    
 **
 
 A user has enabled serverside encryption with S3. The user downloads the encrypted object from
@@ -394,10 +394,10 @@ C. The user needs to decrypt the object using their own private key
 
 D. S3 manages encryption and decryption automatically
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 If the user is using the server-side encryption feature, Amazon S3 encrypts the object data before
@@ -410,7 +410,7 @@ the user is free from the tasks of managing encryption, encryption keys, and rel
 
 ---
 
-**QUESTION 87  
+**QUESTION 87    
 **
 
 A user has configured ELB with two instances running in separate AZs of the same region?
@@ -425,10 +425,10 @@ C. Multi AZ instances will provide scalability with ELB
 
 D. The user can achieve both HA and scalability with ELB
 
-**Answer: A  
+**Answer: A    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 If a user is running two instances in separate AZs, it will provide HA with ELB since ELB will
@@ -437,7 +437,7 @@ automatically stop routing the traffic to unhealthy instances and send it to hea
 
 ---
 
-**QUESTION 88  
+**QUESTION 88    
 **
 
 Does Amazon DynamoDB support both increment and decrement atomic operations?
@@ -450,10 +450,10 @@ C. Only decrement, since increment are inherently impossible with DynamoDB's dat
 
 D. Yes, both increment and decrement operations.
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 Amazon DynamoDB supports increment and decrement atomic operations.
@@ -462,7 +462,7 @@ Amazon DynamoDB supports increment and decrement atomic operations.
 
 ---
 
-**QUESTION 89  
+**QUESTION 89    
 **
 
 What is the data model of DynamoDB?
@@ -479,10 +479,10 @@ D. "Database", a collection of Tables; "Tables", with Keys and one or more Attri
 
 "Attribute", with Name and Value.
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 The data model of DynamoDB is:
@@ -497,7 +497,7 @@ The data model of DynamoDB is:
 
 ---
 
-**QUESTION 90  
+**QUESTION 90    
 **
 
 A user is trying to configure access with S3. Which of the following options is not possible to
@@ -512,10 +512,10 @@ C. Define the policy for the object
 
 D. Define the policy for the bucket
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 Amazon S3 offers access policy options broadly categorized as resource-based policies and user
@@ -530,7 +530,8 @@ policies to the IAM users in the account. These are called user policies.
 
 ---
 
-**QUESTION 91**
+**QUESTION 91  
+**
 
 An organization has enabled a strict password policy for its IAM users. The organization is taking
 
@@ -546,9 +547,11 @@ C. Allow at least one non-alphanumeric character
 
 D. Do not allow the user to use the password from the last three passwords
 
-**Answer: D**
+**Answer: D  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 AWS IAM allows an organization to create multiple users and provide them access to various
 
@@ -576,7 +579,8 @@ One number
 
 ---
 
-**QUESTION 92**
+**QUESTION 92  
+**
 
 A user has developed an application which is required to send the data to a NoSQL database.
 
@@ -594,9 +598,11 @@ C. AWS Simple Query Service
 
 D. AWS Simple Queue Service
 
-**Answer: D**
+**Answer: D  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 Amazon Simple Queue Service \(SQS\) is a fast, reliable, scalable, and fully managed message
 
@@ -611,6 +617,84 @@ for any acknowledgement from DB. The user can use SQS to transmit any volume of 
 losing messages or requiring other services to always be available.
 
 [http://aws.amazon.com/sqs/](http://aws.amazon.com/sqs/)
+
+---
+
+**QUESTION 93**
+
+In regard to DynamoDB, can I modify the index once it is created?
+
+A. Yes, if it is a primary hash key index
+
+B. Yes, if it is a Global secondary index
+
+C. No
+
+D. Yes, if it is a local secondary index
+
+**Answer: C**
+
+**Explanation:**
+
+Currently, in DynamoDB, an index cannot be modified once it is created.
+
+[http://aws.amazon.com/dynamodb/faqs/\#security\_anchor](http://aws.amazon.com/dynamodb/faqs/#security_anchor)
+
+---
+
+**QUESTION 94**
+
+A user has created a new raw EBS volume. The user mounts the volume on the instance to
+
+which it is attached. Which of the below mentioned options is a required step before the user can
+
+mount the volume?
+
+A. Run a cyclic check on the device for data consistency
+
+B. Create a file system of the volume
+
+C. No step is required. The user can directly mount the device
+
+D. Resize the volume as per the original snapshot size
+
+**Answer: B**
+
+**Explanation:**
+
+When a user is trying to mount a blank EBS volume, it is required that the user first creates a file
+
+system within the volume.
+
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html)
+
+---
+
+**QUESTION 95**
+
+A user is launching an AWS RDS with MySQL. Which of the below mentioned options allows the
+
+user to configure the INNODB engine parameters?
+
+A. Options group
+
+B. Engine parameters
+
+C. Parameter groups
+
+D. DB parameters
+
+**Answer: C**
+
+**Explanation:**
+
+With regard to RDS, the user can manage the configuration of a DB engine by using a DB
+
+parameter group. A DB parameter group contains engine configuration values that can be applied
+
+to one or more DB instances of the same instance type.
+
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
 ---
 
