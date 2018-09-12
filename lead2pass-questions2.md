@@ -1,4 +1,4 @@
-**QUESTION 38      
+**QUESTION 38        
 **
 
 Can one instance be registered with two ELBs in the same region?
@@ -11,10 +11,10 @@ C. Yes, always
 
 D. Yes, provided both ELBs are in the same AZ
 
-**Answer: C      
+**Answer: C        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 Yes, it is possible to have one instance part of two separate ELBs, though both ELBs have
@@ -25,7 +25,7 @@ different configurations. ELBs are never launched in specific zones.
 
 ---
 
-**QUESTION 39      
+**QUESTION 39        
 **
 
 What does Amazon SQS provide?
@@ -38,10 +38,10 @@ C. None of these.
 
 D. A synchronous message queue service.
 
-**Answer: A      
+**Answer: A        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 Amazon SQS stands for Simple Queue Services, and provides a cost-effective way to decouple
@@ -52,7 +52,7 @@ the components of your application through an asynchronous message queue service
 
 ---
 
-**QUESTION 40      
+**QUESTION 40        
 **
 
 A user is trying to create a list of IAM users with the AWS console. When the IAM users are
@@ -67,10 +67,10 @@ C. Nothing. Everything is disabled by default
 
 D. IAM passwords
 
-**Answer: C      
+**Answer: C        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 Newly created IAM users have no password and no access key \(access key ID and secret
@@ -89,7 +89,7 @@ they use to uniquely identify themselves to AWS.
 
 ---
 
-**QUESTION 41      
+**QUESTION 41        
 **
 
 Bob is an IAM user who has access to the EC2 services. Admin is an IAM user who has access
@@ -104,10 +104,10 @@ C. Yes, only from AWS CLI
 
 D. Yes, only from the AWS console
 
-**Answer: B      
+**Answer: B        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 The IAM users by default cannot change their password. The root owner or IAM administrator
@@ -122,7 +122,7 @@ console or CLI.
 
 ---
 
-**QUESTION 42      
+**QUESTION 42        
 **
 
 A user has created photo editing software and hosted it on EC2. The software accepts requests
@@ -141,10 +141,10 @@ C. AWS Simple Queue Service
 
 D. AWS Glacier
 
-**Answer: C      
+**Answer: C        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 Amazon Simple Queue Service \(SQS\) is a fast, reliable, scalable, and fully managed message
@@ -159,7 +159,7 @@ application and S3. Thus, the application does not keep waiting for S3 to provid
 
 ---
 
-**QUESTION 43    
+**QUESTION 43      
 **
 
 A user has created a blank EBS volume in the US-East-1 region. The user is unable to attach the
@@ -188,7 +188,7 @@ will not be able to attach the volume to that instance.
 
 ---
 
-**QUESTION 44    
+**QUESTION 44      
 **
 
 In DynamoDB, could you use IAM to grant access to Amazon DynamoDB resources and API
@@ -203,10 +203,10 @@ C. In DynamoDB there is no need to grant access
 
 D. No
 
-**Answer: A    
+**Answer: A      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 Amazon DynamoDB integrates with AWS Identity and Access Management \(IAM\).
@@ -217,12 +217,12 @@ To do this, you first write an AWS IAM policy, which is a document that explicit
 
 permissions you want to grant. You then attach that policy to an AWS IAM user or role.
 
-[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/UsingIAMWithDDB.html    
+[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/UsingIAMWithDDB.html      
 ](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/UsingIAMWithDDB.html)
 
 ---
 
-**QUESTION 45    
+**QUESTION 45      
 **
 
 A user is planning to host a mobile game on EC2 which sends notifications to active users on
@@ -241,10 +241,10 @@ C. AWS Mobile Communication Service.
 
 D. AWS Simple Email Service.
 
-**Answer: A    
+**Answer: A      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 Amazon Simple Notification Service \(Amazon SNS\) is a fast, flexible, and fully managed push
@@ -255,12 +255,12 @@ such as iPhone, iPad, Android, Kindle Fire, and internet connected smart devices
 
 pushing to other distributed services.
 
-[http://aws.amazon.com/sns    
+[http://aws.amazon.com/sns      
 ](http://aws.amazon.com/sns)
 
 ---
 
-**QUESTION 46    
+**QUESTION 46      
 **
 
 An organization is setting up their website on AWS. The organization is working on various
@@ -281,7 +281,7 @@ D. Perform a Code Check for any memory leaks.
 
 **Answer: D**
 
-**Explanation:    
+**Explanation:      
 **
 
 AWS security follows the shared security model where the user is as much responsible as
@@ -308,7 +308,7 @@ application performance.
 
 ---
 
-**QUESTION 47    
+**QUESTION 47      
 **
 
 A root account owner is trying to setup an additional level of security for all his IAM users. Which
@@ -323,10 +323,10 @@ C. Enable the password for all the IAM users
 
 D. Enable MFA for the root account
 
-**Answer: B    
+**Answer: B      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 Multi-Factor Authentication adds an extra level of security for all the users. The user can enable
@@ -339,7 +339,7 @@ authentication.
 
 ---
 
-**QUESTION 48  
+**QUESTION 48    
 **
 
 Regarding Amazon SQS, what happens if there is no activity against a queue for more than 30
@@ -354,10 +354,10 @@ C. Nothing
 
 D. The queue will be deleted
 
-**Answer: B  
+**Answer: B    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 AWS reserve the right to delete a queue if none of the following requests have been issued
@@ -392,10 +392,10 @@ C. Statement
 
 D. Version
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 The statement is the main element of the IAM policy and it is a must for a policy.
@@ -407,7 +407,7 @@ html](http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_Eleme
 
 ---
 
-**QUESTION 50  
+**QUESTION 50    
 **
 
 Which of the below mentioned commands allows the user to share the AMI with his peers using
@@ -422,10 +422,10 @@ C. ec2-share-image
 
 D. ec2-modify-image-attribute
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 A user can share an AMI with another user / peer using the command:
@@ -436,7 +436,7 @@ ec2-modify-image-attribute &lt;AMI-ID&gt; -l -a &lt;AWS Account ID&gt;
 
 ---
 
-**QUESTION 51  
+**QUESTION 51    
 **
 
 ExamKiller \(with AWS account ID 111122223333\) has created 50 IAM users for its organization's
@@ -465,7 +465,7 @@ AWS account ID, he can create an alias for his AWS account ID.
 
 ---
 
-**QUESTION 52  
+**QUESTION 52    
 **
 
 A user has created a new EBS volume from an existing snapshot.
@@ -482,10 +482,10 @@ C. Resize the volume as per the original snapshot size
 
 D. No step is required. The user can directly mount the device
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 When a user is trying to mount a blank EBS volume, it is required that the user first creates a file
@@ -498,7 +498,7 @@ not to create a file system on the volume as it will wipe out the existing data.
 
 ---
 
-**QUESTION 53  
+**QUESTION 53    
 **
 
 A user is creating multiple IAM users. What advice should be given to him to enhance the
@@ -513,10 +513,10 @@ C. Grant less privileges for user, but higher privileges for the group
 
 D. Grant more privileges to the user, but least privileges to the group
 
-**Answer: A  
+**Answer: A    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 It is a recommended rule that the root user should grant the least privileges to the IAM user or the
@@ -527,7 +527,7 @@ group. The higher the privileges, the more problems it can create.
 
 ---
 
-**QUESTION 54  
+**QUESTION 54    
 **
 
 In regards to Amazon SQS how many times will you receive each message?
@@ -556,7 +556,7 @@ errors or inconsistencies.
 
 ---
 
-**QUESTION 55  
+**QUESTION 55    
 **
 
 A user has set an IAM policy where it allows all requests if a request from IP 10.10.10.1/32.
@@ -573,10 +573,10 @@ C. It will deny access
 
 D. It will allow access
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 With regard to IAM, when a request is made, the AWS service decides whether a given request
@@ -595,7 +595,7 @@ An explicit deny policy overrides any allows.
 
 ---
 
-**QUESTION 56  
+**QUESTION 56    
 **
 
 A user is enabling logging on a particular bucket. Which of the below mentioned options may be
@@ -610,10 +610,10 @@ C. Create an IAM Role which has access to the log bucket
 
 D. Provide ACL for the logging group
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 The only recommended use case for the S3 bucket ACL is to grant the write permission to the
@@ -624,7 +624,7 @@ Amazon S3 Log Delivery group to write access log objects to the user's bucket.
 
 ---
 
-**QUESTION 56  
+**QUESTION 56    
 **
 
 A user is enabling logging on a particular bucket. Which of the below mentioned options may be
@@ -639,10 +639,10 @@ C. Create an IAM Role which has access to the log bucket
 
 D. Provide ACL for the logging group
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 The only recommended use case for the S3 bucket ACL is to grant the write permission to the
@@ -653,7 +653,7 @@ Amazon S3 Log Delivery group to write access log objects to the user's bucket.
 
 ---
 
-**QUESTION 57  
+**QUESTION 57    
 **
 
 A user is running a webserver on EC2. The user wants to receive the SMS when the EC2
@@ -670,10 +670,10 @@ C. AWS CloudWatch + AWS SQS.
 
 D. AWS EC2 + AWS Cloudwatch.
 
-**Answer: B  
+**Answer: B    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 Amazon SNS makes it simple and cost-effective to push to mobile devices, such as iPhone, iPad,
@@ -688,7 +688,7 @@ when the threshold is crossed to SNS which will trigger an SMS.
 
 ---
 
-**QUESTION 58  
+**QUESTION 58    
 **
 
 Can a user associate and use his own DNS with ELB instead of the DNS provided by AWS ELB?
@@ -701,10 +701,10 @@ C. No
 
 D. Yes, only through Route 53 by mapping ELB and DNS
 
-**Answer: A  
+**Answer: A    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 The AWS ELB allows mapping a custom domain name with ELB. The user can map ELB with
@@ -715,7 +715,7 @@ creating a record with Route 53.
 
 ---
 
-**QUESTION 59  
+**QUESTION 59    
 **
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_ can be used to bootstrap both the Chef Server and Chef Client software on your
@@ -730,7 +730,7 @@ C. AWS OpsWorks
 
 D. Amazon Glacier
 
-**Answer: A  
+**Answer: A    
 **
 
 **Explanation**:
@@ -743,7 +743,7 @@ your EC2 instances.
 
 ---
 
-**QUESTION 60  
+**QUESTION 60    
 **
 
 In relation to Amazon Simple Workflow Service \(Amazon SWF\),what is an "Activity Worker"?
@@ -756,10 +756,10 @@ C. A piece of software that implements tasks
 
 D. All answers listed are correct
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 In relation to Amazon Simple Workflow Service \(Amazon SWF\), an activity worker is a program
@@ -772,7 +772,7 @@ Which translates to a piece of software that implements tasks.
 
 ---
 
-**QUESTION 61  
+**QUESTION 61    
 **
 
 A user has launched a MySQL RDS. The user wants to plan for the DR and automate the
@@ -787,10 +787,10 @@ C. Snapshot
 
 D. Automated backup
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 Amazon RDS provides two different methods for backing up and restoring the Amazon DB
@@ -805,7 +805,7 @@ user-specified period of time.
 
 ---
 
-**QUESTION 62  
+**QUESTION 62    
 **
 
 You cannot access your AWS console, so you revert to using the CLI that you are not familiar
@@ -820,10 +820,10 @@ C. ec2-associate-route-table
 
 D. ec2-allocate-interface
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 You can use the CLI tools to manage your Amazon EC2 resources \(such as instances, security
@@ -854,7 +854,7 @@ ec2-attach-network-interface \(not ec2-allocate-interface\)
 
 ---
 
-**QUESTION 63  
+**QUESTION 63    
 **
 
 An organization has 20 employees. The organization wants to give all the users access to the
@@ -869,10 +869,10 @@ C. It is not advisable to give AWS access to so many users
 
 D. Use the IAM role to allow access based on STS
 
-**Answer: B  
+**Answer: B    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 AWS Identity and Access Management is a web service that enables the AWS customers to
@@ -891,7 +891,7 @@ access.
 
 ---
 
-**QUESTION 64  
+**QUESTION 64    
 **
 
 When AutoScaling is launching a new instance based on condition, which of the below mentioned
@@ -906,10 +906,10 @@ C. Launch an instance in the AZ with the fewest instances
 
 D. Launch an instance in the AZ which has the highest instances
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 AutoScaling attempts to distribute instances evenly between the Availability Zones that are
@@ -922,7 +922,7 @@ instances in the Availability Zone with the fewest instances.
 
 ---
 
-**QUESTION 65  
+**QUESTION 65    
 **
 
 In regards to Amazon SQS how can you secure the messages in your queues?
@@ -937,10 +937,10 @@ C. Through your IAM access keys
 
 D. Don't use root access
 
-**Answer: B  
+**Answer: B    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 Authentication mechanisms are provided to ensure that messages stored in Amazon SQS
@@ -957,7 +957,7 @@ of an X.509 certificate.
 
 ---
 
-**QUESTION 66  
+**QUESTION 66    
 **
 
 Which Amazon service is not used by Elastic Beanstalk?
@@ -970,10 +970,10 @@ C. Auto scaling
 
 D. Amazon EMR
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 Elastic Beanstalk leverages AWS services such as Amazon Elastic Cloud Compute \(Amazon
@@ -986,12 +986,12 @@ scalable, and cost-effective infrastructure that hundreds of thousands of busine
 
 today.
 
-[http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html  
+[http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html    
 ](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
 
 ---
 
-**QUESTION 67  
+**QUESTION 67    
 **
 
 In AWS Elastic Beanstalk, if the application returns any response other than 200 ,OK or there is
@@ -1008,10 +1008,10 @@ C. SQS run DeleteMessagecall and deletes the message from the queue
 
 D. SQS sends a message to the application with the MessageID and pending status
 
-**Answer: A  
+**Answer: A    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 In AWS Elastic Beanstalk, if the application returns any response other than 200, OK or there is
@@ -1022,7 +1022,7 @@ visible in the queue and available for another attempt at processing.
 
 ---
 
-**QUESTION 68  
+**QUESTION 68    
 **
 
 Which of the below mentioned options can be a good use case for storing content in AWS RRS?
@@ -1035,22 +1035,22 @@ C. Storing a video file which is not reproducible
 
 D. Storing image thumbnails
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 AWS RRS provides the same functionality as AWS S3, but at a cheaper rate. It is ideally suited
 
 for non-mission, critical applications, such as files which can be reproduced.
 
-[http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRRS.html  
+[http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRRS.html    
 ](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRRS.html)
 
 ---
 
-**QUESTION 69  
+**QUESTION 69    
 **
 
 Which header received at the EC2 instance identifies the port used by the client while requesting
@@ -1065,10 +1065,10 @@ C. X-Forwarded-Port
 
 D. X-Requested-Port
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 The X-Forwarded-Port request header helps the user identify the port used by the client while
@@ -1077,7 +1077,7 @@ sending a request to ELB.
 
 ---
 
-**QUESTION 70  
+**QUESTION 70    
 **
 
 When you register an activity in Amazon SWF, you provide the following information, except:
@@ -1090,10 +1090,10 @@ C. a domain
 
 D. version
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 When designing an Amazon SWF workflow, you precisely define each of the required activities.
@@ -1108,7 +1108,7 @@ how long you expect the activity to take.
 
 ---
 
-**QUESTION 71  
+**QUESTION 71    
 **
 
 A user is using an EBS backed instance. Which of the below mentioned statements is true?
@@ -1121,10 +1121,10 @@ C. The user will be charged only for the instance running cost
 
 D. The user will not be charged for the volume if the instance is stopped
 
-**Answer: B  
+**Answer: B    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 If a user has launched an EBS backed instance, the user will be charged for the EBS volume
@@ -1137,7 +1137,7 @@ cost only when it is running.
 
 ---
 
-**QUESTION 72  
+**QUESTION 72    
 **
 
 A user is trying to create a policy for an IAM user from the AWS console. Which of the below
@@ -1152,10 +1152,10 @@ C. Use policy simulator to create policy
 
 D. Assign No permission
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 When a user is trying to create a policy from the AWS console, it will have options such as create
@@ -1168,7 +1168,7 @@ chose the option to have no permission. The policy simulator is not available in
 
 ---
 
-**QUESTION 73  
+**QUESTION 73    
 **
 
 A user has an S3 object in the US Standard region with the content "color=red". The user
@@ -1185,10 +1185,10 @@ C. It will return an error saying that the object was not found
 
 D. It may return either "color=red" or "color=white" i.e. any of the value
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 AWS S3 follows the eventual consistent model in the US Standard Region. Once the object is
@@ -1201,7 +1201,7 @@ replicated across multiple servers until it becomes consistent \(eventual\).
 
 ---
 
-**QUESTION 74  
+**QUESTION 74    
 **
 
 AWS Elastic Beanstalk will change the health status of a web server environment tier to gray
@@ -1222,10 +1222,10 @@ D. Your application's health status is unknown because status is reported when t
 
 not in the ready state.
 
-**Answer: D  
+**Answer: D    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 AWS Elastic Beanstalk will change the health status of a web server environment tier to gray
