@@ -1,4 +1,4 @@
-**QUESTION 75    
+**QUESTION 75      
 **
 
 A user wants to access RDS from an EC2 instance using IP addresses. Both RDS and EC2 are
@@ -15,10 +15,10 @@ C. Configuring the elastic IP of the instance in RDS security group
 
 D. Configure the Public IP of the instance in RDS security group
 
-**Answer: A    
+**Answer: A      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 If the user is going to specify an IP range in RDS security group, AWS recommends using the
@@ -31,7 +31,7 @@ for the data sent outside of the Amazon network.
 
 ---
 
-**QUESTION 76  
+**QUESTION 76    
 **
 
 A user is creating a snapshot of an EBS volume. Which of the below statements is incorrect in
@@ -46,10 +46,10 @@ C. It is stored in the same AZ as the volume
 
 D. It is a point in time backup of the EBS volume
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 The EBS snapshots are a point in time backup of the EBS volume. It is an incremental snapshot,
@@ -62,7 +62,8 @@ stored in the same AZ as the volume" is incorrect.
 
 ---
 
-**QUESTION 77**
+**QUESTION 77  
+**
 
 A user is planning to use EBS for his DB requirement. The user already has an EC2 instance
 
@@ -82,9 +83,11 @@ D. The user can specify the same subnet while creating EBS and then attach it to
 
 instance.
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 A Virtual Private Cloud \(VPC\) is a virtual network dedicated to the user's AWS account. The user
 
@@ -106,7 +109,8 @@ running instance.
 
 ---
 
-**QUESTION 78**
+**QUESTION 78  
+**
 
 Which of the following groups is AWS Elastic Beanstalk best suited for?
 
@@ -120,9 +124,11 @@ applications as required
 
 D. Those who want to model, visualize, and automate the steps required to release software
 
-**Answer: A**
+**Answer: A  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 AWS Elastic Beanstalk is best suited for those groups who want to deploy and manage their
 
@@ -130,11 +136,13 @@ applications within minutes in the AWS cloud. As a bonus, you don't even need ex
 
 cloud computing to get started.
 
-[https://aws.amazon.com/elasticbeanstalk/faqs/](https://aws.amazon.com/elasticbeanstalk/faqs/)
+[https://aws.amazon.com/elasticbeanstalk/faqs/  
+](https://aws.amazon.com/elasticbeanstalk/faqs/)
 
 ---
 
-**QUESTION 79**
+**QUESTION 79  
+**
 
 You are using Amazon SQS and are getting a "Queue Deleted Recently" error. What is wrong?
 
@@ -148,9 +156,11 @@ D. If you delete a queue, you need to wait for at least 60 seconds before creati
 
 same name
 
-**Answer: D**
+**Answer: D  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 If you delete a queue, you need to wait for at least 60 seconds before creating a queue with the
 
@@ -162,11 +172,13 @@ period. For example, a SendMessage request might succeed, but after 60 seconds t
 
 and that message you sent no longer exists.
 
-[https://aws.amazon.com/items/1343?externalID=1343](https://aws.amazon.com/items/1343?externalID=1343)
+[https://aws.amazon.com/items/1343?externalID=1343  
+](https://aws.amazon.com/items/1343?externalID=1343)
 
 ---
 
-**QUESTION 80**
+**QUESTION 80  
+**
 
 Your manager has requested you to tag EC2 instances to organize and manage a load balancer.
 
@@ -180,9 +192,11 @@ C. Tag keys and values are case sensitive.
 
 D. The maximum number of tags per load balancer is 20.
 
-**Answer: D**
+**Answer: D  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 Tags help you to categorize your load balancers in different ways, for example, by purpose,
 
@@ -190,13 +204,13 @@ owner, or environment. The following basic restrictions apply to tags: The maxim
 
 tags per resource is
 
-10. The maximum key length is 127 Unicode characters. The maximum value length that can be
+1. The maximum key length is 127 Unicode characters. The maximum value length that can be
 
 used is 255 Unicode characters. The tag keys and values are case sensitive. Allowed characters
 
 are letters, spaces, and numbers representable in UTF-8, plus the following special characters: +
 
-- =. \_ : / @. Do not use leading or trailing spaces. Do not use the aws: prefix in your tag names or
+* =. \_ : / @. Do not use leading or trailing spaces. Do not use the aws: prefix in your tag names or
 
 values because it is reserved for AWS use. You can't edit or delete tag names or values with this
 
@@ -204,7 +218,8 @@ prefix. Tags with this prefix do not count against your tags per resource limit.
 
 ---
 
-**QUESTION 81**
+**QUESTION 81  
+**
 
 A user is trying to find the state of an S3 bucket with respect to versioning. Which of the below
 
@@ -218,9 +233,11 @@ C. unversioned
 
 D. versioned
 
-**Answer: D**
+**Answer: D  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 S3 buckets can be in one of the three states: unversioned \(the default\), versioning-enabled or
 
@@ -236,7 +253,8 @@ version ID.
 
 ---
 
-**QUESTION 82**
+**QUESTION 82  
+**
 
 What is the maximum number of tags that a user can assign to an EC2 instance?
 
@@ -248,9 +266,11 @@ C. 5
 
 D. 25
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 To help manage EC2 instances as well as their usage in a better way, the user can tag the
 
@@ -258,7 +278,94 @@ instances. The tags are metadata assigned by the user which consists of a key an
 
 One resource can have a maximum of 10 tags.
 
-[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using\_Tags.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html)
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using\_Tags.html  
+](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html)
+
+---
+
+**QUESTION 83**
+
+How do you configure SQS to support longer message retention?
+
+A. Set the MessageRetentionPeriod attribute using the SetQueueAttributes method
+
+B. Using a Lambda function
+
+C. You can't. It is set to 14 days and cannot be changed
+
+D. You need to request it from AWS
+
+**Answer: A**
+
+**Explanation:**
+
+To configure the message retention period, set the MessageRetentionPeriod attribute using the
+
+SetQueueAttributes method. This attribute is used to specify the number of seconds a message
+
+will be retained by SQS. Currently the default value for the message retention period is 4 days.
+
+Using the MessageRetentionPeriod attribute, the message retention period can be set anywhere
+
+from 60 seconds \(1 minute\), up to 1209600 seconds \(14 days\).
+
+[https://aws.amazon.com/sqs/faqs/](https://aws.amazon.com/sqs/faqs/)
+
+---
+
+QUESTION 84
+
+The user has created multiple AutoScaling groups. The user is trying to create a new AS group
+
+but it fails. How can the user know that he has reached the AS group limit specified by
+
+AutoScaling in that region?
+
+A. Run the command: as-describe-account-limits
+
+B. Run the command: as-describe-group-limits
+
+C. Run the command: as-max-account-limits
+
+D. Run the command: as-list-account-limits
+
+**Answer: A**
+
+**Explanation:**
+
+A user can see the number of AutoScaling resources currently allowed for the AWS account
+
+either by using the as-describe-account-limits command or by calling the DescribeAccountLimits
+
+action.
+
+[http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/ts-as-capacity.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/ts-as-capacity.html)
+
+---
+
+**QUESTION 85**
+
+An organization is hosting an application as part of the free usage tier. The organization wants to
+
+create IAM users for each of its 150 employees and they may access AWS as part of free usage
+
+tier. What will you advise the organization?
+
+A. The IAM is not available as a part of the free usage tier
+
+B. Create IAM roles and give access based on role since it will not cost the user
+
+C. Do not create more than 100 users as it will cost the organization.
+
+D. Create IAM users for each employee as it does not cost
+
+**Answer: D**
+
+**Explanation:**
+
+IAM is a free service. You can create as many IAM users or groups as desired free of cost.
+
+[http://docs.aws.amazon.com/IAM/latest/UserGuide/IAM\_Introduction.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/IAM_Introduction.html)
 
 ---
 
