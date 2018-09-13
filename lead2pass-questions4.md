@@ -12,10 +12,10 @@ C. Job
 
 D. Archive
 
-**Answer: B      
+**Answer: B        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 AWS Glacier has four resources. Vault and Archives are core data model concepts. Job is
@@ -28,7 +28,7 @@ notification when archive is available for download.
 
 ---
 
-**QUESTION 122      
+**QUESTION 122        
 **
 
 An organization has 10 departments. The organization wants to track the AWS usage of each
@@ -45,10 +45,10 @@ C. Create separate accounts for each department and track them separately
 
 D. Setup IAM users for each department and track their usage
 
-**Answer: B      
+**Answer: B        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 The cost of an IAM user or groups can never be tracked separately for the purpose of billing.
@@ -61,7 +61,7 @@ consolidated billing.
 
 ---
 
-**QUESTION 123      
+**QUESTION 123        
 **
 
 Regarding Amazon SWF, at times you might want to record information in the workflow history of
@@ -80,10 +80,10 @@ C. Hash keys
 
 D. Events
 
-**Answer: A      
+**Answer: A        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 In Amazon SWF, at times you might want to record information in the workflow history of a
@@ -96,7 +96,7 @@ the workflow execution history that you can use for any custom or scenario-speci
 
 ---
 
-**QUESTION 124      
+**QUESTION 124        
 **
 
 How can you peek at a message in Amazon SQS?
@@ -111,10 +111,10 @@ C. You can't
 
 D. Set up a CloudWatch alarm to auto send you the message
 
-**Answer: A      
+**Answer: A        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 With version 2008-01-01, the PeekMessage action has been removed from Amazon SQS. This
@@ -127,12 +127,12 @@ To do this with version 2008-01-01, you can log the message ID and the receipt h
 
 messages and correlate them to confirm when a message has been received and deleted.
 
-[https://aws.amazon.com/items/1343?externalID=1343      
+[https://aws.amazon.com/items/1343?externalID=1343        
 ](https://aws.amazon.com/items/1343?externalID=1343)
 
 ---
 
-**QUESTION 125      
+**QUESTION 125        
 **
 
 In regard to DynamoDB, for which one of the following parameters does Amazon not charge you?
@@ -145,10 +145,10 @@ C. Storage cost
 
 D. I/O usage within the same Region
 
-**Answer: D      
+**Answer: D        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 In DynamoDB, you will be charged for the storage and the throughput you use rather than for the
@@ -159,7 +159,7 @@ I/O which has been used.
 
 ---
 
-**QUESTION 126      
+**QUESTION 126        
 **
 
 An organization has created 10 IAM users. The organization wants those users to work
@@ -178,10 +178,10 @@ C. Enable MFA for each IAM user and assign them the virtual MFA device to access
 
 D. Provide each user with the IAM login and password for the AWS console
 
-**Answer: A      
+**Answer: A        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 If an organization has created the IAM users, the users can access AWS services either with an
@@ -200,7 +200,7 @@ key are useful for CLI or Webservices.
 
 ---
 
-**QUESTION 127      
+**QUESTION 127        
 **
 
 What is the maximum size for messages stored in SQS?
@@ -213,7 +213,7 @@ C. 1024KB
 
 D. 64KB
 
-**Answer: A      
+**Answer: A        
 **
 
 **Explanation:**
@@ -228,7 +228,7 @@ MaximumMessageSize attribute of the SetQueueAttributes method.
 
 ---
 
-**QUESTION 128      
+**QUESTION 128        
 **
 
 A user is planning to host data with RDS. Which of the below mentioned databases is not
@@ -243,10 +243,10 @@ C. Oracle
 
 D. MS SQL
 
-**Answer: B      
+**Answer: B        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 Amazon Relational Database Service \(Amazon RDS\) is a web service that makes it easier to set
@@ -265,7 +265,7 @@ automatic failure detection, and recovery of Database.
 
 ---
 
-**QUESTION 129      
+**QUESTION 129        
 **
 
 An EC2 instance has one additional EBS volume attached to it. How can a user attach the same
@@ -282,10 +282,10 @@ D. No need to detach. Just select the volume and attach it to the new instance, 
 
 mapping internally
 
-**Answer: C      
+**Answer: C        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 If an EBS volume is attached to a running EC2 instance, the user needs to detach the volume
@@ -298,7 +298,7 @@ stop / terminate the original instance.
 
 ---
 
-**QUESTION 130      
+**QUESTION 130        
 **
 
 A user has configured an automated backup between 5 AM ?5:30 AM for the MySQL RDS DB.
@@ -313,10 +313,10 @@ C. Yes, provided it is a single zone implementation
 
 D. Yes, always
 
-**Answer: C      
+**Answer: C        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 Amazon RDS provides two different methods for backing up and restoring the Amazon DB
@@ -327,7 +327,7 @@ backups and DB snapshot operations on Single-AZ DB instances.
 
 ---
 
-**QUESTION 131      
+**QUESTION 131        
 **
 
 A root AWS account owner has created three IAM users: Bob, John and Michael. Michael is the
@@ -348,10 +348,10 @@ D. Provided Michael has added Bob to a group, which has permissions to modify th
 
 passwords
 
-**Answer: D      
+**Answer: D        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 Generally with IAM users, the password can be modified in two ways. The first option is to define
@@ -366,7 +366,7 @@ users.
 
 ---
 
-**QUESTION 132    
+**QUESTION 132      
 **
 
 Regarding Amazon SNS, to send messages to a queue through a topic, you must subscribe the
@@ -381,10 +381,10 @@ C. Registration ID
 
 D. URL
 
-**Answer: A    
+**Answer: A      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 In Amazon SNS, to send messages to a queue through a topic, you must subscribe the queue to
@@ -395,7 +395,7 @@ the Amazon SNS topic. You specify the queue by its ARN.
 
 ---
 
-**QUESTION 133  
+**QUESTION 133    
 **
 
 To scale up the AWS resources using manual AutoScaling, which of the below mentioned
@@ -410,10 +410,10 @@ C. Preferred capacity
 
 D. Current capacity
 
-**Answer: B  
+**Answer: B    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 The Manual Scaling as part of Auto Scaling allows the user to change the capacity of Auto
@@ -430,7 +430,8 @@ Scaling Group Name&gt; --desired-capacity &lt;New Capacity&gt;
 
 ---
 
-**QUESTION 134**
+**QUESTION 134  
+**
 
 A user has configured a website and launched it using the Apache web server on port 80. The
 
@@ -446,9 +447,11 @@ C. Configure the EC2 instance so that it only listens on the ELB port
 
 D. Configure the security group of EC2, which allows access only to the ELB listener
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 When a user is configuring ELB and registering the EC2 instances with it, ELB will create a
 
@@ -458,7 +461,8 @@ rules set for the other requests and open the port only for the ELB source secur
 
 ---
 
-**QUESTION 135**
+**QUESTION 135  
+**
 
 When working with AWS CloudFormation Templates what is the maximum number of stacks that
 
@@ -472,9 +476,11 @@ C. 20
 
 D. 10
 
-**Answer: C**
+**Answer: C  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 CloudFormation Limits
 
@@ -484,7 +490,8 @@ Maximum number of AWS CloudFormation stacks that you can create is 20 stacks.
 
 ---
 
-**QUESTION 136**
+**QUESTION 136  
+**
 
 Does DynamoDB support in-place atomic updates?
 
@@ -496,15 +503,18 @@ C. It does support in-place non-atomic updates
 
 D. No
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 DynamoDB supports in-place atomic updates.
 
 ---
 
-**QUESTION 137**
+**QUESTION 137  
+**
 
 A user is having access to objects of an S3 bucket which is not owned by him. If he is trying to set
 
@@ -520,9 +530,11 @@ C. Provide ACL on the object
 
 D. Create an IAM user with permission
 
-**Answer: C**
+**Answer: C  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 An S3 object ACL is the only way to manage access to objects which are not owned by the
 
@@ -536,7 +548,8 @@ the object must grant permissions using object ACLs.
 
 ---
 
-**QUESTION 138**
+**QUESTION 138  
+**
 
 A bucket owner has allowed another account's IAM users to upload or access objects in his
 
@@ -554,9 +567,11 @@ by the IAM user B to the object
 
 D. It is not possible that the IAM user of one account accesses objects of the other IAM user
 
-**Answer: C**
+**Answer: C  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 If a IAM user is trying to perform some action on an object belonging to another AWS user's
 
@@ -566,7 +581,8 @@ It also verifies the policy for the bucket as well as the policy defined by the 
 
 ---
 
-**QUESTION 139**
+**QUESTION 139  
+**
 
 A user wants to achieve High Availability with PostgreSQL DB. Which of the below mentioned
 
@@ -580,9 +596,11 @@ C. Multi region
 
 D. PostgreSQL does not support HA
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 The Multi AZ feature allows the user to achieve High Availability. For Multi AZ, Amazon RDS
 
@@ -591,6 +609,230 @@ automatically provisions and maintains a synchronous "standby" replica in a diff
 Zone.
 
 [http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+
+---
+
+**QUESTION 140**
+
+A user is launching an instance with EC2. Which of the below mentioned options does the user
+
+need to consider before launching an instance?
+
+A. Select the region where the instance is being launched.
+
+B. Select the instance type.
+
+C. All the options listed should be considered..
+
+D. Select the OS of the AMI.
+
+**Answer: C**
+
+**Explanation:**
+
+Regarding Amazon EC2, when launching an instance, the user needs to select the region the
+
+instance would be launched from. While launching, the user needs to plan for the instance type
+
+and the OS of the instance.
+
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-instance\_linux.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-instance_linux.html)
+
+---
+
+**QUESTION 141**
+
+A user has created an EBS volume with 1000 IOPS. What is the average IOPS that the user will
+
+get for most of the year as per EC2 SLA if the instance is attached to the EBS optimized
+
+instance?
+
+A. 900
+
+B. 990
+
+C. 950
+
+D. 1000
+
+**Answer: A**
+
+**Explanation:**
+
+As per AWS SLA if the instance is attached to an EBS-Optimized instance, then the Provisioned
+
+IOPS volumes are designed to deliver within 10% of the provisioned IOPS performance 99.9% of
+
+the time in a given year. Thus, if the user has created a volume of 1000 IOPS, the user will get a
+
+minimum 900 IOPS 99.9% time of the year.
+
+[http://aws.amazon.com/ec2/faqs/](http://aws.amazon.com/ec2/faqs/)
+
+---
+
+**QUESTION 142**
+
+Which of the following programming languages have an officially supported AWS SDK? Choose 2
+
+answers
+
+A. Perl
+
+B. PHP
+
+C. Pascal
+
+D. Java
+
+E. SQL
+
+**Answer: BD**
+
+---
+
+**QUESTION 143**
+
+Which statements about DynamoDB are true? Choose 2 answers
+
+A. DynamoDB uses a pessimistic locking model
+
+B. DynamoDB uses optimistic concurrency control
+
+C. DynamoDB uses conditional writes for consistency
+
+D. DynamoDB restricts item access during reads
+
+E. DynamoDB restricts item access during writes
+
+**Answer: BC**
+
+---
+
+**QUESTION 144**
+
+You have an environment that consists of a public subnet using Amazon VPC and 3 instances
+
+that are running in this subnet. These three instances can successfully communicate with other
+
+hosts on the Internet. You launch a fourth instance in the same subnet, using the same AMI and
+
+security group configuration you used for the others, but find that this instance cannot be
+
+accessed from the Internet.
+
+What should you do to enable internet access?
+
+A. Deploy a NAT instance into the public subnet.
+
+B. Modify the routing table for the public subnet
+
+C. Configure a publically routable IP Address In the host OS of the fourth instance.
+
+D. Assign an Elastic IP address to the fourth instance.
+
+**Answer: D**
+
+---
+
+**QUESTION 145**
+
+How can you secure data at rest on an EBS volume?
+
+A. Attach the volume to an instance using EC2's SSL interface.
+
+B. Write the data randomly instead of sequentially.
+
+C. Use an encrypted file system on top of the BBS volume.
+
+D. Encrypt the volume using the S3 server-side encryption service.
+
+E. Create an IAM policy that restricts read and write access to the volume.
+
+**Answer: C**
+
+---
+
+**QUESTION 146**
+
+Which of the following is an example of a good DynamoDB hash key schema for provisioned
+
+throughput efficiency?
+
+A. User ID, where the application has many different users.
+
+B. Status Code where most status codes are the same
+
+C. Device ID, where one is by far more popular than all the others.
+
+D. Game Type, where there are three possible game types
+
+**Answer: A**
+
+---
+
+**QUESTION 147**
+
+Which of the following statements about SWF are true? Choose 3 answers
+
+A. SWF tasks are assigned once and never duplicated
+
+B. SWF requires an S3 bucket for workflow storage
+
+C. SWF workflow executions can last up to a year
+
+D. SWF triggers SNS notifications on task assignment
+
+E. SWF uses deciders and workers to complete tasks
+
+F. SWF requires at least 1 EC2 instance per domain
+
+**Answer: ACE**
+
+---
+
+**QUESTION 148**
+
+Which of the following are correct statements with policy evaluation logic in AWS Identity and
+
+Access Management? Choose 2 answers
+
+A. By default, all requests are denied
+
+B. An explicit allow overrides an explicit deny
+
+C. An explicit allow overrides default deny.
+
+D. An explicit deny does not override an explicit allow
+
+E. By default, all request are allowed
+
+**Answer: AC**
+
+---
+
+**QUESTION 150**
+
+Company D is running their corporate website on Amazon S3 accessed from
+
+http//www.companyd.com. Their marketing team has published new web fonts to a separate S3
+
+bucket accessed by the S3 endpoint https://s3-us-west1.amazonaws.com/cdfonts. While testing
+
+the new web fonts, Company D recognized the web fonts are being blocked by the browser. What
+
+should Company D do to prevent the web fonts from being blocked by the browser?
+
+A. Enable versioning on the cdfonts bucket for each web font
+
+B. Create a policy on the cdfonts bucket to enable access to everyone
+
+C. Add the Content-MD5 header to the request for webfonts in the cdfonts bucket from the website
+
+D. Configure the cdfonts bucket to allow cross-origin requests by creating a CORS configuration
+
+**Answer: D**
 
 ---
 
