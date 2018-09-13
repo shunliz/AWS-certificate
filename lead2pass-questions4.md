@@ -12,10 +12,10 @@ C. Job
 
 D. Archive
 
-**Answer: B    
+**Answer: B      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 AWS Glacier has four resources. Vault and Archives are core data model concepts. Job is
@@ -28,7 +28,7 @@ notification when archive is available for download.
 
 ---
 
-**QUESTION 122    
+**QUESTION 122      
 **
 
 An organization has 10 departments. The organization wants to track the AWS usage of each
@@ -45,10 +45,10 @@ C. Create separate accounts for each department and track them separately
 
 D. Setup IAM users for each department and track their usage
 
-**Answer: B    
+**Answer: B      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 The cost of an IAM user or groups can never be tracked separately for the purpose of billing.
@@ -61,7 +61,7 @@ consolidated billing.
 
 ---
 
-**QUESTION 123    
+**QUESTION 123      
 **
 
 Regarding Amazon SWF, at times you might want to record information in the workflow history of
@@ -80,10 +80,10 @@ C. Hash keys
 
 D. Events
 
-**Answer: A    
+**Answer: A      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 In Amazon SWF, at times you might want to record information in the workflow history of a
@@ -96,7 +96,7 @@ the workflow execution history that you can use for any custom or scenario-speci
 
 ---
 
-**QUESTION 124    
+**QUESTION 124      
 **
 
 How can you peek at a message in Amazon SQS?
@@ -111,10 +111,10 @@ C. You can't
 
 D. Set up a CloudWatch alarm to auto send you the message
 
-**Answer: A    
+**Answer: A      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 With version 2008-01-01, the PeekMessage action has been removed from Amazon SQS. This
@@ -127,12 +127,12 @@ To do this with version 2008-01-01, you can log the message ID and the receipt h
 
 messages and correlate them to confirm when a message has been received and deleted.
 
-[https://aws.amazon.com/items/1343?externalID=1343    
+[https://aws.amazon.com/items/1343?externalID=1343      
 ](https://aws.amazon.com/items/1343?externalID=1343)
 
 ---
 
-**QUESTION 125    
+**QUESTION 125      
 **
 
 In regard to DynamoDB, for which one of the following parameters does Amazon not charge you?
@@ -145,10 +145,10 @@ C. Storage cost
 
 D. I/O usage within the same Region
 
-**Answer: D    
+**Answer: D      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 In DynamoDB, you will be charged for the storage and the throughput you use rather than for the
@@ -159,7 +159,7 @@ I/O which has been used.
 
 ---
 
-**QUESTION 126    
+**QUESTION 126      
 **
 
 An organization has created 10 IAM users. The organization wants those users to work
@@ -178,10 +178,10 @@ C. Enable MFA for each IAM user and assign them the virtual MFA device to access
 
 D. Provide each user with the IAM login and password for the AWS console
 
-**Answer: A    
+**Answer: A      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 If an organization has created the IAM users, the users can access AWS services either with an
@@ -200,7 +200,7 @@ key are useful for CLI or Webservices.
 
 ---
 
-**QUESTION 127    
+**QUESTION 127      
 **
 
 What is the maximum size for messages stored in SQS?
@@ -213,7 +213,7 @@ C. 1024KB
 
 D. 64KB
 
-**Answer: A    
+**Answer: A      
 **
 
 **Explanation:**
@@ -228,7 +228,7 @@ MaximumMessageSize attribute of the SetQueueAttributes method.
 
 ---
 
-**QUESTION 128    
+**QUESTION 128      
 **
 
 A user is planning to host data with RDS. Which of the below mentioned databases is not
@@ -243,10 +243,10 @@ C. Oracle
 
 D. MS SQL
 
-**Answer: B    
+**Answer: B      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 Amazon Relational Database Service \(Amazon RDS\) is a web service that makes it easier to set
@@ -265,7 +265,7 @@ automatic failure detection, and recovery of Database.
 
 ---
 
-**QUESTION 129    
+**QUESTION 129      
 **
 
 An EC2 instance has one additional EBS volume attached to it. How can a user attach the same
@@ -282,10 +282,10 @@ D. No need to detach. Just select the volume and attach it to the new instance, 
 
 mapping internally
 
-**Answer: C    
+**Answer: C      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 If an EBS volume is attached to a running EC2 instance, the user needs to detach the volume
@@ -298,7 +298,7 @@ stop / terminate the original instance.
 
 ---
 
-**QUESTION 130    
+**QUESTION 130      
 **
 
 A user has configured an automated backup between 5 AM ?5:30 AM for the MySQL RDS DB.
@@ -313,10 +313,10 @@ C. Yes, provided it is a single zone implementation
 
 D. Yes, always
 
-**Answer: C    
+**Answer: C      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 Amazon RDS provides two different methods for backing up and restoring the Amazon DB
@@ -327,7 +327,7 @@ backups and DB snapshot operations on Single-AZ DB instances.
 
 ---
 
-**QUESTION 131    
+**QUESTION 131      
 **
 
 A root AWS account owner has created three IAM users: Bob, John and Michael. Michael is the
@@ -348,10 +348,10 @@ D. Provided Michael has added Bob to a group, which has permissions to modify th
 
 passwords
 
-**Answer: D    
+**Answer: D      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 Generally with IAM users, the password can be modified in two ways. The first option is to define
@@ -366,7 +366,7 @@ users.
 
 ---
 
-**QUESTION 132  
+**QUESTION 132    
 **
 
 Regarding Amazon SNS, to send messages to a queue through a topic, you must subscribe the
@@ -381,10 +381,10 @@ C. Registration ID
 
 D. URL
 
-**Answer: A  
+**Answer: A    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 In Amazon SNS, to send messages to a queue through a topic, you must subscribe the queue to
@@ -395,7 +395,8 @@ the Amazon SNS topic. You specify the queue by its ARN.
 
 ---
 
-**QUESTION 133**
+**QUESTION 133  
+**
 
 To scale up the AWS resources using manual AutoScaling, which of the below mentioned
 
@@ -409,9 +410,11 @@ C. Preferred capacity
 
 D. Current capacity
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 The Manual Scaling as part of Auto Scaling allows the user to change the capacity of Auto
 
@@ -424,6 +427,170 @@ requirements. If the user is trying to CLI, he can use command as-set-desired-ca
 Scaling Group Name&gt; --desired-capacity &lt;New Capacity&gt;
 
 [http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-manual-scaling.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-manual-scaling.html)
+
+---
+
+**QUESTION 134**
+
+A user has configured a website and launched it using the Apache web server on port 80. The
+
+user is using ELB with the EC2 instances for Load Balancing. What should the user do to ensure
+
+that the EC2 instances accept requests only from ELB?
+
+A. Open the port for an ELB static IP in the EC2 security group
+
+B. Configure the security group of EC2, which allows access to the ELB source security group
+
+C. Configure the EC2 instance so that it only listens on the ELB port
+
+D. Configure the security group of EC2, which allows access only to the ELB listener
+
+**Answer: B**
+
+**Explanation:**
+
+When a user is configuring ELB and registering the EC2 instances with it, ELB will create a
+
+source security group. If the user wants to allow traffic only from ELB, he should remove all the
+
+rules set for the other requests and open the port only for the ELB source security group.
+
+---
+
+**QUESTION 135**
+
+When working with AWS CloudFormation Templates what is the maximum number of stacks that
+
+you can create?
+
+A. 500
+
+B. 50
+
+C. 20
+
+D. 10
+
+**Answer: C**
+
+**Explanation:**
+
+CloudFormation Limits
+
+Maximum number of AWS CloudFormation stacks that you can create is 20 stacks.
+
+[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html)
+
+---
+
+**QUESTION 136**
+
+Does DynamoDB support in-place atomic updates?
+
+A. It is not defined
+
+B. Yes
+
+C. It does support in-place non-atomic updates
+
+D. No
+
+**Answer: B**
+
+**Explanation:**
+
+DynamoDB supports in-place atomic updates.
+
+---
+
+**QUESTION 137**
+
+A user is having access to objects of an S3 bucket which is not owned by him. If he is trying to set
+
+the objects of that bucket public, which of the below mentioned options may be a right fit for this
+
+action?
+
+A. Make the bucket public with full access
+
+B. Define the policy for the bucket
+
+C. Provide ACL on the object
+
+D. Create an IAM user with permission
+
+**Answer: C**
+
+**Explanation:**
+
+An S3 object ACL is the only way to manage access to objects which are not owned by the
+
+bucket owner. An AWS account that owns the bucket can grant another AWS account permission
+
+to upload objects. The bucket owner does not own these objects. The AWS account that created
+
+the object must grant permissions using object ACLs.
+
+[http://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html](http://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html)
+
+---
+
+**QUESTION 138**
+
+A bucket owner has allowed another account's IAM users to upload or access objects in his
+
+bucket. The IAM user of Account A is trying to access an object created by the IAM user of
+
+account B. What will happen in this scenario?
+
+A. The bucket policy may not be created as S3 will give error due to conflict of Access Rights
+
+B. It is not possible to give permission to multiple IAM users
+
+C. AWS S3 will verify proper rights given by the owner of Account A, the bucket owner as well as
+
+by the IAM user B to the object
+
+D. It is not possible that the IAM user of one account accesses objects of the other IAM user
+
+**Answer: C**
+
+**Explanation:**
+
+If a IAM user is trying to perform some action on an object belonging to another AWS user's
+
+bucket, S3 will verify whether the owner of the IAM user has given sufficient permission to him.
+
+It also verifies the policy for the bucket as well as the policy defined by the object owner.
+
+---
+
+**QUESTION 139**
+
+A user wants to achieve High Availability with PostgreSQL DB. Which of the below mentioned
+
+functionalities helps achieve HA?
+
+A. Read Replica
+
+B. Multi AZ
+
+C. Multi region
+
+D. PostgreSQL does not support HA
+
+**Answer: B**
+
+**Explanation:**
+
+The Multi AZ feature allows the user to achieve High Availability. For Multi AZ, Amazon RDS
+
+automatically provisions and maintains a synchronous "standby" replica in a different Availability
+
+Zone.
+
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
 ---
 
