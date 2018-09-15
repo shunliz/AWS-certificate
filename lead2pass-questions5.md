@@ -1,4 +1,4 @@
-**QUESTION 171**
+**QUESTION 171**
 
 You need to migrate 10 million records in one hour into DynamoDB. All records are 1.5KB in size.
 
@@ -14,17 +14,16 @@ C. 5556
 
 D. 2778
 
-**Answer: C**
+**Answer: C**
 
-**Explanation:**
-
-You need 2 units to make a 1.5KB write, since you round up. You need 20 million total units to
+**Explanation:  
+**You need 2 units to make a 1.5KB write, since you round up. You need 20 million total units to
 
 perform this load. You have 3600 seconds to do so. Divide and round up for 5556.
 
 ---
 
-**QUESTION 172**
+**QUESTION 172**
 
 You attempt to store an object in the US-STANDARD region in Amazon S3, and receive a
 
@@ -44,11 +43,11 @@ C. US-STANDARD imposes a 1 second delay before new objects are readable.
 
 D. You exceeded the bucket object limit, and once this limit is raised the object will be visible.
 
-**Answer: A**
+**Answer: A**
 
 ---
 
-**QUESTION 173**
+**QUESTION 173**
 
 You are writing to a DynamoDB table and receive the following exception:"
 
@@ -68,11 +67,12 @@ D. You're exceeding your capacity on a particular Sort Key
 
 E. You haven't configured DynamoDB Auto Scaling triggers
 
-**Answer: C**
+**Answer: C**
 
 ---
 
-**QUESTION 174**
+**QUESTION 174  
+**
 
 If an application is storing hourly log files from thousands of instances from a high traffic web site,
 
@@ -88,11 +88,11 @@ D. HH-DD-MM-YYYY-log\_instanceID
 
 E. YYYY-MM-DD-HH-log\_instanceID
 
-**Answer: E**
+**Answer: E**
 
 ---
 
-**QUESTION 175**
+**QUESTION 175**
 
 You run an ad-supported photo sharing website using S3 to serve photos to visitors of your site.
 
@@ -110,11 +110,11 @@ C. Use CloudFront distributions for static content.
 
 D. Block the IPs of the offending websites in Security Groups.
 
-**Answer: B**
+**Answer: B**
 
 ---
 
-**QUESTION 176**
+**QUESTION 176**
 
 Company A has an S3 bucket containing premier content that they intend to make available to
 
@@ -140,11 +140,11 @@ D. Enable server side encryption on the S3 bucket for data protection against th
 
 website visitors
 
-**Answer: B**
+**Answer: B**
 
 ---
 
-**QUESTION 177**
+**QUESTION 177**
 
 Which of the following is chosen as the default region when making an API call with an AWS
 
@@ -160,11 +160,11 @@ D. eu-west-1
 
 E. us-central-1
 
-**Answer: C**
+**Answer: C**
 
 ---
 
-**QUESTION 178**
+**QUESTION 178**
 
 Games-R-Us is launching a new game app for mobile devices. Users will log into the game using
 
@@ -186,11 +186,11 @@ D. Establish cross account access between the mobile app and the DynamoDB table 
 
 requests
 
-**Answer: C**
+**Answer: C**
 
 ---
 
-**QUESTION 179**
+**QUESTION 179**
 
 After launching an instance that you intend to serve as a NAT \(Network Address Translation\)
 
@@ -214,11 +214,11 @@ C. Disabling the Source/Destination Check attribute on the NAT instance
 
 D. Attaching an Elastic IP address to the instance in the private subnet
 
-**Answer: C**
+**Answer: C**
 
 ---
 
-**QUESTION 180**
+**QUESTION 180**
 
 What happens, by default, when one of the resources in a CloudFormation stack cannot be
 
@@ -232,11 +232,11 @@ C. The stack creation continues, and the final results indicate which steps fail
 
 D. CloudFormation templates are parsed in advance so stack creation is guaranteed to succeed.
 
-**Answer: B**
+**Answer: B**
 
 ---
 
-**QUESTION 181**
+**QUESTION 181**
 
 Which of the following statements about SQS is true?
 
@@ -252,11 +252,11 @@ out order
 
 D. Messages will be delivered one or more times and message delivery order is indeterminate
 
-**Answer: D**
+**Answer: D**
 
 ---
 
-**QUESTION 182**
+**QUESTION 182**
 
 A user is running a MySQL RDS instance. The user will not use the DB for the next 3 months.
 
@@ -270,9 +270,9 @@ C. Create a snapshot of RDS to launch in the future and terminate the instance n
 
 D. Change the instance size to micro
 
-**Answer: C**
+**Answer: C**
 
-**Explanation:**
+**Explanation:**
 
 The RDS instances unlike the AWS EBS backed instances cannot be stopped or paused.
 
@@ -282,7 +282,7 @@ the future from that snapshot.
 
 ---
 
-**QUESTION 183**
+**QUESTION 183**
 
 In DynamoDB, if you create a table and request 10 units of write capacity and 200 units of read
 
@@ -298,9 +298,9 @@ C. $0.03 per hour
 
 D. $0.15 per hour
 
-**Answer: A**
+**Answer: A**
 
-**Explanation:**
+**Explanation:**
 
 To understand pricing in DynamoDB, consider the following example. If you create a table and
 
@@ -310,11 +310,11 @@ would be charged:
 
 $0.01 + \(4 x $0.01\) = $0.05 per hour
 
-[http://aws.amazon.com/dynamodb/pricing/](http://aws.amazon.com/dynamodb/pricing/)
+[http://aws.amazon.com/dynamodb/pricing/](http://aws.amazon.com/dynamodb/pricing/)
 
 ---
 
-**QUESTION 184**
+**QUESTION 184**
 
 You have been doing a lot of testing of your VPC Network by deliberately failing EC2 instances to
 
@@ -342,9 +342,9 @@ D. Billing commences when Amazon EC2 initiates the boot sequence of an AMI insta
 
 billing ends as soon as the instance starts to shutdown.
 
-**Answer: B**
+**Answer: B**
 
-**Explanation:**
+**Explanation:**
 
 Billing commences when Amazon EC2 initiates the boot sequence of an AMI instance. Billing
 
@@ -352,13 +352,12 @@ ends when the instance shuts down, which could occur through a web services comm
 
 running "shutdown -h", or through instance failure.
 
-[http://aws.amazon.com/ec2/faqs/\#Billing](http://aws.amazon.com/ec2/faqs/#Billing)
+[http://aws.amazon.com/ec2/faqs/\#Billing](http://aws.amazon.com/ec2/faqs/#Billing)
 
 ---
 
-**QUESTION 185**
-
-AWS Elastic Load Balancer supports SSL termination.
+**QUESTION 185  
+**AWS Elastic Load Balancer supports SSL termination.
 
 A. True. For specific availability zones only.
 
@@ -368,9 +367,9 @@ C. True. For specific regions only
 
 D. True. For all regions
 
-**Answer: D**
+**Answer: D**
 
-**Explanation:**
+**Explanation:**
 
 You can configure your load balancer in ELB \(Elastic Load Balancing\) to use a SSL certificate in
 
@@ -384,9 +383,8 @@ balancer.
 
 ---
 
-**QUESTION 186**
-
-A user has launched five instances with ELB. How can the user add the sixth EC2 instance to
+**QUESTION 186  
+**A user has launched five instances with ELB. How can the user add the sixth EC2 instance to
 
 ELB?
 
@@ -398,9 +396,9 @@ C. The user can add the instance and change the ELB config file.
 
 D. The ELB can only have a maximum of five instances.
 
-**Answer: A**
+**Answer: A**
 
-**Explanation:**
+**Explanation:**
 
 Elastic Load Balancing automatically distributes incoming traffic across multiple EC2 instances.
 
@@ -412,11 +410,11 @@ you to increase the availability of your application. You can add and remove EC2
 
 your load balancer as your needs change, without disrupting the overall flow of information.
 
-[http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/SvcIntro.html](http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/SvcIntro.html)
+[http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/SvcIntro.html](http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/SvcIntro.html)
 
 ---
 
-**QUESTION 187**
+**QUESTION 187**
 
 An organization has 500 employees. The organization wants to set up AWS access for each
 
@@ -430,21 +428,19 @@ C. Create IAM groups based on the permission and assign IAM users to the groups
 
 D. It is not possible to manage more than 100 IAM users with AWS
 
-**Answer: C**
-
-**Explanation:**
+**Answer: C  
+Explanation:**
 
 An IAM group is a collection of IAM users. Groups let the user specify permissions for a collection
 
 of users, which can make it easier to manage the permissions for those users.
 
-[http://docs.aws.amazon.com/IAM/latest/UserGuide/Using\_WorkingWithGroupsAndUsers.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/Using_WorkingWithGroupsAndUsers.html)
+[http://docs.aws.amazon.com/IAM/latest/UserGuide/Using\_WorkingWithGroupsAndUsers.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/Using_WorkingWithGroupsAndUsers.html)
 
 ---
 
-**QUESTION 188**
-
-How long can you keep your Amazon SQS messages in Amazon SQS queues?
+**QUESTION 188  
+**How long can you keep your Amazon SQS messages in Amazon SQS queues?
 
 A. From 120 secs up to 4 weeks
 
@@ -454,9 +450,9 @@ C. From 60 secs up to 2 weeks
 
 D. From 30 secs up to 1 week
 
-**Answer: C**
+**Answer: C**
 
-**Explanation:**
+**Explanation:**
 
 The SQS message retention period is configurable and can be set anywhere from 1 minute to 2
 
@@ -466,11 +462,12 @@ be automatically deleted. The option for longer message retention provides great
 
 allow for longer intervals between message production and consumption.
 
-[https://aws.amazon.com/sqs/faqs/](https://aws.amazon.com/sqs/faqs/)
+[https://aws.amazon.com/sqs/faqs/  
+](https://aws.amazon.com/sqs/faqs/)
 
 ---
 
-**QUESTION 189**
+**QUESTION 189**
 
 In regard to DynamoDB, which of the following statements is correct?
 
@@ -482,17 +479,18 @@ C. A primary key should be single-valued.
 
 D. An attribute can have one or several other attributes.
 
-**Answer: B**
-
-**Explanation:**
+**Answer: B  
+Explanation:**
 
 In Amazon DynamoDB, a database is a collection of tables. A table is a collection of items and
 
 each item is a collection of attributes.
 
-[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html)
+[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataModel.html)
 
-**QUESTION 190**
+---
+
+**QUESTION 190**
 
 Which one of the following statements is NOT an advantage of DyanamoDB being built on Solid
 
@@ -506,9 +504,9 @@ C. high I/O performance of WebApp on EC2 instance
 
 D. low-latency response times
 
-**Answer: C**
+**Answer: C**
 
-**Explanation:**
+**Explanation:**
 
 In DynamoDB, SSDs help achieve design goals of predictable low-latency response times for
 
@@ -519,4 +517,8 @@ high-scale request workloads cost efficiently, and to pass this efficiency along
 pricing.
 
 [http://aws.amazon.com/dynamodb/faqs/](http://aws.amazon.com/dynamodb/faqs/)
+
+---
+
+
 
