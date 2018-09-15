@@ -44,6 +44,7 @@
     * [lead2pass questions2](lead2pass-questions2.md)
     * [lead2pass questions3](lead2pass-questions3.md)
     * [lead2pass questions4](lead2pass-questions4.md)
+    * [lead2pass questions5](lead2pass-questions5.md)
   * [AWS solution architect Quiz](aws-solution-architect-quiz.md)
     * [solution architect3](solution-architect3.md)
     * [solution architect2](solution-architect2.md)
