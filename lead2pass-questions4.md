@@ -12,10 +12,10 @@ C. Job
 
 D. Archive
 
-**Answer: B          
+**Answer: B            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 AWS Glacier has four resources. Vault and Archives are core data model concepts. Job is
@@ -28,7 +28,7 @@ notification when archive is available for download.
 
 ---
 
-**QUESTION 122          
+**QUESTION 122            
 **
 
 An organization has 10 departments. The organization wants to track the AWS usage of each
@@ -45,10 +45,10 @@ C. Create separate accounts for each department and track them separately
 
 D. Setup IAM users for each department and track their usage
 
-**Answer: B          
+**Answer: B            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 The cost of an IAM user or groups can never be tracked separately for the purpose of billing.
@@ -61,7 +61,7 @@ consolidated billing.
 
 ---
 
-**QUESTION 123          
+**QUESTION 123            
 **
 
 Regarding Amazon SWF, at times you might want to record information in the workflow history of
@@ -80,10 +80,10 @@ C. Hash keys
 
 D. Events
 
-**Answer: A          
+**Answer: A            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 In Amazon SWF, at times you might want to record information in the workflow history of a
@@ -96,7 +96,7 @@ the workflow execution history that you can use for any custom or scenario-speci
 
 ---
 
-**QUESTION 124          
+**QUESTION 124            
 **
 
 How can you peek at a message in Amazon SQS?
@@ -111,10 +111,10 @@ C. You can't
 
 D. Set up a CloudWatch alarm to auto send you the message
 
-**Answer: A          
+**Answer: A            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 With version 2008-01-01, the PeekMessage action has been removed from Amazon SQS. This
@@ -127,12 +127,12 @@ To do this with version 2008-01-01, you can log the message ID and the receipt h
 
 messages and correlate them to confirm when a message has been received and deleted.
 
-[https://aws.amazon.com/items/1343?externalID=1343          
+[https://aws.amazon.com/items/1343?externalID=1343            
 ](https://aws.amazon.com/items/1343?externalID=1343)
 
 ---
 
-**QUESTION 125          
+**QUESTION 125            
 **
 
 In regard to DynamoDB, for which one of the following parameters does Amazon not charge you?
@@ -145,10 +145,10 @@ C. Storage cost
 
 D. I/O usage within the same Region
 
-**Answer: D          
+**Answer: D            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 In DynamoDB, you will be charged for the storage and the throughput you use rather than for the
@@ -159,7 +159,7 @@ I/O which has been used.
 
 ---
 
-**QUESTION 126          
+**QUESTION 126            
 **
 
 An organization has created 10 IAM users. The organization wants those users to work
@@ -178,10 +178,10 @@ C. Enable MFA for each IAM user and assign them the virtual MFA device to access
 
 D. Provide each user with the IAM login and password for the AWS console
 
-**Answer: A          
+**Answer: A            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 If an organization has created the IAM users, the users can access AWS services either with an
@@ -200,7 +200,7 @@ key are useful for CLI or Webservices.
 
 ---
 
-**QUESTION 127          
+**QUESTION 127            
 **
 
 What is the maximum size for messages stored in SQS?
@@ -213,7 +213,7 @@ C. 1024KB
 
 D. 64KB
 
-**Answer: A          
+**Answer: A            
 **
 
 **Explanation:**
@@ -228,7 +228,7 @@ MaximumMessageSize attribute of the SetQueueAttributes method.
 
 ---
 
-**QUESTION 128          
+**QUESTION 128            
 **
 
 A user is planning to host data with RDS. Which of the below mentioned databases is not
@@ -243,10 +243,10 @@ C. Oracle
 
 D. MS SQL
 
-**Answer: B          
+**Answer: B            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 Amazon Relational Database Service \(Amazon RDS\) is a web service that makes it easier to set
@@ -265,7 +265,7 @@ automatic failure detection, and recovery of Database.
 
 ---
 
-**QUESTION 129          
+**QUESTION 129            
 **
 
 An EC2 instance has one additional EBS volume attached to it. How can a user attach the same
@@ -282,10 +282,10 @@ D. No need to detach. Just select the volume and attach it to the new instance, 
 
 mapping internally
 
-**Answer: C          
+**Answer: C            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 If an EBS volume is attached to a running EC2 instance, the user needs to detach the volume
@@ -298,7 +298,7 @@ stop / terminate the original instance.
 
 ---
 
-**QUESTION 130          
+**QUESTION 130            
 **
 
 A user has configured an automated backup between 5 AM ?5:30 AM for the MySQL RDS DB.
@@ -313,10 +313,10 @@ C. Yes, provided it is a single zone implementation
 
 D. Yes, always
 
-**Answer: C          
+**Answer: C            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 Amazon RDS provides two different methods for backing up and restoring the Amazon DB
@@ -327,7 +327,7 @@ backups and DB snapshot operations on Single-AZ DB instances.
 
 ---
 
-**QUESTION 131          
+**QUESTION 131            
 **
 
 A root AWS account owner has created three IAM users: Bob, John and Michael. Michael is the
@@ -348,10 +348,10 @@ D. Provided Michael has added Bob to a group, which has permissions to modify th
 
 passwords
 
-**Answer: D          
+**Answer: D            
 **
 
-**Explanation:          
+**Explanation:            
 **
 
 Generally with IAM users, the password can be modified in two ways. The first option is to define
@@ -366,7 +366,7 @@ users.
 
 ---
 
-**QUESTION 132        
+**QUESTION 132          
 **
 
 Regarding Amazon SNS, to send messages to a queue through a topic, you must subscribe the
@@ -381,10 +381,10 @@ C. Registration ID
 
 D. URL
 
-**Answer: A        
+**Answer: A          
 **
 
-**Explanation:        
+**Explanation:          
 **
 
 In Amazon SNS, to send messages to a queue through a topic, you must subscribe the queue to
@@ -395,7 +395,7 @@ the Amazon SNS topic. You specify the queue by its ARN.
 
 ---
 
-**QUESTION 133      
+**QUESTION 133        
 **
 
 To scale up the AWS resources using manual AutoScaling, which of the below mentioned
@@ -410,10 +410,10 @@ C. Preferred capacity
 
 D. Current capacity
 
-**Answer: B      
+**Answer: B        
 **
 
-**Explanation:      
+**Explanation:        
 **
 
 The Manual Scaling as part of Auto Scaling allows the user to change the capacity of Auto
@@ -430,7 +430,7 @@ Scaling Group Name&gt; --desired-capacity &lt;New Capacity&gt;
 
 ---
 
-**QUESTION 134    
+**QUESTION 134      
 **
 
 A user has configured a website and launched it using the Apache web server on port 80. The
@@ -447,10 +447,10 @@ C. Configure the EC2 instance so that it only listens on the ELB port
 
 D. Configure the security group of EC2, which allows access only to the ELB listener
 
-**Answer: B    
+**Answer: B      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 When a user is configuring ELB and registering the EC2 instances with it, ELB will create a
@@ -461,7 +461,7 @@ rules set for the other requests and open the port only for the ELB source secur
 
 ---
 
-**QUESTION 135    
+**QUESTION 135      
 **
 
 When working with AWS CloudFormation Templates what is the maximum number of stacks that
@@ -476,10 +476,10 @@ C. 20
 
 D. 10
 
-**Answer: C    
+**Answer: C      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 CloudFormation Limits
@@ -490,7 +490,7 @@ Maximum number of AWS CloudFormation stacks that you can create is 20 stacks.
 
 ---
 
-**QUESTION 136    
+**QUESTION 136      
 **
 
 Does DynamoDB support in-place atomic updates?
@@ -503,17 +503,17 @@ C. It does support in-place non-atomic updates
 
 D. No
 
-**Answer: B    
+**Answer: B      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 DynamoDB supports in-place atomic updates.
 
 ---
 
-**QUESTION 137    
+**QUESTION 137      
 **
 
 A user is having access to objects of an S3 bucket which is not owned by him. If he is trying to set
@@ -530,10 +530,10 @@ C. Provide ACL on the object
 
 D. Create an IAM user with permission
 
-**Answer: C    
+**Answer: C      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 An S3 object ACL is the only way to manage access to objects which are not owned by the
@@ -548,7 +548,7 @@ the object must grant permissions using object ACLs.
 
 ---
 
-**QUESTION 138    
+**QUESTION 138      
 **
 
 A bucket owner has allowed another account's IAM users to upload or access objects in his
@@ -567,10 +567,10 @@ by the IAM user B to the object
 
 D. It is not possible that the IAM user of one account accesses objects of the other IAM user
 
-**Answer: C    
+**Answer: C      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 If a IAM user is trying to perform some action on an object belonging to another AWS user's
@@ -581,7 +581,7 @@ It also verifies the policy for the bucket as well as the policy defined by the 
 
 ---
 
-**QUESTION 139    
+**QUESTION 139      
 **
 
 A user wants to achieve High Availability with PostgreSQL DB. Which of the below mentioned
@@ -596,10 +596,10 @@ C. Multi region
 
 D. PostgreSQL does not support HA
 
-**Answer: B    
+**Answer: B      
 **
 
-**Explanation:    
+**Explanation:      
 **
 
 The Multi AZ feature allows the user to achieve High Availability. For Multi AZ, Amazon RDS
@@ -612,7 +612,7 @@ Zone.
 
 ---
 
-**QUESTION 140  
+**QUESTION 140    
 **
 
 A user is launching an instance with EC2. Which of the below mentioned options does the user
@@ -627,10 +627,10 @@ C. All the options listed should be considered..
 
 D. Select the OS of the AMI.
 
-**Answer: C  
+**Answer: C    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 Regarding Amazon EC2, when launching an instance, the user needs to select the region the
@@ -643,7 +643,7 @@ and the OS of the instance.
 
 ---
 
-**QUESTION 141  
+**QUESTION 141    
 **
 
 A user has created an EBS volume with 1000 IOPS. What is the average IOPS that the user will
@@ -660,10 +660,10 @@ C. 950
 
 D. 1000
 
-**Answer: A  
+**Answer: A    
 **
 
-**Explanation:  
+**Explanation:    
 **
 
 As per AWS SLA if the instance is attached to an EBS-Optimized instance, then the Provisioned
@@ -674,12 +674,12 @@ the time in a given year. Thus, if the user has created a volume of 1000 IOPS, t
 
 minimum 900 IOPS 99.9% time of the year.
 
-[http://aws.amazon.com/ec2/faqs/  
+[http://aws.amazon.com/ec2/faqs/    
 ](http://aws.amazon.com/ec2/faqs/)
 
 ---
 
-**QUESTION 142  
+**QUESTION 142    
 **
 
 Which of the following programming languages have an officially supported AWS SDK? Choose 2
@@ -700,7 +700,7 @@ E. SQL
 
 ---
 
-**QUESTION 143  
+**QUESTION 143    
 **
 
 Which statements about DynamoDB are true? Choose 2 answers
@@ -719,7 +719,7 @@ E. DynamoDB restricts item access during writes
 
 ---
 
-**QUESTION 144  
+**QUESTION 144    
 **
 
 You have an environment that consists of a public subnet using Amazon VPC and 3 instances
@@ -746,7 +746,7 @@ D. Assign an Elastic IP address to the fourth instance.
 
 ---
 
-**QUESTION 145  
+**QUESTION 145    
 **
 
 How can you secure data at rest on an EBS volume?
@@ -765,7 +765,7 @@ E. Create an IAM policy that restricts read and write access to the volume.
 
 ---
 
-**QUESTION 146  
+**QUESTION 146    
 **
 
 Which of the following is an example of a good DynamoDB hash key schema for provisioned
@@ -784,7 +784,7 @@ D. Game Type, where there are three possible game types
 
 ---
 
-**QUESTION 147  
+**QUESTION 147    
 **
 
 Which of the following statements about SWF are true? Choose 3 answers
@@ -801,12 +801,12 @@ E. SWF uses deciders and workers to complete tasks
 
 F. SWF requires at least 1 EC2 instance per domain
 
-**Answer: ACE  
+**Answer: ACE    
 **
 
 ---
 
-**QUESTION 148  
+**QUESTION 148    
 **
 
 Which of the following are correct statements with policy evaluation logic in AWS Identity and
@@ -823,12 +823,12 @@ D. An explicit deny does not override an explicit allow
 
 E. By default, all request are allowed
 
-**Answer: AC  
+**Answer: AC    
 **
 
 ---
 
-**QUESTION 150  
+**QUESTION 150    
 **
 
 Company D is running their corporate website on Amazon S3 accessed from
@@ -849,8 +849,432 @@ C. Add the Content-MD5 header to the request for webfonts in the cdfonts bucket 
 
 D. Configure the cdfonts bucket to allow cross-origin requests by creating a CORS configuration
 
-**Answer: D  
+**Answer: D    
 **
+
+---
+
+**QUESTION 151**
+
+What is one key difference between an Amazon EBS-backed and an instance-store backed
+
+instance?
+
+A. Virtual Private Cloud requires EBS backed instances
+
+B. Amazon EBS-backed instances can be stopped and restarted
+
+C. Auto scaling requires using Amazon EBS-backed instances.
+
+D. Instance-store backed instances can be stopped and restarted.
+
+**Answer: B**
+
+---
+
+**QUESTION 152**
+
+A meteorological system monitors 600 temperature gauges, obtaining temperature samples every
+
+minute and saving each sample to a DynamoDB table. Each sample involves writing 1K of data
+
+and the writes are evenly distributed over time.
+
+How much write throughput is required for the target table?
+
+A. 1 write capacity unit
+
+B. 10 write capacity units
+
+C. 60 write capacity units
+
+D. 600 write capacity units
+
+E. 3600 write capacity units
+
+**Answer: B**
+
+---
+
+---
+
+**QUESTION 153**
+
+A startup s photo-sharing site is deployed in a VPC. An ELB distributes web traffic across two
+
+subnets. ELB session stickiness is configured to use the AWS-generated session cookie, with a
+
+session TTL of 5 minutes. The webserver Auto Scaling Group is configured as: min-size=4, maxsize=
+
+4. The startups preparing for a public launch, by running load-testing software installed on a
+
+single EC2 instance running in us-west-2a. After 60 minutes of load-testing, the webserver logs
+
+show:
+
+Which recommendations can help ensure load-testing HTTP requests are evenly distributed
+
+across the four webservers? Choose 2 answers
+
+A. Launch and run the load-tester EC2 instance from us-east-1 instead.
+
+B. Re-configure the load-testing software to re-resolve DNS for each web request.
+
+C. Use a 3rd-party load-testing service which offers globally-distributed test clients.
+
+D. Configure ELB and Auto Scaling to distribute across us-west-2a and us-west-2c.
+
+E. Configure ELB session stickiness to use the app-specific session cookie.
+
+**Answer: BE**
+
+---
+
+**QUESTION 154**
+
+You have written an application that uses the Elastic Load Balancing service to spread traffic to
+
+several web servers Your users complain that they are sometimes forced to login again in the
+
+middle of using your application, after they have already togged in. This is not behavior you have
+
+designed. What is a possible solution to prevent this happening?
+
+A. Use instance memory to save session state.
+
+B. Use instance storage to save session state.
+
+C. Use EBS to save session state
+
+D. Use ElastiCache to save session state.
+
+E. Use Glacier to save session slate.
+
+**Answer: D**
+
+---
+
+**QUESTION 155**
+
+If a message is retrieved from a queue in Amazon SQS, how long is the message inaccessible to
+
+other users by default?
+
+A. 0 seconds
+
+B. 1 hour
+
+C. 1 day
+
+D. forever
+
+E. 30 seconds
+
+**Answer: E**
+
+---
+
+**QUESTION 156**
+
+Which of the following are valid SNS delivery transports? Choose 2 answers
+
+A. HTTP
+
+B. UDP
+
+C. SMS
+
+D. DynamoDB
+
+E. Named Pipes
+
+**Answer: AC**
+
+---
+
+**QUESTION 157**
+
+When uploading an object, what request header can be explicitly specified in a request to
+
+Amazon S3 to encrypt object data when saved on the server side?
+
+A. x-amz-storage-class
+
+B. Content-MD5
+
+C. x-amz-security-token
+
+D. x-amz-server-side-encryption
+
+**Answer: D**
+
+---
+
+**QUESTION 158**
+
+Which DynamoDB limits can be raised by contacting AWS support? Choose 2 answers
+
+A. The number of hash keys per account
+
+B. The maximum storage used per account
+
+C. The number of tables per account
+
+D. The number of local secondary indexes per account
+
+E. The number of provisioned throughput units per account
+
+**Answer: CE**
+
+---
+
+**QUESTION 159**
+
+In AWS, which security aspects are the customer's responsibility? Choose 4 answers
+
+A. Life-cycle management of IAM credentials
+
+B. Decommissioning storage devices
+
+C. Security Group and ACL \(Access Control List\) settings
+
+D. Encryption of EBS \(Elastic Block Storage\) volumes
+
+E. Controlling physical access to compute resources
+
+F. Patch management on the EC2 instance's operating system
+
+**Answer: ABCF**
+
+---
+
+**QUESTION 160**
+
+You are providing AWS consulting services for a company developing a new mobile application
+
+that will be leveraging Amazon SNS Mobile Push for push notifications. In order to send direct
+
+notification messages to individual devices each device registration identifier or token needs to be
+
+registered with SNS; however the developers are not sure of the best way to do this.
+
+You advise them to:
+
+A. Bulk upload the device tokens contained in a CSV file via the AWS Management Console.
+
+B. Let the push notification service \(e.g. Amazon Device Messaging\) handle the registration.
+
+C. Implement a token vending service to handle the registration.
+
+D. Call the CreatePlatformEndPoint API function to register multiple device tokens.
+
+**Answer: B**
+
+---
+
+**QUESTION 161**
+
+In DynamoDB, what type of HTTP response codes indicate that a problem was found with the
+
+client request sent to the service?
+
+A. 5xx HTTP response code
+
+B. 200 HTTP response code
+
+C. 306 HTTP response code
+
+D. 4xx HTTP response code
+
+**Answer: D**
+
+---
+
+**QUESTION 162**
+
+You are inserting 1000 new items every second in a DynamoDB table. Once an hour these items
+
+are analyzed and then are no longer needed. You need to minimize provisioned throughput,
+
+storage, and API calls.
+
+Given these requirements, what is the most efficient way to manage these Items after the
+
+analysis?
+
+A. Retain the items in a single table
+
+B. Delete items individually over a 24 hour period
+
+C. Delete the table and create a new table per hour
+
+D. Create a new table per hour
+
+**Answer: C**
+
+---
+
+**QUESTION 163**
+
+Which features can be used to restrict access to data in S3? Choose 2 answers
+
+A. Use S3 Virtual Hosting
+
+B. Set an S3 Bucket policy.
+
+C. Enable IAM Identity Federation.
+
+D. Set an S3 ACL on the bucket or the object.
+
+E. Create a CloudFront distribution for the bucket
+
+**Answer: CD**
+
+---
+
+**QUESTION 164**
+
+Company B provides an online image recognition service and utilizes SOS to decouple system
+
+components for scalability The SQS consumers poll the imaging queue as often as possible to
+
+keep end-to-end throughput as high as possible. However, Company B is realizing that polling in
+
+tight loops is burning CPU cycles and increasing costs with empty responses.
+
+How can Company B reduce the number of empty responses?
+
+A. Set the imaging queue visibility Timeout attribute to 20 seconds
+
+B. Set the Imaging queue ReceiveMessageWaitTimeSeconds attribute to 20 seconds
+
+C. Set the imaging queue MessageRetentionPeriod attribute to 20 seconds
+
+D. Set the DelaySeconds parameter of a message to 20 seconds
+
+**Answer: B**
+
+---
+
+**QUESTION 165**
+
+What AWS products and features can be deployed by Elastic Beanstalk? Choose 3 answers
+
+A. Auto scaling groups
+
+B. Route 53 hosted zones
+
+C. Elastic Load Balancers
+
+D. RDS Instances
+
+E. Elastic IP addresses
+
+F. SQS Queues
+
+**Answer: ACD**
+
+---
+
+**QUESTION 166**
+
+What is the maximum number of S3 Buckets available per AWS account?
+
+A. 100 per region
+
+B. there is no limit
+
+C. 100 per account
+
+D. 500 per account
+
+E. 100 per IAM user
+
+**Answer: C**
+
+---
+
+**QUESTION 167**
+
+What is the format of structured notification messages sent by Amazon SNS?
+
+A. An XML object containing MessageId, UnsubscribeURL, Subject, Message and other values
+
+B. An JSON object containing MessageId, DuplicateFlag, Message and other values
+
+C. An XML object containing MessageId, DuplicateFlag, Message and other values
+
+D. An JSON object containing MessageId, unsubscribeURL, Subject, Message and other values
+
+**Answer: D**
+
+---
+
+**QUESTION 168**
+
+When using a large Scan operation in DynamoDB, what technique can be used to minimize the
+
+impact of a scan on a table's provisioned throughput?
+
+A. Set a smaller page size for the scan
+
+B. Use parallel scans
+
+C. Define a range index on the table
+
+D. Prewarm the table by updating all items
+
+**Answer: C**
+
+---
+
+**QUESTION 169**
+
+Which code snippet below returns the URL of a load balanced web site created in
+
+CloudFormation with an AWS::ElasticLoadBalancing::LoadBalancer resource name "ElasticLoad
+
+Balancer"?
+
+A. "Fn::Join" : \["". \[ "http://", {"Fn::GetAtr" : \[ "ElasticLoadBalancer","DNSName"\]}\]\]
+
+B. "Fn::Join" : \["". \[ "http://", {"Fn::GetAtr" : \[ "ElasticLoadBalancer","Url"\]}\]\]
+
+C. "Fn::Join" : \["". \[ "http://", {"Ref" : "ElasticLoadBalancerUrl"}\]\]
+
+D. "Fn::Join" : \[".", \[ "http://", {"Ref" : "ElasticLoadBalancerDNSName"}\]\]
+
+**Answer: B**
+
+---
+
+**QUESTION 170**
+
+You are getting a lot of empty receive requests when using Amazon SQS.
+
+This is making a lot of unnecessary network load on your instances.
+
+What can you do to reduce this load?
+
+A. Subscribe your queue to an SNS topic instead.
+
+B. Use as long of a poll as possible, instead of short polls.
+
+C. Alter your visibility timeout to be shorter.
+
+D. Use &lt;code&gt;sqsd&lt;/code&gt; on your EC2 instances.
+
+**Answer: B**
+
+**Explanation:**
+
+One benefit of long polling with Amazon SQS is the reduction of the number of empty responses,
+
+when there are no messages available to return, in reply to a ReceiveMessage request sent to an
+
+Amazon SQS queue. Long polling allows the Amazon SQS service to wait until a message is
+
+available in the queue before sending a response.
 
 ---
 
