@@ -16,7 +16,7 @@ D. 2778
 
 **Answer: C**
 
-**Explanation:    
+**Explanation:      
 **You need 2 units to make a 1.5KB write, since you round up. You need 20 million total units to
 
 perform this load. You have 3600 seconds to do so. Divide and round up for 5556.
@@ -71,7 +71,7 @@ E. You haven't configured DynamoDB Auto Scaling triggers
 
 ---
 
-**QUESTION 174    
+**QUESTION 174      
 **
 
 If an application is storing hourly log files from thousands of instances from a high traffic web site,
@@ -356,7 +356,7 @@ running "shutdown -h", or through instance failure.
 
 ---
 
-**QUESTION 185    
+**QUESTION 185      
 **AWS Elastic Load Balancer supports SSL termination.
 
 A. True. For specific availability zones only.
@@ -383,7 +383,7 @@ balancer.
 
 ---
 
-**QUESTION 186    
+**QUESTION 186      
 **A user has launched five instances with ELB. How can the user add the sixth EC2 instance to
 
 ELB?
@@ -439,7 +439,7 @@ of users, which can make it easier to manage the permissions for those users.
 
 ---
 
-**QUESTION 188    
+**QUESTION 188      
 **How long can you keep your Amazon SQS messages in Amazon SQS queues?
 
 A. From 120 secs up to 4 weeks
@@ -462,7 +462,7 @@ be automatically deleted. The option for longer message retention provides great
 
 allow for longer intervals between message production and consumption.
 
-[https://aws.amazon.com/sqs/faqs/    
+[https://aws.amazon.com/sqs/faqs/      
 ](https://aws.amazon.com/sqs/faqs/)
 
 ---
@@ -520,7 +520,8 @@ pricing.
 
 ---
 
-**QUESTION 191**
+**QUESTION 191  
+**
 
 An organization has hosted an application on the EC2 instances. There will be multiple users
 
@@ -542,9 +543,11 @@ D. Create a procedure to revoke the access rights of the individual user when th
 
 to connect to EC2 instance anymore for the purpose of application configuration.
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 Since AWS is a public cloud any application hosted on EC2 is prone to hacker attacks. It
 
@@ -574,11 +577,13 @@ The IAM is useful when users are required to work with AWS resources and actions
 
 launching an instance. It is not useful to connect \(RDP / SSH\) with an instance.
 
-[http://aws.amazon.com/articles/1233/](http://aws.amazon.com/articles/1233/)
+[http://aws.amazon.com/articles/1233/  
+](http://aws.amazon.com/articles/1233/)
 
 ---
 
-**QUESTION 192**
+**QUESTION 192  
+**
 
 A user is planning to make a mobile game which can be played online or offline and will be
 
@@ -606,11 +611,13 @@ service for businesses and developers. It integrates with other AWS services, ma
 
 easy to send emails from applications that are hosted on AWS.
 
-[http://aws.amazon.com/ses/faqs/](http://aws.amazon.com/ses/faqs/)
+[http://aws.amazon.com/ses/faqs/  
+](http://aws.amazon.com/ses/faqs/)
 
 ---
 
-**QUESTION 193**
+**QUESTION 193  
+**
 
 Which one of the following operations is NOT a DynamoDB operation?
 
@@ -622,27 +629,31 @@ C. BatchGetItem
 
 D. BatchDeleteItem
 
-**Answer: D**
+**Answer: D  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 In DynamoDB, DeleteItem deletes a single item in a table by primary key, but BatchDeleteItem
 
 doesn't exist.
 
-[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/operationlist.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/operationlist.html)
+[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/operationlist.html  
+](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/operationlist.html)
 
 ---
 
-**QUESTION 194**
+**QUESTION 194  
+**
 
 Company C is currently hosting their corporate site in an Amazon S3 bucket with Static Website
 
-Hosting enabled. Currently, when visitors go to http://www.companyc.com the index.html page is
+Hosting enabled. Currently, when visitors go to [http://www.companyc.com](http://www.companyc.com) the index.html page is
 
 returned. Company C now would like a new page welcome.html to be returned when a visitor
 
-enters http://www.companyc.com in the browser.
+enters [http://www.companyc.com](http://www.companyc.com) in the browser.
 
 Which of the following steps will allow Company C to meet this requirement? Choose 2 answers
 
@@ -656,11 +667,13 @@ D. Move the index.html page to a welcome subfolder
 
 E. Set the Error Document property to welcome.html
 
-**Answer: AC**
+**Answer: AC  
+**
 
 ---
 
-**QUESTION 195**
+**QUESTION 195  
+**
 
 What item operation allows the retrieval of multiple items from a DynamoDB table in a single API
 
@@ -674,11 +687,13 @@ C. GetMultipleItems
 
 D. GetItemRange
 
-**Answer: B**
+**Answer: B  
+**
 
 ---
 
-**QUESTION 196**
+**QUESTION 196  
+**
 
 Which of the following are valid arguments for an SNS Publish request? Choose 3 answers
 
@@ -694,11 +709,13 @@ E. Message
 
 F. Language
 
-**Answer: ABE**
+**Answer: ABE  
+**
 
 ---
 
-**QUESTION 197**
+**QUESTION 197  
+**
 
 An application stores payroll information nightly in DynamoDB for a large number of employees
 
@@ -722,11 +739,13 @@ C. Configure a hash index on the name attribute and no range index
 
 D. Configure a hash index on the office Identifier attribute and no range index
 
-**Answer: B**
+**Answer: B  
+**
 
 ---
 
-**QUESTION 198**
+**QUESTION 198  
+**
 
 EC2 instances are launched from Amazon Machine images \(AMIS\).
 
@@ -740,11 +759,13 @@ C. only be used to launch EC2 instances in the same AWS region as the AMI is sto
 
 D. only be used to launch EC2 instances in the same AWS availability zone as the AMI is stored
 
-**Answer: C**
+**Answer: C  
+**
 
 ---
 
-**QUESTION 199**
+**QUESTION 199  
+**
 
 Which of the following platforms are supported by Elastic Beanstalk? Choose 2 answers
 
@@ -758,11 +779,13 @@ D. Oracle JBoss
 
 E. Jetty
 
-**Answer: AB**
+**Answer: AB  
+**
 
 ---
 
-**QUESTION 200**
+**QUESTION 200  
+**
 
 Which EC2 API call would you use to retrieve a list of Amazon Machine Images \(AMIs\)?
 
@@ -776,11 +799,13 @@ D. GetAMls
 
 E. You cannot retrieve a list of AMIs as there are over 10,000 AMIs
 
-**Answer: E**
+**Answer: E  
+**
 
 ---
 
-**QUESTION 201**
+**QUESTION 201  
+**
 
 When a Simple Queue Service message triggers a task that takes 5 minutes to complete, which
 
@@ -804,11 +829,13 @@ D. Retrieve the message with increased DelaySeconds, delete the message from the
 
 process the message
 
-**Answer: A**
+**Answer: A  
+**
 
 ---
 
-**QUESTION 202**
+**QUESTION 202  
+**
 
 In Amazon EC2, which of the following is the type of monitoring data for Amazon EBS volumes
 
@@ -822,19 +849,23 @@ C. Initial
 
 D. Detailed
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 Basic is the type of monitoring data \(for Amazon EBS volumes\) which is available automatically in
 
 5-minute periods at no charge called.
 
-[http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/monitoring-volume-status.html](http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/monitoring-volume-status.html)
+[http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/monitoring-volume-status.html  
+](http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/monitoring-volume-status.html)
 
 ---
 
-**QUESTION 203**
+**QUESTION 203  
+**
 
 In DynamoDB, to get a detailed listing of secondary indexes on a table, you can use the \_\_\_\_\_
 
@@ -848,19 +879,23 @@ C. GetItem
 
 D. TableName
 
-**Answer: A**
+**Answer: A  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 In DynamoDB, DescribeTable returns information about the table, including the current status of
 
 the table, when it was created, the primary key schema, and any indexes on the table.
 
-[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)
+[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html  
+](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)
 
 ---
 
-**QUESTION 204**
+**QUESTION 204  
+**
 
 A user has launched an EC2 instance. However, due to some reason the instance was
 
@@ -880,9 +915,11 @@ under the Instance Status Change reason label
 
 D. It is not possible to find the details after the instance is terminated
 
-**Answer: A**
+**Answer: A  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 An EC2 instance, once terminated, may be available in the AWS console for a while after
 
@@ -896,7 +933,8 @@ shutdown".
 
 ---
 
-**QUESTION 205**
+**QUESTION 205  
+**
 
 \_\_\_\_\_\_\_\_\_\_\_ is a task coordination and state management service for cloud applications.
 
@@ -908,9 +946,11 @@ C. Amazon FPS
 
 D. Amazon SNS
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 Amazon Simple Workflow \(Amazon SWF\) is a task coordination and state management service
 
@@ -918,11 +958,13 @@ for cloud applications. With Amazon SWF, you can stop writing complex glue-code 
 
 machinery and invest more in the business logic that makes your applications unique.
 
-[http://aws.amazon.com/swf/](http://aws.amazon.com/swf/)
+[http://aws.amazon.com/swf/  
+](http://aws.amazon.com/swf/)
 
 ---
 
-**QUESTION 206**
+**QUESTION 206  
+**
 
 When you create a table with a hash-and-range key, you must define one or more secondary
 
@@ -936,19 +978,23 @@ C. True
 
 D. False, when you have Hash-Range key you cannot define Secondary index
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 When you create a table with a hash-and-range key in DynamoDB, you can also define one or
 
 more secondary indexes on that table.
 
-[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSI.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSI.html)
+[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSI.html  
+](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSI.html)
 
 ---
 
-**QUESTION 207**
+**QUESTION 207  
+**
 
 A user is planning to create a structured database in the cloud. Which of the below mentioned
 
@@ -962,19 +1008,23 @@ C. AWS SimpleDB
 
 D. AWS RSD
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 AWS RDS is a managed database server offered by AWS, which makes it easy to set up,
 
 operate, and scale a relational database or structured data in cloud.
 
-[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html  
+](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
 ---
 
-**QUESTION 208**
+**QUESTION 208  
+**
 
 A user has created a MySQL RDS instance with PIOPS. Which of the below mentioned
 
@@ -990,9 +1040,11 @@ C. It provides a dedicated network bandwidth between EBS and RDS
 
 D. It uses a standard EBS volume with optimized configuration the stacks
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 RDS DB instance storage comes in two types: standard and provisioned IOPS. Standard storage
 
@@ -1002,11 +1054,13 @@ IOPS uses optimized EBS volumes and an optimized configuration stack. It provide
 
 dedicated capacity for the EBS I/O.
 
-[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html  
+](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
 ---
 
-**QUESTION 209**
+**QUESTION 209  
+**
 
 A user is accessing an EC2 instance on the SSH port for IP 10.20.30.40. Which one is a secure
 
@@ -1020,9 +1074,11 @@ C. In the security group, open port 22 for IP 10.20.30.40/24
 
 D. In the security group, open port 22 for IP 10.20.30.40
 
-**Answer: B**
+**Answer: B  
+**
 
-**Explanation:**
+**Explanation:  
+**
 
 In AWS EC2, while configuring a security group, the user needs to specify the IP address in CIDR
 
@@ -1032,11 +1088,13 @@ specifies the IP as 10.20.30.40 only, the security group will not accept and ask
 
 format.
 
-[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html)
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html  
+](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html)
 
 ---
 
-**QUESTION 210**
+**QUESTION 210  
+**
 
 An Amazon S3 bucket, "myawsbucket" is configured with website hosting in Tokyo region, what is
 
@@ -1050,11 +1108,13 @@ C. myawsbucket.amazonaws.com
 
 D. myawsbucket.tokyo.amazonaws.com
 
-**Answer: B**
+**Answer: B  
+**
 
 ---
 
-**QUESTION 211**
+**QUESTION 211  
+**
 
 Which of the following items are required to allow an application deployed on an EC2 instance to
 
@@ -1074,11 +1134,13 @@ E. Create an IAM Role that allows write access to the DynamoDB table.
 
 F. Launch an EC2 Instance with the IAM User included in the launch configuration.
 
-**Answer: DE**
+**Answer: DE  
+**
 
 ---
 
-**QUESTION 212**
+**QUESTION 212  
+**
 
 Which of the following services are key/value stores? Choose 3 answers
 
@@ -1092,11 +1154,13 @@ D. Simple Workflow Service
 
 E. Simple Storage Service
 
-**Answer: ABC**
+**Answer: ABC  
+**
 
 ---
 
-**QUESTION 213**
+**QUESTION 213  
+**
 
 How is provisioned throughput affected by the chosen consistency model when reading data from
 
@@ -1110,11 +1174,13 @@ C. Strongly consistent reads use less throughput than eventually consistent read
 
 D. Strongly consistent reads use variable throughput depending on read activity
 
-**Answer: B**
+**Answer: B  
+**
 
 ---
 
-**QUESTION 214**
+**QUESTION 214  
+**
 
 Your application is trying to upload a 6 GB file to Simple Storage Service and receive a "Your
 
@@ -1132,11 +1198,13 @@ D. Contact support to increase your object size limit
 
 E. Upload to a different region
 
-**Answer: B**
+**Answer: B  
+**
 
 ---
 
-**QUESTION 215**
+**QUESTION 215  
+**
 
 Which of the following services are included at no additional cost with the use of the AWS
 
