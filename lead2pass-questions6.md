@@ -1,4 +1,4 @@
-**QUESTION 216          
+**QUESTION 216            
 **
 
 What type of block cipher does Amazon S3 offer for server side encryption?
@@ -32,6 +32,8 @@ C. Disable the access keys for the IAM user
 D. Stop the instance
 
 **Answer: C**
+
+
 
 **Explanation:**
 
@@ -1157,7 +1159,7 @@ This is the complete list of Pseudo Parameters: AWS::AccountId, AWS::Notificatio
 
 AWS::NoValue, AWS::Region, AWS::StackId, AWS::StackName
 
-[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference.html
+[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference.html  
 ](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference)
 
 **QUESTION 259**
