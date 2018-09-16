@@ -1,4 +1,5 @@
-**QUESTION 216**
+**QUESTION 216  
+**
 
 What type of block cipher does Amazon S3 offer for server side encryption?
 
@@ -290,9 +291,9 @@ C. Select ENI
 
 D. Select VPC
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 When a user is launching an ELB with VPC, he/she has to select the options, such as subnet and
 
@@ -300,7 +301,7 @@ security group before selecting the instances part of that subnet.
 
 [http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/elb-getting-started.html](http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/elb-getting-started.html)
 
-QUESTION 227
+**QUESTION 227**
 
 A user has setup Multi AZ with the MS SQL RDS instance.
 
@@ -314,9 +315,9 @@ C. MS SQL does not support Multi AZ
 
 D. Disaster recovery
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 The Multi AZ feature allows the user to achieve High Availability.
 
