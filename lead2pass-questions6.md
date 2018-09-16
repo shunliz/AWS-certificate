@@ -1,12 +1,20 @@
-Standard
+**QUESTION 216**
+
+What type of block cipher does Amazon S3 offer for server side encryption?
+
+A. Triple DES
+
+B. Advanced Encryption Standard
 
 C. Blowfish
 
 D. RC5
 
-Answer: B
+**Answer: B**
 
-QUESTION 217
+---
+
+**QUESTION 217**
 
 A user has setup an application on EC2 which uses the IAM user access key and secret access
 
@@ -22,9 +30,9 @@ C. Disable the access keys for the IAM user
 
 D. Stop the instance
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 If the user wants to temporarily stop the access to S3 the best solution is to disable the keys.
 
@@ -34,9 +42,11 @@ future. If the user stops the instance IAM users can still access S3. The change
 
 not help either as they are still active. The best possible solution is to disable the keys.
 
-http://docs.aws.amazon.com/IAM/latest/UserGuide/ManagingCredentials.html
+[http://docs.aws.amazon.com/IAM/latest/UserGuide/ManagingCredentials.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/ManagingCredentials.html)
 
-QUESTION 218
+---
+
+**QUESTION 218**
 
 When should a user try to Force Detach an EBS volume?
 
@@ -48,9 +58,9 @@ C. If the volume is not unmounted and the user still wants to detach
 
 D. If the volume is a root volume
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 If an EBS volume stays in the detaching state, the user can force the detachment by clicking
 
@@ -60,7 +70,9 @@ The user should use this option only as a last resort to detach a volume from a 
 
 if he is detaching a volume with the intention of deleting it.
 
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html)
+
+---
 
 QUESTION 219
 
@@ -74,9 +86,9 @@ C. Keep updating the AutoScaling group with each policy
 
 D. The user cannot specify more than two policies for AutoScaling
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 To configure the Auto Scaling termination policy, the user can either specify any one of the
 
@@ -84,9 +96,9 @@ policies as a standalone policy or list multiple policies in an ordered list.
 
 The policies are executed in the order that they are listed.
 
-http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/us-termination-policy.html
+[http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/us-termination-policy.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/us-termination-policy.html)
 
-QUESTION 220
+**QUESTION 220**
 
 A user wants to configure AutoScaling which scales up when the CPU utilization is above 70%
 
@@ -102,9 +114,9 @@ C. Use dynamic AutoScaling with a policy
 
 D. Use AutoScaling by manually modifying the desired capacity during a condition
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 The user can configure the AutoScaling group to automatically scale up and then scale down
 
@@ -112,9 +124,9 @@ based on the specified conditions. To configure this, the user must setup polici
 
 triggered by the CloudWatch alarms.
 
-http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-scale-based-on-demand.html
+[http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-scale-based-on-demand.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-scale-based-on-demand.html)
 
-QUESTION 221
+**QUESTION 221**
 
 A user has created an application which sends data to a log file. The server hosting the log files
 
@@ -132,9 +144,9 @@ C. AWS Simple Notification Service
 
 D. AWS Simple Queue Service
 
-Answer: D
+**Answer: D**
 
-Explanation:
+**Explanation:**
 
 Amazon Simple Queue Service \(SQS\) is a fast, reliable, scalable, and fully managed message
 
@@ -146,9 +158,9 @@ requiring other services to always be available. Using SQS, the application has 
 
 data to SQS and SQS transmits it to the log file whenever it is available.
 
-http://aws.amazon.com/sqs/
+[http://aws.amazon.com/sqs/](http://aws.amazon.com/sqs/)
 
-QUESTION 222
+**QUESTION 222**
 
 Is there a limit to how much throughput you can get out of a single table in DynamoDB?
 
@@ -162,9 +174,9 @@ D. No, but If you wish to exceed throughput rates of 10,000 writes/second or 10,
 
 you must first contact AWS.
 
-Answer: D
+**Answer: D**
 
-Explanation:
+**Explanation:**
 
 In DynamoDB, you can increase the throughput you have provisioned for your table using
 
@@ -172,9 +184,9 @@ UpdateTable API or in the AWS Management Console. If you wish to exceed throughp
 
 10,000 writes/second or 10,000 reads/second, you must first contact AWS.
 
-http://aws.amazon.com/dynamodb/
+[http://aws.amazon.com/dynamodb/](http://aws.amazon.com/dynamodb/)
 
-QUESTION 223
+**QUESTION 223**
 
 In AWS Elastic Beanstalk, you can update your deployed application even while it is part of a
 
@@ -190,9 +202,9 @@ C. the AWS Toolkit for JVM
 
 D. the AWS Toolkit for Netbeans
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 In AWS Elastic Beanstalk, you can update your deployed application, even while it is part of a
 
@@ -200,9 +212,9 @@ running environment. For a Java application, you can also use the AWS Toolkit fo
 
 update your deployed application.
 
-http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/GettingStarted.Walkthrough.html
+[http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/GettingStarted.Walkthrough.html](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/GettingStarted.Walkthrough.html)
 
-QUESTION 224
+**QUESTION 224**
 
 You have a number of image files to encode. In an Amazon SQS worker queue, you create an
 
@@ -224,9 +236,9 @@ D. Amazon SQS is a distributed queuing system that is optimized for vertical sca
 
 single-threaded sending or receiving speeds.
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 Amazon SQS is a distributed queuing system that is optimized for horizontal scalability, not for
 
@@ -238,9 +250,9 @@ achieved by requesting multiple messages \(up to 10\) in a single call. It may t
 
 before a message that has been to a queue is available to be received.
 
-http://media.amazonwebservices.com/AWS\_Storage\_Options.pdf
+[http://media.amazonwebservices.com/AWS\_Storage\_Options.pdf](http://media.amazonwebservices.com/AWS_Storage_Options.pdf)
 
-QUESTION 225
+**QUESTION 225**
 
 Can you configure an RDS Read Replica using CloudFormation templates?
 
@@ -252,9 +264,9 @@ C. Yes, but not for all Regions.
 
 D. No, you can add the ReadReplica only when the resource is made available by CloudFormation
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 AWS CloudFormation gives developers and systems administrators an easy way to create and
 
@@ -264,7 +276,7 @@ RDS when you create a new CloudFormation template.
 
 You can start using it with the sample template of CloudFormation.
 
-QUESTION 226
+**QUESTION 226**
 
 A user is creating an ELB with VPC. Which of the following options is available as a part of the
 
@@ -286,7 +298,7 @@ When a user is launching an ELB with VPC, he/she has to select the options, such
 
 security group before selecting the instances part of that subnet.
 
-http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/elb-getting-started.html
+[http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/elb-getting-started.html](http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/elb-getting-started.html)
 
 QUESTION 227
 
@@ -310,7 +322,7 @@ The Multi AZ feature allows the user to achieve High Availability.
 
 MS SQL does not support Multi AZ.
 
-https://aws.amazon.com/rds/faqs/\#36
+[https://aws.amazon.com/rds/faqs/\#36](https://aws.amazon.com/rds/faqs/#36)
 
 QUESTION 228
 
@@ -356,7 +368,7 @@ can fetch the instance metadata and get the MAC address from that instance metad
 
 Once the MAC is received, the organization can register that MAC with the software.
 
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html)
 
 QUESTION 229
 
@@ -380,7 +392,7 @@ AWS RRS provides the same functionality as AWS S3, but at a cheaper rate. It is 
 
 for non mission critical applications. It provides less durability than S3, but is a cheaper option.
 
-http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRRS.html
+[http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRRS.html](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRRS.html)
 
 QUESTION 230
 
@@ -404,7 +416,7 @@ An ELB performs a health check on its instances to ensure that it diverts traffi
 
 instances. The ELB can perform a health check on HTTP, HTTPS, TCP and SSL protocols.
 
-http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/Welcome.html
+[http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/Welcome.html](http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/Welcome.html)
 
 QUESTION 231
 
@@ -464,7 +476,7 @@ If an EBS volume is not in the same AZ of an EC2 instance, it cannot be attached
 
 The only option is to take a snapshot of the volume and create a new volume in the instance's
 
-AZ. http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html
+AZ. [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html)
 
 QUESTION 233
 
@@ -492,7 +504,7 @@ one group, but has permission for another group, he will have full access to EC2
 
 Unless there is specific deny policy, the user will be able to access EC2.
 
-http://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html
+[http://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html)
 
 QUESTION 234
 
@@ -518,7 +530,7 @@ can create more than 1 database. The maximum size of the instance should be betw
 
 and 3 TB. The size of each DB can be anything in this range.
 
-http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
 QUESTION 235
 
@@ -544,7 +556,7 @@ If the user needs to connect to RDS then he has to open port 3306 in the RDS sec
 
 his IP address.
 
-http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
 QUESTION 236
 
@@ -572,7 +584,7 @@ instance will be shown as the original size. The user needs to change the size o
 
 resize2fs or other OS specific commands.
 
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-expand-volume.html
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-expand-volume.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-expand-volume.html)
 
 QUESTION 237
 
@@ -600,7 +612,7 @@ In this case, the federated user is the only solution since AWS does not allow c
 
 5000 IAM users.
 
-http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html
+[http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html)
 
 QUESTION 238
 
@@ -624,7 +636,7 @@ To send push notifications to mobile devices using Amazon SNS and ADM, you need 
 
 the following: Registration ID and Client secret.
 
-http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePushPrereq.html
+[http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePushPrereq.html](http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePushPrereq.html)
 
 QUESTION 239
 
@@ -652,7 +664,7 @@ ADM. After you've registered and configured the app to use one of these services
 
 Amazon SNS to send push notifications to the mobile endpoints.
 
-http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html
+[http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html](http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html)
 
 QUESTION 240
 
@@ -698,7 +710,7 @@ AWS account ID, he can create an alias for his AWS account ID. The alias must be
 
 across all Amazon Webservices products and contain only digits, lowercase letters, and hyphens.
 
-http://docs.aws.amazon.com/IAM/latest/UserGuide/AccountAlias.html
+[http://docs.aws.amazon.com/IAM/latest/UserGuide/AccountAlias.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/AccountAlias.html)
 
 QUESTION 242
 
@@ -720,7 +732,7 @@ The user can get notifications using SNS if he has configured the notifications 
 
 Auto Scaling group.
 
-http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/GettingStartedTutorial.html
+[http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/GettingStartedTutorial.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/GettingStartedTutorial.html)
 
 QUESTION 243
 
@@ -746,7 +758,7 @@ has more instances than the other Availability Zones used by the group. If all t
 
 Zones have the same number of instances, it identifies a random Availability Zone.
 
-http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/us-termination-policy.html
+[http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/us-termination-policy.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/us-termination-policy.html)
 
 QUESTION 244
 
@@ -766,7 +778,7 @@ Explanation:
 
 In DynamoDB, an index cannot be modified once it is created.
 
-http://aws.amazon.com/dynamodb/faqs/\#security\_anchor
+[http://aws.amazon.com/dynamodb/faqs/\#security\_anchor](http://aws.amazon.com/dynamodb/faqs/#security_anchor)
 
 QUESTION 245
 
@@ -814,7 +826,7 @@ the set of AWS resources that are created and managed as a single unit when AWS
 
 CloudFormation instantiates a template.
 
-http://aws.amazon.com/cloudformation/faqs/
+[http://aws.amazon.com/cloudformation/faqs/](http://aws.amazon.com/cloudformation/faqs/)
 
 QUESTION 246
 
@@ -840,7 +852,7 @@ located in a public subnet, that will act as a proxy for them.
 
 You can also connect if you have direct connect or vpn.
 
-http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC\_Scenario2.html
+[http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC\_Scenario2.html](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html)
 
 QUESTION 247
 
@@ -866,7 +878,7 @@ names, resource attribute values \(e.g. addresses\), or values computed by simpl
 
 a concatenated list of strings\).
 
-http://aws.amazon.com/cloudformation/faqs/
+[http://aws.amazon.com/cloudformation/faqs/](http://aws.amazon.com/cloudformation/faqs/)
 
 QUESTION 248
 
@@ -892,7 +904,7 @@ user does not provide the value for the zone, the maintenance window or automate
 
 window, RDS will automatically select the value.
 
-http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html
+[http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
 
 QUESTION 249
 
@@ -936,7 +948,7 @@ Explanation:
 
 In DynamoDB, Scan operations are always eventually consistent.
 
-http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/APISummary.html
+[http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/APISummary.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/APISummary.html)
 
 QUESTION 251
 
@@ -962,7 +974,7 @@ select Email in the Protocol drop-down box. Enter an email address you can use t
 
 notification in the Endpoint field.
 
-http://docs.aws.amazon.com/sns/latest/dg/SubscribeTopic.html
+[http://docs.aws.amazon.com/sns/latest/dg/SubscribeTopic.html](http://docs.aws.amazon.com/sns/latest/dg/SubscribeTopic.html)
 
 QUESTION 252
 
@@ -988,7 +1000,7 @@ explicitly remove the volume. It is a recommended practice to unmount the volume
 
 any file system damage.
 
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html
+[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html)
 
 QUESTION 253
 
@@ -1014,7 +1026,7 @@ a part of an ELB. Cloudwatch will be used to monitor the resources and based on 
 
 need it will trigger policies. AutoScaling is then used to scale up or down the instances.
 
-http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/WhatIsAutoScaling.html
+[http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/WhatIsAutoScaling.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/WhatIsAutoScaling.html)
 
 QUESTION 254
 
@@ -1064,7 +1076,7 @@ message alerts, badge updates, or even sound alerts. Microsoft Windows Mobile Me
 
 \(MWMM\) doesn't exist and is not supported by Amazon SNS.
 
-http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html
+[http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html](http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html)
 
 QUESTION 256
 
@@ -1144,7 +1156,7 @@ This is the complete list of Pseudo Parameters: AWS::AccountId, AWS::Notificatio
 
 AWS::NoValue, AWS::Region, AWS::StackId, AWS::StackName
 
-http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference.
+[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference).
 
 html
 
