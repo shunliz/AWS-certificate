@@ -1,4 +1,4 @@
-**QUESTION 216    
+**QUESTION 216      
 **
 
 What type of block cipher does Amazon S3 offer for server side encryption?
@@ -385,9 +385,9 @@ C. AWS RRS
 
 D. AWS Glacier
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 AWS RRS provides the same functionality as AWS S3, but at a cheaper rate. It is ideally suited
 
@@ -395,7 +395,7 @@ for non mission critical applications. It provides less durability than S3, but 
 
 [http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRRS.html](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingRRS.html)
 
-QUESTION 230
+**QUESTION 230**
 
 A user has configured ELB. Which of the below mentioned protocols the user can configure for
 
