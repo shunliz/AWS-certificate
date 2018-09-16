@@ -1,4 +1,4 @@
-**QUESTION 216  
+**QUESTION 216    
 **
 
 What type of block cipher does Amazon S3 offer for server side encryption?
@@ -325,7 +325,7 @@ MS SQL does not support Multi AZ.
 
 [https://aws.amazon.com/rds/faqs/\#36](https://aws.amazon.com/rds/faqs/#36)
 
-QUESTION 228
+**QUESTION 228**
 
 An organization is having an application which can start and stop an EC2 instance as per
 
@@ -351,9 +351,9 @@ D. The organization should provide a MAC address as a part of the user data. Thu
 
 instance is booted the script assigns the fixed MAC address to that instance.
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 AWS provides an on demand, scalable infrastructure. AWS EC2 allows the user to launch OnDemand
 
@@ -371,7 +371,7 @@ Once the MAC is received, the organization can register that MAC with the softwa
 
 [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html)
 
-QUESTION 229
+**QUESTION 229**
 
 A user is trying to share a video file with all his friends. Which of the below mentioned AWS
 
