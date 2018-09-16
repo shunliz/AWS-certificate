@@ -1,4 +1,4 @@
-**QUESTION 216      
+**QUESTION 216        
 **
 
 What type of block cipher does Amazon S3 offer for server side encryption?
@@ -409,9 +409,9 @@ C. HTTPS
 
 D. SSL
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 An ELB performs a health check on its instances to ensure that it diverts traffic only to healthy
 
@@ -419,7 +419,7 @@ instances. The ELB can perform a health check on HTTP, HTTPS, TCP and SSL protoc
 
 [http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/Welcome.html](http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/Welcome.html)
 
-QUESTION 231
+**QUESTION 231**
 
 Is it possible to create an S3 bucket accessible only by a certain IAM user, using policies in a
 
@@ -433,9 +433,9 @@ C. Yes, all these resources can be created using a CloudFormation template
 
 D. No, in the same template you can only create the S3 bucket and the realtive policy.
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 With AWS Identity and Access Management \(IAM\), you can create IAM users to control who has
 
@@ -449,7 +449,7 @@ In addition to AWS CloudFormation actions, you can manage what AWS services and 
 
 are available to each user.
 
-QUESTION 232
+**QUESTION 232**
 
 A user has created an EBS instance in the US-East-1a AZ. The user has a volume of 30 GB in
 
@@ -469,9 +469,9 @@ D. Use the volume replicate function to create a new volume in the US-East-1a an
 
 the volume
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 If an EBS volume is not in the same AZ of an EC2 instance, it cannot be attached to the instance.
 
@@ -479,7 +479,7 @@ The only option is to take a snapshot of the volume and create a new volume in t
 
 AZ. [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html)
 
-QUESTION 233
+**QUESTION 233**
 
 A user is part of a group which has a policy allowing him just read only access to EC2. The user
 
@@ -495,9 +495,9 @@ C. It will allow or deny based on the group under which the user has logged into
 
 D. It will not allow the user to add to the conflicting groups
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 The IAM group policy is always aggregated. In this case, if the user does not have permission for
 
@@ -507,7 +507,7 @@ Unless there is specific deny policy, the user will be able to access EC2.
 
 [http://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html)
 
-QUESTION 234
+**QUESTION 234**
 
 A user has launched an RDS instance. The user has created 3 databases on the same server.
 
@@ -521,9 +521,9 @@ C. The total instance storage size cannot be more than 3 TB
 
 D. The size of each DB cannot be more than 1 TB
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 The AWS RDS DB instance is an isolated DB environment provided by AWS in which the user
 
@@ -533,7 +533,7 @@ and 3 TB. The size of each DB can be anything in this range.
 
 [http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
-QUESTION 235
+**QUESTION 235**
 
 A user has created an RDS instance with MySQL. The user is using the HeidiSQL client to
 
@@ -549,9 +549,9 @@ C. You can never connect to RDS from your desktop
 
 D. The user has to open port 22 in the RDS security group to connect with RDS DNS
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 If the user needs to connect to RDS then he has to open port 3306 in the RDS security group for
 
@@ -559,7 +559,7 @@ his IP address.
 
 [http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
-QUESTION 236
+**QUESTION 236**
 
 A user is creating a new EBS volume from an existing snapshot. The snapshot size shows 10
 
@@ -573,9 +573,9 @@ C. Provided the snapshot has the modify size attribute set as true
 
 D. No
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 A user can always create a new EBS volume of a higher size than the original snapshot size.
 
@@ -587,7 +587,7 @@ resize2fs or other OS specific commands.
 
 [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-expand-volume.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-expand-volume.html)
 
-QUESTION 237
+**QUESTION 237**
 
 An organization has 10000 employees. The organization wants to give restricted AWS access to
 
@@ -601,9 +601,9 @@ C. Use STS and create the users' run time
 
 D. Use Identity federation with SSO
 
-Answer: D
+**Answer: D**
 
-Explanation:
+**Explanation:**
 
 Identity federation enables users from an existing directory to access resources within your AWS
 
@@ -615,7 +615,7 @@ In this case, the federated user is the only solution since AWS does not allow c
 
 [http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html)
 
-QUESTION 238
+**QUESTION 238**
 
 In Amazon SNS, to send push notifications to mobile devices using Amazon SNS and ADM, you
 
@@ -629,9 +629,9 @@ C. Device token
 
 D. Registration ID
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 To send push notifications to mobile devices using Amazon SNS and ADM, you need to obtain
 
@@ -639,7 +639,7 @@ the following: Registration ID and Client secret.
 
 [http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePushPrereq.html](http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePushPrereq.html)
 
-QUESTION 239
+**QUESTION 239**
 
 Regarding Amazon SNS, to begin using Amazon SNS mobile push notifications, you first need
 
@@ -653,9 +653,9 @@ C. to know the type of mobile device operating system
 
 D. an app for the mobile endpoints
 
-Answer: D
+**Answer: D**
 
-Explanation:
+**Explanation:**
 
 In Amazon SNS, to begin using Amazon SNS mobile push notifications, you first need an app for
 
@@ -667,7 +667,7 @@ Amazon SNS to send push notifications to the mobile endpoints.
 
 [http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html](http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html)
 
-QUESTION 240
+**QUESTION 240**
 
 How many types of block devices does Amazon EC2 support?
 
@@ -679,13 +679,13 @@ C. 2
 
 D. 4
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 Amazon EC2 supports 2 types of block devices.
 
-QUESTION 241
+**QUESTION 241**
 
 ExamKiller \(with AWS account ID 111122223333\) has created 50 IAM users for its organization's
 
@@ -701,9 +701,9 @@ C. The user needs to use Route 53 to map the ExamKiller domain and IAM URL
 
 D. For the AWS account, create an alias ExamKiller for the IAM login
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 If a user wants the URL of the AWS IAM sign-in page to have the company name instead of the
 
@@ -713,7 +713,7 @@ across all Amazon Webservices products and contain only digits, lowercase letter
 
 [http://docs.aws.amazon.com/IAM/latest/UserGuide/AccountAlias.html](http://docs.aws.amazon.com/IAM/latest/UserGuide/AccountAlias.html)
 
-QUESTION 242
+**QUESTION 242**
 
 Can a user get a notification of each instance start / terminate configured with Auto Scaling?
 
@@ -725,9 +725,9 @@ C. Yes, if configured with the Auto Scaling group
 
 D. Yes, if configured with the Launch Config
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 The user can get notifications using SNS if he has configured the notifications while creating the
 
@@ -735,7 +735,7 @@ Auto Scaling group.
 
 [http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/GettingStartedTutorial.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/GettingStartedTutorial.html)
 
-QUESTION 243
+**QUESTION 243**
 
 AutoScaling is configured with 3 AZs. Each zone has 5 instances running. If AutoScaling wants to
 
@@ -749,9 +749,9 @@ C. Terminate the instance from the AZ which does not have a high AWS load
 
 D. Terminate the instance from the AZ which has instances running near to the billing hour
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 Before Auto Scaling selects an instance to terminate, it first identifies the Availability Zone that
 
@@ -761,7 +761,7 @@ Zones have the same number of instances, it identifies a random Availability Zon
 
 [http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/us-termination-policy.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/us-termination-policy.html)
 
-QUESTION 244
+**QUESTION 244**
 
 In regard to DynamoDB, can I delete local secondary indexes?
 
@@ -773,15 +773,15 @@ C. Yes, if it is a local secondary indexes
 
 D. Yes, if it is a Global secondary indexes
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 In DynamoDB, an index cannot be modified once it is created.
 
 [http://aws.amazon.com/dynamodb/faqs/\#security\_anchor](http://aws.amazon.com/dynamodb/faqs/#security_anchor)
 
-QUESTION 245
+**QUESTION 245**
 
 You need to develop and run some new applications on AWS and you know that Elastic
 
@@ -801,9 +801,9 @@ design and script custom resources
 
 D. Elastic Beanstalk is faster in deploying applications than CloudFormation.
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 These services are designed to complement each other. AWS Elastic Beanstalk provides an
 
@@ -829,7 +829,7 @@ CloudFormation instantiates a template.
 
 [http://aws.amazon.com/cloudformation/faqs/](http://aws.amazon.com/cloudformation/faqs/)
 
-QUESTION 246
+**QUESTION 246**
 
 Can you SSH to your private machines that reside in a VPC from outside without elastic IP?
 
@@ -841,9 +841,9 @@ C. Only if you are using a US region
 
 D. No
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 The instances that reside in the private subnets of your VPC are not reachable from the Internet,
 
@@ -855,7 +855,7 @@ You can also connect if you have direct connect or vpn.
 
 [http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC\_Scenario2.html](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html)
 
-QUESTION 247
+**QUESTION 247**
 
 Does AWS CloudFormation support Amazon EC2 tagging?
 
@@ -867,9 +867,9 @@ C. No, CloudFormation doesn't support any tagging
 
 D. Yes, AWS CloudFormation supports Amazon EC2 tagging
 
-Answer: D
+**Answer: D**
 
-Explanation:
+**Explanation:**
 
 In AWS CloudFormation, Amazon EC2 resources that support the tagging feature can also be
 
@@ -881,7 +881,7 @@ a concatenated list of strings\).
 
 [http://aws.amazon.com/cloudformation/faqs/](http://aws.amazon.com/cloudformation/faqs/)
 
-QUESTION 248
+**QUESTION 248**
 
 A user has created a MySQL RDS instance. Which of the below mentioned options is mandatory
 
@@ -895,9 +895,9 @@ C. Availability Zone
 
 D. Maintenance window
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 When creating an RDS instance, the user needs to specify whether it is Multi AZ or not. If the
 
@@ -907,7 +907,7 @@ window, RDS will automatically select the value.
 
 [http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
 
-QUESTION 249
+**QUESTION 249**
 
 A user has enabled the automated backup, but not specified the backup window. What will RDS
 
@@ -921,9 +921,9 @@ C. RDS assigns a random time period based on the region
 
 D. Will not allow to launch a DB instance
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 If the user does not specify a preferred backup window while enabling an automated backup,
 
@@ -931,7 +931,7 @@ Amazon RDS assigns a default 30-minute backup window which is selected at random
 
 hour block of time per region.
 
-QUESTION 250
+**QUESTION 250**
 
 True or False: In DynamoDB, Scan operations are always eventually consistent.
 
@@ -943,15 +943,15 @@ C. No, scan is strongly consistent by default
 
 D. No, you can optionally request strongly consistent scan.
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 In DynamoDB, Scan operations are always eventually consistent.
 
 [http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/APISummary.html](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/APISummary.html)
 
-QUESTION 251
+**QUESTION 251**
 
 Regarding Amazon SNS, when you want to subscribe to a topic and receive notifications to your
 
@@ -965,9 +965,9 @@ C. SMTP
 
 D. IMAP
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 In Amazon SNS, when you want to subscribe to a topic and receive notifications to your email,
 
@@ -977,7 +977,7 @@ notification in the Endpoint field.
 
 [http://docs.aws.amazon.com/sns/latest/dg/SubscribeTopic.html](http://docs.aws.amazon.com/sns/latest/dg/SubscribeTopic.html)
 
-QUESTION 252
+**QUESTION 252**
 
 When a user is detaching an EBS volume from a running instance and attaching it to a new
 
@@ -991,9 +991,9 @@ C. Take a snapshot of the volume before detaching
 
 D. Force Detach the volume to ensure that all the data stays intact
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 When a user is trying to detach an EBS volume, the user can either terminate the instance or
 
@@ -1003,7 +1003,7 @@ any file system damage.
 
 [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html)
 
-QUESTION 253
+**QUESTION 253**
 
 A user is planning to host a scalable dynamic web application on AWS. Which of the services
 
@@ -1017,9 +1017,9 @@ C. AutoScaling
 
 D. AWS EC2 instances
 
-Answer: B
+**Answer: B**
 
-Explanation:
+**Explanation:**
 
 The user can achieve automated scaling by launching different EC2 instances and making them
 
@@ -1029,7 +1029,7 @@ need it will trigger policies. AutoScaling is then used to scale up or down the 
 
 [http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/WhatIsAutoScaling.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/WhatIsAutoScaling.html)
 
-QUESTION 254
+**QUESTION 254**
 
 Which one of the following data types does Amazon DynamoDB not support?
 
@@ -1041,9 +1041,9 @@ C. Binary
 
 D. Number Set
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 Amazon DynamoDB supports the following data types:
 
@@ -1051,7 +1051,7 @@ Scalar data types \(like Number, String, and Binary\)
 
 Multi-valued types \(like String Set, Number Set, and Binary Set\).
 
-QUESTION 255
+**QUESTION 255**
 
 Regarding Amazon SNS, you can send notification messages to mobile devices through any of
 
@@ -1065,9 +1065,9 @@ C. Amazon Device Messaging \(ADM\)
 
 D. Microsoft Windows Mobile Messaging \(MWMM\)
 
-Answer: D
+**Answer: D**
 
-Explanation:
+**Explanation:**
 
 In Amazon SNS, you have the ability to send notification messages directly to apps on mobile
 
@@ -1079,7 +1079,7 @@ message alerts, badge updates, or even sound alerts. Microsoft Windows Mobile Me
 
 [http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html](http://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html)
 
-QUESTION 256
+**QUESTION 256**
 
 How can software determine the public and private IP addresses of the Amazon EC2 instance
 
@@ -1093,9 +1093,9 @@ C. Query the local instance userdata.
 
 D. Query the local instance metadata.
 
-Answer: D
+**Answer: D**
 
-QUESTION 257
+**QUESTION 257**
 
 A corporate web application is deployed within an Amazon VPC, and is connected to the
 
@@ -1135,9 +1135,9 @@ an IAM Role to get temporary AWS security credentials. The application calls the
 
 to get AWS temporary security credentials with access to the appropriate S3 bucket.
 
-Answer: BD
+**Answer: BD**
 
-QUESTION 258
+**QUESTION 258**
 
 Which of these is not a Pseudo Parameter in AWS CloudFormation?
 
@@ -1149,9 +1149,9 @@ C. AWS::StackArn
 
 D. AWS::NotificationARNs
 
-Answer: C
+**Answer: C**
 
-Explanation:
+**Explanation:**
 
 This is the complete list of Pseudo Parameters: AWS::AccountId, AWS::NotificationARNs,
 
@@ -1161,7 +1161,7 @@ AWS::NoValue, AWS::Region, AWS::StackId, AWS::StackName
 
 html
 
-QUESTION 259
+**QUESTION 259**
 
 What is the scope of an EBS volume?
 
@@ -1173,15 +1173,15 @@ C. Placement Group
 
 D. Availability Zone
 
-Answer: D
+**Answer: D**
 
-Explanation:
+**Explanation:**
 
 An Amazon EBS volume is tied to its Availability Zone and can be attached only to instances in
 
 the same Availability Zone.
 
-QUESTION 260
+**QUESTION 260**
 
 What is the scope of AWS IAM?
 
@@ -1193,9 +1193,9 @@ C. Region
 
 D. Placement Group
 
-Answer: A
+**Answer: A**
 
-Explanation:
+**Explanation:**
 
 IAM resources are all global; there is not regional constraint.
 
