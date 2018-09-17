@@ -1,4 +1,4 @@
-**QUESTION 216              
+**QUESTION 216                
 **
 
 What type of block cipher does Amazon S3 offer for server side encryption?
@@ -162,6 +162,8 @@ requiring other services to always be available. Using SQS, the application has 
 data to SQS and SQS transmits it to the log file whenever it is available.
 
 [http://aws.amazon.com/sqs/](http://aws.amazon.com/sqs/)
+
+---
 
 **QUESTION 222**
 
@@ -1159,7 +1161,7 @@ This is the complete list of Pseudo Parameters: AWS::AccountId, AWS::Notificatio
 
 AWS::NoValue, AWS::Region, AWS::StackId, AWS::StackName
 
-[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference.html    
+[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference.html      
 ](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference)
 
 **QUESTION 259**
