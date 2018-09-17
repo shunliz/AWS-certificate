@@ -1,4 +1,4 @@
-**QUESTION 216            
+**QUESTION 216              
 **
 
 What type of block cipher does Amazon S3 offer for server side encryption?
@@ -32,8 +32,6 @@ C. Disable the access keys for the IAM user
 D. Stop the instance
 
 **Answer: C**
-
-
 
 **Explanation:**
 
@@ -128,6 +126,8 @@ based on the specified conditions. To configure this, the user must setup polici
 triggered by the CloudWatch alarms.
 
 [http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-scale-based-on-demand.html](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-scale-based-on-demand.html)
+
+---
 
 **QUESTION 221**
 
@@ -1159,7 +1159,7 @@ This is the complete list of Pseudo Parameters: AWS::AccountId, AWS::Notificatio
 
 AWS::NoValue, AWS::Region, AWS::StackId, AWS::StackName
 
-[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference.html  
+[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference.html    
 ](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference)
 
 **QUESTION 259**
