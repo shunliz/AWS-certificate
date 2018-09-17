@@ -1,4 +1,4 @@
-**QUESTION 216                
+**QUESTION 216                  
 **
 
 What type of block cipher does Amazon S3 offer for server side encryption?
@@ -190,6 +190,8 @@ UpdateTable API or in the AWS Management Console. If you wish to exceed throughp
 10,000 writes/second or 10,000 reads/second, you must first contact AWS.
 
 [http://aws.amazon.com/dynamodb/](http://aws.amazon.com/dynamodb/)
+
+---
 
 **QUESTION 223**
 
@@ -1161,7 +1163,7 @@ This is the complete list of Pseudo Parameters: AWS::AccountId, AWS::Notificatio
 
 AWS::NoValue, AWS::Region, AWS::StackId, AWS::StackName
 
-[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference.html      
+[http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference.html        
 ](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameterreference)
 
 **QUESTION 259**
