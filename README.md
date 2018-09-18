@@ -1,6 +1,7 @@
 # AWS-certificate
 
 AWS certificate preparation notes.
+
 # Summary
 
 * [Introduction](README.md)
@@ -48,8 +49,6 @@ AWS certificate preparation notes.
     * [solution architect2](solution-architect2.md)
     * [Solution Architect1](test1.md)
 * [References](references.md)
-
-
 
 
 
