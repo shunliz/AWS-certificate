@@ -20,7 +20,7 @@
   * S3
   * CloudFormation
   * IAM
-  * Lambda
+  * [Lambda](lambda.md)
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
   * bigdata-specialty-notes
