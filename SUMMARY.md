@@ -12,7 +12,7 @@
   * [Running Containerized Microservices on AWS](withe-papers/running-containerized-microservices-on-aws.md)
   * [Blue/Green Deployments on AWS](withe-papers/bluegreen-deployments-on-aws.md)
 * [AWS doc](aws-doc.md)
-  * EC2
+  * [EC2](ec2.md)
   * RDS
   * SNS
   * VPC
