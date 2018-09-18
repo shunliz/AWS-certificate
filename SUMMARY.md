@@ -38,7 +38,6 @@
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
     * [AWS developer2](aws-developer2.md)
-    * [quiz3](quiz3.md)
     * [simplifysearch quiz](simplifysearch-quiz.md)
     * [lead2pass questions1](lead2pass-questions.md)
     * [lead2pass questions2](lead2pass-questions2.md)
