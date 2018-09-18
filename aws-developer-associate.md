@@ -85,95 +85,93 @@
 
 **Amazon Glacier is a storage service allowing customers to store data for as little as:**
 
-1. [x] 1 cent per gigabyte (GB) per month
-1. [ ] 10 cents per GB per month
-1. [ ] 20 cents per GB per month
-1. [ ] 50 cents per GB per month
+1. [x] 1 cent per gigabyte \(GB\) per month
+2. [ ] 10 cents per GB per month
+3. [ ] 20 cents per GB per month
+4. [ ] 50 cents per GB per month
 
 **Amazon Elastic Beanstalk automates the details of which of the following functions?**
 
 1. [ ] Capacity provisioning
-1. [ ] Load balancing
-1. [ ] Auto-scaling
-1. [ ] Application deployment
-1. [x] All of the above
+2. [ ] Load balancing
+3. [ ] Auto-scaling
+4. [ ] Application deployment
+5. [x] All of the above
 
 **All AWS IaaS services are pay-as-you-go.**
 
 1. [x] True
-1. [ ] False
+2. [ ] False
 
 **When analyst firm IDC interviewed 11 major AWS customers in 2012, researchers found an average five-year return on investment of how much?**
 
 1. [ ] 26%
-1. [ ] 186%
-1. [x] 626%
-1. [ ] 1,226%
+2. [ ] 186%
+3. [x] 626%
+4. [ ] 1,226%
 
 **In the same survey, researchers said the customers' average payback period on their AWS IaaS investments was how long?**
 
 1. [ ] 7 weeks
-1. [x] 7 months
-1. [ ] 14 months
-1. [ ] 2.5 years
+2. [x] 7 months
+3. [ ] 14 months
+4. [ ] 2.5 years
 
 **AWS reaches customers in how many countries?**
 
 1. [ ] 86
-1. [ ] 137
-1. [ ] 182
-1. [x] 190
+2. [ ] 137
+3. [ ] 182
+4. [x] 190
 
 **What are the three authentication options offered by AWS?**
 
 1. [x] Username and password, certificate, access keys
-1. [ ] Access monitoring, password, locking systems
-1. [ ] Access keys, system monitoring, password
+2. [ ] Access monitoring, password, locking systems
+3. [ ] Access keys, system monitoring, password
 
 **Which is a recommended way to protect Access Keys?**
 
 1. [ ] Train developers how to better protect their access keys.
-1. [ ] Define IAM policies.
-1. [ ] Enable CloudWatch notifications.
-1. [x] All of the above.
+2. [ ] Define IAM policies.
+3. [ ] Enable CloudWatch notifications.
+4. [x] All of the above.
 
 **What is the practice of distributing responsibility among multiple people so that no one person has full control of everything?**
 
 1. [ ] Responsible distribution
-1. [x] Separation of duty
-1. [ ] Separation of responsibility
+2. [x] Separation of duty
+3. [ ] Separation of responsibility
 
 **Which of these Amazon's tools is for monitoring?**
 
-1. [x]  CloudWatch
-1. [ ]  CloudFront
-1. [ ]  CloudSearch
+1. [x] CloudWatch
+2. [ ] CloudFront
+3. [ ] CloudSearch
 
 **True or False: A root account credential can be used to log into your AWS account or buy a book on Amazon.com.**
 
-1. [x]  True
-1. [ ]  False
-
+1. [x] True
+2. [ ] False
 
 **What can happen if a hacker gets a hold of your account key?**
 
 1. [ ] Accounts can be hacked.
-1. [ ] Servers may be terminated.
-1. [ ] Data may be deleted.
-1. [x] All of the above.
+2. [ ] Servers may be terminated.
+3. [ ] Data may be deleted.
+4. [x] All of the above.
 
-** What is AWS Multi-Factor Authentication (MFA)?**
+** What is AWS Multi-Factor Authentication \(MFA\)?**
 
 1. [ ] Taking multiple factors into consideration when creating an AWS account.
-1. [ ] A process that authenticates accounts by approving the background factors of each user.
-1. [x] A practice that adds increased security to an account by using multiple forms of authentication.
+2. [ ] A process that authenticates accounts by approving the background factors of each user.
+3. [x] A practice that adds increased security to an account by using multiple forms of authentication.
 
 **Which storage service provides encryption services for both data in flight and data at rest?**
 
 1. [ ] DynamoDB
-1. [ ] Relational Database Service (RDS)
-1. [x] Simple Storage Service (S3)
-
+2. [ ] Relational Database Service \(RDS\)
+3. [x] Simple Storage Service \(S3\)
 
 
 
