@@ -19,7 +19,7 @@
   * [EBS](ebs.md)
   * [S3](s3.md)
   * [CloudFormation](cloudformation.md)
-  * IAM
+  * [IAM](iam.md)
   * [Lambda](lambda.md)
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
