@@ -16,7 +16,7 @@
   * RDS
   * [SNS](sns.md)
   * [VPC](vpc.md)
-  * EBS
+  * [EBS](ebs.md)
   * S3
   * CloudFormation
   * IAM
