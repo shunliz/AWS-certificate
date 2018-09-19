@@ -15,7 +15,7 @@
   * [EC2](ec2.md)
   * RDS
   * [SNS](sns.md)
-  * VPC
+  * [VPC](vpc.md)
   * EBS
   * S3
   * CloudFormation
