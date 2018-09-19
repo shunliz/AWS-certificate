@@ -17,7 +17,7 @@
   * [SNS](sns.md)
   * [VPC](vpc.md)
   * [EBS](ebs.md)
-  * S3
+  * [S3](s3.md)
   * CloudFormation
   * IAM
   * [Lambda](lambda.md)
