@@ -14,7 +14,7 @@
 * [AWS doc](aws-doc.md)
   * [EC2](ec2.md)
   * RDS
-  * SNS
+  * [SNS](sns.md)
   * VPC
   * EBS
   * S3
