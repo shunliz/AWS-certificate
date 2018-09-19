@@ -18,7 +18,7 @@
   * [VPC](vpc.md)
   * [EBS](ebs.md)
   * [S3](s3.md)
-  * CloudFormation
+  * [CloudFormation](cloudformation.md)
   * IAM
   * [Lambda](lambda.md)
   * [CloutTrail](clouttrail.md)
