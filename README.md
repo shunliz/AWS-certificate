@@ -16,15 +16,15 @@ AWS certificate preparation notes.
   * [Running Containerized Microservices on AWS](withe-papers/running-containerized-microservices-on-aws.md)
   * [Blue/Green Deployments on AWS](withe-papers/bluegreen-deployments-on-aws.md)
 * [AWS doc](aws-doc.md)
-  * EC2
+  * [EC2](ec2.md)
   * RDS
-  * SNS
-  * VPC
-  * EBS
-  * S3
-  * CloudFormation
-  * IAM
-  * Lambda
+  * [SNS](sns.md)
+  * [VPC](vpc.md)
+  * [EBS](ebs.md)
+  * [S3](s3.md)
+  * [CloudFormation](cloudformation.md)
+  * [IAM](iam.md)
+  * [Lambda](lambda.md)
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
   * bigdata-specialty-notes
@@ -42,8 +42,14 @@ AWS certificate preparation notes.
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
     * [AWS developer2](aws-developer2.md)
-    * [quiz3](quiz3.md)
     * [simplifysearch quiz](simplifysearch-quiz.md)
+    * [lead2pass questions1](lead2pass-questions.md)
+    * [lead2pass questions2](lead2pass-questions2.md)
+    * [lead2pass questions3](lead2pass-questions3.md)
+    * [lead2pass questions4](lead2pass-questions4.md)
+    * [lead2pass questions5](lead2pass-questions5.md)
+    * [lead2pass questions6](lead2pass-questions6.md)
+    * [aws netquiz-IAM](aws-netquiz-iam.md)
   * [AWS solution architect Quiz](aws-solution-architect-quiz.md)
     * [solution architect3](solution-architect3.md)
     * [solution architect2](solution-architect2.md)
