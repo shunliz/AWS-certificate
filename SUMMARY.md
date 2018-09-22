@@ -23,6 +23,7 @@
   * [Lambda](lambda.md)
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
+  * [cloudfront](cloudfront.md)
   * bigdata-specialty-notes
     * [DynamoDB](bigdata-specialty/dynamodb.md)
     * [AWS-data-pipeline](bigdata-specialty/aws_data_pipeline.md)
@@ -34,7 +35,6 @@
     * [AWS-redshift](bigdata-specialty/redshift.md)
     * [AWS-SQS](bigdata-specialty/sqs.md)
     * [AWS-visualization](bigdata-specialty/visualization.md)
-  * [cloudfront](cloudfront.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
