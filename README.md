@@ -6,8 +6,11 @@ AWS certificate preparation, notes of withe paper, documentation and FAQs, and s
 
 # [How To Contribute](contribute.md)
 
+# **Donate**
 
-Donate
+Thank you very much for your donation.
+
+![](/assets/mywebchat.png)
 
 # Summary
 
