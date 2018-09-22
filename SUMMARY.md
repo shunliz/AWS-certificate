@@ -25,7 +25,6 @@
   * [Glacier](glacier.md)
   * [cloudfront](cloudfront.md)
   * [ELB](elb.md)
-  * [DynaymoDB](dynaymodb.md)
   * [ElasticCache](elasticcache.md)
   * bigdata-specialty-notes
     * [DynamoDB](bigdata-specialty/dynamodb.md)
