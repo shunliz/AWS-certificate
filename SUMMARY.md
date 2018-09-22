@@ -34,6 +34,7 @@
     * [AWS-redshift](bigdata-specialty/redshift.md)
     * [AWS-SQS](bigdata-specialty/sqs.md)
     * [AWS-visualization](bigdata-specialty/visualization.md)
+  * [cloudfront](cloudfront.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
