@@ -24,6 +24,7 @@
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
   * [cloudfront](cloudfront.md)
+  * [ELB](elb.md)
   * bigdata-specialty-notes
     * [DynamoDB](bigdata-specialty/dynamodb.md)
     * [AWS-data-pipeline](bigdata-specialty/aws_data_pipeline.md)
