@@ -1,6 +1,13 @@
 # AWS-certificate
 
-AWS certificate preparation notes.
+AWS certificate preparation, notes of withe paper, documentation and FAQs, and some exam questions also.
+
+# **It can really save you dollars!!!**
+
+# [How To Contribute](contribute.md)
+
+
+Donate
 
 # Summary
 
