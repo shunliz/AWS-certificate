@@ -67,5 +67,6 @@
   * SNS
   * IAM
   * Devops
+  * DynamoDB
 * [References](references.md)
 
