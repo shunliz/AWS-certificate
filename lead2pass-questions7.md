@@ -154,5 +154,37 @@ D Depends on the file size
 
 ---
 
+**QUESTION 270**
+
+What is the maximum write throughput I can provision for a single DynamoDB table?
+
+A 1,000 write capacity units
+
+B 100,000 write capacity units
+
+C DynamoDB is designed to scale without limits, but if you go beyond 10,000 you have to contact AWS first.—
+
+D 10,000 write capacity units
+
+**Answer: D**
+
+---
+
+**QUESTION 271**
+
+Is Federated Storage Engine currently supported by Amazon RDS for MySQL?
+
+A Only for Oracle RDS instances
+
+B No
+
+C Yes
+
+D Only in VPC
+
+**Answer: B**
+
+---
+
 
 
