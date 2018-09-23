@@ -27,7 +27,7 @@ Thank you very much for your donation.
   * [Blue/Green Deployments on AWS](withe-papers/bluegreen-deployments-on-aws.md)
 * [AWS doc](aws-doc.md)
   * [EC2](ec2.md)
-  * RDS
+  * [RDS](rds.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)
   * [EBS](ebs.md)
@@ -37,17 +37,19 @@ Thank you very much for your donation.
   * [Lambda](lambda.md)
   * [CloutTrail](clouttrail.md)
   * [Glacier](glacier.md)
-  * bigdata-specialty-notes
-    * [DynamoDB](bigdata-specialty/dynamodb.md)
-    * [AWS-data-pipeline](bigdata-specialty/aws_data_pipeline.md)
-    * [Elastic-search](bigdata-specialty/elasticsearch.md)
-    * [AWS-EMR](bigdata-specialty/emr.md)
-    * [AWS-glacier](bigdata-specialty/glacier.md)
-    * [AWS-iot](bigdata-specialty/iot.md)
-    * [AWS-kinesis](bigdata-specialty/kinesis.md)
-    * [AWS-redshift](bigdata-specialty/redshift.md)
-    * [AWS-SQS](bigdata-specialty/sqs.md)
-    * [AWS-visualization](bigdata-specialty/visualization.md)
+  * [cloudfront](cloudfront.md)
+  * [ELB](elb.md)
+  * [ElasticCache](elasticcache.md)
+  * [DynamoDB](bigdata-specialty/dynamodb.md)
+  * [AWS-data-pipeline](bigdata-specialty/aws_data_pipeline.md)
+  * [Elastic-search](bigdata-specialty/elasticsearch.md)
+  * [AWS-EMR](bigdata-specialty/emr.md)
+  * [AWS-glacier](bigdata-specialty/glacier.md)
+  * [AWS-iot](bigdata-specialty/iot.md)
+  * [AWS-kinesis](bigdata-specialty/kinesis.md)
+  * [AWS-redshift](bigdata-specialty/redshift.md)
+  * [AWS-SQS](bigdata-specialty/sqs.md)
+  * [AWS-visualization](bigdata-specialty/visualization.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
@@ -59,12 +61,29 @@ Thank you very much for your donation.
     * [lead2pass questions4](lead2pass-questions4.md)
     * [lead2pass questions5](lead2pass-questions5.md)
     * [lead2pass questions6](lead2pass-questions6.md)
+    * [lead2pass questions7](lead2pass-questions7.md)
     * [aws netquiz-IAM](aws-netquiz-iam.md)
   * [AWS solution architect Quiz](aws-solution-architect-quiz.md)
     * [solution architect3](solution-architect3.md)
     * [solution architect2](solution-architect2.md)
     * [Solution Architect1](test1.md)
+* AWS FAQS
+  * EC2
+  * RDS
+  * ELB
+  * CloudFormation
+  * SQS
+  * S3
+  * ECS
+  * Lambda
+  * beanstalk
+  * EBS
+  * SNS
+  * IAM
+  * Devops
 * [References](references.md)
+
+
 
 
 
