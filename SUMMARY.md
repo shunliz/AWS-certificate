@@ -53,5 +53,19 @@
     * [solution architect3](solution-architect3.md)
     * [solution architect2](solution-architect2.md)
     * [Solution Architect1](test1.md)
+* AWS FAQS
+  * EC2
+  * RDS
+  * ELB
+  * CloudFormation
+  * SQS
+  * S3
+  * ECS
+  * Lambda
+  * beanstalk
+  * EBS
+  * SNS
+  * IAM
+  * Devops
 * [References](references.md)
 
