@@ -81,7 +81,7 @@ C. Use Amazon Simple Workflow \(SWF\) to manages assessments movement of data &m
 
 D. Use AWS data Pipeline to manage movement of data & meta-data and assessments use auto-scaling group of C3 with SR-IOV \(Single Root I/O virtualization\).
 
-**Answer: B** 
+**Answer: B**
 
 \(SR-IOV is a method of device virtualization that provides higher I/O performance and lower CPU utilization when compared to traditional virtualized network interfaces\)
 
@@ -122,7 +122,37 @@ D No
 
 ---
 
+**QUESTION 268**
 
+Out of the stripping options available for the EBS volumes, which one has the following disadvantage: ‘Doubles the amount of I/O required from the instance to EBS compared to RAID 0, because you’re mirroring all writes to a pair of volumes, limiting how much you can stripe.’ ?
+
+A Raid 0
+
+B RAID 1+0 \(RAID 10\)
+
+C Raid 1
+
+D Raid 2
+
+**Answer: B**
+
+---
+
+**QUESTION 269**
+
+Can Amazon S3 uploads resume on failure or do they need to restart?
+
+A Restart from beginning
+
+B You can resume them, if you flag the “resume on failure” option before uploading.
+
+C Resume on failure
+
+D Depends on the file size
+
+**Answer: A**
+
+---
 
 
 
