@@ -545,5 +545,99 @@ D. ElastiCache
 
 ---
 
+**QUESTION 293**
+
+Amazon S3 offers encryption services for which types of data?
+
+A. data in flight
+
+B. data at relax
+
+C. data at rest
+
+D. data in motion
+
+E. a and c
+
+F. b and d
+
+**Answer: E**
+
+ Amazon offers encryption services for data at flight and data at rest.
+
+---
+
+**QUESTION 294**
+
+Amazon S3 has how many pricing components?
+
+A. 4
+
+B. 5
+
+C. 3
+
+D. 2
+
+**Answer: C**
+
+ Amazon S3 offers three pricing options. Storage \(per GB per month\), data transfer in or out \(per GB per month\), and requests \(per x thousand requests per month\).
+
+---
+
+**QUESTION 295**
+
+What does RRS stand for when referring to the storage option in Amazon S3 that offers a lower level of durability at a lower storage cost?
+
+A. Reduced Reaction Storage
+
+B. Redundant Research Storage
+
+C. Regulatory Resources Storage
+
+D. Reduced Redundancy Storage
+
+**Answer:D **
+
+\(Non-critical data, such as transcoded media or image thumbnails, can be easily reproduced using the Reduced Redundancy Storage option. Objects stored using the RRS option have less redundancy than objects stored using standard Amazon S3 storage.
+
+---
+
+**QUESTION 296**
+
+Object storage systems require less**\_**than file systems to store and access files.
+
+A. Big data
+
+B. Metadata
+
+C. Master data
+
+D. Exif data
+
+**Answer: B**
+
+ \(Object storage systems are typically more efficient because they reduce the overhead of managing file metadata by storing the metadata with the object. This means object storage can be scaled out almost endlessly by adding nodes.\)
+
+---
+
+**QUESTION 297**
+
+Why is a bucket policy necessary?
+
+A. To allow bucket access to multiple users.
+
+B. To grant or deny accounts to read and upload files in your bucket.
+
+C. To approve or deny users the option to add or remove buckets.
+
+D. All of the above
+
+**Answer: B **
+
+Users need a bucket policy to grant or deny accounts to read and upload files in your bucket.
+
+---
+
 
 
