@@ -288,5 +288,37 @@ D. 6
 
 ---
 
+**QUESTION 278**
+
+Your customer wishes to deploy an enterprise application to AWS which will consist of several web servers, several application servers and a small \(50GB\) Oracle database information is stored, both in the database and the file systems of the various servers. The backup system must support database recovery whole server and whole disk restores, and individual file restores with a recovery time of no more than two hours They have chosen to use RDS Oracle as the database Which backup architecture will meet these requirements?
+
+A. Backup RDS using automated daily DB backups Backup the EC2 instances using AMIs and supplement with file-level backup to S3 using traditional enterprise backup software to provide file level restore
+
+B. Backup RDS using a Multi-AZ Deployment Backup the EC2 instances using Amis, and supplement by copying file system data to S3 to provide file level restore.
+
+C. Backup RDS using automated daily DB backups Backup the EC2 instances using EBS snapshots and supplement with file-level backups to Amazon Glacier using traditional enterprise backup software to provide file level restore
+
+D. Backup RDS database to S3 using Oracle RMAN Backup the EC2 instances using Amis, and supplement with EBS snapshots for individual volume restore.
+
+**Answer: B**
+
+---
+
+**QUESTION 279**
+
+You have a content management system running on an Amazon EC2 instance that is approaching 100% CPU utilization. Which option will reduce load on the Amazon EC2 instance?
+
+A. Create a load balancer, and register the Amazon EC2 instance with it
+
+B. Create a CloudFront distribution, and configure the Amazon EC2 instance as the origin
+
+C. Create an Auto Scaling group from the instance using the CreateAutoScalingGroup action
+
+D. Create a launch configuration from the instance using the CreateLaunchConfiguration action
+
+**Answer： A**
+
+---
+
 
 
