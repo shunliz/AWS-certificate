@@ -15,7 +15,7 @@
 * Shared access to your AWS account
   * Grant other people permission to administer and use resources in your AWS account without having to share your password or access key.
 * Granular permissions
-  * Each user can be granted with different set granular permissions as required to perform their job
+  * Each user can be granted with different set granular permissions as required to perform their job.
 * Secure access to AWS resources for applications that run on EC2
   * IAM can help provide applications running on EC2 instance temporary credentials that they need in order to access other AWS resources
 * Identity federation
