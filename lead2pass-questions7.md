@@ -563,7 +563,7 @@ F. b and d
 
 **Answer: E**
 
- Amazon offers encryption services for data at flight and data at rest.
+Amazon offers encryption services for data at flight and data at rest.
 
 ---
 
@@ -581,7 +581,7 @@ D. 2
 
 **Answer: C**
 
- Amazon S3 offers three pricing options. Storage \(per GB per month\), data transfer in or out \(per GB per month\), and requests \(per x thousand requests per month\).
+Amazon S3 offers three pricing options. Storage \(per GB per month\), data transfer in or out \(per GB per month\), and requests \(per x thousand requests per month\).
 
 ---
 
@@ -617,7 +617,7 @@ D. Exif data
 
 **Answer: B**
 
- \(Object storage systems are typically more efficient because they reduce the overhead of managing file metadata by storing the metadata with the object. This means object storage can be scaled out almost endlessly by adding nodes.\)
+\(Object storage systems are typically more efficient because they reduce the overhead of managing file metadata by storing the metadata with the object. This means object storage can be scaled out almost endlessly by adding nodes.\)
 
 ---
 
@@ -636,6 +636,26 @@ D. All of the above
 **Answer: B **
 
 Users need a bucket policy to grant or deny accounts to read and upload files in your bucket.
+
+---
+
+**QUESTION 298**
+
+You would like to create a mirror image of your production environment in another region for disaster recovery purposes. Which of the following AWS resources do not need to be recreated in the second region? \(Choose 2 answers\)
+
+A. Route 53 Record Sets
+
+B. IAM Roles
+
+C. Elastic IP Addresses \(EIP\)
+
+D. EC2 Key Pairs
+
+E. Launch configurations
+
+F. Security Groups
+
+**Answer : A,C**
 
 ---
 
