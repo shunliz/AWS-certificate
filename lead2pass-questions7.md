@@ -659,5 +659,237 @@ F. Security Groups
 
 ---
 
+**QUESTION 299**
+
+Your company has recently extended its datacenter into a VPC on AWS to add burst computing capacity as needed Members of your Network Operations Center need to be able to go to the AWS Management Console and administer Amazon EC2 instances as necessary You don’t want to create new IAM users for each NOC member and make those users sign in again to the AWS Management Console Which option below will meet the needs for your NOC members?
+
+A. Use OAuth 2 0 to retrieve temporary AWS security credentials to enable your NOC members to sign in to the AVVS Management Console.
+
+B. Use web Identity Federation to retrieve AWS temporary security credentials to enable your NOC members to sign in to the AWS Management Console.
+
+C. Use your on-premises SAML 2 O-compliant identityprovider \(IDP\) to grant the NOC members federated access to the AWS Management Console via the AWS single sign-on \(SSO\) endpoint.
+
+D. Use your on-premises SAML2.0-compliam identity provider \(IDP\) to retrieve temporary security credentials to enable NOC members to sign in to the AWS Management Console.
+
+**Answer : D**
+
+---
+
+**QUESTION 300**
+
+You are implementing AWS Direct Connect. You intend to use AWS public service end points such as Amazon S3, across the AWS Direct Connect link. You want other Internet traffic to use your existing link to an Internet Service Provider. What is the correct way to configure AWS Direct connect for access to services such as Amazon S3?
+
+A. Configure a public Interface on your AWS Direct Connect link Configure a static route via your AWS Direct Connect link that points to Amazon S3 Advertise a default route to AWS using BGP.
+
+B. Create a private interface on your AWS Direct Connect link. Configure a static route via your AWS Direct connect link that points to Amazon S3 Configure specific routes to your network in your VPC.
+
+C. Create a public interface on your AWS Direct Connect link Redistribute BGP routes into your existing routing infrastructure advertise specific routes for your network to AWS.
+
+D. Create a private interface on your AWS Direct connect link. Redistribute BGP routes into your existing routing infrastructure and advertise a default route to AWS.
+
+**Answer : C**
+
+---
+
+**QUESTION 301**
+
+You have deployed a web application targeting a global audience across multiple AWS Regions under the domain name.example.com. You decide to use Route53 Latency-Based Routing to serve web requests to users from the region closest to the user. To provide business continuity in the event of server downtime you configure weighted record sets associated with two web servers in separate Availability Zones per region. Dunning a DR test you notice that when you disable all web servers in one of the regions Route53 does not automatically direct all users to the other region. What could be happening? \(Choose 2 answers\)
+
+A. Latency resource record sets cannot be used in combination with weighted resource record sets.
+
+B. You did not setup an http health check tor one or more of the weighted resource record sets associated with me disabled web servers.
+
+C. The value of the weight associated with the latency alias resource record set in the region with the disabled servers is higher than the weight for the other region.
+
+D. One of the two working web servers in the other region did not pass its HTTP health check.
+
+E. You did not set “Evaluate Target Health” to “Yes” on the latency alias resource record set associated with example com in the region where you disabled the servers.
+
+**Answer : B,D**
+
+---
+
+**QUESTION 302**
+
+Your company produces customer commissioned one-of-a-kind skiing helmets combining nigh fashion with custom technical enhancements Customers can show off their Individuality on the ski slopes and have access to head-up-displays. GPS rear-view cams and any other technical innovation they wish to embed in the helmet.The current manufacturing process is data rich and complex including assessments to ensure that the custom electronics and materials used to assemble the helmets are to the highest standards Assessments are amixture of human and automated assessments you need to add a new set of assessment to model the failure modes of the custom electronics using GPUs with CUDA. across a cluster of servers with low latency networking.What architecture would allow you to automate the existing process using a hybrid approach and ensure that the architecture can support the evolution of processes over time?
+
+A. Use AWS Data Pipeline to manage movement of data &meta-data and assessments Use an auto-scaling group of G2 instances in a placement group.
+
+B. Use Amazon Simple Workflow \(SWF\) 10 manages assessments, movement of data &meta-data Use an auto-scaling group of G2 instances in a placement group.
+
+C. Use Amazon Simple Workflow \(SWF\) lo manages assessments movement of data &meta-data Use an auto-scaling group of C3 instances with SR-IOV \(Single Root I/O Virtualization\).
+
+D. Use AWS data Pipeline to manage movement of data & meta-data and assessments use auto-scaling group of C3 with SR-IOV \(Single Root I/O virtualization\).
+
+**Answer : A**
+
+---
+
+**QUESTION 303**
+
+You require the ability to analyze a large amount of data, which is stored on Amazon S3 using Amazon Elastic Map Reduce. You are using the cc2 8x large Instance type, whose CPUs are mostly idle during processing. Which of the below would be the most cost efficient way to reduce the runtime of the job?
+
+A. Create more smaller flies on Amazon S3.
+
+B.Add additional cc2 8x large instances by introducing a task group.
+
+C. Use smaller instances that have higher aggregate I/O performance.
+
+D. Create fewer, larger files on Amazon S3.
+
+**Answer : C**
+
+---
+
+**QUESTION 304**
+
+You are designing a photo sharing mobile app the application will store all pictures in a single Amazon S3 bucket.Users will upload pictures from their mobile device directly to Amazon S3 and will be able to view and download their own pictures directly from Amazon S3.You want to configure security to handle potentially millions of users in the most secure manner possible. What should your server-side application do when a new user registers on the photo-sharing mobile application?
+
+A. Create a set of long-term credentials using AWS Security Token Service with appropriate permissions Store these credentials in the mobile app and use them to access Amazon S3.
+
+B. Record the user’s Information in Amazon RDS and create a role in IAM with appropriate permissions. When the user uses their mobile app create temporary credentials using the AWS Security Token Service ‘AssumeRole’ function Store these credentials in the mobile app’s memory and use them to access Amazon S3 Generate new credentials the next time the user runs the mobile app.
+
+C. Record the user’s Information In Amazon DynamoDB. When the user uses their mobile app create temporary credentials using AWS Security Token Service with appropriate permissions Store these credentials in the mobile app’s memory and use them to access Amazon S3 Generate new credentials the next time the user runs the mobile app.
+
+D. Create IAM user. Assign appropriate permissions to the IAM user Generate an access key and secret key for the IAM user, store them in the mobile app and use these credentials to access Amazon S3.
+
+E.Create an IAM user. Update the bucket policy with appropriate permissions for the IAM user Generate an access Key and secret Key for the IAM user, store them In the mobile app and use these credentials to access Amazon S3.
+
+**Answer : B**
+
+---
+
+**QUESTION 305**
+
+A customer has a 10 GB AWS Direct Connect connection to an AWS region where they have a web application hosted on Amazon Elastic Computer Cloud \(EC2\). The application has dependencies on an on-premises mainframe database that uses a BASE \(Basic Available. Sort stale Eventual consistency\) rather than an ACID \(Atomicity. Consistency isolation. Durability\) consistency model. The application is exhibiting undesirable behavior because the database is not able to handle the volume of writes. How can you reduce the load on your on-premises database resources in the most cost-effective way?
+
+A. Use an Amazon Elastic Map Reduce \(EMR\) S3DistCp as a synchronization mechanism between the on-premises database and a Hadoop cluster on AWS.
+
+B. Modify the application to write to an Amazon SQS queue and develop a worker process to flush the queue to the on-premises database.
+
+C. Modify the application to use DynamoDB to feed an EMR cluster which uses a map function to write to the on-premises database.
+
+D. Provision an RDS read-replica database on AWS to handle the writes and synchronize the two databases using Data Pipeline.
+
+**Answer : A**
+
+---
+
+**QUESTION 306**
+
+You are the new IT architect in a company that operates a mobile sleep tracking application When activated at night, the mobile app is sending collected data points of 1 kilobyte every5 minutes to your backend The backend takes care of authenticating the user and writing the data points into an Amazon DynamoDB table. Every morning, you scan the table to extract and aggregate last night’s data on a per user basis, and store the results in Amazon S3.Users are notified via Amazon SMS mobile push notifications that new data is available, which is parsed and visualized by \(The mobile app Currently you have around 100k users who are mostly based out of North America. You have been tasked to optimize the architecture of the backend system to lower cost what would you recommend? \(Choose 2 answers\)
+
+A. Create a new Amazon DynamoDB \(able each day and drop the one for the previous day after its data is on Amazon S3.
+
+B. Have the mobile app access Amazon DynamoDB directly instead of JSON files stored on Amazon S3.
+
+C. Introduce an Amazon SQS queue to buffer writes to the Amazon DynamoDB table and reduce provisioned write throughput.
+
+D. Introduce Amazon Elasticache lo cache reads from the Amazon DynamoDB table and reduce provisioned read throughput.
+
+E. Write data directly into an Amazon Redshift cluster replacing both Amazon DynamoDB and Amazon S3.
+
+**Answer : B,D**
+
+---
+
+**QUESTION 307**
+
+Your company is getting ready to do a major public announcement of a social media site on AWS. The website is running on EC2 instances deployed across multiple Availability Zones with a Multi-AZ RDS MySQL Extra Large DB Instance. The site performs a high number of small reads and writes per second and relies on an eventual consistency model. After comprehensive tests you discover that there is read contention on RDS MySQL. Which are the best approaches to meet these requirements? \(Choose 2 answers\)
+
+A. Deploy ElasticCache in-memory cache running in each availability zone
+
+B. Implement sharding to distribute load to multiple RDS MySQL instances
+
+C. Increase the RDS MySQL Instance size and Implement provisioned IOPS
+
+D. Add an RDS MySQL read replica in each availability zone
+
+Answer : A,C
+
+---
+
+**QUESTION 308**
+
+You are tasked with moving a legacy application from a virtual machine running Inside your datacenter to an Amazon VPC Unfortunately this app requires access to a number of on-premises services and no one who configured the app still works for your company. Even worse there’s no documentation for it. What will allow the application running inside the VPC to reach back and access its internal dependencies without being reconfigured? \(Choose 3 answers\)
+
+A. An AWS Direct Connect link between the VPC and the network housing the internal services.
+
+B. AnInternet Gateway to allow a VPN connection.
+
+C. An Elastic IP address on the VPC instance
+
+D. An IP address space that does not conflict with the one on-premises
+
+E. Entries in Amazon Route 53 that allow the Instance to resolve its dependencies’ IP addresses
+
+F. A VM Import of the current virtual machine
+
+**Answer : A,C,F**
+
+---
+
+**QUESTION 309**
+
+Your company currently has a 2-tier web application running in an on-premises data center. You have experienced several infrastructure failures in the past two months resulting in significant financial losses. Your CIO is strongly agreeing to move the application to AWS. While working on achieving buy-infrom the other company executives, he asks you to develop a disaster recovery plan to help improve Business continuity in the short term. He specifies a target Recovery Time Objective \(RTO\) of 4 hours and a Recovery Point Objective \(RPO\) of 1 hour or less.He also asks you to implement the solution within 2 weeks. Your database is 200GB in size and you have a 20Mbps Internet connection. How would you do this while minimizing costs?
+
+A. Create an EBS backed private AMI which includes a fresh install or your application. Setup a script in your data center to backup the local database every 1 hour and to encrypt and copy the resulting file to an S3 bucket using multi-part upload.
+
+B. Install your application on a compute-optimized EC2 instance capable of supporting the application’s average load synchronously replicate transactions from your on-premises database to a database instance in AWS across a secure Direct Connect connection.
+
+C. Deploy your application on EC2 instances within an Auto Scaling group across multiple availability zones asynchronously replicate transactions from your on-premises database to a database instance in AWS across a secure VPN connection.
+
+D. Create an EBS backed private AMI that includes a fresh install of your application. Develop a Cloud Formation template which includes your Mil and the required EC2. Auto-Scaling and ELB resources to support deploying the application across Multiple-Ability Zones. Asynchronously replicate transactions from your on-premises database to a database instance in AWS across a secure VPN connection.
+
+**Answer : A**
+
+---
+
+**QUESTION 310**
+
+Refer to the architecture diagram above of a batch processing solution using Simple Queue Service \(SOS\) to set up a message queue between EC2 instances which are used as batch processors Cloud Watch monitors the number of Job requests \(queued messages\) and an Auto Scaling group adds or deletes batch servers automatically based on parameters set in Cloud Watch alarms. You can use this architecture to implement which of the following features in a cost effective and efficient manner?
+
+A. Reduce the overall lime for executing jobs through parallel processing by allowing a busy EC2 instance that receives a message to pass it to the next instance in a daisy-chain setup.
+
+B. Implement fault tolerance against EC2 instance failure since messages would remain in SQS and worn can continue with recovery of EC2 instances implement fault tolerance against SQS failure by backing up messages to S3.
+
+C. Implement message passing between EC2 instances within a batch by exchanging messages through SOS. D. Coordinate number of EC2 instances with number of job requests automatically thus Improving cost effectiveness.
+
+D. Handle high priority jobs before lower priority jobs by assigning a priority metadata field to SQS messages.
+
+**Answer : B**
+
+---
+
+**QUESTION 311**
+
+A company is building a voting system for a popular TV show, viewers win watch the performances then visit the show’s website to vote for their favorite performer. It is expected that in a short period of time after the show has finished the site will receive millions of visitors. The visitors will first login to the site using their Amazon.com credentials and then submit their vote. After the voting is completed the page will display the vote totals. The company needs to build the site such that can handlethe rapid influx of traffic while maintaining good performance but also wants to keep costs to a minimum. Which of the design patterns below should they use?
+
+A. Use CloudFront and an Elastic Load balancer in front of an auto-scaled set of web servers, the web servers will first can the Login With Amazon service to authenticate the user then process the users vote and store the result into a multi-AZ Relational Database Service instance.
+
+B. Use CloudFront and the static website hosting feature of S3 with the Javascript SDK to call the Login With Amazon service to authenticate the user, use IAM Roles to gain permissions to a DynamoDB table to store the users vote.
+
+C. Use CloudFront and an Elastic Load Balancer in front of an auto-scaled set of web servers, the web servers will first call the Login with Amazon service to authenticate the user, the web servers will process the users vote and store the result into a DynamoDB table using IAM Roles for EC2 instances to gain permissions to the DynamoDB table.
+
+D. Use CloudFront and an Elastic Load Balancer in front of an auto-scaled set of web servers, the web servers will first call the Login. With Amazon service to authenticate the user, the web servers win process the users vote and store the result into an SQS queue using IAM Roles for EC2 Instances to gain permissions to the SQS queue. A set of application servers will then retrieve the items from the queue and store the result into a DynamoDB table.
+
+**Answer : D**
+
+---
+
+**QUESTION 312**
+
+You have a periodic Image analysis application that gets some files In Input analyzes them and tor each file writes some data in output to a ten file the number of files in input per day is high and concentrated in a few hours of the day. Currently you have a server on EC2 with a large EBS volume that hosts the input data and the results it takes almost 20 hours per day to complete the process What services could be used to reduce the elaboration time and improve the availability of the solution?
+
+A. S3 to store I/O files. SQS to distribute elaboration commands to a group of hosts working in parallel. Auto scaling to dynamically size the group of hosts depending on the length of the SQS queue
+
+B. EBS with Provisioned IOPS \(PIOPS\) to store I/O files. SNS to distribute elaboration commands to agroup of hosts working in parallel Auto Scaling to dynamically size the group of hosts depending on the number of SNS notifications
+
+C. S3 to store I/O files, SNS to distribute evaporation commands to a group of hosts working in parallel. Auto scaling to dynamically size the group of hosts depending on the number of SNS notifications
+
+D. EBS with Provisioned IOPS \(PIOPS\) to store I/O files SOS to distribute elaboration commands to a group of hosts working in parallel Auto Scaling to dynamically size the group ot hosts depending on the length of the SQS queue.
+
+**Answer : C**
+
 
 
