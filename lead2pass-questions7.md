@@ -320,5 +320,88 @@ D. Create a launch configuration from the instance using the CreateLaunchConfigu
 
 ---
 
+**QUESTION 280**
+
+Company B is launching a new game app for mobile devices. Users will log into the game using their existing social media account to streamline data capture. Company B would like to directly save player data and scoring information from the mobile app to a DynamoDS table named Score Data When a user saves their game the progress data will be stored to the Game state S3 bucket. what is the best approach for storing data to DynamoDB and S3?
+
+A. Use an EC2 Instance that is launched with an EC2 role providing access to the Score Data DynamoDB table and the GameState S3 bucket that communicates with the mobile app via web services.
+
+B. Use temporary security credentials that assume a role providing access to the Score Data DynamoDB table and the Game State S3 bucket using web identity federation.
+
+C. Use Login with Amazon allowing users to sign in with an Amazon account providing the mobile app with access to the Score Data DynamoDB table and the Game State S3 bucket.
+
+D. Use an 1AM user with access credentials assigned a role providing access to the Score Data DynamoDB table and the Game State S3 bucket for distribution with the mobile app
+
+**Answer: B**
+
+---
+
+**QUESTION 281**
+
+You’re creating a forum DynamoDB database for hosting forums. Your “thread” table contains the forum name and each “forum name” can have one or more “subjects”. What primary key type would you give the thread table in order to allow more than one subject to be tied to the forum primary key name?
+
+A. Hash
+
+B. Primary and range
+
+C. Range and Hash
+
+D. Hash and Range
+
+**Answer: D**  
+ref：[https://forums.aws.amazon.com/thread.jspa?messageID=331668](https://forums.aws.amazon.com/thread.jspa?messageID=331668)
+
+---
+
+**QUESTION 282**
+
+In the basic monitoring package for EC2, Amazon CloudWatch provides the following metrics:
+
+A. web server visible metrics such as number failed transaction requests
+
+B. operating system visible metrics such as memory utilization
+
+C. database visible metrics such as number of connections
+
+D. hypervisor visible metrics such as CPU utilization
+
+**Answer: D.**
+
+---
+
+**QUESTION 283**
+
+ Which is an operational process performed by AWS for data security?
+
+A. AES-256 encryption of data stored on any shared storage device
+
+B. Decommissioning of storage devices using industry-standard practices
+
+C. Background virus scans of EBS volumes and EBS snapshots
+
+D. Replication of data across multiple AWS Regions 
+
+E. Secure wiping of EBS data when an EBS volume is un-mounted
+
+**Answer: B.**
+
+---
+
+**QUESTION 284**
+
+Select the correct set of options. These are the initial settings for the default security group:
+
+A. Allow no inbound traffic, Allow all outbound traffic and Allow instances associated with this security group to talk to each other.
+
+B. Allow all inbound traffic, Allow no outbound traffic and Allow instances associated with this security group to talk to each other.
+
+C. Allow no inbound traffic, Allow all outbound traffic and Does NOT allow instances associated with this security group to talk to each other.
+
+D. Allow all inbound traffic, Allow all outbound traffic and Does NOT allow instances associated with this security group to talk to each other.
+
+**Answer: A**
+
+---
+
 
 
