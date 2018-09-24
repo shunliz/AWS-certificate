@@ -53,6 +53,7 @@
     * [Solution Architect1](test1.md)
     * [solution architect2](solution-architect2.md)
     * [solution architect3](solution-architect3.md)
+    * [solution architect4](solution-architect4.md)
 * AWS FAQS
   * EC2
   * RDS
