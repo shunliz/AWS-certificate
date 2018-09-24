@@ -272,5 +272,21 @@ E. $0.06
 
 ---
 
+**QUESTION 277**
+
+You have been tasked with creating a VPC network topology for your company. The VPC network must support both Internet-facing applications and internally-facing applications accessed only over VPN. Both Internet-facing and internally-facing applications must be able to leverage at least three AZs for high availability. At a minimum, how many subnets must you create within your VPC to accommodate these requirements?
+
+A. 2
+
+B. 3
+
+C. 4
+
+D. 6
+
+**Answer: D**
+
+---
+
 
 
