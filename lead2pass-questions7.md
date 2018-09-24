@@ -371,7 +371,7 @@ D. hypervisor visible metrics such as CPU utilization
 
 **QUESTION 283**
 
- Which is an operational process performed by AWS for data security?
+Which is an operational process performed by AWS for data security?
 
 A. AES-256 encryption of data stored on any shared storage device
 
@@ -379,7 +379,7 @@ B. Decommissioning of storage devices using industry-standard practices
 
 C. Background virus scans of EBS volumes and EBS snapshots
 
-D. Replication of data across multiple AWS Regions 
+D. Replication of data across multiple AWS Regions
 
 E. Secure wiping of EBS data when an EBS volume is un-mounted
 
@@ -400,6 +400,148 @@ C. Allow no inbound traffic, Allow all outbound traffic and Does NOT allow insta
 D. Allow all inbound traffic, Allow all outbound traffic and Does NOT allow instances associated with this security group to talk to each other.
 
 **Answer: A**
+
+---
+
+**QUESTION 285**
+
+An IAM user is trying to perform an action on an object belonging to some other root account’s bucket. Which of the below mentioned options will AWS S3 not verify?
+
+A. Permission provided by the parent of the IAM user on the bucket
+
+B. The object owner has provided access to the IAM user
+
+C. Permission provided by the parent of the IAM user
+
+D. Permission provided by the bucket owner to the IAM user
+
+**Answer: C **
+
+If the IAM user is trying to perform some action on the object belonging to another AWS user’s bucket, S3 will verify whether the owner of the IAM user has given sufficient permission to him. It also verifies the policy for the bucket as well as the policy defined by the object owner.
+
+---
+
+**QUESTION 286**
+
+Placement Groups: enables applications to participate in a low-latency, 10 Gbps network. Which of below statements is false.
+
+A. Not all of the instance types that can be launched into a placement group.
+
+B. A placement group can’t span multiple Availability Zones.
+
+C. You can move an existing instance into a placement group by specify parameter of placement group.
+
+D. A placement group can span peered VPCs.
+
+**Answer: D**
+
+---
+
+**QUESTION 287**
+
+What about below is false for AWS SLA
+
+A. S3 availability is guarantee to 99.95%.
+
+B. EBS availability is guarantee to 99.95%.
+
+C. EC2 availability is guarantee to 99.95%.
+
+D. RDS multi-AZ is guarantee to 99.95%.
+
+**Answer: A**
+
+S3 availability is 99.9%
+
+---
+
+**QUESTION 288**
+
+About the charge of Elastic IP Address, which of the following is true?
+
+A. You can have one Elastic IP \(EIP\) address associated with a running instance at no charge.
+
+B. You are charged for each Elastic IP addressed.
+
+C. You can have 5 Elastic IP addresses per region with no charge.
+
+D. Elastic IP addresses can always be used with no charge.
+
+**Answer: B **
+
+\[ref\]\([http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)\)
+
+---
+
+**QUESTION 289**
+
+Which of the below mentioned steps will not be performed while creating the AMI of instance stored-backend?
+
+A. Define the AMI launch permissions.
+
+B. Upload the bundled volume.
+
+C. Register the AMI.
+
+D. Bundle the volume.
+
+**Answer：A**
+
+---
+
+**QUESTION 290**
+
+The user just started an instance at 3 PM. Between 3 PM to 5 PM, he stopped and started the instance twice. During the same period, he has run the linux reboot command by ssh once and triggered reboot from AWS console once. For how many instance hours will AWS charge this user?
+
+A. 4
+
+B. 3
+
+C. 2
+
+D. 5
+
+**Answer: B**
+
+[ref](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html)  
+Each time you start a stopped instance we charge a full instance hour, even if you make this transition multiple times within a single hour.  
+Rebooting an instance doesn’t start a new instance billing hour, unlike stopping and restarting your instance.
+
+---
+
+**QUESTION 291**
+
+Amazon Redshift is what type of data warehouse service?
+
+A. Gigabyte-scale
+
+B. Exobyte-scale
+
+C. Petabyte-scale
+
+D. Terabyte-scale
+
+**Answer: C **
+
+Amazon Redshift is a fully-managed, petabyte-scale data warehouse service.
+
+---
+
+**QUESTION 292**
+
+Which AWS storage service assists S3 with transferring data?
+
+A. CloudFront
+
+B. AWS Import/Export
+
+C. DynamoDB
+
+D. ElastiCache
+
+**Answer: b **
+
+\( AWS Import/Export accelerates moving large amounts of data into and out of AWS using portable storage devices. AWS transfers your data directly onto and off of storage devices by using Amazon’s internal network and avoiding the Internet.\)
 
 ---
 
