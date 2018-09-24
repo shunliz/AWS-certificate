@@ -186,5 +186,91 @@ D Only in VPC
 
 ---
 
+**QUESTION 272**
+
+You must increase storage size in increments of at least**\_**%
+
+A 40
+
+B 30
+
+C 10
+
+D 20
+
+**Answer: C**
+
+---
+
+**QUESTION 273**
+
+You have an application running in us-west-2 that requires six Amazon Elastic Compute Cloud \(EC2\) instances running at all times. With three Availability Zones available in that region \(us-west-2a, us-west-2b, and us-west-2c\), which of the following deployments provides 100 percent fault tolerance if any single Availability Zone in us-west-2 becomes unavailable?Choose 2 answers
+
+A. Us-west-2a with two EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances
+
+B. Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with no EC2 instances
+
+C. Us-west-2a with four EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances
+
+D. Us-west-2a with six EC2 instances, us-west-2b with six EC2 instances, and us-west-2c with no EC2 instances
+
+E. Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances
+
+**Answer： D, E**
+
+---
+
+**QUESTION 274**
+
+You have a business-critical two-tier web app currently deployed in two Availability Zones in a single region, using Elastic Load Balancing and Auto Scaling. The app depends on synchronous replication \(very low latency connectivity\) at the database layer. The application needs to remain fully available even if one application Availability Zone goes off-line, and Auto Scaling cannot launch new instances in the remaining Availability Zones. How can the current architecture be enhanced to ensure this?
+
+A. Deploy in three Availability Zones, with Auto Scaling minimum set to handle 33 percent peak load per zone.
+
+B. Deploy in three Availability Zones, with Auto Scaling minimum set to handle 50 percent peak load per zone.
+
+C. Deploy in two regions using Weighted Round Robin \(WRR\), with Auto Scaling minimums set for 50 percent peak load per Region.
+
+D. Deploy in two regions using Weighted Round Robin \(WRR\), with Auto Scaling minimums set for 100 percent peak load per region.
+
+**Answer: B**
+
+---
+
+**QUESTION 275**
+
+Amazon Glacier is designed for:Choose 2 answers
+
+A. Frequently accessed data
+
+B. Active database storage
+
+C. Infrequently accessed data
+
+D. Cached session data
+
+E. Data archives
+
+**Answer： C, E**
+
+---
+
+**QUESTION 276**
+
+You receive a Spot Instance at a bid of0.03/hr.After30minutes,theSpotPriceincreasesto0.03/hr.After30minutes,theSpotPriceincreasesto0.05/hr and your Spot Instance is terminated by AWS. What was the total EC2 compute cost of running your Spot Instance?
+
+A. $0.00
+
+B. $0.02
+
+C. $0.03
+
+D. $0.05
+
+E. $0.06
+
+**Answer: A**
+
+---
+
 
 
