@@ -16,3 +16,17 @@ Amazon EC2 instances are grouped into 5 families: General Purpose, Compute Optim
 
 
 
+ 创建EC2实例的时候，我们可以勾选“自动分配Public IP”（原话是英文的哦~），也可以不勾选，然后手动关联Elastic IP\(EIP\),那么着二者有什么区别呢？
+
+ 从亚马逊在线技术支持那里了解到：
+
+ （1）EIP是属于某个特定的账号，可以关联到账号的任意实例上，也可卸载下来重新关联到其他实例上，而且实例被删除之后，EIP依然单独存在。\(分配EIP时注意VPC和EC2的EIP的区别，不同类型的EIP时能关联到自己类型的实例上，即VPC中的EIP只能用于VPC中的实例，Classic EC2只能关联非VPC的EIP）
+
+ （2）而普通的Public IP是属于具体的某台实例，不能卸载重新关联到别的实例，实例创建时，如果勾选自动分配Public IP，则会随实例一起被创建，实例删除时，跟着被删除，无法被重复利用和保留；
+
+ （3）还有一个非常重要的特性：Public IP在实例关机后再开机，可能会改变，重启不影响（这跟Classic EC2实例的Public DNS一样，可能会改变）。而EIP怎么都不会变。
+
+ （4）如果实例创建之初，有PublicIP,然后再关联了ElasticIP的话，二者都会变成ElasticIP的样子（被覆盖），当EIP被解除关联之后，PublicIP才会被显露，但此时会重新分配PublicIP，所以PublicIP会变。
+
+ 所以，如果在EC2实例的生命周期内，有停机再开机的可能，还是使用EIP比较保险
+
