@@ -28,13 +28,13 @@ Amazon EC2 instances are grouped into 5 families: General Purpose, Compute Optim
 
 所以，如果在EC2实例的生命周期内，有停机再开机的可能，还是使用EIP比较保险
 
-
-
 **Q: How isolated are Availability Zones from one another?**
 
 Each Availability Zone runs on its own physically distinct, independent infrastructure, and is engineered to be highly reliable. Common points of failures like generators and cooling equipment are not shared across Availability Zones. Additionally, they are physically separate, such that even extremely uncommon disasters such as fires, tornados or flooding would only affect a single Availability Zone.
 
 
 
+**Q: How can I make sure that I am in the same Availability Zone as another developer?**
 
+We do not currently support the ability to coordinate launches into the same Availability Zone across AWS developer accounts. One Availability Zone name \(for example, us-east-1a\) in two AWS customer accounts may relate to different physical Availability Zones.
 
