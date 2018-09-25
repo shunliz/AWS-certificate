@@ -14,19 +14,27 @@ Or, if you want, you don’t have to set up your own AMI from scratch. You can c
 
 Amazon EC2 instances are grouped into 5 families: General Purpose, Compute Optimized, Memory Optimized, Storage Optimized and Accelerated Computing instances. General Purpose Instances have memory to CPU ratios suitable for most general purpose applications and come with fixed performance \(M5, M4\) or burstable performance \(T2\); Compute Optimized instances \(C5, C4\) have proportionally more CPU resources than memory \(RAM\) and are well suited for scale out compute-intensive applications and High Performance Computing \(HPC\) workloads; Memory Optimized Instances \(X1e, X1, R4\) offer larger memory sizes for memory-intensive applications, including database and memory caching applications; Accelerating Computing instances \(P3, P2, G3, F1\) take advantage of the parallel processing capabilities of NVIDIA Tesla GPUs for high performance computing and machine/deep learning; GPU Graphics instances \(G3\) offer high-performance 3D graphics capabilities for applications using OpenGL and DirectX; F1 instances deliver Xilinx FPGA-based reconfigurable computing; Storage Optimized Instances \(H1, I3, D2\) that provide very high, low latency, I/O capacity using SSD-based local instance storage for I/O-intensive applications, with D2 or H1, the dense-storage and HDD-storage instances, provide local high storage density and sequential I/O performance for data warehousing, Hadoop and other data-intensive applications. When choosing instance types, you should consider the characteristics of your application with regards to resource utilization \(i.e. CPU, Memory, Storage\) and select the optimal instance family and instance size.
 
+创建EC2实例的时候，我们可以勾选“自动分配Public IP”（原话是英文的哦~），也可以不勾选，然后手动关联Elastic IP\(EIP\),那么着二者有什么区别呢？
+
+从亚马逊在线技术支持那里了解到：
+
+（1）EIP是属于某个特定的账号，可以关联到账号的任意实例上，也可卸载下来重新关联到其他实例上，而且实例被删除之后，EIP依然单独存在。\(分配EIP时注意VPC和EC2的EIP的区别，不同类型的EIP时能关联到自己类型的实例上，即VPC中的EIP只能用于VPC中的实例，Classic EC2只能关联非VPC的EIP）
+
+（2）而普通的Public IP是属于具体的某台实例，不能卸载重新关联到别的实例，实例创建时，如果勾选自动分配Public IP，则会随实例一起被创建，实例删除时，跟着被删除，无法被重复利用和保留；
+
+（3）还有一个非常重要的特性：Public IP在实例关机后再开机，可能会改变，重启不影响（这跟Classic EC2实例的Public DNS一样，可能会改变）。而EIP怎么都不会变。
+
+（4）如果实例创建之初，有PublicIP,然后再关联了ElasticIP的话，二者都会变成ElasticIP的样子（被覆盖），当EIP被解除关联之后，PublicIP才会被显露，但此时会重新分配PublicIP，所以PublicIP会变。
+
+所以，如果在EC2实例的生命周期内，有停机再开机的可能，还是使用EIP比较保险
 
 
- 创建EC2实例的时候，我们可以勾选“自动分配Public IP”（原话是英文的哦~），也可以不勾选，然后手动关联Elastic IP\(EIP\),那么着二者有什么区别呢？
 
- 从亚马逊在线技术支持那里了解到：
+**Q: How isolated are Availability Zones from one another?**
 
- （1）EIP是属于某个特定的账号，可以关联到账号的任意实例上，也可卸载下来重新关联到其他实例上，而且实例被删除之后，EIP依然单独存在。\(分配EIP时注意VPC和EC2的EIP的区别，不同类型的EIP时能关联到自己类型的实例上，即VPC中的EIP只能用于VPC中的实例，Classic EC2只能关联非VPC的EIP）
+Each Availability Zone runs on its own physically distinct, independent infrastructure, and is engineered to be highly reliable. Common points of failures like generators and cooling equipment are not shared across Availability Zones. Additionally, they are physically separate, such that even extremely uncommon disasters such as fires, tornados or flooding would only affect a single Availability Zone.
 
- （2）而普通的Public IP是属于具体的某台实例，不能卸载重新关联到别的实例，实例创建时，如果勾选自动分配Public IP，则会随实例一起被创建，实例删除时，跟着被删除，无法被重复利用和保留；
 
- （3）还有一个非常重要的特性：Public IP在实例关机后再开机，可能会改变，重启不影响（这跟Classic EC2实例的Public DNS一样，可能会改变）。而EIP怎么都不会变。
 
- （4）如果实例创建之初，有PublicIP,然后再关联了ElasticIP的话，二者都会变成ElasticIP的样子（被覆盖），当EIP被解除关联之后，PublicIP才会被显露，但此时会重新分配PublicIP，所以PublicIP会变。
 
- 所以，如果在EC2实例的生命周期内，有停机再开机的可能，还是使用EIP比较保险
 
