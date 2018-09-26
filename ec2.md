@@ -40,3 +40,7 @@ We do not currently support the ability to coordinate launches into the same Ava
 
 Instances running on the Nitro Hypervisor support a maximum of 27 additional PCI devices for EBS volumes and VPC ENIs. Each EBS volume or VPC ENI uses a PCI device. For example, if you attach 3 additional network interfaces to an instance that uses the Nitro Hypervisor, you can attach up to 24 EBS volumes to that instance.\(each pci bus has maximum 32 devices, and some slot for sound card, video card......., so left 27 maxinum for EBS or ENI.\)
 
+
+
+
+
