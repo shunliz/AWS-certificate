@@ -67,7 +67,7 @@ Amazon EFS uses the NFSv4.1 protocol. For a step-by-step example of how to acces
 Amazon EC2 instances within your VPC can access your file system directly, and Amazon EC2 Classic instances outside your VPC can mount a file system via [ClassicLink](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html). On-premises servers can mount your file systems via an [AWS Direct Connect](https://amazonaws-china.com/directconnect/) connection to your VPC.
 
 
-
+#Amazon CloudWatch
 **Q: What is the minimum time interval granularity for the data that Amazon CloudWatch receives and aggregates?**
 
 Metrics are received and aggregated at 1 minute intervals.
