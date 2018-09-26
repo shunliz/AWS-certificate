@@ -42,3 +42,7 @@ Instances running on the Nitro Hypervisor support a maximum of 27 additional PCI
 
 
 
+**Q: Which volume type should I choose?**
+
+Amazon EBS includes two major categories of storage: SSD-backed storage for transactional workloads \(performance depends primarily on IOPS\) and HDD-backed storage for throughput workloads \(performance depends primarily on throughput, measured in MB/s\). SSD-backed volumes are designed for transactional, IOPS-intensive database workloads, boot volumes, and workloads that require high IOPS. SSD-backed volumes include Provisioned IOPS SSD \(io1\) and General Purpose SSD \(gp2\). HDD-backed volumes are designed for throughput-intensive and big-data workloads, large I/O sizes, and sequential I/O patterns. HDD-backed volumes include Throughput Optimized HDD \(st1\) and Cold HDD \(sc1\). For more information on Amazon EBS see the[EBS product details page](https://amazonaws-china.com/ebs/details/).
+
