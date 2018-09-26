@@ -32,9 +32,13 @@ Amazon EC2 instances are grouped into 5 families: General Purpose, Compute Optim
 
 Each Availability Zone runs on its own physically distinct, independent infrastructure, and is engineered to be highly reliable. Common points of failures like generators and cooling equipment are not shared across Availability Zones. Additionally, they are physically separate, such that even extremely uncommon disasters such as fires, tornados or flooding would only affect a single Availability Zone.
 
-
-
 **Q: How can I make sure that I am in the same Availability Zone as another developer?**
 
 We do not currently support the ability to coordinate launches into the same Availability Zone across AWS developer accounts. One Availability Zone name \(for example, us-east-1a\) in two AWS customer accounts may relate to different physical Availability Zones.
+
+
+
+**Q. How many EBS volumes and Elastic Network Interfaces \(ENIs\) can be attached to instances running on the Nitro Hypervisor?**
+
+Instances running on the Nitro Hypervisor support a maximum of 27 additional PCI devices for EBS volumes and VPC ENIs. Each EBS volume or VPC ENI uses a PCI device. For example, if you attach 3 additional network interfaces to an instance that uses the Nitro Hypervisor, you can attach up to 24 EBS volumes to that instance.
 
