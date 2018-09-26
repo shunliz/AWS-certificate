@@ -62,9 +62,21 @@ To access your file system, you mount the file system on an Amazon EC2 Linux-bas
 
 Amazon EFS uses the NFSv4.1 protocol. For a step-by-step example of how to access a file system from an Amazon EC2 instance, please see the[Amazon EFS Getting Started guide](http://docs.aws.amazon.com/efs/latest/ug/gs-mount-fs-on-ec2instance-and-test.html).
 
-
-
 **Q. How do I access my file system from outside my VPC?**
 
-Amazon EC2 instances within your VPC can access your file system directly, and Amazon EC2 Classic instances outside your VPC can mount a file system via [ClassicLink](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html). On-premises servers can mount your file systems via an [AWS Direct Connect](https://amazonaws-china.com/directconnect/) connection to your VPC.
+Amazon EC2 instances within your VPC can access your file system directly, and Amazon EC2 Classic instances outside your VPC can mount a file system via [ClassicLink](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html). On-premises servers can mount your file systems via an [AWS Direct Connect](https://amazonaws-china.com/directconnect/) connection to your VPC.
+
+
+
+**Q: What is the minimum time interval granularity for the data that Amazon CloudWatch receives and aggregates?**
+
+Metrics are received and aggregated at 1 minute intervals.
+
+**Q: Which operating systems does Amazon CloudWatch support?**
+
+Amazon CloudWatch receives and provides metrics for all Amazon EC2 instances and should work with any operating system currently supported by the Amazon EC2 service.
+
+**Q: Will I lose the metrics data if I disable monitoring for an Amazon EC2 instance?**
+
+You can retrieve metrics data for any Amazon EC2 instance up to 2 weeks from the time you started to monitor it. After 2 weeks, metrics data for an Amazon EC2 instance will not be available if monitoring was disabled for that Amazon EC2 instance. If you want to archive metrics beyond 2 weeks you can do so by calling mon-get-stats command from the command line and storing the results in Amazon S3 or Amazon SimpleDB.
 
