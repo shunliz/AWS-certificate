@@ -36,9 +36,7 @@ Each Availability Zone runs on its own physically distinct, independent infrastr
 
 We do not currently support the ability to coordinate launches into the same Availability Zone across AWS developer accounts. One Availability Zone name \(for example, us-east-1a\) in two AWS customer accounts may relate to different physical Availability Zones.
 
-
-
 **Q. How many EBS volumes and Elastic Network Interfaces \(ENIs\) can be attached to instances running on the Nitro Hypervisor?**
 
-Instances running on the Nitro Hypervisor support a maximum of 27 additional PCI devices for EBS volumes and VPC ENIs. Each EBS volume or VPC ENI uses a PCI device. For example, if you attach 3 additional network interfaces to an instance that uses the Nitro Hypervisor, you can attach up to 24 EBS volumes to that instance.
+Instances running on the Nitro Hypervisor support a maximum of 27 additional PCI devices for EBS volumes and VPC ENIs. Each EBS volume or VPC ENI uses a PCI device. For example, if you attach 3 additional network interfaces to an instance that uses the Nitro Hypervisor, you can attach up to 24 EBS volumes to that instance.\(each pci bus has maximum 32 devices, and some slot for sound card, video card......., so left 27 maxinum for EBS or ENI.\)
 
