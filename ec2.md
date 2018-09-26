@@ -44,13 +44,11 @@ Instances running on the Nitro Hypervisor support a maximum of 27 additional PCI
 
 Amazon EBS includes two major categories of storage: SSD-backed storage for transactional workloads \(performance depends primarily on IOPS\) and HDD-backed storage for throughput workloads \(performance depends primarily on throughput, measured in MB/s\). SSD-backed volumes are designed for transactional, IOPS-intensive database workloads, boot volumes, and workloads that require high IOPS. SSD-backed volumes include Provisioned IOPS SSD \(io1\) and General Purpose SSD \(gp2\). HDD-backed volumes are designed for throughput-intensive and big-data workloads, large I/O sizes, and sequential I/O patterns. HDD-backed volumes include Throughput Optimized HDD \(st1\) and Cold HDD \(sc1\). For more information on Amazon EBS see the[EBS product details page](https://amazonaws-china.com/ebs/details/).
 
-
-
 **Q: Will I be able to access my EBS snapshots using the regular Amazon S3 APIs?**
 
 No, EBS snapshots are only available through the Amazon EC2 APIs.
 
-**Q: Do volumes need to be un-mounted in order to take a snapshot? Does the snapshot need to complete before the volume can be used again? **
+**Q: Do volumes need to be un-mounted in order to take a snapshot? Does the snapshot need to complete before the volume can be used again? **
 
 No, snapshots can be done in real time while the volume is attached and in use. However, snapshots only capture data that has been written to your Amazon EBS volume, which might exclude any data that has been locally cached by your application or OS. In order to ensure consistent snapshots on volumes attached to an instance, we recommend cleanly detaching the volume, issuing the snapshot command, and then reattaching the volume. For Amazon EBS volumes that serve as root devices, we recommend shutting down the machine to take a clean snapshot.
 
@@ -62,9 +60,11 @@ You can find snapshots that have been shared with you by selecting “Private Sn
 
 To access your file system, you mount the file system on an Amazon EC2 Linux-based instance using the standard Linux mount command and the file system’s DNS name. Once you’ve mounted, you can work with the files and directories in your file system just like you would with a local file system.
 
-Amazon EFS uses the NFSv4.1 protocol. For a step-by-step example of how to access a file system from an Amazon EC2 instance, please see the[Amazon EFS Getting Started guide](http://docs.aws.amazon.com/efs/latest/ug/gs-mount-fs-on-ec2instance-and-test.html).
+Amazon EFS uses the NFSv4.1 protocol. For a step-by-step example of how to access a file system from an Amazon EC2 instance, please see the[Amazon EFS Getting Started guide](http://docs.aws.amazon.com/efs/latest/ug/gs-mount-fs-on-ec2instance-and-test.html).
 
 
 
+**Q. How do I access my file system from outside my VPC?**
 
+Amazon EC2 instances within your VPC can access your file system directly, and Amazon EC2 Classic instances outside your VPC can mount a file system via [ClassicLink](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html). On-premises servers can mount your file systems via an [AWS Direct Connect](https://amazonaws-china.com/directconnect/) connection to your VPC.
 
