@@ -82,13 +82,35 @@ You can retrieve metrics data for any Amazon EC2 instance up to 2 weeks from the
 
 Elastic Load Balancing offers two types of load balancers that both feature high availability, automatic scaling, and robust security. These include the[Classic Load Balancer](https://amazonaws-china.com/elasticloadbalancing/classicloadbalancer/)that routes traffic based on either application or network level information, and the[Application Load Balancer](https://amazonaws-china.com/elasticloadbalancing/applicationloadbalancer/)that routes traffic based on advanced application level information that includes the content of the request.
 
-
-
 **Q. How many EBS volumes can be attached to C5 instances?**
 
-C5 instances support a maximum for 27 EBS volumes for all Operating systems. The limit is shared with ENI attachments which can be found here http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html. For example: since every instance has at least 1 ENI, if you have 3 additional ENI attachments on the c4.2xlarge, you can attach 24 EBS volumes to that instance.
+C5 instances support a maximum for 27 EBS volumes for all Operating systems. The limit is shared with ENI attachments which can be found here [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html). For example: since every instance has at least 1 ENI, if you have 3 additional ENI attachments on the c4.2xlarge, you can attach 24 EBS volumes to that instance.
 
 **Q. What is the underlying hypervisor on C5 instances?**
 
+C5 instances use a new EC2 hypervisor that is based on core KVM technology.
 
+**Q: Why does the total memory reported by Linux not match the advertised memory of the C5 instance type?**
+
+In C5, portions of the total memory for an instance are reserved from use by the Operating System including areas used by the virtual BIOS for things like ACPI tables and for devices like the virtual video RAM.
+
+**Q: What are Accelerated Computing instances?**
+
+Accelerated Computing instance family is a family of instances which use hardware accelerators, or co-processors, to perform some functions, such as floating-point number calculation and graphics processing, more efficiently than is possible in software running on CPUs. Amazon EC2 provides three types of Accelerated Computing instances – GPU compute instances for general-purpose computing, GPU graphics instances for graphics intensive applications, and FPGA programmable hardware compute instances for advanced scientific workloads.
+
+**Q. When should I use GPU Graphics and Compute instances?**
+
+GPU instances work best for applications with massive parallelism such as workloads using thousands of threads. Graphics processing is an example with huge computational requirements, where each of the tasks is relatively small, the set of operations performed form a pipeline, and the throughput of this pipeline is more important than the latency of the individual operations. To be able build applications that exploit this level of parallelism, one needs GPU device specific knowledge by understanding how to program against various graphics APIs \(DirectX, OpenGL\) or GPU compute programming models \(CUDA, OpenCL\).
+
+**Q: How are P3 instances different from G3 instances?**
+
+P3 instances are the next-generation of EC2 general-purpose GPU computing instances, powered by up to 8 of the latest-generation NVIDIA Tesla V100 GPUs. These new instances significantly improve performance and scalability, and add many new features, including new Streaming Multiprocessor \(SM\) architecture for machine learning \(ML\)/deep learning \(DL\) performance optimization, second-generation NVIDIA NVLink high-speed GPU interconnect, and highly tuned HBM2 memory for higher-efficiency.
+
+G3 instances use NVIDIA Tesla M60 GPUs and provide a high-performance platform for graphics applications using DirectX or OpenGL. NVIDIA Tesla M60 GPUs support NVIDIA GRID Virtual Workstation features, and H.265 \(HEVC\) hardware encoding. Each M60 GPU in G3 instances supports 4 monitors with resolutions up to 4096x2160, and is licensed to use NVIDIA GRID Virtual Workstation for one Concurrent Connected User. Example applications of G3 instances include 3D visualizations, graphics-intensive remote workstation, 3D rendering, application streaming, video encoding, and other server-side graphics workloads.**Q: What are the benefits of NVIDIA Volta GV100 GPUs?**
+
+The new NVIDIA Tesla V100 accelerator incorporates the powerful new Volta GV100 GPU. GV100 not only builds upon the advances of its predecessor, the Pascal GP100 GPU, it significantly improves performance and scalability, and adds many new features that improve programmability. These advances will supercharge HPC, data center, supercomputer, and deep learning systems and applications.
+
+**Q: Who will benefit from P3 instances?**
+
+P3 instances with their high computational performance will benefit users in artificial intelligence \(AI\), machine learning \(ML\), deep learning \(DL\) and high performance computing \(HPC\) applications. Users includes data scientists, data architects, data analysts, scientific researchers, ML engineers, IT managers and software developers. Key industries include transportation, energy/oil & gas, financial services \(banking, insurance\), healthcare, pharmaceutical, sciences, IT, retail, manufacturing, high-tech, transportation, government, academia, among many others.
 
