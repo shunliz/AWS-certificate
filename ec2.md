@@ -196,7 +196,20 @@ Intel Advanced Vector Extension 512 \(AVX-512\) is a set of new CPU instructions
 
 In M5, portions of the total memory for an instance are reserved from use by the operating system including areas used by the virtual BIOS for things like ACPI tables and for devices like the virtual video RAM.
 
-**Q. How do Dense-storage and HDD-storage instances compare to High I/O instances? **
+**Q. How do Dense-storage and HDD-storage instances compare to High I/O instances? **
 
 High I/O instances \(I2\) are targeted at workloads that demand low latency and high random I/O in addition to moderate storage density and provide the best price/IOPS across other EC2 instance types. Dense-storage instances \(D2\) and HDD-storage instances \(H1\) are optimized for applications that require high sequential read/write access and low cost storage for very large data sets and provide the best price/GB-storage and price/disk-throughput across other EC2 instances.
+
+
+
+**Q. How much disk throughput can Dense-storage and HDD-storage instances deliver?**  
+
+
+The largest current generation of Dense-storage instances, d2.8xlarge, can deliver up to 3.5 GBps read and 3.1 GBps write disk throughput with a 2 MiB block size. The largest H1 instances size, h1.16xlarge, can deliver up to 1.15 GBps read and write. To ensure the best disk throughput performance from your D2 instances on Linux, we recommend that you use the most recent version of the[Amazon Linux AMI](https://amazonaws-china.com/amazon-linux-ami/), or another Linux AMI with a kernel version of 3.8 or later that supports persistent grants - an extension to the Xen block ring protocol that significantly improves disk throughput and scalability.  
+
+
+**Q. Do Dense-storage and HDD-storage instances provide any failover mechanisms or redundancy?**  
+
+
+The primary data storage for Dense-storage instances is HDD-based instance storage. Like all instance storage, these storage volumes persist only for the life of the instance. Hence, we recommend that you build a degree of redundancy \(e.g. RAID 1/5/6\) or use file systems \(e.g. HDFS and MapR-FS\) that support redundancy and fault tolerance. You can also back up data periodically to more durable data storage solutions such as Amazon Simple Storage Service \(S3\) for additional data durability. Please refer to[Amazon S3](https://amazonaws-china.com/s3/)for reference.
 
