@@ -176,9 +176,15 @@ Yes. The Hardware Development Kit \(HDK\) includes simulation tools and simulati
 
 Yes. You can use the Hardware Development Kit HDK either in an AWS-provided AMI, or in your on-premises development environment.
 
-
-
 **Q. What kind of network performance can I expect when I launch instances in cluster placement group?**
 
 The bandwidth an EC2 instance can utilize in a cluster placement group depends on the instance type and its networking performance specification. Inter-instance traffic within the same region can utilize 5 Gbps for single-flow and up to 25 Gbps for multi-flow traffic. When launched in a placement group, select EC2 instances can utilize up to 10 Gbps for single-flow traffic.
+
+
+
+**Q. Are there any ways to optimize the likelihood that I receive the full number of instances I request for my cluster via a cluster placement group?**
+
+We recommend that you launch the minimum number of instances required to participate in a cluster in a single launch. For very large clusters, you should launch multiple placement groups, e.g. two placement groups of 128 instances, and combine them to create a larger, 256 instance cluster.
+
+
 
