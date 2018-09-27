@@ -208,9 +208,11 @@ The largest current generation of Dense-storage instances, d2.8xlarge, can deliv
 
 The primary data storage for Dense-storage instances is HDD-based instance storage. Like all instance storage, these storage volumes persist only for the life of the instance. Hence, we recommend that you build a degree of redundancy \(e.g. RAID 1/5/6\) or use file systems \(e.g. HDFS and MapR-FS\) that support redundancy and fault tolerance. You can also back up data periodically to more durable data storage solutions such as Amazon Simple Storage Service \(S3\) for additional data durability. Please refer to[Amazon S3](https://amazonaws-china.com/s3/)for reference.
 
-
-
 **Q. How many IOPS can i3.16.xlarge instances deliver?**
 
-Using HVM AMIs, High I/O I3 instances can deliver up to 3.3 million IOPS measured at 100% random reads using 4KB block size, and up to 300,000 100% random write IOPs, measured at 4KB block sizes to applications across 8 x 1.9 TB NVMe devices. 
+Using HVM AMIs, High I/O I3 instances can deliver up to 3.3 million IOPS measured at 100% random reads using 4KB block size, and up to 300,000 100% random write IOPs, measured at 4KB block sizes to applications across 8 x 1.9 TB NVMe devices.
+
+**Q. What is the sequential throughput of i3 instances?**
+
+The maximum sequential throughput, measured at 128K block sizes is 16 GB/s read throughput and 6.4 GB/s write throughput.
 
