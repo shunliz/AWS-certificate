@@ -114,8 +114,6 @@ The new NVIDIA Tesla V100 accelerator incorporates the powerful new Volta GV100 
 
 P3 instances with their high computational performance will benefit users in artificial intelligence \(AI\), machine learning \(ML\), deep learning \(DL\) and high performance computing \(HPC\) applications. Users includes data scientists, data architects, data analysts, scientific researchers, ML engineers, IT managers and software developers. Key industries include transportation, energy/oil & gas, financial services \(banking, insurance\), healthcare, pharmaceutical, sciences, IT, retail, manufacturing, high-tech, transportation, government, academia, among many others.
 
-
-
 **Q: Why should customers use GPU-powered Amazon P3 instances for AI/ML and HPC?**
 
 GPU-based compute instances provide greater throughput and performance because they are designed for massively parallel processing using thousands of specialized cores per GPU, versus CPUs offering sequential processing with a few cores. In addition, developers have built hundreds of GPU-optimized scientific HPC applications such as quantum chemistry, molecular dynamics, meteorology, among many others. Research indicates that over 70% of the most popular HPC applications provide built-in support for GPUs.
@@ -133,4 +131,8 @@ P2 instances use NVIDIA Tesla K80 GPUs and are designed for general purpose GPU 
 **Q. Which AMIs can I use with P3, P2 and G3 instances?**
 
 You can currently use Windows Server, SUSE Enterprise Linux, Ubuntu, and Amazon Linux AMIs on P2 and G3 instances. P3 instances only support HVM AMIs. If you want to launch AMIs with operating systems not listed here, contact AWS[Customer Support](https://amazonaws-china.com/contact-us/)with your request or reach out through[EC2 Forums](https://forums.aws.amazon.com/forum.jspa?forumID=30#).
+
+**Q. Why am I unable to see the GPU when using Microsoft Remote Desktop?**
+
+When using Remote Desktop, GPUs using the WDDM driver model are replaced with a non-accelerated Remote Desktop display driver. In order to access your GPU hardware, you need to utilize a different remote access tool, such as VNC.
 
