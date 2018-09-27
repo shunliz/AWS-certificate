@@ -152,8 +152,6 @@ F1 is an AWS instance with programmable hardware for application acceleration. W
 
 The design that you create to program your FPGA is called an Amazon FPGA Image \(AFI\). AWS provides a service to register, manage, copy, query, and delete AFIs. After an AFI is created, it can be loaded on a running F1 instance. You can load multiple AFIs to the same F1 instance, and can switch between AFIs in runtime without reboot. This lets you quickly test and run multiple hardware accelerations in rapid sequence. You can also offer to other customers on the AWS Marketplace a combination of your FPGA acceleration and an AMI with custom software or AFI drivers.
 
-
-
 **Q. What is available with F1 instances?**
 
 For developers, AWS is providing a Hardware Development Kit \(HDK\) to help accelerate development cycles, a FPGA Developer AMI for development in the cloud, an SDK for AMIs running the F1 instance, and a set of APIs to register, manage, copy, query, and delete AFIs. Both developers and customers have access to the AWS Marketplace where AFIs can be listed and purchased for use in application accelerations.
@@ -169,4 +167,14 @@ Developers can get started on the F1 instance by creating an AWS account and dow
 **Q. I’m not an FPGA developer, how do I get started with F1 instances?**
 
 Customers can get started with F1 instances by selecting an accelerator from the AWS Marketplace, provided by AWS Marketplace sellers, and launching an F1 instance with that AMI. The AMI includes all of the software and APIs for that accelerator. AWS manages programming the FPGA with the AFI for that accelerator. Customers do not need any FPGA experience or knowledge to use these accelerators. They can work completely at the software API level for that accelerator.
+
+
+
+**Q. Does AWS provide a developer kit?**
+
+Yes. The Hardware Development Kit \(HDK\) includes simulation tools and simulation models for developers to simulate, debug, build, and register their acceleration code. The HDK includes code samples, compile scripts, debug interfaces, and many other tools you will need to develop the FPGA code for your F1 instances. You can use the HDK either in an AWS provided AMI, or in your on-premises development environment. These models and scripts are available publically with an AWS account.
+
+**Q. Can I use the HDK in my on-premises development environment?**
+
+Yes. You can use the Hardware Development Kit HDK either in an AWS-provided AMI, or in your on-premises development environment.
 
