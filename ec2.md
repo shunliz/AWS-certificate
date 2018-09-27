@@ -168,8 +168,6 @@ Developers can get started on the F1 instance by creating an AWS account and dow
 
 Customers can get started with F1 instances by selecting an accelerator from the AWS Marketplace, provided by AWS Marketplace sellers, and launching an F1 instance with that AMI. The AMI includes all of the software and APIs for that accelerator. AWS manages programming the FPGA with the AFI for that accelerator. Customers do not need any FPGA experience or knowledge to use these accelerators. They can work completely at the software API level for that accelerator.
 
-
-
 **Q. Does AWS provide a developer kit?**
 
 Yes. The Hardware Development Kit \(HDK\) includes simulation tools and simulation models for developers to simulate, debug, build, and register their acceleration code. The HDK includes code samples, compile scripts, debug interfaces, and many other tools you will need to develop the FPGA code for your F1 instances. You can use the HDK either in an AWS provided AMI, or in your on-premises development environment. These models and scripts are available publically with an AWS account.
@@ -177,4 +175,10 @@ Yes. The Hardware Development Kit \(HDK\) includes simulation tools and simulati
 **Q. Can I use the HDK in my on-premises development environment?**
 
 Yes. You can use the Hardware Development Kit HDK either in an AWS-provided AMI, or in your on-premises development environment.
+
+
+
+**Q. What kind of network performance can I expect when I launch instances in cluster placement group?**
+
+The bandwidth an EC2 instance can utilize in a cluster placement group depends on the instance type and its networking performance specification. Inter-instance traffic within the same region can utilize 5 Gbps for single-flow and up to 25 Gbps for multi-flow traffic. When launched in a placement group, select EC2 instances can utilize up to 10 Gbps for single-flow traffic.
 
