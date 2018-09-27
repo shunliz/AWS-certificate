@@ -180,11 +180,17 @@ Yes. You can use the Hardware Development Kit HDK either in an AWS-provided AMI,
 
 The bandwidth an EC2 instance can utilize in a cluster placement group depends on the instance type and its networking performance specification. Inter-instance traffic within the same region can utilize 5 Gbps for single-flow and up to 25 Gbps for multi-flow traffic. When launched in a placement group, select EC2 instances can utilize up to 10 Gbps for single-flow traffic.
 
-
-
 **Q. Are there any ways to optimize the likelihood that I receive the full number of instances I request for my cluster via a cluster placement group?**
 
 We recommend that you launch the minimum number of instances required to participate in a cluster in a single launch. For very large clusters, you should launch multiple placement groups, e.g. two placement groups of 128 instances, and combine them to create a larger, 256 instance cluster.
 
 
+
+**Q. If an instance in a cluster placement group is stopped then started again, will it maintain its presence in the cluster placement group?**
+
+Yes. A stopped instance will be started as part of the cluster placement group it was in when it stopped. If capacity is not available for it to start within its cluster placement group, the start will fail.
+
+**Q: How does support for Intel AVX-512 benefit EC2 M5 Instance customers?**
+
+Intel Advanced Vector Extension 512 \(AVX-512\) is a set of new CPU instructions available on the latest Intel Xeon Scalable processor family, that can accelerate performance for workloads and usages such as scientific simulations, financial analytics, artificial intelligence, machine learning/deep learning, 3D modeling and analysis, image and video processing, cryptography and data compression, among others. Intel AVX-512 offers exceptional processing of encryption algorithms, helping to reduce the performance overhead for cryptography, which means EC2 M5 customers can deploy more secure data and services into distributed environments without compromising performance
 
