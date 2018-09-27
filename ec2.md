@@ -136,8 +136,6 @@ You can currently use Windows Server, SUSE Enterprise Linux, Ubuntu, and Amazon 
 
 When using Remote Desktop, GPUs using the WDDM driver model are replaced with a non-accelerated Remote Desktop display driver. In order to access your GPU hardware, you need to utilize a different remote access tool, such as VNC.
 
-
-
 **Q. What is Amazon EC2 F1?**
 
 Amazon EC2 F1 is a compute instance with programmable hardware you can use for application acceleration. The new F1 instance type provides a high performance, easy to access FPGA for developing and deploying custom hardware accelerations.
@@ -153,4 +151,22 @@ F1 is an AWS instance with programmable hardware for application acceleration. W
 **Q: What is an Amazon FPGA Image \(AFI\)?**
 
 The design that you create to program your FPGA is called an Amazon FPGA Image \(AFI\). AWS provides a service to register, manage, copy, query, and delete AFIs. After an AFI is created, it can be loaded on a running F1 instance. You can load multiple AFIs to the same F1 instance, and can switch between AFIs in runtime without reboot. This lets you quickly test and run multiple hardware accelerations in rapid sequence. You can also offer to other customers on the AWS Marketplace a combination of your FPGA acceleration and an AMI with custom software or AFI drivers.
+
+
+
+**Q. What is available with F1 instances?**
+
+For developers, AWS is providing a Hardware Development Kit \(HDK\) to help accelerate development cycles, a FPGA Developer AMI for development in the cloud, an SDK for AMIs running the F1 instance, and a set of APIs to register, manage, copy, query, and delete AFIs. Both developers and customers have access to the AWS Marketplace where AFIs can be listed and purchased for use in application accelerations.
+
+**Q. Do I need to be a FPGA expert to use an F1 instance?**
+
+AWS customers subscribing to a F1-optimized AMI from AWS Marketplace do not need to know anything about FPGAs to take advantage of the accelerations provided by the F1 instance and the AWS Marketplace. Simply subscribe to an F1-optimized AMI from the AWS Marketplace with an acceleration that matches the workload. The AMI contains all the software necessary for using the FPGA acceleration. Customers need only write software to the specific API for that accelerator and start using the accelerator.
+
+**Q. I’m a FPGA developer, how do I get started with F1 instances?**
+
+Developers can get started on the F1 instance by creating an AWS account and downloading the AWS Hardware Development Kit \(HDK\). The HDK includes documentation on F1, internal FPGA interfaces, and compiler scripts for generating AFI. Developers can start writing their FPGA code to the documented interfaces included in the HDK to create their acceleration function. Developers can launch AWS instances with the FPGA Developer AMI. This AMI includes the development tools needed to compile and simulate the FPGA code. The Developer AMI is best run on the latest C5, M5, or R4 instances. Developers should have experience in the programming languages used for creating FPGA code \(i.e. Verilog or VHDL\) and an understanding of the operation they wish to accelerate.
+
+**Q. I’m not an FPGA developer, how do I get started with F1 instances?**
+
+Customers can get started with F1 instances by selecting an accelerator from the AWS Marketplace, provided by AWS Marketplace sellers, and launching an F1 instance with that AMI. The AMI includes all of the software and APIs for that accelerator. AWS manages programming the FPGA with the AFI for that accelerator. Customers do not need any FPGA experience or knowledge to use these accelerators. They can work completely at the software API level for that accelerator.
 
