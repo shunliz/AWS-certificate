@@ -84,5 +84,11 @@ Elastic Load Balancing offers two types of load balancers that both feature high
 
 
 
+**Q. How many EBS volumes can be attached to C5 instances?**
+
+C5 instances support a maximum for 27 EBS volumes for all Operating systems. The limit is shared with ENI attachments which can be found here http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html. For example: since every instance has at least 1 ENI, if you have 3 additional ENI attachments on the c4.2xlarge, you can attach 24 EBS volumes to that instance.
+
+**Q. What is the underlying hypervisor on C5 instances?**
+
 
 
