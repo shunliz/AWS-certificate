@@ -96,7 +96,7 @@ In C5, portions of the total memory for an instance are reserved from use by the
 
 **Q: What are Accelerated Computing instances?**
 
-Accelerated Computing instance family is a family of instances which use hardware accelerators, or co-processors, to perform some functions, such as floating-point number calculation and graphics processing, more efficiently than is possible in software running on CPUs. Amazon EC2 provides three types of Accelerated Computing instances – GPU compute instances for general-purpose computing, GPU graphics instances for graphics intensive applications, and FPGA programmable hardware compute instances for advanced scientific workloads.
+Accelerated Computing instance family is a family of instances which use hardware accelerators, or co-processors, to perform some functions, such as floating-point number calculation and graphics processing, more efficiently than is possible in software running on CPUs. Amazon EC2 provides three types of Accelerated Computing instances – GPU compute instances for general-purpose computing, GPU graphics instances for graphics intensive applications, and FPGA programmable hardware compute instances for advanced scientific workloads.
 
 **Q. When should I use GPU Graphics and Compute instances?**
 
@@ -113,4 +113,24 @@ The new NVIDIA Tesla V100 accelerator incorporates the powerful new Volta GV100 
 **Q: Who will benefit from P3 instances?**
 
 P3 instances with their high computational performance will benefit users in artificial intelligence \(AI\), machine learning \(ML\), deep learning \(DL\) and high performance computing \(HPC\) applications. Users includes data scientists, data architects, data analysts, scientific researchers, ML engineers, IT managers and software developers. Key industries include transportation, energy/oil & gas, financial services \(banking, insurance\), healthcare, pharmaceutical, sciences, IT, retail, manufacturing, high-tech, transportation, government, academia, among many others.
+
+
+
+**Q: Why should customers use GPU-powered Amazon P3 instances for AI/ML and HPC?**
+
+GPU-based compute instances provide greater throughput and performance because they are designed for massively parallel processing using thousands of specialized cores per GPU, versus CPUs offering sequential processing with a few cores. In addition, developers have built hundreds of GPU-optimized scientific HPC applications such as quantum chemistry, molecular dynamics, meteorology, among many others. Research indicates that over 70% of the most popular HPC applications provide built-in support for GPUs.
+
+**Q: Will P3 instances support EC2 Classic networking and Amazon VPC?**
+
+P3 instances will support VPC only.
+
+**Q. How are G3 instances different from P2 instances?**
+
+G3 instances use NVIDIA Tesla M60 GPUs and provide a high-performance platform for graphics applications using DirectX or OpenGL. NVIDIA Tesla M60 GPUs support NVIDIA GRID Virtual Workstation features, and H.265 \(HEVC\) hardware encoding. Each M60 GPU in G3 instances supports 4 monitors with resolutions up to 4096x2160, and is licensed to use NVIDIA GRID Virtual Workstation for one Concurrent Connected User. Example applications of G3 instances include 3D visualizations, graphics-intensive remote workstation, 3D rendering, application streaming, video encoding, and other server-side graphics workloads.
+
+P2 instances use NVIDIA Tesla K80 GPUs and are designed for general purpose GPU computing using the CUDA or OpenCL programming models. P2 instances provide customers with high bandwidth 25 Gbps networking, powerful single and double precision floating-point capabilities, and error-correcting code \(ECC\) memory, making them ideal for deep learning, high performance databases, computational fluid dynamics, computational finance, seismic analysis, molecular modeling, genomics, rendering, and other server-side GPU compute workloads.
+
+**Q. Which AMIs can I use with P3, P2 and G3 instances?**
+
+You can currently use Windows Server, SUSE Enterprise Linux, Ubuntu, and Amazon Linux AMIs on P2 and G3 instances. P3 instances only support HVM AMIs. If you want to launch AMIs with operating systems not listed here, contact AWS[Customer Support](https://amazonaws-china.com/contact-us/)with your request or reach out through[EC2 Forums](https://forums.aws.amazon.com/forum.jspa?forumID=30#).
 
