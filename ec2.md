@@ -192,9 +192,11 @@ Yes. A stopped instance will be started as part of the cluster placement group i
 
 Intel Advanced Vector Extension 512 \(AVX-512\) is a set of new CPU instructions available on the latest Intel Xeon Scalable processor family, that can accelerate performance for workloads and usages such as scientific simulations, financial analytics, artificial intelligence, machine learning/deep learning, 3D modeling and analysis, image and video processing, cryptography and data compression, among others. Intel AVX-512 offers exceptional processing of encryption algorithms, helping to reduce the performance overhead for cryptography, which means EC2 M5 customers can deploy more secure data and services into distributed environments without compromising performance
 
-
-
 **Q: Why does the total memory reported by Linux not match the advertised memory of the M5 instance type?**
 
 In M5, portions of the total memory for an instance are reserved from use by the operating system including areas used by the virtual BIOS for things like ACPI tables and for devices like the virtual video RAM.
+
+**Q. How do Dense-storage and HDD-storage instances compare to High I/O instances? **
+
+High I/O instances \(I2\) are targeted at workloads that demand low latency and high random I/O in addition to moderate storage density and provide the best price/IOPS across other EC2 instance types. Dense-storage instances \(D2\) and HDD-storage instances \(H1\) are optimized for applications that require high sequential read/write access and low cost storage for very large data sets and provide the best price/GB-storage and price/disk-throughput across other EC2 instances.
 
