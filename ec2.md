@@ -66,8 +66,6 @@ Amazon EFS uses the NFSv4.1 protocol. For a step-by-step example of how to acces
 
 Amazon EC2 instances within your VPC can access your file system directly, and Amazon EC2 Classic instances outside your VPC can mount a file system via [ClassicLink](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html). On-premises servers can mount your file systems via an [AWS Direct Connect](https://amazonaws-china.com/directconnect/) connection to your VPC.
 
-
-
 **Q: What is the minimum time interval granularity for the data that Amazon CloudWatch receives and aggregates?**
 
 Metrics are received and aggregated at 1 minute intervals.
@@ -83,4 +81,8 @@ You can retrieve metrics data for any Amazon EC2 instance up to 2 weeks from the
 **Q: What load balancing options does the Elastic Load Balancing service offer?**
 
 Elastic Load Balancing offers two types of load balancers that both feature high availability, automatic scaling, and robust security. These include the[Classic Load Balancer](https://amazonaws-china.com/elasticloadbalancing/classicloadbalancer/)that routes traffic based on either application or network level information, and the[Application Load Balancer](https://amazonaws-china.com/elasticloadbalancing/applicationloadbalancer/)that routes traffic based on advanced application level information that includes the content of the request.
+
+
+
+
 
