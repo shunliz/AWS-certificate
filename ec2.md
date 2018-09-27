@@ -184,8 +184,6 @@ The bandwidth an EC2 instance can utilize in a cluster placement group depends o
 
 We recommend that you launch the minimum number of instances required to participate in a cluster in a single launch. For very large clusters, you should launch multiple placement groups, e.g. two placement groups of 128 instances, and combine them to create a larger, 256 instance cluster.
 
-
-
 **Q. If an instance in a cluster placement group is stopped then started again, will it maintain its presence in the cluster placement group?**
 
 Yes. A stopped instance will be started as part of the cluster placement group it was in when it stopped. If capacity is not available for it to start within its cluster placement group, the start will fail.
@@ -193,4 +191,10 @@ Yes. A stopped instance will be started as part of the cluster placement group i
 **Q: How does support for Intel AVX-512 benefit EC2 M5 Instance customers?**
 
 Intel Advanced Vector Extension 512 \(AVX-512\) is a set of new CPU instructions available on the latest Intel Xeon Scalable processor family, that can accelerate performance for workloads and usages such as scientific simulations, financial analytics, artificial intelligence, machine learning/deep learning, 3D modeling and analysis, image and video processing, cryptography and data compression, among others. Intel AVX-512 offers exceptional processing of encryption algorithms, helping to reduce the performance overhead for cryptography, which means EC2 M5 customers can deploy more secure data and services into distributed environments without compromising performance
+
+
+
+**Q: Why does the total memory reported by Linux not match the advertised memory of the M5 instance type?**
+
+In M5, portions of the total memory for an instance are reserved from use by the operating system including areas used by the virtual BIOS for things like ACPI tables and for devices like the virtual video RAM.
 
