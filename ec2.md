@@ -220,3 +220,7 @@ The maximum sequential throughput, measured at 128K block sizes is 16 GB/s read 
 
 The TRIM command allows the operating system to inform SSDs which blocks of data are no longer considered in use and can be wiped internally. In the absence of TRIM, future write operations to the involved blocks can slow down significantly. I3 instances support TRIM.
 
+**Q. Do X1 and X1e instances enable CPU power management state control**
+
+Yes. You can configure C-states and P-states on x1e.32xlarge, x1e.16xlarge, x1e.8xlarge, x1.32xlarge and x1.16xlarge instances. You can use C-states to enable higher turbo frequencies \(as much as 3.1 GHz with one or two core turbo\). You can also use P-states to lower performance variability by pinning all cores at P1 or higher P states, which is similar to disabling Turbo, and running consistently at the base CPU clock speed.
+
