@@ -216,3 +216,7 @@ Using HVM AMIs, High I/O I3 instances can deliver up to 3.3 million IOPS measure
 
 The maximum sequential throughput, measured at 128K block sizes is 16 GB/s read throughput and 6.4 GB/s write throughput.
 
+**Q. Do High I/O instances support TRIM?**
+
+The TRIM command allows the operating system to inform SSDs which blocks of data are no longer considered in use and can be wiped internally. In the absence of TRIM, future write operations to the involved blocks can slow down significantly. I3 instances support TRIM.
+
