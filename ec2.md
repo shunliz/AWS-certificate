@@ -232,9 +232,13 @@ Yes, all data is encrypted in an AWS Nitro hardware module prior to being writte
 
 Amazon EC2 NVMe instance storage is encrypted using an XTS-AES-256 block cipher.
 
-
-
 **Q. What is VM Import/Export?**
 
 VM Import/Export enables customers to import Virtual Machine \(VM\) images in order to create Amazon EC2 instances. Customers can also export previously imported EC2 instances to create VMs. Customers can use VM Import/Export to leverage their previous investments in building VMs by migrating their VMs to Amazon EC2.
+
+
+
+**Q. What virtual machine file formats are supported?**
+
+You can import VMware ESX VMDK images, Citrix Xen VHD images, Microsoft Hyper-V VHD images and RAW images as Amazon EC2 instances. You can export EC2 instances to VMware ESX VMDK, VMware ESX OVA, Microsoft Hyper-V VHD or Citrix Xen VHD images. For a full list of support operating systems, please see[What operating systems are supported?](https://amazonaws-china.com/ec2/faqs/#What_operating_systems_are_supported).
 
