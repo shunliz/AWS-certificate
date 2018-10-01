@@ -220,3 +220,7 @@ The maximum sequential throughput, measured at 128K block sizes is 16 GB/s read 
 
 The TRIM command allows the operating system to inform SSDs which blocks of data are no longer considered in use and can be wiped internally. In the absence of TRIM, future write operations to the involved blocks can slow down significantly. I3 instances support TRIM.
 
+
+
+
+
