@@ -55,19 +55,19 @@
     * [solution architect3](solution-architect3.md)
     * [solution architect4](solution-architect4.md)
 * AWS FAQS
-  * [EC2](ec2.md)
-  * RDS
-  * ELB
-  * CloudFormation
-  * SQS
-  * S3
-  * ECS
-  * Lambda
-  * beanstalk
-  * EBS
-  * SNS
-  * IAM
-  * Devops
-  * DynamoDB
+  * [EC2](ec2-faq.md)
+  * [RDS](rds-faq.md)
+  * [ELB](elb-faq.md)
+  * [CloudFormation](cloudformation-faq.md)
+  * [SQS](sqq-faq.md)
+  * [S3](s3-faq.md)
+  * [ECS](ecs-faq.md)
+  * [Lambda](lambda-faq.md)
+  * [beanstalk](beanstalk-faq.md)
+  * [EBS](ebs-faq.md)
+  * [SNS](sns-faq.md)
+  * [IAM](iam-faq.md)
+  * [Devops](devops-faq.md)
+  * [DynamoDB](dyanmodb-faq.md)
 * [References](references.md)
 
