@@ -55,8 +55,8 @@
     * [solution architect3](solution-architect3.md)
     * [solution architect4](solution-architect4.md)
 * AWS FAQS
-  * [EC2](ec2.md)
-  * RDS
+  * [EC2](ec2-faq.md)
+  * [RDS](rds.md)
   * ELB
   * CloudFormation
   * SQS
