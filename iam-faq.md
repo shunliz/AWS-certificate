@@ -124,11 +124,42 @@ Yes. Using IAM roles, IAM users and federated users can access resources in anot
 The policy simulator supports testing of newly entered policies and existing policies attached to users, groups, or roles. In addition, you can simulate whether resource-level policies grant access to a particular resource for Amazon S3 buckets, Amazon Glacier vaults, Amazon SNS topics, and Amazon SQS queues. These are included in the simulation when an Amazon Resource Name \(ARN\) is specified in the **Resource **field in **Simulation Settings **for a service that supports resource policies
 
 **Q: If I change a policy in the policy simulator, do those changes persist in production?**  
-No. To apply changes to production, copy the policy that you’ve modified in the policy simulator and attach it to the desired IAM user, group, or role.  
-
+No. To apply changes to production, copy the policy that you’ve modified in the policy simulator and attach it to the desired IAM user, group, or role.
 
 **Q: Can I use the policy simulator programmatically?**  
-Yes. You can use the policy simulator using the AWS SDKs or AWS CLI in addition to the policy simulator console. Use the [iam:SimulatePrincipalPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulatePrincipalPolicy.html)API to programmatically test your existing IAM policies. To test the effects of new or updated policies that are not yet attached to a user, group, or role, call the[iam:SimulateCustomPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulateCustomPolicy.html)API.  
+Yes. You can use the policy simulator using the AWS SDKs or AWS CLI in addition to the policy simulator console. Use the [iam:SimulatePrincipalPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulatePrincipalPolicy.html)API to programmatically test your existing IAM policies. To test the effects of new or updated policies that are not yet attached to a user, group, or role, call the[iam:SimulateCustomPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulateCustomPolicy.html)API.
+
+**Q: Which AWS sites can IAM users access?**
+
+IAM users can sign in to the following AWS sites:
+
+* [AWS Management Console](https://console.aws.amazon.com/)
+* [AWS Forums](https://forums.aws.amazon.com/)
+* [AWS Support Center](https://amazonaws-china.com/support)
+* [AWS Marketplace](https://amazonaws-china.com/marketplace)
+
+**Q: Can a temporary security credential be revoked prior to its expiration?**  
+No. When requesting temporary credentials, we recommend the following:
+
+* When creating temporary security credentials, set the expiration to a value that is appropriate for your application.
+* Because root account permissions cannot be restricted, use an IAM user and not the root account for creating temporary security credentials. You can revoke permissions of the IAM user that issued the original call to request it. This action almost immediately revokes privileges for all temporary security credentials issued by that IAM user
+
+**Q: Are IAM actions logged for auditing purposes?**
+
+  
+
+
+Yes. You can log IAM actions, STS actions, and AWS Management Console sign-ins by activating AWS CloudTrail. To learn more about AWS logging, see 
+
+[AWS CloudTrail](http://amazonaws-china.com/cloudtrail/)
+
+.**Q. Can I have multiple MFA devices active for my AWS account?**  
+Yes. Each IAM user can have its own MFA device. However, each identity \(IAM user or root account\) can be associated with only one MFA device.  
+
+
+**Q. Can I use my U2F security key with multiple AWS accounts?**
+
+Yes. AWS allows you to use the same U2F security key with several root and IAM users across multiple accounts.
 
 
 

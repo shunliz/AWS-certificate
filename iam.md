@@ -125,5 +125,5 @@ Refer to My Blog Post about [IAM Policy and Permissions](http://jayendrapatil.co
 
 ![](/assets/iam-policy-evaluation.png)
 
-
+![](/assets/federate-saml2.png)
 
