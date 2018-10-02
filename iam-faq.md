@@ -56,8 +56,6 @@ IAM roles for EC2 instances provides the following features:
 * Automatic rotation of the AWS temporary security credentials.
 * Granular AWS service permissions for applications running on EC2 instances.
 
-
-
 **Q: Can I associate an IAM role with an Auto Scaling group?**
 
 Yes. You can add an IAM role as an additional parameter in an Auto Scaling launch configuration and create an Auto Scaling group with that launch configuration. All EC2 instances launched in an Auto Scaling group that is associated with an IAM role are launched with the role as an input parameter.
@@ -82,14 +80,10 @@ You must grant an IAM user two distinct permissions to successfully launch EC2 i
 
 **Q: Who can access the access keys on an EC2 instance?**
 
-  
-
-
 Any local user on the instance can access the access keys associated with the IAM role.
 
 **Q: How do I use the IAM role with my application on the EC2 instance?**  
-If you develop your application with the AWS SDK, the AWS SDK automatically uses the AWS access keys that have been made available on the EC2 instance. If you are not using the AWS SDK, you can retrieve the access keys from the[EC2 instance metadata service](http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html). For details, see[Using an IAM Role to Grant Permissions to Applications Running on Amazon EC2 Instances.](http://docs.aws.amazon.com/IAM/latest/UserGuide/role-usecase-ec2app.html)  
-
+If you develop your application with the AWS SDK, the AWS SDK automatically uses the AWS access keys that have been made available on the EC2 instance. If you are not using the AWS SDK, you can retrieve the access keys from the[EC2 instance metadata service](http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html). For details, see[Using an IAM Role to Grant Permissions to Applications Running on Amazon EC2 Instances.](http://docs.aws.amazon.com/IAM/latest/UserGuide/role-usecase-ec2app.html)
 
 **Q: How do I rotate the temporary security credentials on the EC2 instance?**  
 The AWS temporary security credentials associated with an IAM role are automatically rotated multiple times a day. New temporary security credentials are made available no later than five minutes before the existing temporary security credentials expire.
@@ -107,9 +101,44 @@ AWS provides a set of commonly used permissions that you can attach to IAM users
 
 **Q: How are IAM policies evaluated in conjunction with Amazon S3, Amazon SQS, Amazon SNS, and AWS KMS resource-based policies?**
 
-IAM policies are evaluated together with the service’s resource-based policies. When a policy of any type grants access \(without explicitly denying it\), the action is allowed. For more information about the policy evaluation logic, see[IAM Policy Evaluation Logic](http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_EvaluationLogic.html). 
+IAM policies are evaluated together with the service’s resource-based policies. When a policy of any type grants access \(without explicitly denying it\), the action is allowed. For more information about the policy evaluation logic, see[IAM Policy Evaluation Logic](http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_EvaluationLogic.html).
+
+**Q: Can I use a managed policy as a resource-based policy?**
+
+Managed policies can only be attached to IAM users, groups, or roles. You cannot use them as resource-based policies.
+
+**Q: How do I set granular permissions using policies?**
+
+Using policies, you can specify several layers of permission granularity. First, you can define specific AWS service actions you wish to allow or explicitly deny access to. Second, depending on the action, you can define specific AWS resources the actions can be performed on. Third, you can define conditions to specify when the policy is in effect \(for example, if MFA is enabled or not\).**Q: Can I grant permissions to access or change account-level information \(for example, payment instrument, contact email address, and billing history\)?**  
 
 
+Yes, you can delegate the ability for an IAM user or a federated user to view AWS billing data and modify AWS account information. For more information about controlling access to your billing information, see[Controlling Access](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/control-access-billing.html).**Q: Who can create and manage access keys in an AWS account?**
+
+Only the AWS account owner can manage the access keys for the root account. The account owner and IAM users or roles that have been granted the necessary permissions can manage access keys for IAM users.
+
+**Q: Can I grant permissions to access AWS resources owned by another AWS account?**
+
+  
 
 
+Yes. Using IAM roles, IAM users and federated users can access resources in another AWS account via the AWS Management Console, the AWS CLI, or the APIs. See
+
+[Manage IAM Roles](http://amazonaws-china.com/iam/details/manage-roles/)
+
+for more information.
+
+**Q: What kinds of policies does the IAM policy simulator support?**
+
+  
+
+
+The policy simulator supports testing of newly entered policies and existing policies attached to users, groups, or roles. In addition, you can simulate whether resource-level policies grant access to a particular resource for Amazon S3 buckets, Amazon Glacier vaults, Amazon SNS topics, and Amazon SQS queues. These are included in the simulation when an Amazon Resource Name \(ARN\) is specified in the
+
+**Resource**
+
+field in
+
+**Simulation Settings**
+
+for a service that supports resource policies.
 
