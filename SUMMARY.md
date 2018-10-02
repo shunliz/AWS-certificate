@@ -69,5 +69,6 @@
   * [IAM](iam-faq.md)
   * [Devops](devops-faq.md)
   * [DynamoDB](dyanmodb-faq.md)
+  * [VPC](vpc-faqs.md)
 * [References](references.md)
 
