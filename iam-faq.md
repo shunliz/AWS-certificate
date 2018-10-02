@@ -30,21 +30,11 @@ Yes, you can enforce strong passwords by requiring minimum length or at least on
 
 **Q: What is an IAM role?**
 
-  
-
-
 An IAM role is an IAM entity that defines a set of [permissions](https://amazonaws-china.com/iam/details/manage-permissions/) for making AWS service requests. IAM roles are not associated with a specific user or group. Instead, trusted entities assumeroles, such as IAM users, applications, or AWS services such as EC2.
-
-
 
 **Q: How many IAM roles can I assume?**
 
-  
-
-
 There is no limit to the number of IAM roles you can assume, but you can only act as one IAM role when making requests to AWS services.
-
-
 
 **Q: How many policies can I attach to an IAM role?**
 
@@ -54,27 +44,72 @@ There is no limit to the number of IAM roles you can assume, but you can only ac
 * Role policy size cannot exceed 10,240 characters.
 * Group policy size cannot exceed 5,120 characters.
 
-
-
 **Q: How many IAM roles can I create?**
 
-  
+You are limited to 1,000 IAM roles under your AWS account. If you need more roles, submit the [IAM limit increase request form](https://portal.aws.amazon.com/gp/aws/html-forms-controller/iam-limit-increase-request) with your use case, and we will consider your request.
 
-
-You are limited to 1,000 IAM roles under your AWS account. If you need more roles, submit the
-
-[IAM limit increase request form](https://portal.aws.amazon.com/gp/aws/html-forms-controller/iam-limit-increase-request)
-
-with your use case, and we will consider your request.
-
-**Q: What are the features of IAM roles for EC2 instances?**  
-
+**Q: What are the features of IAM roles for EC2 instances?**
 
 IAM roles for EC2 instances provides the following features:
 
 * AWS temporary security credentials to use when making requests from running EC2 instances to AWS services.
 * Automatic rotation of the AWS temporary security credentials.
 * Granular AWS service permissions for applications running on EC2 instances.
+
+
+
+**Q: Can I associate an IAM role with an Auto Scaling group?**
+
+Yes. You can add an IAM role as an additional parameter in an Auto Scaling launch configuration and create an Auto Scaling group with that launch configuration. All EC2 instances launched in an Auto Scaling group that is associated with an IAM role are launched with the role as an input parameter.
+
+**Q: What's default client's credential search chain?**
+
+the client will search for credentials using the_default credentials provider chain_, in the following order:
+
+1. In system environment variables:`AWS_ACCESS_KEY_ID`and`AWS_SECRET_ACCESS_KEY`.
+
+2. In the Java system properties:`aws.accessKeyId`and`aws.secretKey`.
+
+3. In the default credentials file \(the location of this file varies by platform\).
+
+4. In the_instance profile credentials_, which exist within the instance metadata associated with the IAM role for the EC2 instance.
+
+**Q: Which permissions are required to launch EC2 instances with an IAM role?**  
+You must grant an IAM user two distinct permissions to successfully launch EC2 instances with roles:
+
+* Permission to launch EC2 instances.
+* Permission to associate an IAM role with EC2 instances.
+
+**Q: Who can access the access keys on an EC2 instance?**
+
+  
+
+
+Any local user on the instance can access the access keys associated with the IAM role.
+
+**Q: How do I use the IAM role with my application on the EC2 instance?**  
+If you develop your application with the AWS SDK, the AWS SDK automatically uses the AWS access keys that have been made available on the EC2 instance. If you are not using the AWS SDK, you can retrieve the access keys from the[EC2 instance metadata service](http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html). For details, see[Using an IAM Role to Grant Permissions to Applications Running on Amazon EC2 Instances.](http://docs.aws.amazon.com/IAM/latest/UserGuide/role-usecase-ec2app.html)  
+
+
+**Q: How do I rotate the temporary security credentials on the EC2 instance?**  
+The AWS temporary security credentials associated with an IAM role are automatically rotated multiple times a day. New temporary security credentials are made available no later than five minutes before the existing temporary security credentials expire.
+
+**Q: Can I use IAM roles for EC2 instances with any instance type or Amazon Machine Image?**  
+Yes. IAM roles for EC2 instances also work in Amazon Virtual Private Cloud \(VPC\), with spot and reserved instances.
+
+**Q: How do permissions work?**
+
+Access control policies are attached to users, groups, and roles to assign permissions to AWS resources. By default, IAM users, groups, and roles have no permissions; users with sufficient permissions must use a policy to grant the desired permissions.
+
+**Q: How do I assign commonly used permissions?**
+
+AWS provides a set of commonly used permissions that you can attach to IAM users, groups, and roles in your account. These are called AWS managed policies. One example is read-only access for Amazon S3. When AWS updates these policies, the permissions are applied automatically to the users, groups, and roles to which the policy is attached. AWS managed policies automatically appear in the**Policies**section of the IAM console. When you assign permissions, you can use an AWS managed policy or you can create your own customer managed policy. Create a new policy based on an existing AWS managed policy, or define your own.
+
+**Q: How are IAM policies evaluated in conjunction with Amazon S3, Amazon SQS, Amazon SNS, and AWS KMS resource-based policies?**
+
+IAM policies are evaluated together with the service’s resource-based policies. When a policy of any type grants access \(without explicitly denying it\), the action is allowed. For more information about the policy evaluation logic, see[IAM Policy Evaluation Logic](http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_EvaluationLogic.html). 
+
+
 
 
 

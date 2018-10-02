@@ -123,5 +123,7 @@ Refer to My Blog Post about [IAM Policy and Permissions](http://jayendrapatil.co
   – Perform Audits and Remove all unused users and credentials
 * Credential report is generated as often as once every four hours. If the existing report was generated less than four hours, the same is available for download. If more then four hours, IAM generates and downloads a new report.
 
+![](/assets/iam-policy-evaluation.png)
+
 
 
