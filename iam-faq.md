@@ -26,8 +26,55 @@ You can set an initial password for an IAM user via the [IAM console](https://co
 
 **Q: Can I define a password policy for my user’s passwords?**
 
+Yes, you can enforce strong passwords by requiring minimum length or at least one number. You can also enforce automatic password expiration, prevent re-use of old passwords, and require a password reset upon the next AWS sign-in.
+
+**Q: What is an IAM role?**
+
   
 
 
-Yes, you can enforce strong passwords by requiring minimum length or at least one number. You can also enforce automatic password expiration, prevent re-use of old passwords, and require a password reset upon the next AWS sign-in.
+An IAM role is an IAM entity that defines a set of [permissions](https://amazonaws-china.com/iam/details/manage-permissions/) for making AWS service requests. IAM roles are not associated with a specific user or group. Instead, trusted entities assumeroles, such as IAM users, applications, or AWS services such as EC2.
+
+
+
+**Q: How many IAM roles can I assume?**
+
+  
+
+
+There is no limit to the number of IAM roles you can assume, but you can only act as one IAM role when making requests to AWS services.
+
+
+
+**Q: How many policies can I attach to an IAM role?**
+
+**For**[**inline policies**](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html)**:**You can add as many inline policies as you want to a user, role, or group, but the total aggregate policy size \(the sum size of all inline policies\) per entity cannot exceed the following limits:
+
+* User policy size cannot exceed 2,048 characters.
+* Role policy size cannot exceed 10,240 characters.
+* Group policy size cannot exceed 5,120 characters.
+
+
+
+**Q: How many IAM roles can I create?**
+
+  
+
+
+You are limited to 1,000 IAM roles under your AWS account. If you need more roles, submit the
+
+[IAM limit increase request form](https://portal.aws.amazon.com/gp/aws/html-forms-controller/iam-limit-increase-request)
+
+with your use case, and we will consider your request.
+
+**Q: What are the features of IAM roles for EC2 instances?**  
+
+
+IAM roles for EC2 instances provides the following features:
+
+* AWS temporary security credentials to use when making requests from running EC2 instances to AWS services.
+* Automatic rotation of the AWS temporary security credentials.
+* Granular AWS service permissions for applications running on EC2 instances.
+
+
 
