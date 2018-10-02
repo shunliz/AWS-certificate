@@ -109,8 +109,7 @@ Managed policies can only be attached to IAM users, groups, or roles. You cannot
 
 **Q: How do I set granular permissions using policies?**
 
-Using policies, you can specify several layers of permission granularity. First, you can define specific AWS service actions you wish to allow or explicitly deny access to. Second, depending on the action, you can define specific AWS resources the actions can be performed on. Third, you can define conditions to specify when the policy is in effect \(for example, if MFA is enabled or not\).**Q: Can I grant permissions to access or change account-level information \(for example, payment instrument, contact email address, and billing history\)?**  
-
+Using policies, you can specify several layers of permission granularity. First, you can define specific AWS service actions you wish to allow or explicitly deny access to. Second, depending on the action, you can define specific AWS resources the actions can be performed on. Third, you can define conditions to specify when the policy is in effect \(for example, if MFA is enabled or not\).**Q: Can I grant permissions to access or change account-level information \(for example, payment instrument, contact email address, and billing history\)?**
 
 Yes, you can delegate the ability for an IAM user or a federated user to view AWS billing data and modify AWS account information. For more information about controlling access to your billing information, see[Controlling Access](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/control-access-billing.html).**Q: Who can create and manage access keys in an AWS account?**
 
@@ -118,27 +117,18 @@ Only the AWS account owner can manage the access keys for the root account. The 
 
 **Q: Can I grant permissions to access AWS resources owned by another AWS account?**
 
-  
-
-
-Yes. Using IAM roles, IAM users and federated users can access resources in another AWS account via the AWS Management Console, the AWS CLI, or the APIs. See
-
-[Manage IAM Roles](http://amazonaws-china.com/iam/details/manage-roles/)
-
-for more information.
+Yes. Using IAM roles, IAM users and federated users can access resources in another AWS account via the AWS Management Console, the AWS CLI, or the APIs. See [Manage IAM Roles](http://amazonaws-china.com/iam/details/manage-roles/) for more information.
 
 **Q: What kinds of policies does the IAM policy simulator support?**
 
-  
+The policy simulator supports testing of newly entered policies and existing policies attached to users, groups, or roles. In addition, you can simulate whether resource-level policies grant access to a particular resource for Amazon S3 buckets, Amazon Glacier vaults, Amazon SNS topics, and Amazon SQS queues. These are included in the simulation when an Amazon Resource Name \(ARN\) is specified in the **Resource **field in **Simulation Settings **for a service that supports resource policies
+
+**Q: If I change a policy in the policy simulator, do those changes persist in production?**  
+No. To apply changes to production, copy the policy that you’ve modified in the policy simulator and attach it to the desired IAM user, group, or role.  
 
 
-The policy simulator supports testing of newly entered policies and existing policies attached to users, groups, or roles. In addition, you can simulate whether resource-level policies grant access to a particular resource for Amazon S3 buckets, Amazon Glacier vaults, Amazon SNS topics, and Amazon SQS queues. These are included in the simulation when an Amazon Resource Name \(ARN\) is specified in the
+**Q: Can I use the policy simulator programmatically?**  
+Yes. You can use the policy simulator using the AWS SDKs or AWS CLI in addition to the policy simulator console. Use the [iam:SimulatePrincipalPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulatePrincipalPolicy.html)API to programmatically test your existing IAM policies. To test the effects of new or updated policies that are not yet attached to a user, group, or role, call the[iam:SimulateCustomPolicy](http://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulateCustomPolicy.html)API.  
 
-**Resource**
 
-field in
-
-**Simulation Settings**
-
-for a service that supports resource policies.
 
