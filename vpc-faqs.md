@@ -185,8 +185,6 @@ Yes. You may create a default route for each subnet. The default route can direc
 
 No.
 
-
-
 **Q. What are the differences between security groups in a VPC and network ACLs in a VPC?**
 
 Security groups in a VPC specify which traffic is allowed to or from an Amazon EC2 instance. Network ACLs operate at the subnet level and evaluate traffic entering and exiting a subnet. Network ACLs can be used to set both Allow and Deny rules. Network ACLs do not filter traffic between instances in the same subnet. In addition, network ACLs perform stateless filtering while security groups perform stateful filtering.
@@ -202,6 +200,18 @@ Stateless filtering, on the other hand, only examines the source or destination 
 Yes. If an Internet gateway has been configured, Amazon VPC traffic bound for Amazon EC2 instances not within a VPC traverses the Internet gateway and then enters the public AWS network to reach the EC2 instance. If an Internet gateway has not been configured, or if the instance is in a subnet configured to route through the virtual private gateway, the traffic traverses the VPN connection, egresses from your datacenter, and then re-enters the public AWS network.
 
 
+
+**Q. Can Amazon EC2 instances within a VPC in one region communicate with Amazon EC2 instances within a VPC in another region?**
+
+Yes. Instances in one region can communicate with each other using Inter-Region VPC Peering, public IP addresses, NAT gateway, NAT instances, VPN Connections or Direct Connect connections.
+
+**Q. Can Amazon EC2 instances within a VPC communicate with Amazon S3?**
+
+Yes. There are multiple options for your resources within a VPC to communicate with Amazon S3. You can use VPC Endpoint for S3, which makes sure all traffic remains within Amazon's network and enables you to apply additional access policies to your Amazon S3 traffic. You can use an Internet gateway to enable Internet access from your VPC and instances in the VPC can communicate with Amazon S3. You can also make all traffic to Amazon S3 traverse the Direct Connect or VPN connection, egress from your datacenter, and then re-enter the public AWS network.
+
+**Q. Can I monitor the network traffic in my VPC?**
+
+Yes. You can use the Amazon VPC Flow Logs feature to monitor the network traffic in your VPC.
 
 
 
