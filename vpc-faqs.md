@@ -211,19 +211,13 @@ Yes. There are multiple options for your resources within a VPC to communicate w
 
 Yes. You can use the Amazon VPC Flow Logs feature to monitor the network traffic in your VPC.
 
-
-
 **Q. Can a subnet span Availability Zones?**
 
 No. A subnet must reside within a single Availability Zone.
 
-
-
 **Q. Am I charged for network bandwidth between instances in different subnets?**
 
 If the instances reside in subnets in different Availability Zones, you will be charged $0.01 per GB for data transfer.
-
-
 
 **Q. Can I attach or detach one or more network interfaces to an EC2 instance while it’s running?**
 
@@ -233,8 +227,6 @@ Yes.
 
 The total number of network interfaces that can be attached to an EC2 instance depends on the instance type. See the EC2 User Guide for more information on the number of allowed network interfaces per instance type.
 
-
-
 **Q. Can I attach a network interface in one Availability Zone to an instance in another Availability Zone?**
 
 Network interfaces can only be attached to instances residing in the same Availability Zone.
@@ -242,8 +234,6 @@ Network interfaces can only be attached to instances residing in the same Availa
 **Q. Can I attach a network interface in one VPC to an instance in another VPC?**
 
 Network interfaces can only be attached to instances in the same VPC as the interface.
-
-
 
 **Q. Can I use Elastic Network Interfaces as a way to host multiple websites requiring separate IP addresses on a single instance?**
 
@@ -256,6 +246,24 @@ Yes.
 **Q. Can I detach the primary interface \(eth0\) on my EC2 instance?**
 
 No. You can attach and detach secondary interfaces \(eth1-ethn\) on an EC2 instance, but you can’t detach the eth0 interface.
+
+
+
+**Q. Can I create a peering connection to a VPC in a different region?**
+
+Yes. Peering connections can be created with VPCs in different regions. Inter-region VPC peering is available globally in all commercial regions \(excluding China\).
+
+**Q. Can I peer my VPC with a VPC belonging to another AWS account?**
+
+Yes, assuming the owner of the other VPC accepts your peering connection request.
+
+**Q. Can I peer two VPCs with matching IP address ranges?**
+
+No. Peered VPCs must have non-overlapping IP ranges.
+
+**Q. How much do VPC peering connections cost?**
+
+There is no charge for creating VPC peering connections, however, data transfer across peering connections is charged. See the Data Transfer section of the[EC2 Pricing page](http://amazonaws-china.com/ec2/pricing/)for data transfer rates.
 
 
 
