@@ -125,15 +125,13 @@ You will use the public IP address of your NAT device.
 
 The AWS VPN service is a route-based solution, so when using a route-based configuration you will not run into SA limitations. If, however, you are using a policy-based solution you will need to limit to a single SA, as the service is a route-based solution.
 
-
-
 **Q. How do I assign IP address ranges to VPCs?**
 
 You assign a single[Classless Internet Domain Routing \(CIDR\)](http://en.wikipedia.org/wiki/CIDR)IP address range as the primary CIDR block when you create a VPC and can add up to four \(4\) secondary CIDR blocks after creation of the VPC. Subnets within a VPC are addressed from these CIDR ranges by you. Please note that while you can create multiple VPCs with overlapping IP address ranges, doing so will prohibit you from connecting these VPCs to a common home network via the hardware VPN connection. For this reason we recommend using non-overlapping IP address ranges. You can allocate an Amazon-provided IPv6 CIDR block to your VPC.
 
 **Q. What IP address ranges are assigned to a default VPC?**
 
-Default VPCs are assigned a CIDR range of 172.31.0.0/16. Default subnets within a default VPC are assigned /20 netblocks within the VPC CIDR range. 
+Default VPCs are assigned a CIDR range of 172.31.0.0/16. Default subnets within a default VPC are assigned /20 netblocks within the VPC CIDR range.
 
 **Q. Can I use my public IPv4 addresses in VPC and access them over the Internet?**
 
@@ -147,7 +145,29 @@ For IPv6, the VPC is a fixed size of /56 \(in CIDR notation\). A VPC can have bo
 
 
 
+**Q. Can I change the size of a VPC?**
 
+Yes. You can expand your existing VPC by adding four \(4\) secondary IPv4 IP ranges \(CIDRs\) to your VPC. You can shrink your VPC by deleting the secondary CIDR blocks you have added to your VPC. You cannot however change the size of the IPv6 address range of your VPC.
+
+**Q. How many subnets can I create per VPC?**
+
+Currently you can create 200 subnets per VPC. If you would like to create more, please[submit a case at the support center](https://amazonaws-china.com/contact-us/vpc-request/).
+
+**Q. Is there a limit on how large or small a subnet can be?**
+
+The minimum size of a subnet is a /28 \(or 14 IP addresses.\) for IPv4. Subnets cannot be larger than the VPC in which they are created.
+
+For IPv6, the subnet size is fixed to be a /64. Only one IPv6 CIDR block can be allocated to a subnet.
+
+**Q. Can I change the private IP addresses of an Amazon EC2 instance while it is running and/or stopped within a VPC?**
+
+Primary private IP addresses are retained for the instance's or interface's lifetime. Secondary private IP addresses can be assigned, unassigned, or moved between interfaces or instances at any time.
+
+
+
+**Q. If an Amazon EC2 instance is stopped within a VPC, can I launch another instance with the same IP address in the same VPC?**
+
+No. An IP address assigned to a running instance can only be used again by another instance once that original running instance is in a “terminated” state.
 
 
 
