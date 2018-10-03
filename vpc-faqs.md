@@ -4,8 +4,6 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 
 You can easily customize the network configuration for your Amazon VPC. For example, you can create a public-facing subnet for your web servers that have access to the Internet, and place your backend systems such as databases or application servers in a private-facing subnet with no Internet access. You can leverage multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
 
-
-
 **Q. What are the components of Amazon VPC?**
 
 Amazon VPC comprises a variety of objects that will be familiar to customers with existing networks:
@@ -26,7 +24,7 @@ Amazon VPC comprises a variety of objects that will be familiar to customers wit
   Your side of a VPN connection.
 * **Peering Connection:**
   A peering connection enables you to route traffic via private IP addresses between two peered VPCs.
-* **VPC Endpoints: **
+* **VPC Endpoints: **
   Enables private connectivity to services hosted in AWS, from within your VPC without using an Internet Gateway, VPN, Network Address Translation \(NAT\) devices, or firewall proxies.
 * **Egress-only Internet Gateway:**
   A stateful gateway to provide egress only access for IPv6 traffic from the VPC to the Internet.
@@ -41,8 +39,6 @@ Gateway type endpoints are available only for AWS services including S3 and Dyna
 
 Interface type endpoints provide private connectivity to services powered by PrivateLink, being AWS services, your own services or SaaS solutions, and supports connectivity over Direct Connect. More AWS and SaaS solutions will be supported by these endpoints in the future. Please refer to VPC Pricing for the price of interface type endpoints.
 
-
-
 **Q. What are the connectivity options for my VPC?**
 
 You may connect your VPC to:
@@ -53,13 +49,9 @@ You may connect your VPC to:
 * Other AWS services \(via Internet gateway, NAT, virtual private gateway, or VPC endpoints\)
 * Other VPCs \(via VPC peering connections\)
 
-
-
 **Q. How do I connect my VPC to the Internet?**
 
 Amazon VPC supports the creation of an Internet gateway. This gateway enables Amazon EC2 instances in the VPC to directly access the Internet.
-
-
 
 **Q. How do instances in a VPC access the Internet?**
 
@@ -100,6 +92,60 @@ In addition to the above capabilities, devices supporting dynamically-routed VPN
 * Establish Border Gateway Protocol \(BGP\) peerings
 * Bind tunnels to logical interfaces \(route-based VPN\)
 * Utilize IPsec Dead Peer Detection
+
+**Q. What is the approximate maximum throughput of a VPN connection?**
+
+VGW supports IPSEC VPN throughput upto 1.25 Gbps. Multiple VPN connections to the same VPC are cumulatively bound by the VGW throughput of 1.25 Gbps.
+
+**Q. What factors affect the throughput of my VPN connection?**
+
+VPN connection throughput can depend on multiple factors, such as the capability of your Customer Gateway \(CGW\), the capacity of your connection, average packet size, the protocol being used \(TCP vs. UDP\), and the network latency between your CGW and the Virtual Private Gateway \(VGW\).
+
+**Q. What tools are available to me to help troubleshoot my Hardware VPN configuration?**
+
+The DescribeVPNConnection API displays the status of the VPN connection, including the state \("up"/"down"\) of each VPN tunnel and corresponding error messages if either tunnel is "down". This information is also displayed in the AWS Management Console.
+
+**Q. How do I connect a VPC to my corporate datacenter?**
+
+Establishing a hardware VPN connection between your existing network and Amazon VPC allows you to interact with Amazon EC2 instances within a VPC as if they were within your existing network. AWS does not perform
+
+[network address translation \(NAT\)](http://en.wikipedia.org/wiki/Network_address_translation)
+
+on Amazon EC2 instances within a VPC accessed via a hardware VPN connection.
+
+**Q. Can I NAT my CGW behind a router or firewall?**
+
+Yes, you will need to enable NAT-T and open UDP port 4500 on your NAT device.
+
+**Q. What IP address do I use for my CGW address?**
+
+You will use the public IP address of your NAT device.
+
+**Q: How many IPsec security associations can be established concurrently per tunnel?**
+
+The AWS VPN service is a route-based solution, so when using a route-based configuration you will not run into SA limitations. If, however, you are using a policy-based solution you will need to limit to a single SA, as the service is a route-based solution.
+
+
+
+**Q. How do I assign IP address ranges to VPCs?**
+
+You assign a single[Classless Internet Domain Routing \(CIDR\)](http://en.wikipedia.org/wiki/CIDR)IP address range as the primary CIDR block when you create a VPC and can add up to four \(4\) secondary CIDR blocks after creation of the VPC. Subnets within a VPC are addressed from these CIDR ranges by you. Please note that while you can create multiple VPCs with overlapping IP address ranges, doing so will prohibit you from connecting these VPCs to a common home network via the hardware VPN connection. For this reason we recommend using non-overlapping IP address ranges. You can allocate an Amazon-provided IPv6 CIDR block to your VPC.
+
+**Q. What IP address ranges are assigned to a default VPC?**
+
+Default VPCs are assigned a CIDR range of 172.31.0.0/16. Default subnets within a default VPC are assigned /20 netblocks within the VPC CIDR range. 
+
+**Q. Can I use my public IPv4 addresses in VPC and access them over the Internet?**
+
+Yes, you can bring your public IPv4 addresses into AWS VPC and statically allocate them to subnets and EC2 instances. To access these addresses over the Internet, you will have to advertise them to the Internet from your on-premises network. You will also have to route the traffic over these addresses between your VPC and on-premises network using AWS DX or AWS VPN connection. You can route the traffic from your VPC using the Virtual Private Gateway. Similarly, you can route the traffic from your on-premises network back to your VPC using your routers.
+
+**Q. How large of a VPC can I create?**
+
+Currently, Amazon VPC supports five \(5\) IP address ranges, one \(1\) primary and four \(4\) secondary for IPv4. Each of these ranges can be between /28 \(in CIDR notation\) and /16 in size. The IP address ranges of your VPC should not overlap with the IP address ranges of your existing network.
+
+For IPv6, the VPC is a fixed size of /56 \(in CIDR notation\). A VPC can have both IPv4 and IPv6 CIDR blocks associated to it.
+
+
 
 
 
