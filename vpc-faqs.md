@@ -199,8 +199,6 @@ Stateless filtering, on the other hand, only examines the source or destination 
 
 Yes. If an Internet gateway has been configured, Amazon VPC traffic bound for Amazon EC2 instances not within a VPC traverses the Internet gateway and then enters the public AWS network to reach the EC2 instance. If an Internet gateway has not been configured, or if the instance is in a subnet configured to route through the virtual private gateway, the traffic traverses the VPN connection, egresses from your datacenter, and then re-enters the public AWS network.
 
-
-
 **Q. Can Amazon EC2 instances within a VPC in one region communicate with Amazon EC2 instances within a VPC in another region?**
 
 Yes. Instances in one region can communicate with each other using Inter-Region VPC Peering, public IP addresses, NAT gateway, NAT instances, VPN Connections or Direct Connect connections.
@@ -212,6 +210,52 @@ Yes. There are multiple options for your resources within a VPC to communicate w
 **Q. Can I monitor the network traffic in my VPC?**
 
 Yes. You can use the Amazon VPC Flow Logs feature to monitor the network traffic in your VPC.
+
+
+
+**Q. Can a subnet span Availability Zones?**
+
+No. A subnet must reside within a single Availability Zone.
+
+
+
+**Q. Am I charged for network bandwidth between instances in different subnets?**
+
+If the instances reside in subnets in different Availability Zones, you will be charged $0.01 per GB for data transfer.
+
+
+
+**Q. Can I attach or detach one or more network interfaces to an EC2 instance while it’s running?**
+
+Yes.
+
+**Q. Can I have more than two network interfaces attached to my EC2 instance?**
+
+The total number of network interfaces that can be attached to an EC2 instance depends on the instance type. See the EC2 User Guide for more information on the number of allowed network interfaces per instance type.
+
+
+
+**Q. Can I attach a network interface in one Availability Zone to an instance in another Availability Zone?**
+
+Network interfaces can only be attached to instances residing in the same Availability Zone.
+
+**Q. Can I attach a network interface in one VPC to an instance in another VPC?**
+
+Network interfaces can only be attached to instances in the same VPC as the interface.
+
+
+
+**Q. Can I use Elastic Network Interfaces as a way to host multiple websites requiring separate IP addresses on a single instance?**
+
+Yes, however, this is not a use case best suited for multiple interfaces. Instead, assign additional private IP addresses to the instance and then associate EIPs to the private IPs as needed.
+
+**Q. Will I get charged for an Elastic IP Address that is associated to a network interface but the network interface isn’t attached to a running instance?**
+
+Yes.
+
+**Q. Can I detach the primary interface \(eth0\) on my EC2 instance?**
+
+No. You can attach and detach secondary interfaces \(eth1-ethn\) on an EC2 instance, but you can’t detach the eth0 interface.
 
 
 
