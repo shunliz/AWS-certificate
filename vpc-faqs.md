@@ -165,10 +165,6 @@ Primary private IP addresses are retained for the instance's or interface's life
 
 No. An IP address assigned to a running instance can only be used again by another instance once that original running instance is in a “terminated” state.
 
-
-
-
-
 **Q. Can I assign any IP address to an instance?**
 
 You can assign any IP address to your instance as long as it is:
@@ -188,6 +184,24 @@ Yes. You may create a default route for each subnet. The default route can direc
 **Q. Does Amazon VPC support**[**multicast**](http://en.wikipedia.org/wiki/IP_multicast)**or**[**broadcast**](http://en.wikipedia.org/wiki/Broadcast_address#IP_network_broadcasting)**?**
 
 No.
+
+
+
+**Q. What are the differences between security groups in a VPC and network ACLs in a VPC?**
+
+Security groups in a VPC specify which traffic is allowed to or from an Amazon EC2 instance. Network ACLs operate at the subnet level and evaluate traffic entering and exiting a subnet. Network ACLs can be used to set both Allow and Deny rules. Network ACLs do not filter traffic between instances in the same subnet. In addition, network ACLs perform stateless filtering while security groups perform stateful filtering.
+
+**Q. What is the difference between stateful and stateless filtering?**
+
+Stateful filtering tracks the origin of a request and can automatically allow the reply to the request to be returned to the originating computer. For example, a stateful filter that allows inbound traffic to TCP port 80 on a webserver will allow the return traffic, usually on a high numbered port \(e.g., destination TCP port 63, 912\) to pass through the stateful filter between the client and the webserver. The filtering device maintains a state table that tracks the origin and destination port numbers and IP addresses. Only one rule is required on the filtering device: Allow traffic inbound to the web server on TCP port 80.
+
+Stateless filtering, on the other hand, only examines the source or destination IP address and the destination port, ignoring whether the traffic is a new request or a reply to a request. In the above example, two rules would need to be implemented on the filtering device: one rule to allow traffic inbound to the web server on TCP port 80, and another rule to allow outbound traffic from the webserver \(TCP port range 49, 152 through 65, 535\).
+
+**Q. Can Amazon EC2 instances within a VPC communicate with Amazon EC2 instances not within a VPC?**
+
+Yes. If an Internet gateway has been configured, Amazon VPC traffic bound for Amazon EC2 instances not within a VPC traverses the Internet gateway and then enters the public AWS network to reach the EC2 instance. If an Internet gateway has not been configured, or if the instance is in a subnet configured to route through the virtual private gateway, the traffic traverses the VPN connection, egresses from your datacenter, and then re-enters the public AWS network.
+
+
 
 
 
