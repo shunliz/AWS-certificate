@@ -143,8 +143,6 @@ Currently, Amazon VPC supports five \(5\) IP address ranges, one \(1\) primary a
 
 For IPv6, the VPC is a fixed size of /56 \(in CIDR notation\). A VPC can have both IPv4 and IPv6 CIDR blocks associated to it.
 
-
-
 **Q. Can I change the size of a VPC?**
 
 Yes. You can expand your existing VPC by adding four \(4\) secondary IPv4 IP ranges \(CIDRs\) to your VPC. You can shrink your VPC by deleting the secondary CIDR blocks you have added to your VPC. You cannot however change the size of the IPv6 address range of your VPC.
@@ -163,11 +161,33 @@ For IPv6, the subnet size is fixed to be a /64. Only one IPv6 CIDR block can be 
 
 Primary private IP addresses are retained for the instance's or interface's lifetime. Secondary private IP addresses can be assigned, unassigned, or moved between interfaces or instances at any time.
 
-
-
 **Q. If an Amazon EC2 instance is stopped within a VPC, can I launch another instance with the same IP address in the same VPC?**
 
 No. An IP address assigned to a running instance can only be used again by another instance once that original running instance is in a “terminated” state.
+
+
+
+
+
+**Q. Can I assign any IP address to an instance?**
+
+You can assign any IP address to your instance as long as it is:
+
+* Part of the associated subnet's IP address range
+* Not reserved by Amazon for IP networking purposes
+* Not currently assigned to another interface
+
+**Q. Can I assign one or more Elastic IP \(EIP\) addresses to VPC-based Amazon EC2 instances?**
+
+Yes, however, the EIP addresses will only be reachable from the Internet \(not over the VPN connection\). Each EIP address must be associated with a unique private IP address on the instance. EIP addresses should only be used on instances in subnets configured to route their traffic directly to the Internet gateway. EIPs cannot be used on instances in subnets configured to use a NAT gateway or a NAT instance to access the Internet. This is applicable only for IPv4. Amazon VPCs do not support EIPs for IPv6 at this time.
+
+**Q. Can I specify which subnet will use which gateway as its default?**
+
+Yes. You may create a default route for each subnet. The default route can direct traffic to egress the VPC via the Internet gateway, the virtual private gateway, or the NAT gateway.
+
+**Q. Does Amazon VPC support**[**multicast**](http://en.wikipedia.org/wiki/IP_multicast)**or**[**broadcast**](http://en.wikipedia.org/wiki/Broadcast_address#IP_network_broadcasting)**?**
+
+No.
 
 
 
