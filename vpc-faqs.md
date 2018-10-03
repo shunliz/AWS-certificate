@@ -247,11 +247,9 @@ Yes.
 
 No. You can attach and detach secondary interfaces \(eth1-ethn\) on an EC2 instance, but you can’t detach the eth0 interface.
 
-
-
 **Q. Can I create a peering connection to a VPC in a different region?**
 
-Yes. Peering connections can be created with VPCs in different regions. Inter-region VPC peering is available globally in all commercial regions \(excluding China\).
+Yes. Peering connections can be created with VPCs in different regions. Inter-region VPC peering is available globally in all commercial regions \(excluding China\).
 
 **Q. Can I peer my VPC with a VPC belonging to another AWS account?**
 
@@ -264,6 +262,40 @@ No. Peered VPCs must have non-overlapping IP ranges.
 **Q. How much do VPC peering connections cost?**
 
 There is no charge for creating VPC peering connections, however, data transfer across peering connections is charged. See the Data Transfer section of the[EC2 Pricing page](http://amazonaws-china.com/ec2/pricing/)for data transfer rates.
+
+
+
+**Q. Do I need an Internet Gateway to use peering connections?**
+
+No. VPC peering connections do not require an Internet Gateway.
+
+**Q. Is VPC peering traffic within the region encrypted?**
+
+No. Traffic between instances in peered VPCs remains private and isolated – similar to how traffic between two instances in the same VPC is private and isolated.
+
+**Q. Is Inter-Region VPC Peering traffic encrypted?**
+
+Traffic is encrypted using modern AEAD \(Authenticated Encryption with Associated Data\) algorithms. Key agreement and key management is handled by AWS.
+
+**Q. How do DNS translations work with Inter-Region VPC Peering?**
+
+By default, a query for a public hostname of an instance in a peered VPC in a different region will resolve to a public IP address. Route 53 private DNS can be used to resolve to a private IP address with Inter-Region VPC Peering.
+
+**Q. Can I reference security groups across an Inter-Region VPC Peering connection?**
+
+No. Security groups cannot be referenced across an Inter-Region VPC Peering connection.
+
+**Q. Does Inter-Region VPC Peering support with IPv6?**
+
+No. Inter-Region VPC Peering does not support IPv6.
+
+**Q. Can Inter-Region VPC Peering be used with EC2-Classic Link?**
+
+No. Inter-Region VPC Peering cannot be used with EC2-ClassicLink.
+
+**Q. Are there AWS Services that cannot be used over Inter-Region VPC Peering?**
+
+Network Load Balancers, AWS PrivateLink and Elastic File System cannot be used over Inter-Region VPC Peering.
 
 
 
