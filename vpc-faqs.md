@@ -263,8 +263,6 @@ No. Peered VPCs must have non-overlapping IP ranges.
 
 There is no charge for creating VPC peering connections, however, data transfer across peering connections is charged. See the Data Transfer section of the[EC2 Pricing page](http://amazonaws-china.com/ec2/pricing/)for data transfer rates.
 
-
-
 **Q. Do I need an Internet Gateway to use peering connections?**
 
 No. VPC peering connections do not require an Internet Gateway.
@@ -295,7 +293,50 @@ No. Inter-Region VPC Peering cannot be used with EC2-ClassicLink.
 
 **Q. Are there AWS Services that cannot be used over Inter-Region VPC Peering?**
 
-Network Load Balancers, AWS PrivateLink and Elastic File System cannot be used over Inter-Region VPC Peering.
+Network Load Balancers, AWS PrivateLink and Elastic File System cannot be used over Inter-Region VPC Peering.  
+
+
+**Q. Can traffic from an EC2-Classic instance travel through the Amazon VPC and egress through the Internet gateway, virtual private gateway, or to peered VPCs?**
+
+Traffic from an EC2-Classic instance can only be routed to private IP addresses within the VPC. They will not be routed to any destinations outside the VPC, including Internet gateway, virtual private gateway, or peered VPC destinations.
+
+
+
+**Q. How can I configure/assign my ASN to be advertised as Amazon side ASN?**
+
+You can configure/assign an ASN to be advertised as the Amazon side ASN during creation of the new Virtual Private Gateway \(VGW\). You can create a VGW using the VPC console or a EC2/CreateVpnGateway API call.
+
+**Q. What ASN did Amazon assign prior to this feature?**
+
+Amazon assigned the following ASNs: EU West \(Dublin\) 9059; Asia Pacific \(Singapore\) 17493 and Asia Pacific \(Tokyo\) 10124. All other regions were assigned an ASN of 7224; these ASNs are referred as “legacy public ASN” of the region.
+
+**Q. Can I use any ASN – public and private?**
+
+You can assign any private ASN to the Amazon side. You can assign the "legacy public ASN" of the region until June 30th 2018, you cannot assign any other public ASN. After June 30th 2018, Amazon will provide an ASN of 64512.
+
+**Q. What is AWS PrivateLink?**
+
+AWS PrivateLink enables customers to access services hosted on AWS in a highly available and scalable manner, while keeping all the network traffic within the AWS network. Service users can use this to privately access services powered by PrivateLink from their Amazon Virtual Private Cloud \(VPC\) or their on-premises, without using public IPs, and without requiring the traffic to traverse across the Internet. Service owners can register their Network Load Balancers to PrivateLink services and provide the services to other AWS customers.
+
+**Q. How can I use AWS PrivateLink?**
+
+As a service user, you will need to create interface type VPC endpoints for services that are powered by PrivateLink. These service endpoints will appear as Elastic Network Interfaces \(ENIs\) with private IPs in your VPCs. Once these endpoints are created, any traffic destined to these IPs will get privately routed to the corresponding AWS services.
+
+As a service owner, you can onboard your service to AWS PrivateLink by establishing a Network Load Balancer \(NLB\) to front your service and create a PrivateLink service to register with the NLB. Your customers will be able to establish endpoints within their VPC to connect to your service after you whitelisted their accounts and IAM roles.
+
+**Q. How many VPCs, subnets, Elastic IP addresses, Internet gateways, customer gateways, virtual private gateways, and VPN connections can I create?**
+
+You can have:
+
+* Five Amazon VPCs per AWS account per region
+* Two hundred subnets per Amazon VPC
+* Five Amazon VPC Elastic IP addresses per AWS account per region
+* One Internet gateway per VPC
+* Five virtual private gateways per AWS account per region
+* Fifty customer gateways per AWS account per region
+* Ten IPsec VPN Connections per virtual private gateway
+
+
 
 
 
