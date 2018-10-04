@@ -129,23 +129,23 @@ Amazon S3 uses a combination of Content-MD5 checksums and cyclic redundancy chec
 
 Versioning allows you to preserve, retrieve, and restore every version of every object stored in an Amazon S3 bucket. Once you enable Versioning for a bucket, Amazon S3 preserves existing objects anytime you perform a PUT, POST, COPY, or DELETE operation on them. By default, GET requests will retrieve the most recently written version. Older versions of an overwritten or deleted object can be retrieved by specifying a version in the request.
 
+**Q:  How does Versioning protect me from accidental deletion of my objects?**
 
+When a user performs a DELETE operation on an object, subsequent simple \(un-versioned\) requests will no longer retrieve the object. However, all versions of that object will continue to be preserved in your Amazon S3 bucket and can be retrieved or restored. Only the owner of an Amazon S3 bucket can permanently delete a version. You can set [Lifecycle rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) to manage the lifetime and the cost of storing multiple versions of your objects.
 
-**Q:  How does Versioning protect me from accidental deletion of my objects?**
+**Q:  Can I setup a trash, recycle bin, or rollback window on my Amazon S3 objects to recover from deletes and overwrites?**
 
-When a user performs a DELETE operation on an object, subsequent simple \(un-versioned\) requests will no longer retrieve the object. However, all versions of that object will continue to be preserved in your Amazon S3 bucket and can be retrieved or restored. Only the owner of an Amazon S3 bucket can permanently delete a version. You can set [Lifecycle rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) to manage the lifetime and the cost of storing multiple versions of your objects.
+You can use [Lifecycle rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) along with [Versioning](http://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectVersioning.html) to implement a rollback window for your Amazon S3 objects. For example, with your versioning-enabled bucket, you can set up a rule that archives all of your previous versions to the lower-cost Glacier storage class and deletes them after 100 days, giving you a 100-day window to roll back any changes on your data while lowering your storage costs.
 
-
-
-**Q:  Can I setup a trash, recycle bin, or rollback window on my Amazon S3 objects to recover from deletes and overwrites?**
-
-You can use [Lifecycle rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) along with [Versioning](http://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectVersioning.html) to implement a rollback window for your Amazon S3 objects. For example, with your versioning-enabled bucket, you can set up a rule that archives all of your previous versions to the lower-cost Glacier storage class and deletes them after 100 days, giving you a 100-day window to roll back any changes on your data while lowering your storage costs.
-
-
-
-**Q:  How can I ensure maximum protection of my preserved versions?**
+**Q:  How can I ensure maximum protection of my preserved versions?**
 
 Versioning’s[Multi-Factor Authentication \(MFA\)](https://amazonaws-china.com/mfa/)Delete capability can be used to provide an additional layer of security. By default, all requests to your Amazon S3 bucket require your AWS account credentials. If you enable Versioning with MFA Delete on your Amazon S3 bucket, two forms of authentication are required to permanently delete a version of an object: your AWS account credentials and a valid six-digit code and serial number from an authentication device in your physical possession. To learn more about enabling Versioning with MFA Delete, including how to purchase and activate an authentication device, please refer to the[Amazon S3 Technical Documentation](http://docs.amazonwebservices.com/AmazonS3/latest/dev/Versioning.html).
+
+
+
+**Q:  Why would I choose to use S3 Standard-IA?**
+
+S3 Standard-IA is ideal for data that is accessed less frequently, but requires rapid access when needed. S3 Standard-IA is ideally suited for long-term file storage, older sync and share storage, and other aging data.
 
 
 
