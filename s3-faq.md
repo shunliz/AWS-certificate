@@ -99,53 +99,53 @@ Using an encryption client library, such as the[Amazon S3 Encryption Client](htt
 
 For more information on using Amazon S3 SSE-S3, SSE-C, or SSE-KMS, please refer to the topic on [Using Encryption](http://docs.amazonwebservices.com/AmazonS3/latest/dev/UsingEncryption.html) in the[Amazon S3 Developer Guide](http://docs.amazonwebservices.com/AmazonS3/latest/dev/).
 
-
-
-**Q:  What is an Amazon VPC Endpoint for Amazon S3?**
+**Q:  What is an Amazon VPC Endpoint for Amazon S3?**
 
 An Amazon VPC Endpoint for Amazon S3 is a logical entity within a VPC that allows connectivity only to S3. The VPC Endpoint routes requests to S3 and routes responses back to the VPC.
 
-
-
-**Q:  Can I allow a specific Amazon VPC Endpoint access to my Amazon S3 bucket?**
+**Q:  Can I allow a specific Amazon VPC Endpoint access to my Amazon S3 bucket?**
 
 You can limit access to your bucket from a specific Amazon VPC Endpoint or a set of endpoints using Amazon S3 bucket policies. S3 bucket policies now support a condition, aws:sourceVpce, that you can use to restrict access. For more details and example policies, read[Using VPC Endpoints](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html).
-
-
 
 **Q: What is Amazon Macie?**
 
 Amazon Macie is an[AI-powered security service](https://amazonaws-china.com/macie/)that helps you prevent data loss by automatically discovering, classifying, and protecting sensitive data stored in Amazon S3. Amazon Macie uses machine learning to recognize sensitive data such as personally identifiable information \(PII\) or intellectual property, assigns a business value, and provides visibility into where this data is stored and how it is being used in your organization. Amazon Macie continuously monitors data access activity for anomalies, and delivers alerts when it detects risk of unauthorized access or inadvertent data leaks.
 
-
-
-**Q:  How durable is Amazon S3?**
+**Q:  How durable is Amazon S3?**
 
 Amazon S3 Standard, S3 Standard–IA, S3 One Zone-IA, and Amazon Glacier are all designed to provide 99.999999999% durability of objects over a given year. This durability level corresponds to an average annual expected loss of 0.000000001% of objects. For example, if you store 10,000,000 objects with Amazon S3, you can on average expect to incur a loss of a single object once every 10,000 years. In addition, Amazon S3 Standard, S3 Standard-IA, and Amazon Glacier are all designed to sustain data in the event of an entire S3 Availability Zone loss.
 
-As with any environment, the best practice is to have a backup and to put in place safeguards against malicious or accidental deletion. For S3 data, that best practice includes secure access permissions, Cross-Region Replication, versioning, and a functioning, regularly tested backup. 
+As with any environment, the best practice is to have a backup and to put in place safeguards against malicious or accidental deletion. For S3 data, that best practice includes secure access permissions, Cross-Region Replication, versioning, and a functioning, regularly tested backup.
 
-
-
-**Q:  How are Amazon S3 and Amazon Glacier designed to achieve 99.999999999% durability?**
+**Q:  How are Amazon S3 and Amazon Glacier designed to achieve 99.999999999% durability?**
 
 Amazon S3 Standard, S3 Standard-IA, and Amazon Glacier storage classes redundantly store your objects on multiple devices across a minimum of three Availability Zones \(AZs\) in an Amazon S3 Region before returning SUCCESS. The S3 One Zone-IA storage class stores data redundantly across mutliple devices within a single AZ. These services are designed to sustain concurrent device failures by quickly detecting and repairing any lost redundancy, and they also regularly verify the integrity of your data using checksums.
 
-
-
-**Q:  What checksums does Amazon S3 employ to detect data corruption?**
+**Q:  What checksums does Amazon S3 employ to detect data corruption?**
 
 Amazon S3 uses a combination of Content-MD5 checksums and cyclic redundancy checks \(CRCs\) to detect data corruption. Amazon S3 performs these checksums on data at rest and repairs any corruption using redundant data. In addition, the service calculates checksums on all network traffic to detect corruption of data packets when storing or retrieving data.
 
-
-
-**Q:  What is Versioning?**
+**Q:  What is Versioning?**
 
 Versioning allows you to preserve, retrieve, and restore every version of every object stored in an Amazon S3 bucket. Once you enable Versioning for a bucket, Amazon S3 preserves existing objects anytime you perform a PUT, POST, COPY, or DELETE operation on them. By default, GET requests will retrieve the most recently written version. Older versions of an overwritten or deleted object can be retrieved by specifying a version in the request.
 
 
 
+**Q:  How does Versioning protect me from accidental deletion of my objects?**
 
+When a user performs a DELETE operation on an object, subsequent simple \(un-versioned\) requests will no longer retrieve the object. However, all versions of that object will continue to be preserved in your Amazon S3 bucket and can be retrieved or restored. Only the owner of an Amazon S3 bucket can permanently delete a version. You can set [Lifecycle rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) to manage the lifetime and the cost of storing multiple versions of your objects.
+
+
+
+**Q:  Can I setup a trash, recycle bin, or rollback window on my Amazon S3 objects to recover from deletes and overwrites?**
+
+You can use [Lifecycle rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) along with [Versioning](http://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectVersioning.html) to implement a rollback window for your Amazon S3 objects. For example, with your versioning-enabled bucket, you can set up a rule that archives all of your previous versions to the lower-cost Glacier storage class and deletes them after 100 days, giving you a 100-day window to roll back any changes on your data while lowering your storage costs.
+
+
+
+**Q:  How can I ensure maximum protection of my preserved versions?**
+
+Versioning’s[Multi-Factor Authentication \(MFA\)](https://amazonaws-china.com/mfa/)Delete capability can be used to provide an additional layer of security. By default, all requests to your Amazon S3 bucket require your AWS account credentials. If you enable Versioning with MFA Delete on your Amazon S3 bucket, two forms of authentication are required to permanently delete a version of an object: your AWS account credentials and a valid six-digit code and serial number from an authentication device in your physical possession. To learn more about enabling Versioning with MFA Delete, including how to purchase and activate an authentication device, please refer to the[Amazon S3 Technical Documentation](http://docs.amazonwebservices.com/AmazonS3/latest/dev/Versioning.html).
 
 
 
