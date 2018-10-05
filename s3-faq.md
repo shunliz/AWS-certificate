@@ -145,17 +145,21 @@ Versioning’s[Multi-Factor Authentication \(MFA\)](https://amazonaws-china.com/
 
 S3 Standard-IA is ideal for data that is accessed less frequently, but requires rapid access when needed. S3 Standard-IA is ideally suited for long-term file storage, older sync and share storage, and other aging data.
 
-
-
-**Q:  How do I get my data into S3 Standard-IA?**
+**Q:  How do I get my data into S3 Standard-IA?**
 
 There are two ways to get data into S3 Standard-IA. You can directly PUT into S3 Standard-IA by specifying STANDARD\_IA in the x-amz-storage-class header. You can also set Lifecycle policies to transition objects from the S3 Standard to the S3 Standard-IA storage class.
 
-
-
-**Q:  Is there a minimum storage duration charge for S3 Standard-IA?**
+**Q:  Is there a minimum storage duration charge for S3 Standard-IA?**
 
 S3 Standard-IA is designed for long-lived but infrequently accessed data that is retained for months or years. Data that is deleted from S3 Standard-IA within 30 days will be charged for a full 30 days. Please see the[Amazon S3 pricing page](https://amazonaws-china.com/s3/pricing/)for information about S3 Standard-IA pricing.
+
+
+
+**Q:  Is there a minimum object storage charge for S3 Standard-IA?**
+
+S3 Standard-IA is designed for larger objects and has a minimum object storage charge of 128KB. Objects smaller than 128KB in size will incur storage charges as if the object were 128KB. For example, a 6KB object in S3 Standard-IA will incur S3 Standard-IA storage charges for 6KB and an additional minimum object size fee equivalent to 122KB at the S3 Standard-IA storage price. Please see the[Amazon S3 pricing page](https://amazonaws-china.com/s3/pricing/)for information about S3 Standard-IA pricing.
+
+
 
 
 
