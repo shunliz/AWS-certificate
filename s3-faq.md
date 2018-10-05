@@ -63,9 +63,7 @@ You can securely upload/download your data to Amazon S3 via SSL endpoints using 
 
 Customers may use four mechanisms for controlling access to Amazon S3 resources: Identity and Access Management \(IAM\) policies, bucket policies, Access Control Lists \(ACLs\), and Query String Authentication. IAM enables organizations with multiple employees to create and manage multiple users under a single AWS account. With IAM policies, customers can grant IAM users fine-grained control to their Amazon S3 bucket or objects while also retaining full control over everything the users do. With bucket policies, customers can define rules which apply broadly across all requests to their Amazon S3 resources, such as granting write privileges to a subset of Amazon S3 resources. Customers can also restrict access based on an aspect of the request, such as HTTP referrer and IP address. With ACLs, customers can grant specific permissions \(i.e. READ, WRITE, FULL\_CONTROL\) to specific users for an individual bucket or object. With Query String Authentication, customers can create a URL to an Amazon S3 object which is only valid for a limited time. For more information on the various access control policies available in Amazon S3, please refer to the[Access Control topic](http://docs.amazonwebservices.com/AmazonS3/latest/dev/index.html?UsingAuthAccess.html)in the[Amazon S3 Developer Guide](http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html).
 
-[Show less](https://amazonaws-china.com/s3/faqs/#)
 
-## Security {#Security}
 
 **Q:  How secure is my data in Amazon S3? **
 
@@ -157,9 +155,7 @@ S3 Standard-IA is designed for long-lived but infrequently accessed data that is
 
 S3 Standard-IA is designed for larger objects and has a minimum object storage charge of 128KB. Objects smaller than 128KB in size will incur storage charges as if the object were 128KB. For example, a 6KB object in S3 Standard-IA will incur S3 Standard-IA storage charges for 6KB and an additional minimum object size fee equivalent to 122KB at the S3 Standard-IA storage price. Please see the[Amazon S3 pricing page](https://amazonaws-china.com/s3/pricing/)for information about S3 Standard-IA pricing.
 
-
-
-**Q:  What is S3 One Zone-IA storage class?**
+**Q:  What is S3 One Zone-IA storage class?**
 
 S3 One Zone-IA storage class is an Amazon S3 storage class that customers can choose to store objects in a single availability zone. S3 One Zone-IA storage redundantly stores data within that single Availability Zone to deliver storage at 20% less cost than geographically redundant S3 Standard-IA storage, which stores data redundantly across multiple geographically separate Availability Zones.
 
@@ -167,15 +163,35 @@ S3 One Zone-IA offers a 99% available SLA and is also designed for eleven 9’s 
 
 S3 One Zone-IA storage offers the same Amazon S3 features as S3 Standard and S3 Standard-IA and is used through the Amazon S3 API, CLI and console. S3 One Zone-IA storage class is set at the object level and can exist in the same bucket as S3 Standard and S3 Standard-IA storage classes. You can use S3 Lifecycle policies to automatically transition objects between storage classes without any application changes.
 
-**Q:  Are there differences between how Amazon EC2 and Amazon S3 work with Availability Zone-specific resources?**
+**Q:  Are there differences between how Amazon EC2 and Amazon S3 work with Availability Zone-specific resources?**
 
 Yes. Amazon EC2 provides you the ability to pick the AZ to place resources, such as compute instances, within a region. When you use S3 One Zone-IA, S3 One Zone-IA assigns an AWS Availability Zone in the region according to available capacity.
 
-
-
-**Q:  How much disaster recovery protection do I forgo by using S3 One Zone-IA?**
+**Q:  How much disaster recovery protection do I forgo by using S3 One Zone-IA?**
 
 Each Availability Zone uses redundant power and networking. Within an AWS Region, Availability Zones are on different flood plains, earthquake fault zones, and geographically separated for fire protection. S3 Standard and S3 Standard-IA storage classes offer protection against these sorts of disasters by storing your data redundantly in multiple Availability Zones. S3 One Zone-IA offers protection against equipment failure within an Availability Zone, but it does not protect against the loss of the Availability Zone, in which case, data stored in S3 One Zone-IA would be lost. Using S3 One Zone-IA, S3 Standard, and S3 Standard-IA options, you can choose the storage class that best fits the durability and availability needs of your storage.
+
+
+
+**Q:  Does Amazon S3 provide capabilities for archiving objects to lower cost storage options?**
+
+Yes, Amazon S3 enables you to utilize Amazon Glacier’s extremely[low-cost storage service for data archival](https://amazonaws-china.com/glacier/). Amazon Glacier stores data for as little as $0.004 per gigabyte per month. To keep costs low yet suitable for varying retrieval needs, Amazon Glacier provides three options for access to archives, ranging from a few minutes to several hours. Some examples of archive uses cases include digital media archives, financial and healthcare records, raw genomic sequence data, long-term database backups, and data that must be retained for regulatory compliance.
+
+
+
+**Q:  How can I store my data using the Amazon Glacier option?**
+
+You can use[Lifecycle rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) to automatically archive sets of Amazon S3 objects to Amazon Glacier based on object age. Use the Amazon S3 Management Console, the AWS SDKs, or the Amazon S3 APIs to define rules for archival. Rules specify a prefix and time period. The prefix \(e.g. “logs/”\) identifies the object\(s\) subject to the rule. The time period specifies either the number of days from object creation date \(e.g. 180 days\) or the specified date after which the object\(s\) should be archived. Any S3 Standard, S3 Standard-IA, or S3 One Zone-IA objects which have names beginning with the specified prefix and which have aged past the specified time period are archived to Amazon Glacier. To retrieve Amazon S3 data stored in Amazon Glacier, initiate a retrieval job via the Amazon S3 APIs or Management Console. Once the retrieval job is complete, you can access your data through an Amazon S3 GET object request.
+
+For more information on using Lifecycle rules for archival to Amazon Glacier, please refer to the[Object Archival](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-archival.html)topic in the Amazon S3 Developer Guide.
+
+
+
+**Q:  How can I retrieve my objects that are archived in Amazon Glacier?**
+
+To retrieve Amazon S3 data stored in Amazon Glacier, initiate a retrieval request using the Amazon S3 APIs or the Amazon S3 Management Console. The retrieval request creates a temporary copy of your data in the S3 RRS or S3 Standard-IA storage class while leaving the archived data intact in Amazon Glacier. You can specify the amount of time in days for which the temporary copy is stored in S3. You can then access your temporary copy from S3 through an Amazon S3 GET request on the archived object.
+
+
 
 
 
