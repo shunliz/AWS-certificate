@@ -153,13 +153,29 @@ There are two ways to get data into S3 Standard-IA. You can directly PUT into S3
 
 S3 Standard-IA is designed for long-lived but infrequently accessed data that is retained for months or years. Data that is deleted from S3 Standard-IA within 30 days will be charged for a full 30 days. Please see the[Amazon S3 pricing page](https://amazonaws-china.com/s3/pricing/)for information about S3 Standard-IA pricing.
 
-
-
-**Q:  Is there a minimum object storage charge for S3 Standard-IA?**
+**Q:  Is there a minimum object storage charge for S3 Standard-IA?**
 
 S3 Standard-IA is designed for larger objects and has a minimum object storage charge of 128KB. Objects smaller than 128KB in size will incur storage charges as if the object were 128KB. For example, a 6KB object in S3 Standard-IA will incur S3 Standard-IA storage charges for 6KB and an additional minimum object size fee equivalent to 122KB at the S3 Standard-IA storage price. Please see the[Amazon S3 pricing page](https://amazonaws-china.com/s3/pricing/)for information about S3 Standard-IA pricing.
 
 
+
+**Q:  What is S3 One Zone-IA storage class?**
+
+S3 One Zone-IA storage class is an Amazon S3 storage class that customers can choose to store objects in a single availability zone. S3 One Zone-IA storage redundantly stores data within that single Availability Zone to deliver storage at 20% less cost than geographically redundant S3 Standard-IA storage, which stores data redundantly across multiple geographically separate Availability Zones.
+
+S3 One Zone-IA offers a 99% available SLA and is also designed for eleven 9’s of durability within the Availability Zone. But, unlike the S3 Standard and S3 Standard-IA storage classes, data stored in the S3 One Zone-IA storage class will be lost in the event of Availability Zone destruction.
+
+S3 One Zone-IA storage offers the same Amazon S3 features as S3 Standard and S3 Standard-IA and is used through the Amazon S3 API, CLI and console. S3 One Zone-IA storage class is set at the object level and can exist in the same bucket as S3 Standard and S3 Standard-IA storage classes. You can use S3 Lifecycle policies to automatically transition objects between storage classes without any application changes.
+
+**Q:  Are there differences between how Amazon EC2 and Amazon S3 work with Availability Zone-specific resources?**
+
+Yes. Amazon EC2 provides you the ability to pick the AZ to place resources, such as compute instances, within a region. When you use S3 One Zone-IA, S3 One Zone-IA assigns an AWS Availability Zone in the region according to available capacity.
+
+
+
+**Q:  How much disaster recovery protection do I forgo by using S3 One Zone-IA?**
+
+Each Availability Zone uses redundant power and networking. Within an AWS Region, Availability Zones are on different flood plains, earthquake fault zones, and geographically separated for fire protection. S3 Standard and S3 Standard-IA storage classes offer protection against these sorts of disasters by storing your data redundantly in multiple Availability Zones. S3 One Zone-IA offers protection against equipment failure within an Availability Zone, but it does not protect against the loss of the Availability Zone, in which case, data stored in S3 One Zone-IA would be lost. Using S3 One Zone-IA, S3 Standard, and S3 Standard-IA options, you can choose the storage class that best fits the durability and availability needs of your storage.
 
 
 
