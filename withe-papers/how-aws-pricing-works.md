@@ -1,48 +1,46 @@
-# Introduction 
+# Key Principles
 
-# Key Principles 
+## Understand the fundamentals of pricing
 
-## Understand the fundamentals of pricing 
+## Start early with cost optimization
 
-## Start early with cost optimization 
+## Maximize the power of flexibility
 
-## Maximize the power of flexibility 
+## Use the right pricing model for the job
 
-## Use the right pricing model for the job 
+# Get started with the AWS Free Tier
 
-# Get started with the AWS Free Tier 
+# Pricing details for individual services
 
-# Pricing details for individual services 
-
-## Amazon Elastic Compute Cloud \(Amazon EC2\) 
+## Amazon Elastic Compute Cloud \(Amazon EC2\)
 
 ## AWS Lambda
 
-## Amazon Elastic Block Store \(Amazon EBS\) 
+## Amazon Elastic Block Store \(Amazon EBS\)
 
-## Amazon Simple Storage Service \(Amazon S3\) 
+## Amazon Simple Storage Service \(Amazon S3\)
 
-## Amazon S3 Glacier 
+## Amazon S3 Glacier
 
-## AWS Snowball 
+## AWS Snowball
 
-## Amazon RDS 
+## Amazon RDS
 
-## Amazon DynamoDB 
+## Amazon DynamoDB
 
-## Amazon CloudFront 
+## Amazon CloudFront
 
-# Optimizing costs with reservations 
+# Optimizing costs with reservations
 
-## Amazon EC2 Reserved Instances 
+## Amazon EC2 Reserved Instances
 
-## Amazon DynamoDB Reserved Capacity 
+## Amazon DynamoDB Reserved Capacity
 
-## Amazon ElastiCache Reserved Nodes 
+## Amazon ElastiCache Reserved Nodes
 
-## Amazon RDS RIs 
+## Amazon RDS RIs
 
-## Amazon Redshift Reserved Nodes 
+## Amazon Redshift Reserved Nodes
 
 
 
