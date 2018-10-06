@@ -14,6 +14,7 @@
   * [AWS Security Whitepaper](withe-papers/aws-security-whitepaper.md)
   * [AWS\_Amazon\_VPC\_Connectivity\_Options](withe-papers/awsamazon-vpc-connectivity-options.md)
   * [Backup, Archive, and Restore Approaches Using AWS](withe-papers/backup-archive-and-restore-approaches-using-aws.md)
+  * [How AWS Pricing Works](withe-papers/how-aws-pricing-works.md)
 * [AWS doc](aws-doc.md)
   * [EC2](ec2.md)
   * [RDS](rds.md)
