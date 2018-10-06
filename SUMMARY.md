@@ -11,6 +11,8 @@
   * [Optimizing Enterprise Economics with Serverless Architectures](withe-papers/optimizing-enterprise-economics-with-serverless-architectures.md)
   * [Running Containerized Microservices on AWS](withe-papers/running-containerized-microservices-on-aws.md)
   * [Blue/Green Deployments on AWS](withe-papers/bluegreen-deployments-on-aws.md)
+  * [AWS Security Whitepaper](withe-papers/aws-security-whitepaper.md)
+  * [AWS\_Amazon\_VPC\_Connectivity\_Options](withe-papers/awsamazon-vpc-connectivity-options.md)
 * [AWS doc](aws-doc.md)
   * [EC2](ec2.md)
   * [RDS](rds.md)
