@@ -170,91 +170,91 @@ Recommendations include:
 
 ##### Creating Custom AMIs security guide:
 
-**Disable insecure applications  
+**Disable insecure applications    
 **
 
 Disable services and protocols that authenticate users in clear text over the network, or otherwise insecurely.
 
-**Minimize exposure  
+**Minimize exposure    
 **
 
 Disable non-essential network services on startup. Only administrative services \(SSH/RDP\) and the services required for essential applications should be started.
 
-**Protect credentials  
+**Protect credentials    
 **
 
 Securely delete all AWS credentials from disk and configuration files.
 
-**Protect credentials  
+**Protect credentials    
 **
 
 Securely delete any third-party credentials from disk and configuration files.
 
-**Protect credentials  
+**Protect credentials    
 **
 
 Securely delete all additional certificates or key material from the system.
 
-**Protect credentials  
+**Protect credentials    
 **
 
 Ensure that software installed does not use default internal accounts and passwords.
 
-**Use good governance  
+**Use good governance    
 **
 
 Ensure that the system does not violate the Amazon Web Services Acceptable Use Policy. Examples of violations include open SMTP relays or proxy servers. For more information, see the Amazon Web Services Acceptable Use Policy–[http://aws.amazon.com/aup/](http://aws.amazon.com/aup/).
 
 #### securing Linux AMIs
 
-**Secure services  
+**Secure services    
 **
 
 Configure sshd to allow only public key authentication. Set PubkeyAuthentication to Yes and PasswordAuthentication to No in sshd\_config.
 
-**Secure services  
+**Secure services    
 **
 
 Generate a unique SSH host key on instance creation. If the AMI uses cloud-init, it will handle this automatically.
 
-**Protect credentials  
+**Protect credentials    
 **
 
 Remove and disable passwords for all user accounts so that they cannot be used to log in and do not have a default password. Run passwd -l &lt;USERNAME&gt; for each account.
 
-**Protect credentials  
+**Protect credentials    
 **
 
 Securely delete all user SSH public and private key pairs.
 
-**Protect data  
+**Protect data    
 **
 
 Securely delete all shell history and system log files containing sensitive data.
 
 #### securing Windows AMIs
 
-**Protect credentials  
+**Protect credentials    
 **
 
 Ensure that all enabled user accounts have new randomly generated passwords upon instance creation. You can configure the EC2 Config Service to do this for the Administrator account upon boot, but you must explicitly do so before bundling the image.
 
-**Protect credentials  
+**Protect credentials    
 **
 
 Ensure that the Guest account is disabled.
 
-**Protect data  
+**Protect data    
 **
 
 Clear the Windows event logs.
 
-**Protect credentials  
+**Protect credentials    
 **
 
 Make sure the AMI is not a part of a Windows domain.
 
-**Minimizing exposure  
+**Minimizing exposure    
 **
 
 Do not enable any file sharing, print spooler, RPC, and other Windows services that are not essential but are enabled by default.
