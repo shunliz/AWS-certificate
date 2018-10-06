@@ -378,7 +378,7 @@ For even greater communication privacy, Amazon Elastic Load Balancer allows the 
 
 Amazon Elastic Load Balancing allows you to identify the originating IP address of a client connecting to your servers, whether you’re using HTTPS or TCP load balancing. Typically, client connection information, such as IP address and port, is lost when requests are proxied through a load balancer. This is because the load balancer sends requests to the server on behalf of the client, making your load balancer appear as though it is the requesting client. Having the originating client IP address is useful if you need more information about visitors to your applications in order to gather connection statistics, analyze traffic logs, or manage whitelists of IP addresses.
 
-Amazon Elastic Load Balancing access logs contain information about each HTTP and TCP request processed by your load balancer. This includes the IP address and port of the requesting client, the backend IP address of the instance that processed the request, the size of the request and response, and the actual request line from the client \(for example, GET http://www.example.com: 80/HTTP/1.1\). All requests sent to the load balancer are logged, including requests that never made it to back-end instances.
+Amazon Elastic Load Balancing access logs contain information about each HTTP and TCP request processed by your load balancer. This includes the IP address and port of the requesting client, the backend IP address of the instance that processed the request, the size of the request and response, and the actual request line from the client \(for example, GET [http://www.example.com](http://www.example.com): 80/HTTP/1.1\). All requests sent to the load balancer are logged, including requests that never made it to back-end instances.
 
 ## Amazon Virtual Private Cloud \(Amazon VPC\) Security
 
@@ -410,7 +410,7 @@ This access can only be modified through the invocation of Amazon VPC APIs. AWS 
 
 Dedicated Instances: Within a VPC, you can launch Amazon EC2 instances that are physically isolated at the host hardware level \(i.e., they will run on single-tenant hardware\). An Amazon VPC can be created with ‘dedicated’ tenancy, so that all instances launched into the Amazon VPC will utilize this feature. Alternatively, an Amazon VPC may be created with ‘default’ tenancy, but you can specify dedicated tenancy for particular instances launched into it.
 
-Elastic Network Interfaces: Each Amazon EC2 instance has a default network interface that is assigned a private IP address on your Amazon VPC network. You can create and attach an additional network interface, known as an elastic network interface \(ENI\), to any Amazon EC2 instance in your Amazon VPC for a total of two network interfaces per instance. Attaching more than one network interface to an instance is useful when you want to create a management network, use network and security appliances in your Amazon VPC, or create dual-homed instances with workloads/roles on distinct subnets. An ENI's attributes, including the private IP address, elastic IP addresses, and MAC address, will follow the ENI as it is attached or detached from an instance and reattached to another instance. More information about Amazon VPC is available on the AWS website: http://aws.amazon.com/vpc/
+Elastic Network Interfaces: Each Amazon EC2 instance has a default network interface that is assigned a private IP address on your Amazon VPC network. You can create and attach an additional network interface, known as an elastic network interface \(ENI\), to any Amazon EC2 instance in your Amazon VPC for a total of two network interfaces per instance. Attaching more than one network interface to an instance is useful when you want to create a management network, use network and security appliances in your Amazon VPC, or create dual-homed instances with workloads/roles on distinct subnets. An ENI's attributes, including the private IP address, elastic IP addresses, and MAC address, will follow the ENI as it is attached or detached from an instance and reattached to another instance. More information about Amazon VPC is available on the AWS website: [http://aws.amazon.com/vpc/](http://aws.amazon.com/vpc/)
 
 Additional Network Access Control with EC2-VPC
 
@@ -460,7 +460,7 @@ Amazon CloudFront supports the TLSv1.1 and TLSv1.2 protocols for HTTPS connectio
 
 Note that if you're using your own server as your origin, and you want to use HTTPS both between viewers and CloudFront and between CloudFront and your origin, you must install a valid SSL certificate on the HTTP server that is signed by a third-party certificate authority, for example, VeriSign or DigiCert.
 
-By default, you can deliver content to viewers over HTTPS by using your CloudFront distribution domain name in your URLs; for example, https://dxxxxx.cloudfront.net/image.jpg. If you want to deliver your content over HTTPS using your own domain name and your own SSL certificate, you can use SNI Custom SSL or Dedicated IP Custom SSL. With Server Name Identification \(SNI\) Custom SSL, CloudFront relies on the SNI extension of the TLS protocol, which is supported by most modern web browsers. However, some users may not be able to access your content because some older browsers do not support SNI. With Dedicated IP Custom SSL, CloudFront dedicates IP addresses to your SSL certificate at each CloudFront edge location so that CloudFront can associate the incoming requests with the proper SSL certificate.
+By default, you can deliver content to viewers over HTTPS by using your CloudFront distribution domain name in your URLs; for example, [https://dxxxxx.cloudfront.net/image.jpg](https://dxxxxx.cloudfront.net/image.jpg). If you want to deliver your content over HTTPS using your own domain name and your own SSL certificate, you can use SNI Custom SSL or Dedicated IP Custom SSL. With Server Name Identification \(SNI\) Custom SSL, CloudFront relies on the SNI extension of the TLS protocol, which is supported by most modern web browsers. However, some users may not be able to access your content because some older browsers do not support SNI. With Dedicated IP Custom SSL, CloudFront dedicates IP addresses to your SSL certificate at each CloudFront edge location so that CloudFront can associate the incoming requests with the proper SSL certificate.
 
 Amazon CloudFront access logs contain a comprehensive set of information about requests for content, including the object requested, the date and time of the request,
 
@@ -534,8 +534,6 @@ To achieve even greater security, you can securely upload/download data to Amazo
 
 Retrieving archives from Amazon Glacier requires the initiation of a retrieval job, which is generally completed in 3 to 5 hours. You can then access the data via HTTP GET requests. The data will remain available to you for 24 hours
 
-
-
 You can retrieve an entire archive or several files from an archive. If you want to retrieve only a subset of an archive, you can use one retrieval request to specify the range of the archive that contains the files you are interested or you can initiate multiple retrieval requests, each with a range for one or more files. You can also limit the number of vault inventory items retrieved by filtering on an archive creation date range or by setting a maximum items limit. Whichever method you choose, when you retrieve portions of your archive, you can use the supplied checksum to help ensure the integrity of the files provided that the range that is retrieved is aligned with the tree hash of the overall archive.
 
 ## Data Storage
@@ -550,8 +548,6 @@ Only your account can access your data in Amazon Glacier. To control access to y
 
 AWS Storage Gateway transparently backs up data off-site to Amazon S3 in the form of Amazon EBS snapshots. Amazon S3 redundantly stores these snapshots on multiple devices across multiple facilities, detecting and repairing any lost redundancy. The Amazon EBS snapshot provides a point-in-time backup that can be restored on-premises or used to instantiate new Amazon EBS volumes. Data is stored within a single region that you specify.
 
-
-
 AWS Storage Gateway offers three options:
 
  Gateway-Stored Volumes \(where the cloud is backup\). In this option, your volume data is stored locally and then pushed to Amazon S3, where it is stored in redundant, encrypted form, and made available in the form of Elastic Block Storage \(EBS\) snapshots. When you use this model, the on-premises storage is primary, delivering low-latency access to your entire dataset, and the cloud storage is the backup.
@@ -559,8 +555,6 @@ AWS Storage Gateway offers three options:
  Gateway-Cached Volumes \(where the cloud is primary\). In this option, your volume data is stored encrypted in Amazon S3, visible within your enterprise's network via an iSCSI interface. Recently accessed data is cached on- premises for low-latency local access. When you use this model, the cloud storage is primary, but you get low- latency access to your active working set in the cached volumes on premises.
 
  Gateway-Virtual Tape Library \(VTL\). In this option, you can configure a Gateway-VTL with up to 10 virtual tape drives per gateway, 1 media changer and up to 1500 virtual tape cartridges. Each virtual tape drive responds to the SCSI command set, so your existing on-premises backup applications \(either disk-to-tape or disk-to-disk-to- tape\) will work without modification.
-
-
 
 No matter which option you choose, data is asynchronously transferred from your on-premises storage hardware to AWS over SSL. The data is stored encrypted in Amazon S3 using Advanced Encryption Standard \(AES\) 256, a symmetric- key encryption standard using 256-bit encryption keys. The AWS Storage Gateway only uploads data that has changed, minimizing the amount of data sent over the Internet.
 
@@ -583,6 +577,14 @@ For added protection, you can encrypt the data on your device before you ship it
 # Database Services
 
 ## Amazon DynamoDB Security
+
+To control who can use the DynamoDB resources and API, you set up permissions in AWS IAM. In addition to controlling access at the resource-level with IAM, you can also control access at the database level—you can create database-level permissions that allow or deny access to items \(rows\) and attributes \(columns\) based on the needs of your application. These database-level permissions are called fine-grained access controls, and you create them using an IAM policy that specifies under what circumstances a user or application can access a DynamoDB table. The IAM policy can restrict access to individual items in a table, access to the attributes in those items, or both at the same time.
+
+You can optionally use web identity federation to control access by application users who are authenticated by Login with Amazon, Facebook, or Google. Web identity federation removes the need for creating individual IAM users; instead, users can sign in to an identity provider and then obtain temporary security credentials from AWS Security Token Service \(AWS STS\). AWS STS returns temporary AWS credentials to the application and allows it to access the specific DynamoDB table.
+
+In addition to requiring database and user permissions, each request to the DynamoDB service must contain a valid HMAC-SHA256 signature, or the request is rejected. The AWS SDKs automatically sign your requests; however, if you want to write your own HTTP POST requests, you must provide the signature in the header of your request to Amazon DynamoDB. To calculate the signature, you must request temporary security credentials from the AWS Security Token Service. Use the temporary security credentials to sign your requests to Amazon DynamoDB.
+
+Amazon DynamoDB is accessible via SSL-encrypted endpoints. The encrypted endpoints are accessible from both the Internet and from within Amazon EC2.
 
 ## Amazon Relational Database Service \(Amazon RDS\) Security
 
