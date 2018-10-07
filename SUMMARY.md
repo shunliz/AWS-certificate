@@ -12,6 +12,7 @@
   * [Running Containerized Microservices on AWS](withe-papers/running-containerized-microservices-on-aws.md)
   * [Blue/Green Deployments on AWS](withe-papers/bluegreen-deployments-on-aws.md)
   * [AWS Security Whitepaper](withe-papers/aws-security-whitepaper.md)
+  * [AWS Security Whitepaper2](withe-papers/aws-security-whitepaper2.md)
   * [AWS\_Amazon\_VPC\_Connectivity\_Options](withe-papers/awsamazon-vpc-connectivity-options.md)
   * [Backup, Archive, and Restore Approaches Using AWS](withe-papers/backup-archive-and-restore-approaches-using-aws.md)
   * [How AWS Pricing Works](withe-papers/how-aws-pricing-works.md)
