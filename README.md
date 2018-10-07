@@ -25,6 +25,12 @@ Thank you very much for your donation.
   * [Optimizing Enterprise Economics with Serverless Architectures](withe-papers/optimizing-enterprise-economics-with-serverless-architectures.md)
   * [Running Containerized Microservices on AWS](withe-papers/running-containerized-microservices-on-aws.md)
   * [Blue/Green Deployments on AWS](withe-papers/bluegreen-deployments-on-aws.md)
+  * [AWS Security Whitepaper](withe-papers/aws-security-whitepaper.md)
+  * [AWS Security Whitepaper2](withe-papers/aws-security-whitepaper2.md)
+  * [AWS\_Amazon\_VPC\_Connectivity\_Options](withe-papers/awsamazon-vpc-connectivity-options.md)
+  * [Backup, Archive, and Restore Approaches Using AWS](withe-papers/backup-archive-and-restore-approaches-using-aws.md)
+  * [How AWS Pricing Works](withe-papers/how-aws-pricing-works.md)
+  * [Development and Test on Amazon Web Services](withe-papers/development-and-test-on-amazon-web-services.md)
 * [AWS doc](aws-doc.md)
   * [EC2](ec2.md)
   * [RDS](rds.md)
@@ -64,24 +70,28 @@ Thank you very much for your donation.
     * [lead2pass questions7](lead2pass-questions7.md)
     * [aws netquiz-IAM](aws-netquiz-iam.md)
   * [AWS solution architect Quiz](aws-solution-architect-quiz.md)
-    * [solution architect3](solution-architect3.md)
-    * [solution architect2](solution-architect2.md)
     * [Solution Architect1](test1.md)
+    * [solution architect2](solution-architect2.md)
+    * [solution architect3](solution-architect3.md)
+    * [solution architect4](solution-architect4.md)
 * AWS FAQS
-  * EC2
-  * RDS
-  * ELB
-  * CloudFormation
-  * SQS
-  * S3
-  * ECS
-  * Lambda
-  * beanstalk
-  * EBS
-  * SNS
-  * IAM
-  * Devops
+  * [EC2](ec2-faq.md)
+  * [RDS](rds-faq.md)
+  * [ELB](elb-faq.md)
+  * [CloudFormation](cloudformation-faq.md)
+  * [SQS](sqq-faq.md)
+  * [S3](s3-faq.md)
+  * [ECS](ecs-faq.md)
+  * [Lambda](lambda-faq.md)
+  * [beanstalk](beanstalk-faq.md)
+  * [EBS](ebs-faq.md)
+  * [SNS](sns-faq.md)
+  * [IAM](iam-faq.md)
+  * [Devops](devops-faq.md)
+  * [DynamoDB](dyanmodb-faq.md)
+  * [VPC](vpc-faqs.md)
 * [References](references.md)
+
 
 
 
