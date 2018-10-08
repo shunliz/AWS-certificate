@@ -24,7 +24,13 @@ D\) Existing libraries
 
 Q**uestion 3**
 
+Which of the following programming languages have an officially supported AWS SDK? Choose 2 answers
 
+1. **PHP**
+2. Pascal
+3. **Java**
+4. SQL
+5. Perl
 
 
 
