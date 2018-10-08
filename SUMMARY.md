@@ -55,6 +55,7 @@
     * [lead2pass questions6](lead2pass-questions6.md)
     * [lead2pass questions7](lead2pass-questions7.md)
     * [aws netquiz-IAM](aws-netquiz-iam.md)
+    * [aws netquiz2](aws-netquiz2.md)
   * [AWS solution architect Quiz](aws-solution-architect-quiz.md)
     * [Solution Architect1](test1.md)
     * [solution architect2](solution-architect2.md)
