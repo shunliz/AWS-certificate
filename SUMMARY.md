@@ -78,7 +78,6 @@
   * [DynamoDB](dyanmodb-faq.md)
   * [VPC](vpc-faqs.md)
 * Cheat Sheet
-  * AWS Certification Exam Cheat Sheet
+  * [AWS Certification Exam Cheat Sheet](aws-certification-exam-cheat-sheet.md)
 * [References](references.md)
-
 
