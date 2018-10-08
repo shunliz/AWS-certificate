@@ -15,11 +15,14 @@
   * **Flow logs**
     – Capture information about the IP traffic going to and from network interfaces in your VPC
 * allows **Tenancy option **for instances
+
   * **shared**
 
   , by default, allows instances to be launched on shared tenancy
+
   * **dedicated**
     allows instances to be launched on a dedicated hardware
+
 * **NAT**
   * allows internet access to instances in private subnet
   * performs the function of both address translation and port address translation \(PAT\)
@@ -84,21 +87,16 @@
 * **Direct Connect**
   * is a network service that provides an alternative to using Internet to utilize AWS services by using private dedicated network connection
   * provides Virtual Interfaces
-    * **Private VIF**
-      to access instances within an VPC via VGW
-    * **Public VIF**
-      to access non VPC services
+    * **Private VIF **to access instances within an VPC via VGW
+    * **Public VIF **to access non VPC services
   * **requires time to setup**
     probably months, and should not be considered as an option if turnaround time is less
   * **does not provide redundancy**
     , use either second direct connection or IPSec VPN connection
   * Virtual Private Gateway is on the AWS side and Customer Gateway is on the Customer side
-  * **route propagation is enabled on VGW**
-     and not on CGW
+  * **route propagation is enabled on VGW **and not on CGW
 * **Direct Connect vs VPN IPSec**
-  * Expensive to Setup and Takes time vs Cheap 
-    &
-     Immediate
+  * Expensive to Setup and Takes time vs Cheap & Immediate
   * Dedicated private connections vs Internet
   * Reduced data transfer rate vs Internet data transfer cost
   * Consistent performance vs Internet inherent variability
@@ -106,9 +104,7 @@
 
 ## Route 53
 
-* Highly available and scalable DNS 
-  &
-   Domain Registration Service
+* Highly available and scalable DNS & Domain Registration Service
 * Reliable and cost-effective way to route end users to Internet applications
 * Supports
   **multi-region and backup architectures for High availability. ELB , limited to region, does not support multi region HA architecture**
