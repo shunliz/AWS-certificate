@@ -32,5 +32,14 @@ Which of the following programming languages have an officially supported AWS SD
 4. SQL
 5. Perl
 
+Q**uestion 4**
+
+HTTP Query-based requests are HTTP requests that use the HTTP verb GET or POST and a Query parameter named\_\_\_\_\_\_\_\_\_\_\_\_\_.
+
+1. **Action**
+2. Value
+3. Reset
+4. Retrieve
+
 
 
