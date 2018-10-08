@@ -24,10 +24,12 @@
     allows instances to be launched on a dedicated hardware
 
 * **NAT**
+
   * allows internet access to instances in private subnet
   * performs the function of both address translation and port address translation \(PAT\)
   * needs source/destination check flag to be disabled as it is not actual destination of  the traffic
   * NAT gateway is a AWS managed NAT service that provides better availability, higher bandwidth, and requires less administrative effort
+
 * **Route Tables**
   * defines rules, termed as routes, which determine where network traffic from the subnet would be routed
   * Each VPC has a Main Route table, and can have multiple custom route tables created
@@ -106,19 +108,14 @@
 
 * Highly available and scalable DNS & Domain Registration Service
 * Reliable and cost-effective way to route end users to Internet applications
-* Supports
-  **multi-region and backup architectures for High availability. ELB , limited to region, does not support multi region HA architecture**
+* Supports **multi-region and backup architectures for High availability. ELB , limited to region, does not support multi region HA architecture**
 * supports private Intranet facing DNS service
 * **internal resource record sets only work for requests originating from within the VPC**
   and currently cannot extend to on-premise
 * Global propagation of any changes made to the DN records within ~ 1min
-* Route 53 to create an
-  [**alias resource record set**](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html)
-  that points to ELB, S3, CloudFront. An alias resource record set is an Route 53 extension to DNS. It’s similar to a CNAME resource record set, but supports both for root domain – zone apex  
-  _e.g. example.com_
-  , and for subdomains for e.g.
-  _www.example.com_
-  .
+* Route 53 to create an [**alias resource record set**](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html) that points to ELB, S3, CloudFront. An alias resource record set is an Route 53 extension to DNS. It’s similar to a CNAME resource record set, but supports both for root domain – zone apex  
+  _e.g. example.com _, and for subdomains for e.g.
+  _www.example.com_.
 * CNAME resource record sets can be created only for subdomains and cannot be mapped to the zone apex record
 * **Routing policy**
   * Simple routing – simple round robin policy
