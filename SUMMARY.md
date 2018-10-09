@@ -82,5 +82,6 @@
   * [AWS Network Cheat Sheet](aws-network-cheat-sheet.md)
   * [Security & Identity Services – Cheat Sheet](security-and-identity-services-cheat-sheet.md)
   * [Compute Services – Cheat Sheet](compute-services-cheat-sheet.md)
+  * [Storage & Content Delivery – Cheat Sheet](storage-and-content-delivery-cheat-sheet.md)
 * [References](references.md)
 
