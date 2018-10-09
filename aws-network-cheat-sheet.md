@@ -31,10 +31,12 @@
   * NAT gateway is a AWS managed NAT service that provides better availability, higher bandwidth, and requires less administrative effort
 
 * **Route Tables**
+
   * defines rules, termed as routes, which determine where network traffic from the subnet would be routed
   * Each VPC has a Main Route table, and can have multiple custom route tables created
   * Every route table contains a local route that enables communication within a VPC which cannot be modified or deleted
   * Route priority is decided by matching the most specific route in the route table that matches the traffic
+
 * **Subnets**
   * **map to AZs **and do not span across AZs
   * have a CIDR range that is a portion of the whole VPC.
