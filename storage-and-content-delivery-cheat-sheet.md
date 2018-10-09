@@ -15,47 +15,24 @@
 ## S3
 
 * Key-value based object storage with unlimited storage, unlimited objects up to 5 TB for the internet
-* is an 
-  **Object level storage**
-  \(not a Block level storage\) and cannot be used to host OS or dynamic websites \(but can work with Javascript SDK\)
-* provides
-  **durability by redundantly storing objects on multiple facilities within a region**
-* support
-  **SSL encryption of data in transit**
-  and
-  **data encryption at rest**
-* regularly
-  **verifies the integrity**
-  of data using checksums and provides auto healing capability
+* is an  **Object level storage**\(not a Block level storage\) and cannot be used to host OS or dynamic websites \(but can work with Javascript SDK\)
+* provides **durability by redundantly storing objects on multiple facilities within a region**
+* support **SSL encryption of data in transit **and **data encryption at rest**
+* regularly **verifies the integrity **of data using checksums and provides auto healing capability
 * integrates with CloudTrail, CloudWatch and SNS for event notifications
 * **S3 resources**
-  * consists of
-    **bucket and objects**
-    stored in the bucket which can be retrieved via a unique, developer-assigned key
+  * consists of **bucket and objects **stored in the bucket which can be retrieved via a unique, developer-assigned key
   * **bucket names are globally unique**
-  * **data model is a flat structure**
-    with no hierarchies or folders
+  * **data model is a flat structure **with no hierarchies or folders
   * **Logical hierarchy**
     can be inferred using the keyname prefix e.g. Folder1/Object1
-* **Bucket **
-  **&**
-  ** Object Operations**
-  * allows
-    **retrieval of 1000 objects and provides pagination support**
-    and is
-    **NOT**
-     suited for list or prefix queries with large number of objects
+* **Bucket & Object Operations**
+  * allows **retrieval of 1000 objects and provides pagination support **and is **NOT **suited for list or prefix queries with large number of objects
   * with a single put operations, 5GB size object can be uploaded
-  * use
-    **Multipart upload**
-     to upload large objects up to 5 TB and is recommended for object size of over 100MB for fault tolerant uploads
-  * support
-    **Range HTTP Header**
-    to retrieve partial objects for fault tolerant downloads where the network connectivity is poor
-  * **Pre-Signed URLs**
-    can also be used shared for uploading/downloading objects for
-    **limited time**
-    **without requiring AWS security credentials**
+  * use **Multipart upload **to upload large objects up to 5 TB and is recommended for object size of over 100MB for fault tolerant uploads
+
+  * support **Range HTTP Header **to retrieve partial objects for fault tolerant downloads where the network connectivity is poor
+  * **Pre-Signed URLs **can also be used shared for uploading/downloading objects for **limited time without requiring AWS security credentials**
   * allows deletion of a single object or multiple objects \(max 1000\) in a single call
 * **Multipart Uploads**
   allows
@@ -63,39 +40,22 @@
     with improved throughput and bandwidth utilization
   * **fault tolerance and quick recovery**
     from network issues
-  * ability to
-    **pause and resume**
-    uploads
+  * ability to **pause and resume **uploads
   * **begin an upload before the final object size is known**
 * **Versioning**
   * allows preserve, retrieve, and restore every version of every object
-  * **protects individual files**
-    but does
-    **NOT protect from Bucket deletion**
+  * **protects individual files **but does **NOT protect from Bucket deletion**
 * **Storage tiers**
   * Standard
-    * default storage class
-    * **99.999999999% durability**
-      &
-      **99.99% availability**
+    * default storage class **99.999999999% durability**&**99.99% availability**
+
     * Low latency and high throughput performance
-    * designed to
-      **sustain the loss of data in a two**
-       facilities
+    * designed to **sustain the loss of data in a two **facilities
   * Standard IA
-    * optimized for
-      **long-lived and less frequently**
-      accessed data
-    * designed to
-      **sustain the loss of data in a two**
-       facilities
-    * **99.999999999% durability**
-      &
-      **99.9% availability**
-    * suitable for
-      **objects greater than 128 KB**
-      kept for at
-      **least 30 days**
+    * optimized for **long-lived and less frequently **accessed data
+    * designed to **sustain the loss of data in a two **facilities
+    * **99.999999999% durability **& **99.9% availability**
+    * suitable for **objects greater than 128 KB **kept for at **least 30 days**
   * Reduced Redundancy Storage
     * designed for
       **noncritical, reproducible data**
