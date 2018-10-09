@@ -81,5 +81,6 @@
   * [AWS Certification Exam Cheat Sheet](aws-certification-exam-cheat-sheet.md)
   * [AWS Network Cheat Sheet](aws-network-cheat-sheet.md)
   * [Security & Identity Services – Cheat Sheet](security-and-identity-services-cheat-sheet.md)
+  * [Compute Services – Cheat Sheet](compute-services-cheat-sheet.md)
 * [References](references.md)
 
