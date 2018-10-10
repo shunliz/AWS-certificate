@@ -85,5 +85,6 @@
   * [Storage & Content Delivery – Cheat Sheet](storage-and-content-delivery-cheat-sheet.md)
   * [Database Services – Cheat Sheet](database-services-cheat-sheet.md)
   * [Analytics Services – Cheat Sheet](analytics-services-cheat-sheet.md)
+  * [Application Services – Cheat Sheet](application-services-cheat-sheet.md)
 * [References](references.md)
 
