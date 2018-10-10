@@ -49,8 +49,10 @@
   * **begin an upload before the final object size is known**
 
 * **Versioning**
+
   * allows preserve, retrieve, and restore every version of every object
   * **protects individual files **but does **NOT protect from Bucket deletion**
+
 * **Storage tiers**
 
   * Standard
@@ -69,10 +71,12 @@
     * suitable for **objects greater than 128 KB **kept for at **least 30 days**
 
   * Reduced Redundancy Storage
+
     * designed for **noncritical, reproducible data **stored at lower levels of redundancy than the STANDARD storage class
     * **reduces storage costs**
     * **99.99% durability **& **99.99% availability**
     * designed to **sustain the loss of data in a single **facility
+
   * Glacier
     * suitable for **archiving data **where **data access is infrequent and retrieval time of several \(3-5\) hours  is acceptable**
     * **99.999999999% durability**
@@ -84,9 +88,11 @@
   * **expiration **to remove objects
 
 * **Data Consistency Model**
+
   * provide **read-after-write consistency for PUTS of new objects **and **eventual consistency for overwrite PUTS and DELETES**
   * for new objects, **synchronously stores data across multiple facilities **before returning success
   * **updates to a single key are atomic**
+
 * **Security**
   * **IAM policies**
     – grant users within your own AWS account permission to access S3 resources
@@ -155,31 +161,16 @@
 * object **removal **from cache
   * would be removed upon **expiry \(TTL\) **from the cache, by default 24 hrs
   * can be **invalidated explicitly**, but has a cost associated, however might continue to see the old version until it expires from those caches
-  * objects can be
-    **invalidated only for Web distribution**
-  * change object name,
-    **versioning**
-    , to serve different version
+  * objects can be **invalidated only for Web distribution**
+  * change object name, **versioning**, to serve different version
 * supports adding or modifying custom headers before the request is sent to origin which can be used to
-  * **validate**
-    if user is accessing the content from CDN
-  * **identifying CDN**
-    from which the request was forwarded from, in case of multiple CloudFront distribution
-  * for
-    **viewers not supporting CORS**
-     to return the Access-Control-Allow-Origin header for every request
-* supports
-  **Partial GET requests**
-  using range header to download object in smaller units improving the efficiency of partial downloads and recovery from partially failed transfers
-* supports
-  **compression**
-  to compress and serve compressed files when viewer requests include Accept-Encoding: gzip in the request header
-* supports different
-  **price class**
-  to include all regions, to include only least expensive regions and other regions to exclude most expensive regions
-* supports
-  **access logs**
-  which contain detailed information about every user request for both web and RTMP distribution
+  * **validate **if user is accessing the content from CDN
+  * **identifying CDN **from which the request was forwarded from, in case of multiple CloudFront distribution
+  * for **viewers not supporting CORS **to return the Access-Control-Allow-Origin header for every request
+* supports **Partial GET requests **using range header to download object in smaller units improving the efficiency of partial downloads and recovery from partially failed transfers
+* supports **compression **to compress and serve compressed files when viewer requests include Accept-Encoding: gzip in the request header
+* supports different **price class **to include all regions, to include only least expensive regions and other regions to exclude most expensive regions
+* supports **access logs **which contain detailed information about every user request for both web and RTMP distribution
 
 ## AWS Import/Export
 
