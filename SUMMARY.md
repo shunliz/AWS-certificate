@@ -77,11 +77,12 @@
   * [Devops](devops-faq.md)
   * [DynamoDB](dyanmodb-faq.md)
   * [VPC](vpc-faqs.md)
-* Cheat Sheet
+* [Cheat Sheet](cheat-sheet.md)
   * [AWS Certification Exam Cheat Sheet](aws-certification-exam-cheat-sheet.md)
   * [AWS Network Cheat Sheet](aws-network-cheat-sheet.md)
   * [Security & Identity Services – Cheat Sheet](security-and-identity-services-cheat-sheet.md)
   * [Compute Services – Cheat Sheet](compute-services-cheat-sheet.md)
   * [Storage & Content Delivery – Cheat Sheet](storage-and-content-delivery-cheat-sheet.md)
+  * [Database Services – Cheat Sheet](database-services-cheat-sheet.md)
 * [References](references.md)
 
