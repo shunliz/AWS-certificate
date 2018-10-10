@@ -35,16 +35,19 @@
   * support **Range HTTP Header **to retrieve partial objects for fault tolerant downloads where the network connectivity is poor
 
   * **Pre-Signed URLs **can also be used shared for uploading/downloading objects for **limited time without requiring AWS security credentials**
+
   * allows deletion of a single object or multiple objects \(max 1000\) in a single call
 
-* **Multipart Uploads**
+* **Multipart Uploads**  
   allows
+
   * **parallel uploads**
     with improved throughput and bandwidth utilization
   * **fault tolerance and quick recovery**
     from network issues
   * ability to **pause and resume **uploads
   * **begin an upload before the final object size is known**
+
 * **Versioning**
   * allows preserve, retrieve, and restore every version of every object
   * **protects individual files **but does **NOT protect from Bucket deletion**
@@ -59,10 +62,12 @@
     * designed to **sustain the loss of data in a two **facilities
 
   * Standard IA
+
     * optimized for **long-lived and less frequently **accessed data
     * designed to **sustain the loss of data in a two **facilities
     * **99.999999999% durability **& **99.9% availability**
     * suitable for **objects greater than 128 KB **kept for at **least 30 days**
+
   * Reduced Redundancy Storage
     * designed for **noncritical, reproducible data **stored at lower levels of redundancy than the STANDARD storage class
     * **reduces storage costs**
@@ -72,10 +77,12 @@
     * suitable for **archiving data **where **data access is infrequent and retrieval time of several \(3-5\) hours  is acceptable**
     * **99.999999999% durability**
 
-* allows
+* allows  
   **Lifecycle Management policies**
+
   * **transition **to move objects to different storage classes and Glacier
   * **expiration **to remove objects
+
 * **Data Consistency Model**
   * provide **read-after-write consistency for PUTS of new objects **and **eventual consistency for overwrite PUTS and DELETES**
   * for new objects, **synchronously stores data across multiple facilities **before returning success
@@ -113,7 +120,7 @@
 * delivers the content through a worldwide network of data centers called **Edge Locations**
 * keeps persistent connections with the origin servers so that the files can be fetched from the origin servers as quickly as possible.
 * dramatically **reduces the number of network hops **that users’ requests must pass through
-* supports **multiple origin server options**, like AWS hosted service _for e.g. S3, EC2, ELB _or an on premise server, which stores the original, definitive version of the objects
+* supports **multiple origin server options**, like AWS hosted service \_for e.g. S3, EC2, ELB \_or an on premise server, which stores the original, definitive version of the objects
 * **single distribution can have multiple origins **and Path pattern in a cache behavior determines which requests are routed to the origin
 * supports **Web Download **distribution and **RTMP Streaming **distribution
   * Web distribution supports static, dynamic web content, on demand using progressive download & HLS and live streaming video content
@@ -129,9 +136,7 @@
 * Security
   * **Origin Access Identity**
     \(OAI\) can be used to restrict the content from S3 origin to be accessible from CloudFront only
-  * supports
-    **Geo restriction \(Geo-Blocking\) to whitelist or blacklist**
-    countries that can access the content
+  * supports **Geo restriction \(Geo-Blocking\) to whitelist or blacklist **countries that can access the content
   * **Signed URLs **
     * for RTMP distribution as signed cookies aren’t supported
     * to restrict access to individual files,
@@ -143,32 +148,13 @@
     * provide access to multiple restricted files,
       _for e.g., video part files in HLS format or all of the files in the subscribers’ area of a website._
     * don’t want to change the current URLs
-  * integrates with AWS
-    **WAF**
-    , a web application firewall that helps protect web applications from attacks by allowing rules configured based on IP addresses, HTTP headers, and custom URI strings
-* supports
-  **GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE**
-  to get object 
-  &
-   object headers, add, update, and delete objects
-  * **only caches**
-    responses to
-    **GET and HEAD**
-    requests and, optionally, OPTIONS requests
-  * **does not cache**
-    responses to
-    **PUT, POST, PATCH, DELETE**
-    request methods and these requests are proxied back to the origin
-* object
-  **removal**
-  from cache
-  * would be removed upon
-    **expiry \(TTL\)**
-    from the cache, by default 24 hrs
-  * can be
-    **invalidated**
-    **explicitly**
-    , but has a cost associated, however might continue to see the old version until it expires from those caches
+  * integrates with AWS **WAF**, a web application firewall that helps protect web applications from attacks by allowing rules configured based on IP addresses, HTTP headers, and custom URI strings
+* supports **GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE **to get object & object headers, add, update, and delete objects
+  * **only caches **responses to **GET and HEAD **requests and, optionally, OPTIONS requests
+  * **does not cache **responses to **PUT, POST, PATCH, DELETE **request methods and these requests are proxied back to the origin
+* object **removal **from cache
+  * would be removed upon **expiry \(TTL\) **from the cache, by default 24 hrs
+  * can be **invalidated explicitly**, but has a cost associated, however might continue to see the old version until it expires from those caches
   * objects can be
     **invalidated only for Web distribution**
   * change object name,
