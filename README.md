@@ -69,6 +69,7 @@ Thank you very much for your donation.
     * [lead2pass questions6](lead2pass-questions6.md)
     * [lead2pass questions7](lead2pass-questions7.md)
     * [aws netquiz-IAM](aws-netquiz-iam.md)
+    * [aws netquiz2](aws-netquiz2.md)
   * [AWS solution architect Quiz](aws-solution-architect-quiz.md)
     * [Solution Architect1](test1.md)
     * [solution architect2](solution-architect2.md)
@@ -90,7 +91,19 @@ Thank you very much for your donation.
   * [Devops](devops-faq.md)
   * [DynamoDB](dyanmodb-faq.md)
   * [VPC](vpc-faqs.md)
+* [Cheat Sheet](cheat-sheet.md)
+  * [AWS Certification Exam Cheat Sheet](aws-certification-exam-cheat-sheet.md)
+  * [AWS Network Cheat Sheet](aws-network-cheat-sheet.md)
+  * [Security & Identity Services – Cheat Sheet](security-and-identity-services-cheat-sheet.md)
+  * [Compute Services – Cheat Sheet](compute-services-cheat-sheet.md)
+  * [Storage & Content Delivery – Cheat Sheet](storage-and-content-delivery-cheat-sheet.md)
+  * [Database Services – Cheat Sheet](database-services-cheat-sheet.md)
+  * [Analytics Services – Cheat Sheet](analytics-services-cheat-sheet.md)
+  * [Application Services – Cheat Sheet](application-services-cheat-sheet.md)
+  * [Management Tools – Cheat Sheet](management-tools-cheat-sheet.md)
 * [References](references.md)
+
+
 
 
 
