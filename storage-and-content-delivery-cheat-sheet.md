@@ -27,13 +27,16 @@
   * **Logical hierarchy**
     can be inferred using the keyname prefix e.g. Folder1/Object1
 * **Bucket & Object Operations**
+
   * allows **retrieval of 1000 objects and provides pagination support **and is **NOT **suited for list or prefix queries with large number of objects
   * with a single put operations, 5GB size object can be uploaded
   * use **Multipart upload **to upload large objects up to 5 TB and is recommended for object size of over 100MB for fault tolerant uploads
 
   * support **Range HTTP Header **to retrieve partial objects for fault tolerant downloads where the network connectivity is poor
+
   * **Pre-Signed URLs **can also be used shared for uploading/downloading objects for **limited time without requiring AWS security credentials**
   * allows deletion of a single object or multiple objects \(max 1000\) in a single call
+
 * **Multipart Uploads**
   allows
   * **parallel uploads**
@@ -46,47 +49,36 @@
   * allows preserve, retrieve, and restore every version of every object
   * **protects individual files **but does **NOT protect from Bucket deletion**
 * **Storage tiers**
+
   * Standard
+
     * default storage class **99.999999999% durability**&**99.99% availability**
 
     * Low latency and high throughput performance
+
     * designed to **sustain the loss of data in a two **facilities
+
   * Standard IA
     * optimized for **long-lived and less frequently **accessed data
     * designed to **sustain the loss of data in a two **facilities
     * **99.999999999% durability **& **99.9% availability**
     * suitable for **objects greater than 128 KB **kept for at **least 30 days**
   * Reduced Redundancy Storage
-    * designed for
-      **noncritical, reproducible data**
-      stored at lower levels of redundancy than the STANDARD storage class
+    * designed for **noncritical, reproducible data **stored at lower levels of redundancy than the STANDARD storage class
     * **reduces storage costs**
-    * **99.99% durability**
-      &
-      **99.99% availability**
-    * designed to
-      **sustain the loss of data in a single**
-      facility
+    * **99.99% durability **& **99.99% availability**
+    * designed to **sustain the loss of data in a single **facility
   * Glacier
-    * suitable for
-      **archiving data**
-      where
-      **data access is infrequent and retrieval time of several \(3-5\) hours  is acceptable**
+    * suitable for **archiving data **where **data access is infrequent and retrieval time of several \(3-5\) hours  is acceptable**
     * **99.999999999% durability**
+
 * allows
   **Lifecycle Management policies**
-  * **transition**
-    to move objects to different storage classes and Glacier
-  * **expiration**
-    to remove objects
+  * **transition **to move objects to different storage classes and Glacier
+  * **expiration **to remove objects
 * **Data Consistency Model**
-  * provide
-    **read-after-write consistency for PUTS of new objects**
-    and
-    **eventual consistency for overwrite PUTS and DELETES**
-  * for new objects,
-    **synchronously stores data across multiple facilities**
-    before returning success
+  * provide **read-after-write consistency for PUTS of new objects **and **eventual consistency for overwrite PUTS and DELETES**
+  * for new objects, **synchronously stores data across multiple facilities **before returning success
   * **updates to a single key are atomic**
 * **Security**
   * **IAM policies**
@@ -99,89 +91,41 @@
 * **Best Practices**
   * **use random hash prefix for keys and ensure a random access pattern**
     , as S3 stores object lexicographically randomness helps distribute the contents across multiple partitions for better performance
-  * use parallel threads and
-    **Multipart upload for faster writes**
-  * use parallel threads and
-    **Range Header GET for faster reads**
+  * use parallel threads and **Multipart upload for faster writes**
+  * use parallel threads and **Range Header GET for faster reads**
   * for list operations with large number of objects, its better to build a secondary index in DynamoDB
-  * use
-    **Versioning to protect from unintended overwrites and deletions**
-    , but this does not protect against bucket deletion
-  * use
-    **VPC S3 Endpoints**
-    with VPC to transfer data using Amazon internet network
+  * use **Versioning to protect from unintended overwrites and deletions**, but this does not protect against bucket deletion
+  * use **VPC S3 Endpoints **with VPC to transfer data using Amazon internet network
 
 ## Glacier
 
-* suitable for
-  **archiving**
-  data, where data access is
-  **infrequent**
-  and a
-  **retrieval time of several hours \(3 to 5 hours\) is acceptable**
-  \(
-  Not true anymore with enhancements from AWS
-  \)
-* provides a
-  **high durability**
-  by storing archive in multiple facilities and multiple devices at a
-  **very low cost storage**
-* performs regular, systematic
-  **data integrity checks**
-  and is built to be
-  **automatically self healing**
-* **aggregate files into bigger files**
-  before sending them to Glacier and use 
-  **range retrievals to retrieve partial file and reduce costs**
-* improve speed and reliability with
-  **multipart upload**
-* **automatically encrypts**
-  the data using AES-256
+* suitable for **archiving **data, where data access is **infrequent **and a **retrieval time of several hours \(3 to 5 hours\) is acceptable**\(Not true anymore with enhancements from AWS\)
+* provides a **high durability **by storing archive in multiple facilities and multiple devices at a **very low cost storage**
+* performs regular, systematic **data integrity checks **and is built to be **automatically self healing**
+* **aggregate files into bigger files **before sending them to Glacier and use  **range retrievals to retrieve partial file and reduce costs**
+* improve speed and reliability with **multipart upload**
+* **automatically encrypts **the data using AES-256
 * **upload or download data to Glacier via SSL encrypted endpoints**
 
 ## CloudFront
 
 * provides low latency and high data transfer speeds for distribution of static, dynamic web or streaming content to web users
-* delivers the content through a worldwide network of data centers called
-  **Edge Locations**
+* delivers the content through a worldwide network of data centers called **Edge Locations**
 * keeps persistent connections with the origin servers so that the files can be fetched from the origin servers as quickly as possible.
-* dramatically
-  **reduces the number of network hops**
-  that users’ requests must pass through
-* supports
-  **multiple origin server options**
-  , like AWS hosted service
-  _for e.g. S3, EC2, ELB_
-   or an on premise server, which stores the original, definitive version of the objects
-* **single distribution can have multiple origins**
-  and Path pattern in a cache behavior determines which requests are routed to the origin
-* supports
-  **Web Download**
-   distribution and
-  **RTMP**
-  **Streaming**
-   distribution
-  * Web distribution supports static, dynamic web content, on demand using progressive download 
-    &
-     HLS and live streaming video content
-  * RTMP supports streaming of media files using Adobe Media Server and the Adobe Real-Time Messaging Protocol \(RTMP\) 
-    **ONLY**
+* dramatically **reduces the number of network hops **that users’ requests must pass through
+* supports **multiple origin server options**, like AWS hosted service _for e.g. S3, EC2, ELB _or an on premise server, which stores the original, definitive version of the objects
+* **single distribution can have multiple origins **and Path pattern in a cache behavior determines which requests are routed to the origin
+* supports **Web Download **distribution and **RTMP Streaming **distribution
+  * Web distribution supports static, dynamic web content, on demand using progressive download & HLS and live streaming video content
+  * RTMP supports streaming of media files using Adobe Media Server and the Adobe Real-Time Messaging Protocol \(RTMP\) **ONLY **
 * supports HTTPS using either
   * **dedicated IP address**
     , which is expensive as dedicated IP address is assigned to each CloudFront edge location
   * **Server Name Indication \(SNI\)**
     , which is free but supported by modern browsers only with the domain name available in the request header
 * For E2E HTTPS connection,
-  * **Viewers -**
-    **&gt;**
-    ** CloudFront**
-    needs either
-    **self signed certificate, or certificate issued by CA or ACM**
-  * **CloudFront -**
-    **&gt;**
-    ** Origin**
-    needs
-    **certificate issued by ACM for ELB and by CA for other origins**
+  * **Viewers -&gt;CloudFront **needs either **self signed certificate, or certificate issued by CA or ACM**
+  * **CloudFront -&gt;Origin **needs **certificate issued by ACM for ELB and by CA for other origins**
 * Security
   * **Origin Access Identity**
     \(OAI\) can be used to restrict the content from S3 origin to be accessible from CloudFront only
