@@ -1,11 +1,11 @@
-Q**uestion 1**
+**Question 1**
 
 REST or Query requests are HTTP or HTTPS requests that use an HTTP verb \(such as GET or POST\) and a parameter named Action or Operation that specifies the API you are calling.
 
 1. FALSE
 2. **TRUE**
 
-Q**uestion 2**
+**Question 2**
 
 Through which of the following interfaces is AWS Identity and Access Management available?
 
@@ -22,7 +22,7 @@ D\) Existing libraries
 3. A and C
 4. **All of the above**
 
-Q**uestion 3**
+Question 3
 
 Which of the following programming languages have an officially supported AWS SDK? Choose 2 answers
 
@@ -32,7 +32,7 @@ Which of the following programming languages have an officially supported AWS SD
 4. SQL
 5. Perl
 
-Q**uestion 4**
+**Question 4**
 
 HTTP Query-based requests are HTTP requests that use the HTTP verb GET or POST and a Query parameter named\_\_\_\_\_\_\_\_\_\_\_\_\_.
 
@@ -41,7 +41,7 @@ HTTP Query-based requests are HTTP requests that use the HTTP verb GET or POST a
 3. Reset
 4. Retrieve
 
-Q**uestion 5**
+**Question 5**
 
 An AWS customer is deploying an application that is composed of an AutoScaling group of EC2 Instances. The customers security policy requires that every outbound connection from these instances to any other service within the customers Virtual Private Cloud must be authenticated using a unique x.509 certificate that contains the specific instanceid. In addition an x.509 certificates must be designed by the customer’s Key management service in order to be trusted for authentication. Which of the following configurations will support these requirements?
 
@@ -50,7 +50,7 @@ An AWS customer is deploying an application that is composed of an AutoScaling g
 3. **Configure the Auto Scaling group to send an SNS notification of the launch of a new instance to the trusted key management service. Have the Key management service generate a signed certificate and send it directly to the newly launched instance.**
 4. Configure the launched instances to generate a new certificate upon first boot. Have the Key management service poll the AutoScaling group for associated instances and send new instances a certificate signature that contains the specific instance-id.
 
-Q**uestion 6**
+**Question 6**
 
 When assessing an organization AWS use of AWS API access credentials which of the following three credentials should be evaluated? Choose 3 answers
 
@@ -60,7 +60,7 @@ When assessing an organization AWS use of AWS API access credentials which of th
 4. **Signing certificates**
 5. Security Group memberships \(required for EC2 instance access\)
 
-Q**uestion 7**
+**Question 7**
 
 Your organization’s security policy requires that all privileged users either use frequently rotated passwords or one-time access credentials in addition to username/password. Which two of the following options would allow an organization to enforce this policy for AWS users? Choose 2 answers
 
@@ -69,7 +69,7 @@ Your organization’s security policy requires that all privileged users either 
 3. Implement identity federation between your organization’s Identity provider leveraging the IAM Security Token Service
 4. Enable the IAM single-use password policy option for privileged users \(no such option the password expiration can be set from 1 to 1095 days\)
 
-Q**uestion 8**
+**Question 8**
 
 A company needs to deploy services to an AWS region which they have not previously used. The company currently has an AWS identity and Access Management \(IAM\) role for the Amazon EC2 instances, which permits the instance to have access to Amazon DynamoDB. The company wants their EC2 instances in the new region to have the same privileges. How should the company achieve this?
 
@@ -78,7 +78,7 @@ A company needs to deploy services to an AWS region which they have not previous
 3. Copy the IAM role and associated policies to the new region and attach it to the instances
 4. Create an Amazon Machine Image \(AMI\) of the instance and copy it to the desired region using the AMI Copy feature
 
-Q**uestion 9**
+**Question 9**
 
 When you use the AWS Management Console to delete an IAM user, IAM also deletes any signing certificates and any access keys belonging to the user.
 
@@ -86,19 +86,17 @@ When you use the AWS Management Console to delete an IAM user, IAM also deletes 
 2. This is configurable
 3. **TRUE**
 
-Q**uestion 10**
+**Question 10**
 
 You are setting up a blog on AWS. In which of the following scenarios will you need AWS credentials? \(Choose 3\)
 
 1. **Sign in to the AWS management console to launch an Amazon EC2 instance**
-2. Sign in to the running instance to instance some software \(
-   needs ssh keys
-   \)
+2. Sign in to the running instance to instance some software \(needs ssh keys\)
 3. **Launch an Amazon RDS instance**
-4. Log into your blog’s content management system to write a blog post \(
-   need to authenticate using blog authentication
-   \)
+4. Log into your blog’s content management system to write a blog post \(need to authenticate using blog authentication\)
 5. **Post pictures to your blog on Amazon S3**
+
+
 
 
 

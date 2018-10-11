@@ -32,6 +32,7 @@
     * source/destination checks on the NAT instance should be disabled
 
 * Peering
+
 * security group vs NACL
 
 
