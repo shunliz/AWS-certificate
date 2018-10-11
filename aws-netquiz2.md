@@ -50,5 +50,15 @@ An AWS customer is deploying an application that is composed of an AutoScaling g
 3. **Configure the Auto Scaling group to send an SNS notification of the launch of a new instance to the trusted key management service. Have the Key management service generate a signed certificate and send it directly to the newly launched instance.**
 4. Configure the launched instances to generate a new certificate upon first boot. Have the Key management service poll the AutoScaling group for associated instances and send new instances a certificate signature that contains the specific instance-id.
 
+Q**uestion 6**
+
+When assessing an organization AWS use of AWS API access credentials which of the following three credentials should be evaluated? Choose 3 answers
+
+1. Key pairs
+2. **Console passwords**
+3. **Access keys**
+4. **Signing certificates**
+5. Security Group memberships \(required for EC2 instance access\)
+
 
 
