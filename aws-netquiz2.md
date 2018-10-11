@@ -60,5 +60,14 @@ When assessing an organization AWS use of AWS API access credentials which of th
 4. **Signing certificates**
 5. Security Group memberships \(required for EC2 instance access\)
 
+Q**uestion 7**
+
+Your organization’s security policy requires that all privileged users either use frequently rotated passwords or one-time access credentials in addition to username/password. Which two of the following options would allow an organization to enforce this policy for AWS users? Choose 2 answers
+
+1. **Configure multi-factor authentication for privileged IAM users**
+2. **Create IAM users for privileged accounts \(**can set password policy**\)**
+3. Implement identity federation between your organization’s Identity provider leveraging the IAM Security Token Service
+4. Enable the IAM single-use password policy option for privileged users \(no such option the password expiration can be set from 1 to 1095 days\)
+
 
 
