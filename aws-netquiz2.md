@@ -78,5 +78,27 @@ A company needs to deploy services to an AWS region which they have not previous
 3. Copy the IAM role and associated policies to the new region and attach it to the instances
 4. Create an Amazon Machine Image \(AMI\) of the instance and copy it to the desired region using the AMI Copy feature
 
+Q**uestion 9**
+
+When you use the AWS Management Console to delete an IAM user, IAM also deletes any signing certificates and any access keys belonging to the user.
+
+1. FALSE
+2. This is configurable
+3. **TRUE**
+
+Q**uestion 10**
+
+You are setting up a blog on AWS. In which of the following scenarios will you need AWS credentials? \(Choose 3\)
+
+1. **Sign in to the AWS management console to launch an Amazon EC2 instance**
+2. Sign in to the running instance to instance some software \(
+   needs ssh keys
+   \)
+3. **Launch an Amazon RDS instance**
+4. Log into your blog’s content management system to write a blog post \(
+   need to authenticate using blog authentication
+   \)
+5. **Post pictures to your blog on Amazon S3**
+
 
 
