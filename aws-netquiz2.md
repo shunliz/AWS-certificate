@@ -67,7 +67,16 @@ Your organization’s security policy requires that all privileged users either 
 1. **Configure multi-factor authentication for privileged IAM users**
 2. **Create IAM users for privileged accounts \(**can set password policy**\)**
 3. Implement identity federation between your organization’s Identity provider leveraging the IAM Security Token Service
-4. Enable the IAM single-use password policy option for privileged users \(no such option the password expiration can be set from 1 to 1095 days\)
+4. Enable the IAM single-use password policy option for privileged users \(no such option the password expiration can be set from 1 to 1095 days\)
+
+Q**uestion 8**
+
+A company needs to deploy services to an AWS region which they have not previously used. The company currently has an AWS identity and Access Management \(IAM\) role for the Amazon EC2 instances, which permits the instance to have access to Amazon DynamoDB. The company wants their EC2 instances in the new region to have the same privileges. How should the company achieve this?
+
+1. Create a new IAM role and associated policies within the new region
+2. **Assign the existing IAM role to the Amazon EC2 instances in the new region**
+3. Copy the IAM role and associated policies to the new region and attach it to the instances
+4. Create an Amazon Machine Image \(AMI\) of the instance and copy it to the desired region using the AMI Copy feature
 
 
 
