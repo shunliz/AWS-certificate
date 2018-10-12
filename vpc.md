@@ -40,6 +40,7 @@
 * A virtual private cloud \(VPC\) is a virtual network dedicated to the AWS account. It is logically isolated from other virtual networks in the AWS cloud.
 * VPC allows the user to select IP address range, create subnets, and configure route tables, network gateways, and security settings.
 * **VPC Sizing**
+
   * VPC needs a set of IP addresses in the form of a Classless Inter-Domain Routing \(CIDR\) block
     _for e.g,_
     _10.0.0.0/16, which allows 2^16 \(65536\) IP address to be available _
@@ -53,9 +54,8 @@
   * It’s possible to specify a range of publicly routable IP addresses; however, direct access to the Internet is not currently supported from publicly routable CIDR blocks in a VPC
 
   * Each VPC is separate from any other VPC created with the same CIDR block even if it resides within the same AWS account
-* VPC allows
-  [VPC Peering](http://jayendrapatil.com/aws-vpc-peering/)
-  connections with other VPC within the same or different AWS accounts
+
+* VPC allows [VPC Peering](http://jayendrapatil.com/aws-vpc-peering/) connections with other VPC within the same or different AWS accounts
 * Connection between your VPC and corporate or home network can be established, however the CIDR blocks should be not be overlapping
   _for e.g. VPC with CIDR 10.0.0.0/16 can communicate with 10.1.0.0/16 corporate network but the connections would be dropped if it tries to connect to 10.0.37.0/16 corporate network cause of overlapping ip addresses_
   .
