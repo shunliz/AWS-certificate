@@ -35,16 +35,14 @@
 
 * security group vs NACL
 
-
-
 # VPC Overview & Components
 
-* A virtual private cloud \(VPC\) is a virtual network dedicated to the AWS account. It is logically isolated from other virtual networks in the AWS cloud.
-* VPC allows the user to select IP address range, create subnets, and configure route tables, network gateways, and security settings.
+* A virtual private cloud \(VPC\) is a virtual network dedicated to the AWS account. It is logically isolated from other virtual networks in the AWS cloud.
+* VPC allows the user to select IP address range, create subnets, and configure route tables, network gateways, and security settings.
 * **VPC Sizing**
-  * VPC needs a set of IP addresses in the form of a Classless Inter-Domain Routing \(CIDR\) block
+  * VPC needs a set of IP addresses in the form of a Classless Inter-Domain Routing \(CIDR\) block
     _for e.g,_
-    _10.0.0.0/16, which allows 2^16 \(65536\) IP address to be available _
+    _10.0.0.0/16, which allows 2^16 \(65536\) IP address to be available _
   * Allowed CIDR block size is between
     * /28 netmask \(minimum with 2^4 – 16 available IP address\) and
     * /16 netmask \(maximum with 2^16 – 65536 IP address\)
@@ -53,19 +51,16 @@
     * 172.16.0.0 – 172.31.255.255 \(172.16/12 prefix\)
     * 192.168.0.0 – 192.168.255.255 \(192.168/16 prefix\)
   * It’s possible to specify a range of publicly routable IP addresses; however, direct access to the Internet is not currently supported from publicly routable CIDR blocks in a VPC
-  * ~~CIDR block once assigned to the VPC cannot be modified.~~
-    **NOTE**
-    – You can now resize VPC. Read
-    [AWS blog post.](https://aws.amazon.com/about-aws/whats-new/2017/08/amazon-virtual-private-cloud-vpc-now-allows-customers-to-expand-their-existing-vpcs/)
+
   * Each VPC is separate from any other VPC created with the same CIDR block even if it resides within the same AWS account
 * VPC allows
   [VPC Peering](http://jayendrapatil.com/aws-vpc-peering/)
-  connections with other VPC within the same or different AWS accounts
+  connections with other VPC within the same or different AWS accounts
 * Connection between your VPC and corporate or home network can be established, however the CIDR blocks should be not be overlapping
   _for e.g. VPC with CIDR 10.0.0.0/16 can communicate with 10.1.0.0/16 corporate network but the connections would be dropped if it tries to connect to 10.0.37.0/16 corporate network cause of overlapping ip addresses_
   .
-* VPC allows you to set tenancy option for the Instances launched in it. By default, the tenancy option is shared. If dedicated option selected, all the instances within it are launched on a dedicated hardware overriding the individual instance tenancy setting
-* Deletion of the VPC is possible only after terminating all instances within the VPC, and deleting all the components with the VPC
+* VPC allows you to set tenancy option for the Instances launched in it. By default, the tenancy option is shared. If dedicated option selected, all the instances within it are launched on a dedicated hardware overriding the individual instance tenancy setting
+* Deletion of the VPC is possible only after terminating all instances within the VPC, and deleting all the components with the VPC
   _for e.g. subnets, security groups, network ACLs, route tables, Internet gateways, VPC peering connections, and DHCP options_
 
 ![](https://i0.wp.com/jayendrapatil.com/wp-content/uploads/2016/03/AWS-VPC-Components.png?resize=656%2C467 "AWS VPC Components")
@@ -87,14 +82,14 @@ Instances launched in the VPC can have Private, Public and Elastic IP address as
 * Elastic IP address
   * Elastic IP addresses are static, persistent public IP addresses which can be associated and disassociated with the instance, as required
   * Elastic IP address is allocated at an VPC and owned by the account unless released
-  * A Network Interface can be assigned either a Public IP or an Elastic IP. If you assign an instance, already having an Public IP, an Elastic IP, the public IP is released
+  * A Network Interface can be assigned either a Public IP or an Elastic IP. If you assign an instance, already having an Public IP, an Elastic IP, the public IP is released
   * Elastic IP addresses can be moved from one instance to another, which can be within the same or different VPC within the same account
   * Elastic IP are charged for non usage i.e. if it is not associated or associated with a stopped instance or an unattached Network Interface
 
 ## Elastic Network Interface \(ENI\)
 
 * Each Instance is attached with default elastic network interface \(Primary Network Interface eth0\) and cannot be detached from the instance
-* ENI can include the following attributes
+* ENI can include the following attributes
   * Primary private IP address
   * One or more secondary private IP addresses
   * One Elastic IP address per private IP address
@@ -115,18 +110,18 @@ Instances launched in the VPC can have Private, Public and Elastic IP address as
 * Route table defines rules, termed as routes, which determine where network traffic from the subnet would be routed
 * Each VPC has a implicit router to route network traffic
 * Each VPC has a Main Route table, and can have multiple custom route tables created
-* Each Subnet within a VPC must be associated with a single route table at a time, while a route table can have multiple subnets associated with it
-* Subnet, if not explicitly associated to a route table, is implicitly associated with the main route table
+* Each Subnet within a VPC must be associated with a single route table at a time, while a route table can have multiple subnets associated with it
+* Subnet, if not explicitly associated to a route table, is implicitly associated with the main route table
 * Every route table contains a local route that enables communication within a VPC which cannot be modified or deleted
-* Route priority is decided by matching the most specific route in the route table that matches the traffic
+* Route priority is decided by matching the most specific route in the route table that matches the traffic
 * Route tables needs to be updated to defined routes for Internet gateways, Virtual Private gateways, VPC Peering, VPC Endpoints, NAT Device etc.
 
 ## Internet Gateways – IGW
 
-* An Internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in the VPC and the Internet.
-* IGW imposes no availability risks or bandwidth constraints on the network traffic.
+* An Internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in the VPC and the Internet.
+* IGW imposes no availability risks or bandwidth constraints on the network traffic.
 * An Internet gateway serves two purposes:
-  * To provide a target in the VPC route tables for Internet-routable traffic,
+  * To provide a target in the VPC route tables for Internet-routable traffic,
   * To perform network address translation \(NAT\) for instances that have been assigned public IP addresses.
 * **Enabling Internet access to an Instance requires**
   * Attaching Internet gateway to the VPC
@@ -138,7 +133,7 @@ Instances launched in the VPC can have Private, Public and Elastic IP address as
 
 NAT device enables instances in a private subnet to connect to the Internet or other AWS services, but prevents the Internet from initiating connections with the instances.
 
-Refer to My Blog Post about [VPC NAT](http://jayendrapatil.com/aws-vpc-nat/)
+Refer to My Blog Post about [VPC NAT](http://jayendrapatil.com/aws-vpc-nat/)
 
 ## VPC Security
 
@@ -150,11 +145,11 @@ Security within a VPC is provided through
 
 ### Security Groups & NACLs
 
-Refer to My Blog Post about [AWS Security Group vs NACLs](http://jayendrapatil.com/aws-vpc-security-group-vs-nacls/)
+Refer to My Blog Post about [AWS Security Group vs NACLs](http://jayendrapatil.com/aws-vpc-security-group-vs-nacls/)
 
 ### Flow logs
 
-* VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in the VPC and can help in monitoring the traffic or troubleshooting any connectivity issues
+* VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in the VPC and can help in monitoring the traffic or troubleshooting any connectivity issues
 * Flow log data is stored using Amazon CloudWatch Logs
 * Flow log can be created for the entire VPC, subnets or each network interface. If enabled, for entire VPC or subnet all the network interfaces are monitored
 * Flow logs do not capture real-time log streams for network interfaces.
@@ -164,7 +159,7 @@ Refer to My Blog Post about [AWS Security Group vs NACLs](http://jayendrapatil.
 
 * Subnet spans a single Availability Zone, distinct locations engineered to be isolated from failures in other AZs, and cannot span across AZs
 * Subnet can be configured with an Internet gateway to enable communication over the Internet, or virtual private gateway \(VPN\) connection to enable communication with your corporate network
-* Subnet can be Public or Private and it depends on whether it has Internet connectivity i.e. is able to route traffic to the Internet through the IGW
+* Subnet can be Public or Private and it depends on whether it has Internet connectivity i.e. is able to route traffic to the Internet through the IGW
 * Instances within the Public Subnet should be assigned a Public IP or Elastic IP address to be able to communicate with the Internet
 * For Subnets not connected to the Internet, but has traffic routed through Virtual Private Gateway only is termed as VPN-only subnet
 * Subnets can be configured to Enable assignment of the Public IP address to all the Instances launched within the Subnet by default, which can be overridden during the creation of the Instance
@@ -190,15 +185,13 @@ Refer to My Blog Post about [AWS Security Group vs NACLs](http://jayendrapatil.
 
 ## VPC Endpoints
 
-Refer to My Blog Post about [VPC Endpoint](http://jayendrapatil.com/aws-vpc-endpoints/)
+Refer to My Blog Post about [VPC Endpoint](http://jayendrapatil.com/aws-vpc-endpoints/)
 
 ## VPC Peering
 
-Refer to My Blog Post about [VPC Peering](http://jayendrapatil.com/aws-vpc-peering/)
+Refer to My Blog Post about [VPC Peering](http://jayendrapatil.com/aws-vpc-peering/)
 
 ## VPC VPN Connections & CloudHub
 
-Refer to My Blog Post about [AWS VPC VPN CloudHub Connections](http://jayendrapatil.com/aws-vpc-vpn-cloudhub/)
-
-
+Refer to My Blog Post about [AWS VPC VPN CloudHub Connections](http://jayendrapatil.com/aws-vpc-vpn-cloudhub/)
 
