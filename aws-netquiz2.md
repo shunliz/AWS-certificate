@@ -96,7 +96,17 @@ You are setting up a blog on AWS. In which of the following scenarios will you n
 4. Log into your blog’s content management system to write a blog post \(need to authenticate using blog authentication\)
 5. **Post pictures to your blog on Amazon S3**
 
+**Question 11**
 
+You have a business-to-business web application running in a VPC consisting of an Elastic Load Balancer \(ELB\), web servers, application servers and a database. Your web application should only accept traffic from predefined customer IP addresses. Which two options meet this security requirement? Choose 2 answers
+
+1. Configure web server VPC security groups to allow traffic from your customers’ IPs \(
+   Web server is behind the ELB and customer IPs will never reach web servers\)
+2. **Configure your web servers to filter traffic based on the ELB’s “X-forwarded-for” header**
+   \(get the customer IPs and create a custom filter to restrict access. Refer [link](https://aws.amazon.com/premiumsupport/knowledge-center/log-client-ip-load-balancer-apache/)\)
+3. **Configure ELB security groups to allow traffic from your customers’ IPs and deny all outbound traffic**
+   \(ELB will see the customer IPs so can restrict access, deny all is basically have no rules in outbound traffic, implicit, and its stateful so would work\)
+4. Configure a VPC NACL to allow web traffic from your customers’ IPs and deny all outbound traffic \(NACL is stateless, deny all will not work\)
 
 
 

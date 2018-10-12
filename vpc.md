@@ -57,9 +57,10 @@
 
 * VPC allows [VPC Peering](http://jayendrapatil.com/aws-vpc-peering/) connections with other VPC within the same or different AWS accounts
 
-* Connection between your VPC and corporate or home network can be established, however the CIDR blocks should be not be overlapping
-  _for e.g. VPC with CIDR 10.0.0.0/16 can communicate with 10.1.0.0/16 corporate network but the connections would be dropped if it tries to connect to 10.0.37.0/16 corporate network cause of overlapping ip addresses_
+* Connection between your VPC and corporate or home network can be established, however the CIDR blocks should be not be overlapping  
+  _for e.g. VPC with CIDR 10.0.0.0/16 can communicate with 10.1.0.0/16 corporate network but the connections would be dropped if it tries to connect to 10.0.37.0/16 corporate network cause of overlapping ip addresses_  
   .
+
 * VPC allows you to set tenancy option for the Instances launched in it. By default, the tenancy option is shared. If dedicated option selected, all the instances within it are launched on a dedicated hardware overriding the individual instance tenancy setting
 * Deletion of the VPC is possible only after terminating all instances within the VPC, and deleting all the components with the VPC
   _for e.g. subnets, security groups, network ACLs, route tables, Internet gateways, VPC peering connections, and DHCP options_
@@ -180,11 +181,7 @@ Security within a VPC is provided through
 
 ## VPC Endpoints
 
-
-
 ## VPC Peering
-
-
 
 ## VPC VPN Connections & CloudHub
 
