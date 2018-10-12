@@ -108,5 +108,23 @@ You have a business-to-business web application running in a VPC consisting of a
    \(ELB will see the customer IPs so can restrict access, deny all is basically have no rules in outbound traffic, implicit, and its stateful so would work\)
 4. Configure a VPC NACL to allow web traffic from your customers’ IPs and deny all outbound traffic \(NACL is stateless, deny all will not work\)
 
+**Question 12**
+
+A user has created a VPC with public and private subnets using the VPC wizard. Which of the below mentioned statements is true in this scenario?
+
+1. AWS VPC will automatically create a NAT instance with the micro size
+2. **VPC bounds the main route table with a private subnet and a custom route table with a public subnet**
+3. User has to manually create a NAT instance
+4. VPC bounds the main route table with a public subnet and a custom route table with a private subnet
+
+**Question 13**
+
+A user has launched an EC2 instance and installed a website with the Apache webserver. The webserver is running but the user is not able to access the website from the Internet. What can be the possible reason for this failure?
+
+1. **The security group of the instance is not configured properly.**
+2. The instance is not configured with the proper key-pairs.
+3. The Apache website cannot be accessed from the Internet.
+4. Instance is not configured with an elastic IP.
+
 
 
