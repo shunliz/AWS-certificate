@@ -56,6 +56,7 @@
   * Each VPC is separate from any other VPC created with the same CIDR block even if it resides within the same AWS account
 
 * VPC allows [VPC Peering](http://jayendrapatil.com/aws-vpc-peering/) connections with other VPC within the same or different AWS accounts
+
 * Connection between your VPC and corporate or home network can be established, however the CIDR blocks should be not be overlapping
   _for e.g. VPC with CIDR 10.0.0.0/16 can communicate with 10.1.0.0/16 corporate network but the connections would be dropped if it tries to connect to 10.0.37.0/16 corporate network cause of overlapping ip addresses_
   .
@@ -133,8 +134,6 @@ Instances launched in the VPC can have Private, Public and Elastic IP address as
 
 NAT device enables instances in a private subnet to connect to the Internet or other AWS services, but prevents the Internet from initiating connections with the instances.
 
-Refer to My Blog Post about [VPC NAT](http://jayendrapatil.com/aws-vpc-nat/)
-
 ## VPC Security
 
 Security within a VPC is provided through
@@ -142,10 +141,6 @@ Security within a VPC is provided through
 * Security groups – Act as a firewall for associated EC2 instances, controlling both inbound and outbound traffic at the instance level
 * Network access control lists \(ACLs\) – Act as a firewall for associated subnets, controlling both inbound and outbound traffic at the subnet level
 * Flow logs – Capture information about the IP traffic going to and from network interfaces in your VPC
-
-### Security Groups & NACLs
-
-Refer to My Blog Post about [AWS Security Group vs NACLs](http://jayendrapatil.com/aws-vpc-security-group-vs-nacls/)
 
 ### Flow logs
 
@@ -185,13 +180,13 @@ Refer to My Blog Post about [AWS Security Group vs NACLs](http://jayendrapatil.c
 
 ## VPC Endpoints
 
-Refer to My Blog Post about [VPC Endpoint](http://jayendrapatil.com/aws-vpc-endpoints/)
+
 
 ## VPC Peering
 
-Refer to My Blog Post about [VPC Peering](http://jayendrapatil.com/aws-vpc-peering/)
+
 
 ## VPC VPN Connections & CloudHub
 
-Refer to My Blog Post about [AWS VPC VPN CloudHub Connections](http://jayendrapatil.com/aws-vpc-vpn-cloudhub/)
+
 
