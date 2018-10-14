@@ -218,8 +218,6 @@ Can I move a Reserved Instance from one Region to another?
 3. Yes
 4. Only if they are moving to US East from another region
 
-
-
 **Question 24**
 
 A user has enabled termination protection on an EC2 instance. The user has also set Instance initiated shutdown behavior to terminate. When the user shuts down the instance from the OS, what will happen?
@@ -238,9 +236,6 @@ A user has launched an EC2 instance and deployed a production application in it.
 3. The user can set the Deletion termination flag to avoid accidental termination
 4. The user can set the InstanceInitiatedShutdownBehavior flag to avoid accidental termination
 
-  
-
-
 **Question 26**
 
 You have been doing a lot of testing of your VPC Network by deliberately failing EC2 instances to test whether instances are failing over properly. Your customer who will be paying the AWS bill for all this asks you if he being charged for all these instances. You try to explain to him how the billing works on EC2 instances to the best of your knowledge. What would be an appropriate response to give to the customer in regards to this?
@@ -249,6 +244,19 @@ You have been doing a lot of testing of your VPC Network by deliberately failing
 2. **Billing commences when Amazon EC2 initiates the boot sequence of an AMI instance and billing ends when the instance shuts down.**
 3. Billing only commences only after 1 hour of uptime and billing ends when the instance terminates.
 4. Billing commences when Amazon EC2 initiates the boot sequence of an AMI instance and billing ends as soon as the instance starts to shutdown.
+
+**Question 27**
+
+When you view the block device mapping for your instance, you can see only the EBS volumes, not the instance store volumes.
+
+1. Depends on the instance type
+2. FALSE
+3. Depends on whether you use API call
+4. **TRUE**
+
+
+
+
 
 
 
