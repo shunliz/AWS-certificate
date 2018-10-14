@@ -144,8 +144,6 @@ A user has created a VPC with CIDR 20.0.0.0/16. The user has created one subnet 
 3. **It is not possible to create a second subnet as one subnet with the same CIDR as the VPC has been created**
 4. The user can modify the first subnet CIDR with AWS CLI
 
-
-
 **Question 16**
 
 A user has setup a VPC with CIDR 20.0.0.0/16. The VPC has a private subnet \(20.0.1.0/24\) and a public subnet \(20.0.0.0/24\). The user’s data centre has CIDR of 20.0.54.0/24 and 20.1.0.0/24. If the private subnet wants to communicate with the data centre, what will happen?
@@ -173,6 +171,21 @@ A user has created a VPC with CIDR 20.0.0.0/16 using VPC Wizard. The user has cr
 2. **A NAT instance configured to allow the VPN subnet instances to connect with the internet**
 3. Custom route table attached with a public subnet
 4. An internet gateway for a public subnet
+
+
+
+**Question 19**
+
+A user has created a VPC with CIDR 20.0.0.0/16. The user has created public and VPN only subnets along with hardware VPN access to connect to the user’s datacenter. The user wants to make so that all traffic coming to the public subnet follows the organization’s proxy policy. How can the user make this happen?
+
+1. Setting up a NAT with the proxy protocol and configure that the public subnet receives traffic from NAT
+2. Setting up a proxy policy in the internet gateway connected with the public subnet
+3. It is not possible to setup the proxy policy for a public subnet
+4. **Setting the route table and security group of the public subnet which receives traffic from a virtual private gateway**
+
+
+
+
 
 
 
