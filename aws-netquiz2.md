@@ -126,5 +126,23 @@ A user has launched an EC2 instance and installed a website with the Apache webs
 3. The Apache website cannot be accessed from the Internet.
 4. Instance is not configured with an elastic IP.
 
+**Question 14**
+
+A user has created a VPC with public and private subnets using the VPC wizard. Which of the below mentioned statements is true in this scenario?
+
+1. AWS VPC will automatically create a NAT instance with the micro size
+2. **VPC bounds the main route table with a private subnet and a custom route table with a public subnet**
+3. User has to manually create a NAT instance
+4. VPC bounds the main route table with a public subnet and a custom route table with a private subnet
+
+**Question 15**
+
+A user has created a VPC with CIDR 20.0.0.0/16. The user has created one subnet with CIDR 20.0.0.0/16 by mistake. The user is trying to create another subnet of CIDR 20.0.0.1/24. How can the user create the second subnet?
+
+1. There is no need to update the subnet as VPC automatically adjusts the CIDR of the first subnet based on the second subnet’s CIDR
+2. The user can modify the first subnet CIDR from the console
+3. **It is not possible to create a second subnet as one subnet with the same CIDR as the VPC has been created**
+4. The user can modify the first subnet CIDR with AWS CLI
+
 
 
