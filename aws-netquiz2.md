@@ -172,8 +172,6 @@ A user has created a VPC with CIDR 20.0.0.0/16 using VPC Wizard. The user has cr
 3. Custom route table attached with a public subnet
 4. An internet gateway for a public subnet
 
-
-
 **Question 19**
 
 A user has created a VPC with CIDR 20.0.0.0/16. The user has created public and VPN only subnets along with hardware VPN access to connect to the user’s datacenter. The user wants to make so that all traffic coming to the public subnet follows the organization’s proxy policy. How can the user make this happen?
@@ -185,7 +183,14 @@ A user has created a VPC with CIDR 20.0.0.0/16. The user has created public and 
 
 
 
+**Question 20**
 
+Which two components provide connectivity with external networks? When attached to an Amazon VPC which two components provide connectivity with external networks? Choose 2 answers
+
+1. Elastic IPs \(EIP\) \(Does not provide connectivity, public IP address will do as well\)
+2. NAT Gateway \(NAT\) \(Not Attached to VPC and still needs IGW\)
+3. **Internet Gateway \(IGW\)**
+4. **Virtual Private Gateway \(VGW\)**
 
 
 
