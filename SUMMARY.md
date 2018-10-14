@@ -63,6 +63,8 @@
     * [solution architect2](solution-architect2.md)
     * [solution architect3](solution-architect3.md)
     * [solution architect4](solution-architect4.md)
+  * AWS developer professional quiz
+    * [quiz1](quiz1.md)
 * AWS FAQS
   * [EC2](ec2-faq.md)
   * [RDS](rds-faq.md)
