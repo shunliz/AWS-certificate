@@ -25,6 +25,7 @@
     * [EC2 Instance Lifecycle](ec2/ec2-instance-lifecycle.md)
     * [EC2 Instance Automated Startup – Metadata & Userdata](ec2/ec2-instance-automated-startup-metadata-and-userdata.md)
     * [EC2 – Placement Groups](ec2/ec2-placement-groups.md)
+    * [EC2 Storage](ec2/ec2-storage.md)
   * [RDS](rds.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)
