@@ -20,6 +20,7 @@
 * [AWS doc](aws-doc.md)
   * [EC2](ec2.md)
     * [EC2 AMI](ec2/ec2-ami.md)
+    * [EC2 instance Type](ec2/ec2-instance-type.md)
   * [RDS](rds.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)
