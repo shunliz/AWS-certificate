@@ -146,3 +146,33 @@ A user has created a VPC with CIDR 20.0.0.0/16. The user has created one subnet 
 
 
 
+**Question 16**
+
+A user has setup a VPC with CIDR 20.0.0.0/16. The VPC has a private subnet \(20.0.1.0/24\) and a public subnet \(20.0.0.0/24\). The user’s data centre has CIDR of 20.0.54.0/24 and 20.1.0.0/24. If the private subnet wants to communicate with the data centre, what will happen?
+
+1. It will allow traffic communication on both the CIDRs of the data centre
+2. It will not allow traffic with data centre on CIDR 20.1.0.0/24 but allows traffic communication on 20.0.54.0/24
+3. It will not allow traffic communication on any of the data centre CIDRs
+4. **It will allow traffic with data centre on CIDR 20.1.0.0/24 but does not allow on 20.0.54.0/24**
+   \(as the CIDR block would be overlapping\)
+
+**Question 17**
+
+A user has created a subnet in VPC and launched an EC2 instance within it. The user has not selected the option to assign the IP address while launching the instance. Which of the below mentioned statements is true with respect to the Instance requiring access to the Internet?
+
+1. The instance will always have a public DNS attached to the instance by default
+2. The user can directly attach an elastic IP to the instance
+3. The instance will never launch if the public IP is not assigned
+4. **The user would need to create an internet gateway and then attach an elastic IP to the instance to connect from internet**
+
+**Question 18**
+
+A user has created a VPC with CIDR 20.0.0.0/16 using VPC Wizard. The user has created a public CIDR \(20.0.0.0/24\) and a VPN only subnet CIDR \(20.0.1.0/24\) along with the hardware VPN access to connect to the user’s data centre. Which of the below mentioned components is not present when the VPC is setup with the wizard?
+
+1. Main route table attached with a VPN only subnet
+2. **A NAT instance configured to allow the VPN subnet instances to connect with the internet**
+3. Custom route table attached with a public subnet
+4. An internet gateway for a public subnet
+
+
+
