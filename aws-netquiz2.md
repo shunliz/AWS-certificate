@@ -181,8 +181,6 @@ A user has created a VPC with CIDR 20.0.0.0/16. The user has created public and 
 3. It is not possible to setup the proxy policy for a public subnet
 4. **Setting the route table and security group of the public subnet which receives traffic from a virtual private gateway**
 
-
-
 **Question 20**
 
 Which two components provide connectivity with external networks? When attached to an Amazon VPC which two components provide connectivity with external networks? Choose 2 answers
@@ -191,6 +189,18 @@ Which two components provide connectivity with external networks? When attached 
 2. NAT Gateway \(NAT\) \(Not Attached to VPC and still needs IGW\)
 3. **Internet Gateway \(IGW\)**
 4. **Virtual Private Gateway \(VGW\)**
+
+
+
+**Question 21**
+
+If you want to launch Amazon Elastic Compute Cloud \(EC2\) Instances and assign each Instance a predetermined private IP address you should:
+
+1. Assign a group or sequential Elastic IP address to the instances
+2. Launch the instances in a Placement Group
+3. **Launch the instances in the Amazon virtual Private Cloud \(VPC\)**
+4. Use standard EC2 instances since each instance gets a private Domain Name Service \(DNS\) already
+5. Launch the Instance from a private Amazon Machine image \(AMI\)
 
 
 
