@@ -21,6 +21,8 @@
   * [EC2](ec2.md)
     * [EC2 AMI](ec2/ec2-ami.md)
     * [EC2 instance Type](ec2/ec2-instance-type.md)
+    * [purchasing options](ec2/purchasing-options.md)
+    * [EC2 Instance Lifecycle](ec2/ec2-instance-lifecycle.md)
   * [RDS](rds.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)

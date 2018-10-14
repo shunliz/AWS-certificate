@@ -200,8 +200,6 @@ If you want to launch Amazon Elastic Compute Cloud \(EC2\) Instances and assign 
 4. Use standard EC2 instances since each instance gets a private Domain Name Service \(DNS\) already
 5. Launch the Instance from a private Amazon Machine image \(AMI\)
 
-
-
 **Question 22**
 
 You have an Amazon VPC with one private subnet and one public subnet with a Network Address Translator \(NAT\) server. You are creating a group of Amazon Elastic Cloud Compute \(EC2\) instances that configure themselves at startup via downloading a bootstrapping script from Amazon Simple Storage Service \(S3\) that deploys an application via GIT. Which setup provides the highest level of security?
@@ -211,9 +209,46 @@ You have an Amazon VPC with one private subnet and one public subnet with a Netw
 3. Amazon EC2 instances in private subnet, assign EIPs, route outgoing traffic via the Internet Gateway \(IGW\)
 4. Amazon EC2 instances in public subnet, assign EIPs, route outgoing traffic via the NAT
 
+**Question 23**
+
+Can I move a Reserved Instance from one Region to another?
+
+1. **No**
+2. Only if they are moving into GovCloud
+3. Yes
+4. Only if they are moving to US East from another region
 
 
 
+**Question 24**
+
+A user has enabled termination protection on an EC2 instance. The user has also set Instance initiated shutdown behavior to terminate. When the user shuts down the instance from the OS, what will happen?
+
+1. The OS will shutdown but the instance will not be terminated due to protection
+2. **It will terminate the instance**
+3. It will not allow the user to shutdown the instance from the OS
+4. It is not possible to set the termination protection when an Instance initiated shutdown is set to Terminate
+
+**Question 25**
+
+A user has launched an EC2 instance and deployed a production application in it. The user wants to prohibit any mistakes from the production team to avoid accidental termination. How can the user achieve this?
+
+1. **The user can the set DisableApiTermination attribute to avoid accidental termination**
+2. It is not possible to avoid accidental termination
+3. The user can set the Deletion termination flag to avoid accidental termination
+4. The user can set the InstanceInitiatedShutdownBehavior flag to avoid accidental termination
+
+  
+
+
+**Question 26**
+
+You have been doing a lot of testing of your VPC Network by deliberately failing EC2 instances to test whether instances are failing over properly. Your customer who will be paying the AWS bill for all this asks you if he being charged for all these instances. You try to explain to him how the billing works on EC2 instances to the best of your knowledge. What would be an appropriate response to give to the customer in regards to this?
+
+1. Billing commences when Amazon EC2 AMI instance is completely up and billing ends as soon as the instance starts to shutdown.
+2. **Billing commences when Amazon EC2 initiates the boot sequence of an AMI instance and billing ends when the instance shuts down.**
+3. Billing only commences only after 1 hour of uptime and billing ends when the instance terminates.
+4. Billing commences when Amazon EC2 initiates the boot sequence of an AMI instance and billing ends as soon as the instance starts to shutdown.
 
 
 
