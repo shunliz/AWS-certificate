@@ -190,8 +190,6 @@ Which two components provide connectivity with external networks? When attached 
 3. **Internet Gateway \(IGW\)**
 4. **Virtual Private Gateway \(VGW\)**
 
-
-
 **Question 21**
 
 If you want to launch Amazon Elastic Compute Cloud \(EC2\) Instances and assign each Instance a predetermined private IP address you should:
@@ -201,6 +199,21 @@ If you want to launch Amazon Elastic Compute Cloud \(EC2\) Instances and assign 
 3. **Launch the instances in the Amazon virtual Private Cloud \(VPC\)**
 4. Use standard EC2 instances since each instance gets a private Domain Name Service \(DNS\) already
 5. Launch the Instance from a private Amazon Machine image \(AMI\)
+
+
+
+**Question 22**
+
+You have an Amazon VPC with one private subnet and one public subnet with a Network Address Translator \(NAT\) server. You are creating a group of Amazon Elastic Cloud Compute \(EC2\) instances that configure themselves at startup via downloading a bootstrapping script from Amazon Simple Storage Service \(S3\) that deploys an application via GIT. Which setup provides the highest level of security?
+
+1. **Amazon EC2 instances in private subnet, no EIPs, route outgoing traffic via the NAT**
+2. Amazon EC2 instances in public subnet, no EIPs, route outgoing traffic via the Internet Gateway \(IGW\)
+3. Amazon EC2 instances in private subnet, assign EIPs, route outgoing traffic via the Internet Gateway \(IGW\)
+4. Amazon EC2 instances in public subnet, assign EIPs, route outgoing traffic via the NAT
+
+
+
+
 
 
 
