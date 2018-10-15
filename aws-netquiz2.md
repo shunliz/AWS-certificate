@@ -264,8 +264,6 @@ Which of the following will occur when an EC2 instance in a VPC \(Virtual Privat
 4. The ENI \(Elastic Network Interface\) is detached
 5. **The underlying host for the instance is changed**
 
-
-
 **Question 29**
 
 A user has created numerous EBS volumes. What is the general limit for each AWS account for the maximum number of EBS volumes that can be created?
@@ -274,6 +272,17 @@ A user has created numerous EBS volumes. What is the general limit for each AWS 
 2. **5000**
 3. 100
 4. 1000
+
+
+
+**Question 30**
+
+Select the correct set of steps for exposing the snapshot only to specific AWS accounts
+
+1. Select Public for all the accounts and check mark those accounts with whom you want to expose the snapshots and click save.
+2. **Select Private and enter the IDs of those AWS accounts, and click Save.**
+3. Select Public, enter the IDs of those AWS accounts, and click Save.
+4. Select Public, mark the IDs of those AWS accounts as private, and click Save.
 
 
 
