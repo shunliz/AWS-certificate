@@ -273,8 +273,6 @@ A user has created numerous EBS volumes. What is the general limit for each AWS 
 3. 100
 4. 1000
 
-
-
 **Question 30**
 
 Select the correct set of steps for exposing the snapshot only to specific AWS accounts
@@ -283,6 +281,14 @@ Select the correct set of steps for exposing the snapshot only to specific AWS a
 2. **Select Private and enter the IDs of those AWS accounts, and click Save.**
 3. Select Public, enter the IDs of those AWS accounts, and click Save.
 4. Select Public, mark the IDs of those AWS accounts as private, and click Save.
+
+**Question 31**
+
+Do the Amazon EBS volumes persist independently from the running life of an Amazon EC2 instance?
+
+1. **Only if instructed to when created**
+2. Yes
+3. No
 
 
 
