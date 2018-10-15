@@ -55,8 +55,7 @@ More details @[AWS S3](http://jayendrapatil.com/aws-simple-storage-service-s3-ov
 * Instance store is ideal for temporary storage of information that changes frequently, such as buffers, caches, scratch data, and other temporary content, or for data that is replicated across a fleet of instances, such as a load-balanced pool of web servers.
 * An instance store consists of one or more instance store volumes exposed as block devices.
 * Size of an instance store varies by instance type.
-* Virtual devices for instance store volumes are 
-  ephemeral\[0-23\], starting the first one as ephemeral0 and so on.
+* Virtual devices for instance store volumes are ephemeral\[0-23\], starting the first one as ephemeral0 and so on.
 * While an instance store is dedicated to a particular instance, the disk subsystem is shared among instances on a host computer.
 
 ### Instance Store Lifecycle
@@ -96,19 +95,17 @@ More details @[AWS S3](http://jayendrapatil.com/aws-simple-storage-service-s3-ov
 # EC2 Elastic Block Storage – EBS Overview
 
 * Amazon EBS provides highly available, reliable, durable, block-level storage volumes that can be attached to a running instance
-* EBS as a primary storage device is recommended for data that requires frequent and granular updates 
+* EBS as a primary storage device is recommended for data that requires frequent and granular updates 
   _for e.g. running a database or filesystems_
 * An EBS volume behaves like a raw, unformatted, external block device that can be attached to a single EC2 instance at a time
-* EBS volume persists independently from the running life of an instance.
-* An EBS volume can be attached to any instance within the
-  **same Availability Zone**
-  , and can be used like any other physical hard drive.
-* EBS volumes allows encryption using the Amazon EBS encryption feature. All data stored at rest, disk I/O, and snapshots created from the volume are encrypted. Encryption occurs on the EC2 instance, providing encryption of data-in-transit from EC2 to the EBS volume
-* EBS volumes can be backed up by creating a snapshot of the volume, which is stored in Amazon S3.  EBS volumes can be created from a snapshot can be attached to an another instance within the same region
-* EBS volumes are created in a specific Availability Zone, and can then be attached to any instances in that same Availability Zone. To make a volume available outside of the Availability Zone, create a snapshot and restore that snapshot to a new volume anywhere in that region
-* Snapshots can also be copied to other regions and then restored to new volumes, making it easier to leverage multiple AWS regions for geographical expansion, data center migration, and disaster recovery.
-* EBS Magnetic volumes can be created from 1 GiB to 1 TiB in size; EBS General Purpose \(SSD\) and Provisioned IOPS \(SSD\) volumes can be created up to 16 TiB in size
-* General Purpose \(SSD\) volumes support up to 10,000 IOPS and 160 MB/s of throughput and Provisioned IOPS \(SSD\) volumes support up to 20,000 IOPS and 320 MB/s of throughput.
+* EBS volume persists independently from the running life of an instance.
+* An EBS volume can be attached to any instance within the **same Availability Zone**, and can be used like any other physical hard drive.
+* EBS volumes allows encryption using the Amazon EBS encryption feature. All data stored at rest, disk I/O, and snapshots created from the volume are encrypted. Encryption occurs on the EC2 instance, providing encryption of data-in-transit from EC2 to the EBS volume
+* EBS volumes can be backed up by creating a snapshot of the volume, which is stored in Amazon S3.  EBS volumes can be created from a snapshot can be attached to an another instance within the same region
+* EBS volumes are created in a specific Availability Zone, and can then be attached to any instances in that same Availability Zone. To make a volume available outside of the Availability Zone, create a snapshot and restore that snapshot to a new volume anywhere in that region
+* Snapshots can also be copied to other regions and then restored to new volumes, making it easier to leverage multiple AWS regions for geographical expansion, data center migration, and disaster recovery.
+* EBS Magnetic volumes can be created from 1 GiB to 1 TiB in size; EBS General Purpose \(SSD\) and Provisioned IOPS \(SSD\) volumes can be created up to 16 TiB in size
+* General Purpose \(SSD\) volumes support up to 10,000 IOPS and 160 MB/s of throughput and Provisioned IOPS \(SSD\) volumes support up to 20,000 IOPS and 320 MB/s of throughput.
 
 ## Benefits
 
@@ -121,15 +118,15 @@ More details @[AWS S3](http://jayendrapatil.com/aws-simple-storage-service-s3-ov
   * All attached volumes persist, by default, on instance termination
 * Data Encryption
   * EBS volumes can be encrypted by EBS encryption feature
-  * EBS encryption uses 256-bit Advanced Encryption Standard algorithms \(AES-256\) and an Amazon-managed key infrastructure.
-  * Encryption occurs on the server that hosts the EC2 instance, providing encryption of data-in-transit from the EC2 instance to EBS storage
-  * Snapshots of encrypted EBS volumes are automatically encrypted.
+  * EBS encryption uses 256-bit Advanced Encryption Standard algorithms \(AES-256\) and an Amazon-managed key infrastructure.
+  * Encryption occurs on the server that hosts the EC2 instance, providing encryption of data-in-transit from the EC2 instance to EBS storage
+  * Snapshots of encrypted EBS volumes are automatically encrypted.
 * Snapshots
-  * EBS provides the ability to create snapshots \(backups\) of any EBS volume and write a copy of the data in the volume to Amazon S3, where it is stored redundantly in multiple Availability Zones
-  * Snapshots can be used to create new volumes, increase the size of the volumes or replicate data across Availability Zones
+  * EBS provides the ability to create snapshots \(backups\) of any EBS volume and write a copy of the data in the volume to Amazon S3, where it is stored redundantly in multiple Availability Zones
+  * Snapshots can be used to create new volumes, increase the size of the volumes or replicate data across Availability Zones
   * Snapshots are incremental backups and store only the data that was changed from the time the last snapshot was taken.
   * Snapshots size can probably be smaller then the volume size as the data is compressed before being saved to S3
-  * Even though snapshots are saved incrementally, the snapshot deletion process is designed so that you need to retain only the most recent snapshot in order to restore the volume.
+  * Even though snapshots are saved incrementally, the snapshot deletion process is designed so that you need to retain only the most recent snapshot in order to restore the volume.
 
 ## EBS Volume
 
@@ -145,8 +142,8 @@ Refer to My Blog Post about[EBS Volume Types](http://jayendrapatil.com/aws-ebs-v
   * Restore volume from Snapshots
     * EBS volumes can also be restored from a previously created snapshots
     * New volumes created from existing EBS snapshots load lazily in the background.
-    * There is no need to wait for all of the data to transfer from S3 to the EBS volume before the attached instance can start accessing the volume and all its data.
-    * If the instance accesses the data that hasn’t yet been loaded, the volume immediately downloads the requested data from Amazon S3, and continues loading the rest of the data in the background.
+    * There is no need to wait for all of the data to transfer from S3 to the EBS volume before the attached instance can start accessing the volume and all its data.
+    * If the instance accesses the data that hasn’t yet been loaded, the volume immediately downloads the requested data from Amazon S3, and continues loading the rest of the data in the background.
     * EBS volumes restored from encrypted snapshots are encrypted by default
   * EBS volumes can be created and attached to a running EC2 instance by specifying a block device mapping
 
@@ -160,7 +157,7 @@ Refer to My Blog Post about[EBS Volume Types](http://jayendrapatil.com/aws-ebs-v
 
 ### EBS Volume Deletion
 
-* EBS volume deletion would wipe out its data and the volume can’t be attached to any instance. However, it can be backed up before deletion using EBS snapshots
+* EBS volume deletion would wipe out its data and the volume can’t be attached to any instance. However, it can be backed up before deletion using EBS snapshots
 
 ## EBS Volume Snapshots
 
@@ -172,20 +169,16 @@ Refer to My Blog Post about[EBS Snapshot](http://jayendrapatil.com/aws-ebs-snaps
   * Data at rest
   * All snapshots created from the volume
   * All disk I/O
-* Encryption occurs on the servers that host EC2 instances, providing encryption of data-in-transit from EC2 instances to EBS storage.
-* EBS encryption
-  **is supported with all EBS volume types**
-  \(gp2, io1 and standard\), and has the same IOPS performance on encrypted volumes as with unencrypted volumes, with a minimal effect on latency
-* EBS encryption is
-  **only available on select instance types**
-* **Snapshots of encrypted volumes and volumes created from encrypted snapshots are automatically encrypted using the same volume encryption key**
-* EBS encryption uses AWS Key Management Service \(AWS KMS\) customer master keys \(CMK\) when creating encrypted volumes and any snapshots created from the encrypted volumes.
+* Encryption occurs on the servers that host EC2 instances, providing encryption of data-in-transit from EC2 instances to EBS storage.
+* EBS encryption **is supported with all EBS volume types**\(gp2, io1 and standard\), and has the same IOPS performance on encrypted volumes as with unencrypted volumes, with a minimal effect on latency
+* EBS encryption is **only available on select instance types**
+* **Snapshots of encrypted volumes and volumes created from encrypted snapshots are automatically encrypted using the same volume encryption key**
+* EBS encryption uses AWS Key Management Service \(AWS KMS\) customer master keys \(CMK\) when creating encrypted volumes and any snapshots created from the encrypted volumes.
 * EBS volumes can be encrypted using either
   * a default CMK is created for you automatically.
-  * a CMK that you created separately using AWS KMS, giving you more flexibility, including the ability to create, rotate, disable, define access controls, and audit the encryption keys used to protect your data.
-* Public or shared snapshots of encrypted volumes are not supported, because other accounts would be able to decrypt your data and needs to be migrated to an unencrypted status before sharing.
-* **Existing unencrypted volumes cannot be encrypted**
-  directly, but can be migrated by
+  * a CMK that you created separately using AWS KMS, giving you more flexibility, including the ability to create, rotate, disable, define access controls, and audit the encryption keys used to protect your data.
+* Public or shared snapshots of encrypted volumes are not supported, because other accounts would be able to decrypt your data and needs to be migrated to an unencrypted status before sharing.
+* **Existing unencrypted volumes cannot be encrypted **directly, but can be migrated by
   * create a unencrypted snapshot from the volume
   * create an encrypted copy of unencrypted snapshot
   * create an encrypted volume from the encrypted snapshot
