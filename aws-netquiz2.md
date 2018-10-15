@@ -254,8 +254,6 @@ When you view the block device mapping for your instance, you can see only the E
 3. Depends on whether you use API call
 4. **TRUE**
 
-
-
 **Question 28**
 
 Which of the following will occur when an EC2 instance in a VPC \(Virtual Private Cloud\) with an associated Elastic IP is stopped and started? \(Choose 2 answers\)
@@ -268,7 +266,14 @@ Which of the following will occur when an EC2 instance in a VPC \(Virtual Privat
 
 
 
+**Question 29**
 
+A user has created numerous EBS volumes. What is the general limit for each AWS account for the maximum number of EBS volumes that can be created?
+
+1. 10000
+2. **5000**
+3. 100
+4. 1000
 
 
 
