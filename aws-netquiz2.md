@@ -256,6 +256,18 @@ When you view the block device mapping for your instance, you can see only the E
 
 
 
+**Question 28**
+
+Which of the following will occur when an EC2 instance in a VPC \(Virtual Private Cloud\) with an associated Elastic IP is stopped and started? \(Choose 2 answers\)
+
+1. The Elastic IP will be dissociated from the instance
+2. **All data on instance-store devices will be lost**
+3. All data on EBS \(Elastic Block Store\) devices will be lost
+4. The ENI \(Elastic Network Interface\) is detached
+5. **The underlying host for the instance is changed**
+
+
+
 
 
 
