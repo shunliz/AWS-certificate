@@ -300,5 +300,24 @@ Your company policies require encryption of sensitive data at rest. You are cons
 4. **Encrypt data using native data encryption drivers at the file system level**
 5. Implement SSL/TLS for all services running on the server
 
+**Question 33**
+
+How can you secure data at rest on an EBS volume?
+
+1. Encrypt the volume using the S3 server-side encryption service
+2. Attach the volume to an instance using EC2’s SSL interface.
+3. Create an IAM policy that restricts read and write access to the volume.
+4. Write the data randomly instead of sequentially.
+5. **Use an encrypted file system on top of the EBS volume**
+
+**Question 34**
+
+A user has deployed an application on an EBS backed EC2 instance. For a better performance of application, it requires dedicated EC2 to EBS traffic. How can the user achieve this?
+
+1. Launch the EC2 instance as EBS dedicated with PIOPS EBS
+2. Launch the EC2 instance as EBS enhanced with PIOPS EBS
+3. Launch the EC2 instance as EBS dedicated with PIOPS EBS
+4. **Launch the EC2 instance as EBS optimized with PIOPS EBS**
+
 
 
