@@ -319,8 +319,6 @@ A user has deployed an application on an EBS backed EC2 instance. For a better p
 3. Launch the EC2 instance as EBS dedicated with PIOPS EBS
 4. **Launch the EC2 instance as EBS optimized with PIOPS EBS**
 
-
-
 **Question 35**
 
 You are running a database on an EC2 instance, with the data stored on Elastic Block Store \(EBS\) for persistence At times throughout the day, you are seeing large variance in the response times of the database queries Looking into the instance with the isolate command you see a lot of wait time on the disk volume that the database’s data is stored on. What two ways can you improve the performance of the database’s storage while maintaining the current persistence of the data? Choose 2 answers
@@ -329,8 +327,6 @@ You are running a database on an EC2 instance, with the data stored on Elastic B
 2. **Move the database to an EBS-Optimized Instance**
 3. **Use Provisioned IOPs EBS**
 4. Use the ephemeral storage on an m2.4xLarge Instance Instead
-
-
 
 **Question 36**
 
@@ -351,11 +347,57 @@ A user is planning to use EBS for his DB requirement. The user already has an EC
 3. It is not possible to attach an EBS to an instance running in VPC until the instance is stopped.
 4. The user can specify the same subnet while creating EBS and then attach it to a running instance.
 
+**Question 38**
 
+You are designing an enterprise data storage system. Your data management software system requires mountable disks and a real filesystem, so you cannot use S3 for storage. You need persistence, so you will be using AWS EBS Volumes for your system. The system needs as low-cost storage as possible, and access is not frequent or high throughput, and is mostly sequential reads. Which is the most appropriate EBS Volume Type for this scenario?
 
+1. gp1
+2. io1
+3. **standard**\(Standard or Magnetic volumes are suited for cold workloads where data is infrequently accessed, or scenarios where the lowest storage cost is important\)
+4. gp2 
 
+**Question 39**
 
+Which EBS volume type is best for high performance NoSQL cluster deployments?
 
+1. **io1**\(io1 volumes, or Provisioned IOPS \(PIOPS\) SSDs, are best for: Critical business applications that require sustained IOPS performance, or more than 10,000 IOPS or 160 MiB/s of throughput per volume, like large database workloads, such as MongoDB.\)
+2. gp1
+3. standard
+4. gp2
+
+**Question 40**
+
+Provisioned IOPS Costs: you are charged for the IOPS and storage whether or not you use them in a given month.
+
+1. FALSE
+2. **TRUE**
+
+**Question 41**
+
+A user is trying to create a PIOPS EBS volume with 8 GB size and 200 IOPS. Will AWS create the volume?
+
+1. **Yes, since the ratio between EBS and IOPS is less than 30**
+2. No, since the PIOPS and EBS size ratio is less than 30
+3. No, the EBS size is less than 10 GB
+4. Yes, since PIOPS is higher than 100
+
+**Question 42**
+
+A user has provisioned 2000 IOPS to the EBS volume. The application hosted on that EBS is experiencing less IOPS than provisioned. Which of the below mentioned options does not affect the IOPS of the volume?
+
+1. The application does not have enough IO for the volume
+2. Instance is EBS optimized
+3. The EC2 instance has 10 Gigabit Network connectivity
+4. **Volume size is too large**
+
+**Question 43**
+
+A user is trying to create a PIOPS EBS volume with 4000 IOPS and 100 GB size. AWS does not allow the user to create this volume. What is the possible root cause for this?
+
+1. **The ratio between IOPS and the EBS volume is higher than 30**
+2. The maximum IOPS supported by EBS is 3000
+3. The ratio between IOPS and the EBS volume is lower than 50
+4. PIOPS is supported for EBS higher than 500 GB size
 
 
 
