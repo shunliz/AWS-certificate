@@ -195,3 +195,72 @@ Refer to My Blog Post about[EBS Performance](http://jayendrapatil.com/aws-ebs-pe
 
 ![](/assets/ebs-volume-type1.png)
 
+
+
+---
+
+---
+
+# EBS Snapshot
+
+* EBS provides the ability to create snapshots \(backups\) of any EBS volume and write a copy of the data in the volume to Amazon S3, where it is stored redundantly in multiple Availability Zones
+* Snapshots can be used to create new volumes, increase the size of the volumes or replicate data across Availability Zones
+* Snapshots are incremental backups and store only the data that was changed from the time the last snapshot was taken.
+* Snapshots size can probably be smaller then the volume size as the data is compressed before being saved to S3
+* Even though snapshots are saved incrementally, the snapshot deletion process is designed so that you need to retain only the most recent snapshot in order to restore the volume.
+
+## EBS Snapshot creation
+
+* Snapshots can be created from EBS volumes periodically and are point-in-time snapshots.
+* Snapshots are
+  **incremental**
+  and only store the blocks on the device that changed since the last snapshot was taken
+* Snapshots occur
+  **asynchronously**
+  ; the point-in-time snapshot is created immediately while it takes time to upload the modified blocks to S3
+* Snapshots can be taken from in-use volumes. However, snapshots will only capture the data that was written to the EBS volumes at the time snapshot command is issued excluding the data which is cached by any applications of OS
+* Recommended ways to create a Snapshot from an EBS volume are
+  * Pause all file writes to the volume
+  * Unmount the Volume -
+    &gt;
+     Take Snapshot -
+    &gt;
+     Remount the Volume
+  * Stop the instance – Take Snapshot \(for root EBS volumes\)
+* Snapshots of encrypted volumes are encrypted and volumes created from encrypted snapshots are automatically encrypted
+
+## EBS Snapshot Deletion
+
+* When a snapshot is deleted only the data exclusive to that snapshot is removed.
+* Deleting previous snapshots of a volume do not affect your ability to restore volumes from later snapshots of that volume.
+* Active snapshots contain all of the information needed to restore your data \(from the time the snapshot was taken\) to a new EBS volume.
+* Even though snapshots are saved incrementally,
+  **the snapshot deletion process is designed so that you need to retain only the most recent snapshot in order to restore the volume**
+  .
+* Snapshot of the root device of an EBS volume used by a registered AMI can’t be deleted. AMI needs to be deregistered to be able to delete the snapshot.
+
+## EBS Snapshot Copy
+
+* **Snapshots are constrained to the region**
+  in which they are created and can be used to launch EBS volumes within the same region only
+* Snapshots can be copied across regions to make it easier to leverage multiple regions for geographical expansion, data center migration, and disaster recovery
+* Snapshots are copied with S3 server-side encryption \(256-bit Advanced Encryption Standard\) to encrypt your data and the snapshot copy receives a snapshot ID that’s different from the original snapshot’s ID.
+* User-defined tags are not copied from the source to the new snapshot.
+* First Snapshot copy to another region is always a full copy, while the rest are always
+  **incremental**
+  .
+* When a snapshot is copied,
+  * it can be encrypted if currently unencrypted or
+  * can be encrypted using a different encryption key. Changing the encryption status of a snapshot or using a non-default EBS CMK during a copy operation always results in a full copy \(not incremental\)
+
+## EBS Snapshot Sharing
+
+* Snapshots can be shared by making them
+  **public**
+  or with specific AWS accounts by modifying the permissions of the snapshots
+
+* Encrypted snapshot can be shared with specific AWS accounts, though you cannot make it public. For others to use the snapshot, you must also share the custom CMK key used to encrypt it. Cross-account permissions may be applied to a custom key either when it is created or at a later time. Users with access can copy your snapshot and create their own EBS volumes based on your snapshot while your original snapshot remains unaffected.
+* AWS prevents you from sharing snapshots that were encrypted with your default CMK
+
+
+
