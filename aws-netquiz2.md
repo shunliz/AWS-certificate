@@ -290,5 +290,15 @@ Do the Amazon EBS volumes persist independently from the running life of an Amaz
 2. Yes
 3. No
 
+**Question 32**
+
+Your company policies require encryption of sensitive data at rest. You are considering the possible options for protecting data while storing it at rest on an EBS data volume, attached to an EC2 instance. Which of these options would allow you to encrypt your data at rest? \(Choose 3 answers\)
+
+1. **Implement third party volume encryption tools**
+2. Do nothing as EBS volumes are encrypted by default
+3. **Encrypt data inside your applications before storing it on EBS**
+4. **Encrypt data using native data encryption drivers at the file system level**
+5. Implement SSL/TLS for all services running on the server
+
 
 
