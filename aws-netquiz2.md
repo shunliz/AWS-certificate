@@ -417,7 +417,38 @@ What will be the status of the snapshot until the snapshot is complete?
 3. Progressing
 4. **Pending**
 
+**Question 46**
 
+How are the EBS snapshots saved on Amazon S3?
+
+1. Exponentially
+2. **Incrementally**
+3. EBS snapshots are not stored in the Amazon S3
+4. Decrementally
+
+
+
+**Question 47**
+
+Amazon EBS snapshots have which of the following two characteristics? \(Choose 2.\) Choose 2 answers
+
+1. **EBS snapshots only save incremental changes from snapshot to snapshot**
+2. **EBS snapshots can be created in real-time without stopping an EC2 instance**
+   \(the snapshot can be taken real time however it will not be consistent and the recommended way is to stop or freeze the IO\)
+3. EBS snapshots can only be restored to an EBS volume of the same size or smaller \(EBS volume restored from snapshots need to be of the same size of larger size\)
+4. EBS snapshots can only be restored and mounted to an instance in the same Availability Zone as the original EBS volume
+   **\(**Snapshots are specific to Region and can be used to create a volume in any AZ and does not depend on the original EBS volume AZ**\)**
+
+
+
+**Question 48**
+
+When creation of an EBS snapshot is initiated but not completed, the EBS volume
+
+1. Cannot be detached or attached to an EC2 instance until me snapshot completes
+2. Can be used in read-only mode while me snapshot is in progress
+3. **Can be used while the snapshot is in progress**
+4. Cannot be used until the snapshot completes
 
 
 
