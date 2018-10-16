@@ -193,5 +193,5 @@ Refer to My Blog Post about[EBS Performance](http://jayendrapatil.com/aws-ebs-pe
 
 ---
 
-
+![](/assets/ebs-volume-type1.png)
 

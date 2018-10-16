@@ -321,3 +321,41 @@ A user has deployed an application on an EBS backed EC2 instance. For a better p
 
 
 
+**Question 35**
+
+You are running a database on an EC2 instance, with the data stored on Elastic Block Store \(EBS\) for persistence At times throughout the day, you are seeing large variance in the response times of the database queries Looking into the instance with the isolate command you see a lot of wait time on the disk volume that the database’s data is stored on. What two ways can you improve the performance of the database’s storage while maintaining the current persistence of the data? Choose 2 answers
+
+1. Move to an SSD backed instance
+2. **Move the database to an EBS-Optimized Instance**
+3. **Use Provisioned IOPs EBS**
+4. Use the ephemeral storage on an m2.4xLarge Instance Instead
+
+
+
+**Question 36**
+
+An organization wants to move to Cloud. They are looking for a secure encrypted database storage option. Which of the below mentioned AWS functionalities helps them to achieve this?
+
+1. AWS MFA with EBS
+2. **AWS EBS encryption**
+3. Multi-tier encryption with Redshift
+4. AWS S3 server-side storage
+
+**Question 37**
+
+A user is planning to use EBS for his DB requirement. The user already has an EC2 instance running in the VPC private subnet. How can the user attach the EBS volume to a running instance?
+
+1. The user must create EBS within the same VPC and then attach it to a running instance.
+2. **The user can create EBS in the same zone as the subnet of instance and attach that EBS to instance.**
+   \(Should be in the same AZ\)
+3. It is not possible to attach an EBS to an instance running in VPC until the instance is stopped.
+4. The user can specify the same subnet while creating EBS and then attach it to a running instance.
+
+
+
+
+
+
+
+
+
