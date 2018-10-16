@@ -408,5 +408,18 @@ Which of the following approaches provides the lowest cost for Amazon Elastic Bl
 3. **Maintain a single snapshot the latest snapshot is both Incremental and complete**
 4. Maintain the most current snapshot, archive the original and incremental to Amazon Glacier.
 
+**Question 45**
+
+What will be the status of the snapshot until the snapshot is complete?
+
+1. Running
+2. Working
+3. Progressing
+4. **Pending**
+
+
+
+
+
 
 
