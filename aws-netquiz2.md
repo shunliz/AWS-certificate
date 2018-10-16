@@ -399,5 +399,14 @@ A user is trying to create a PIOPS EBS volume with 4000 IOPS and 100 GB size. AW
 3. The ratio between IOPS and the EBS volume is lower than 50
 4. PIOPS is supported for EBS higher than 500 GB size
 
+**Question 44**
+
+Which of the following approaches provides the lowest cost for Amazon Elastic Block Store snapshots while giving you the ability to fully restore data?
+
+1. Maintain two snapshots: the original snapshot and the latest incremental snapshot
+2. Maintain a volume snapshot; subsequent snapshots will overwrite one another
+3. **Maintain a single snapshot the latest snapshot is both Incremental and complete**
+4. Maintain the most current snapshot, archive the original and incremental to Amazon Glacier.
+
 
 
