@@ -26,6 +26,7 @@
     * [EC2 Instance Automated Startup – Metadata & Userdata](ec2/ec2-instance-automated-startup-metadata-and-userdata.md)
     * [EC2 – Placement Groups](ec2/ec2-placement-groups.md)
     * [EC2 Storage](ec2/ec2-storage.md)
+    * [EC2 VM Import/Export](ec2/ec2-vm-importexport.md)
   * [RDS](rds.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)
