@@ -446,8 +446,6 @@ When creation of an EBS snapshot is initiated but not completed, the EBS volume
 3. **Can be used while the snapshot is in progress**
 4. Cannot be used until the snapshot completes
 
-
-
 **Question 49**
 
 A user is creating a snapshot of an EBS volume. Which of the below statements is incorrect in relation to the creation of an EBS snapshot?
@@ -457,8 +455,6 @@ A user is creating a snapshot of an EBS volume. Which of the below statements is
 3. **It is stored in the same AZ as the volume**
    \(stored in the same region\)
 4. It is a point in time backup of the EBS volume
-
-
 
 **Question 50**
 
@@ -478,6 +474,22 @@ There is a very serious outage at AWS. EC2 is not affected, but your EC2 instanc
    \(EBS volume snapshots are stored in S3. If S3 is unavailable, snapshots are unavailable\)
 3. AWS turns off the DeployCode API call when there are major outages, to protect from system floods.
 4. None of the other answers make sense. If EC2 is not affected, it must be some other issue.
+
+
+
+**Question 52**
+
+A user has created an EBS volume of 10 GB and attached it to a running instance. The user is trying to access EBS for first time. Which of the below mentioned options is the correct statement with respect to a first time EBS access?
+
+1. The volume will show a size of 8 GB
+2. **The volume will show a loss of the IOPS performance the first time**
+   \(the volume needed to be wiped cleaned before for new volumes, however pre warming is not needed any more\)
+3. The volume will be blank
+4. If the EBS is mounted it will ask the user to create a file system
+
+
+
+
 
 
 
