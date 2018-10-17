@@ -426,20 +426,16 @@ How are the EBS snapshots saved on Amazon S3?
 3. EBS snapshots are not stored in the Amazon S3
 4. Decrementally
 
-
-
 **Question 47**
 
 Amazon EBS snapshots have which of the following two characteristics? \(Choose 2.\) Choose 2 answers
 
 1. **EBS snapshots only save incremental changes from snapshot to snapshot**
 2. **EBS snapshots can be created in real-time without stopping an EC2 instance**
-   \(the snapshot can be taken real time however it will not be consistent and the recommended way is to stop or freeze the IO\)
+   \(the snapshot can be taken real time however it will not be consistent and the recommended way is to stop or freeze the IO\)
 3. EBS snapshots can only be restored to an EBS volume of the same size or smaller \(EBS volume restored from snapshots need to be of the same size of larger size\)
 4. EBS snapshots can only be restored and mounted to an instance in the same Availability Zone as the original EBS volume
-   **\(**Snapshots are specific to Region and can be used to create a volume in any AZ and does not depend on the original EBS volume AZ**\)**
-
-
+   **\(**Snapshots are specific to Region and can be used to create a volume in any AZ and does not depend on the original EBS volume AZ**\)**
 
 **Question 48**
 
@@ -451,6 +447,37 @@ When creation of an EBS snapshot is initiated but not completed, the EBS volume
 4. Cannot be used until the snapshot completes
 
 
+
+**Question 49**
+
+A user is creating a snapshot of an EBS volume. Which of the below statements is incorrect in relation to the creation of an EBS snapshot?
+
+1. Its incremental
+2. It can be used to launch a new instance
+3. **It is stored in the same AZ as the volume**
+   \(stored in the same region\)
+4. It is a point in time backup of the EBS volume
+
+
+
+**Question 50**
+
+A user has created a snapshot of an EBS volume. Which of the below mentioned usage cases is not possible with respect to a snapshot?
+
+1. Mirroring the volume from one AZ to another AZ
+2. Launch an instance
+3. **Decrease the volume size**
+4. Increase the size of the volume
+
+**Question 51**
+
+There is a very serious outage at AWS. EC2 is not affected, but your EC2 instance deployment scripts stopped working in the region with the outage. What might be the issue?
+
+1. The AWS Console is down, so your CLI commands do not work.
+2. **S3 is unavailable, so you can’t create EBS volumes from a snapshot you use to deploy new volumes.**
+   \(EBS volume snapshots are stored in S3. If S3 is unavailable, snapshots are unavailable\)
+3. AWS turns off the DeployCode API call when there are major outages, to protect from system floods.
+4. None of the other answers make sense. If EC2 is not affected, it must be some other issue.
 
 
 
