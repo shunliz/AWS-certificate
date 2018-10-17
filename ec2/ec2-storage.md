@@ -249,5 +249,45 @@ Refer to My Blog Post about[EBS Performance](http://jayendrapatil.com/aws-ebs-pe
 
 * AWS prevents you from sharing snapshots that were encrypted with your default CMK
 
+---
 
+---
+
+# AWS EBS Performance Tips
+
+EBS Performance depends on several factores including I/O characteristics and the configuration of instances and volumes and can be improved using PIOPS, EBS-Optimized instances, Pre-Warming and RAIDed configuration
+
+## EBS-Optimized or 10 Gigabit Network Instances
+
+* An EBS-Optimized instance uses an optimized configuration stack and provides additional, dedicated capacity for EBS I/O.
+* Optimization provides the best performance for the EBS volumes by minimizing contention between EBS I/O and other traffic from a instance.
+* EBS-Optimized instances deliver dedicated throughput to EBS, with options between 500 Mbps and 4,000 Mbps, depending on the instance type used
+* Not all instance types support EBS-Optimization
+* Some Instance type enable EBS-Optimization by default, while it can be enabled for some.
+* EBS optimization enabled for an instance, that is not EBS-Optimized by default, an additional low, hourly fee for the dedicated capacity is charged
+* When attached to an EBS–optimized instance,
+  * General Purpose \(SSD\) volumes are designed to deliver within 10% of their baseline and burst performance 99.9% of the time in a given year
+  * Provisioned IOPS \(SSD\) volumes are designed to deliver within 10% of their provisioned performance 99.9 percent of the time in a given year.
+
+#### EBS Volume Initialization – Pre-warming
+
+* **New EBS volumes receive their maximum performance the moment that they are available and DO NOT require initialization \(pre-warming\)**
+  .
+* EBS volumes needed a pre-warming, previously, before being used to get maximum performance to start with. Pre-warming of the volume was possible by writing to the entire volume with 0 for new volumes or reading entire volume for volumes from snapshots
+* Storage blocks on volumes that were restored from snapshots must be initialized \(pulled down from S3 and written to the volume\) before the block can be accessed
+* This preliminary action takes time and can cause a significant increase in the latency of an I/O operation the first time each block is accessed.
+
+## RAID Configuration
+
+* EBS volumes can be striped, if a single EBS volume does not meet the performance and more is required.
+* Striping volumes allows pushing tens of thousands of IOPS.
+* EBS volumes are already replicated across multiple servers in an AZ for availability and durability, so AWS generally recommend striping for performance rather than durability.
+* For greater I/O performance than can be achieved with a single volume, RAID 0 can stripe multiple volumes together; for on-instance redundancy, RAID 1 can mirror two volumes together.
+* RAID 0 allows I/O distribution across all volumes in a stripe, allowing straight gains with each addition.
+* RAID 1 can be used for durability to mirror volumes, but in this case, it requires more EC2 to EBS bandwidth as the data is written to multiple volumes simultaneously and should be used with EBS–optimization.
+* EBS volume data is replicated across multiple servers in an AZ to prevent the loss of data from the failure of any single component
+* AWS doesn’t recommend RAID 5 and 6 because the parity write operations of these modes consume the IOPS available for the volumes and can result in 20-30% fewer usable IOPS than a RAID 0.
+* A 2-volume RAID 0 config can outperform a 4-volume RAID 6 that costs twice as much.
+
+![](/assets/aws-ebs-pfm1.png)
 
