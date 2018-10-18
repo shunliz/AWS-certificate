@@ -32,6 +32,7 @@
     * [AWS EC2 Security](ec2/aws-ec2-security.md)
     * [AWS EC2 Best Practices](ec2/aws-ec2-best-practices.md)
     * [AWS EC2 Monitoring](ec2/aws-ec2-monitoring.md)
+    * [Troubleshooting Connecting to an Instance](ec2/troubleshooting-connecting-to-an-instance.md)
   * [RDS](rds.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)

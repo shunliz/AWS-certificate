@@ -43,7 +43,7 @@
 * By default Basic monitoring is enabled and EC2 metric data is sent to CloudWatch in 5-minute periods automatically
 * Detailed monitoring can be enabled on EC2 instance, which sends data to CloudWatch in 1-minute periods.
 * **Aggregating Statistics Across Instances/ASG/AMI ID**
-  * Aggregate statistics are available for the instances that have detailed monitoring \(at an additional charge\) enable, which provides data in 1-minute periods
+  * Aggregate statistics are available for the instances that have detailed monitoring \(at an additional charge\) enable, which provides data in 1-minute periods
   * Instances that use basic monitoring are not included in the aggregates.
   * CloudWatch does not aggregate data across Regions. Therefore, metrics are completely separate between Regions.
   * CloudWatch returns statistics for all dimensions in the AWS/EC2 namespace, if no dimension is specified
