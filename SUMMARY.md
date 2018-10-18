@@ -28,7 +28,7 @@
     * [EC2 Storage](ec2/ec2-storage.md)
     * [EC2 VM Import/Export](ec2/ec2-vm-importexport.md)
     * [EC2 Enhanced Networking](ec2/ec2-enhanced-networking.md)
-    * EC2 Network Features
+    * [EC2 Network Features](ec2/ec2-network-features.md)
   * [RDS](rds.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)
