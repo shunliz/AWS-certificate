@@ -106,10 +106,6 @@ EC2 Network covers a lot of features for High Performance Computing, Ehanced Net
 * Instances running Amazon Linux or Microsoft Windows Server automatically recognize the warm or hot attach and configure themselves.
 * Attaching another ENI to an instance is not a method to increase or double the network bandwidth to or from the dual-homed instance.
 
-## Placement Groups
-
-Refer to My Blog Post about [Placement Groups](http://jayendrapatil.com/aws-ec2-placement-groups/)
-
 ## Network MTU
 
 * Maximum Transmission Unit \(MTU\) of a network connection is the size, in bytes, of the largest permissible packet that can be transferred over the connection.
