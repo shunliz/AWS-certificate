@@ -192,7 +192,65 @@ When uploading an object, what request header can be explicitly specified in a r
 
 
 
+**Question 22**
 
+Your company is getting ready to do a major public announcement of a social media site on AWS. The website is running on EC2 instances deployed across multiple Availability Zones with a Multi-AZ RDS MySQL Extra Large DB Instance. The site performs a high number of small reads and writes per second and relies on an eventual consistency model. After comprehensive tests you discover that there is read contention on RDS MySQL. Which are the best approaches to meet these requirements? \(Choose 2 answers\)
+
+1. **Deploy ElastiCache in-memory cache running in each availability zone**
+2. Implement sharding to distribute load to multiple RDS MySQL instances \(
+   this is only a read contention, the writes work fine\)
+3. Increase the RDS MySQL Instance size and Implement provisioned IOPS \(
+   not scalable, this is only a read contention, the writes work fine\)
+4. **Add an RDS MySQL read replica in each availability zone**
+
+
+
+**Question 23**
+
+What would happen to an RDS \(Relational Database Service\) multi-Availability Zone deployment if the primary DB instance fails?
+
+1. IP of the primary DB Instance is switched to the standby DB Instance.
+2. A new DB instance is created in the standby availability zone.
+3. **The canonical name record \(CNAME\) is changed from primary to standby.**
+4. The RDS \(Relational Database Service\) DB instance reboots.
+
+
+
+**Question 24**
+
+Is creating a Read Replica of another Read Replica supported?
+
+1. Only in certain regions
+2. **Only with MySQL based RDS**
+3. Only for Oracle RDS types
+4. No
+
+**Question 25**
+
+Read Replicas require a transactional storage engine and are only supported for the \_\_\_\_\_\_\_\_\_ storage engine
+
+1. OracleISAM
+2. MSSQLDB
+3. **InnoDB**
+4. MyISAM
+
+**Question 26**
+
+Will I be alerted when automatic failover occurs?
+
+1. **Only if SNS configured**
+2. No
+3. Yes
+4. Only if Cloudwatch configured
+
+**Question 27**
+
+What is the charge for the data transfer incurred in replicating data between your primary and standby?
+
+1. **No charge. It is free.**
+2. Double the standard data transfer charge
+3. Same as the standard data transfer charge
+4. Half of the standard data transfer charge
 
 
 

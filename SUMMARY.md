@@ -34,6 +34,7 @@
     * [AWS EC2 Monitoring](ec2/aws-ec2-monitoring.md)
     * [Troubleshooting Connecting to an Instance](ec2/troubleshooting-connecting-to-an-instance.md)
   * [RDS](rds.md)
+    * [DS Multi-AZ & Read Replica Overview](rds/ds-multi-az-and-read-replica-overview.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)
   * [EBS](ebs.md)
