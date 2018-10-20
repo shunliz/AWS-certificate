@@ -40,7 +40,7 @@
    4. Deploy on-demand master, core and task nodes and store ingest and output files in Amazon S3 RRS \(  
       RRS provides not much cost benefits for a 4 hour job while the amount of input data would take time to upload and Output data to reproduce\)
 
-6. A company currently has a highly available web application running in production. The application’s web front-end utilizes an Elastic Load Balancer and Auto scaling across 3 availability zones. During peak load, your web servers operate at 90% utilization and leverage a combination of heavy utilization reserved instances for steady state load and on-demand and spot instances for peak load. You are asked with designing a cost effective architecture to allow the application to recover quickly in the event that an availability zone is unavailable during peak load. Which option provides the most cost effective high availability architectural design for this application?   
+6. A company currently has a highly available web application running in production. The application’s web front-end utilizes an Elastic Load Balancer and Auto scaling across 3 availability zones. During peak load, your web servers operate at 90% utilization and leverage a combination of heavy utilization reserved instances for steady state load and on-demand and spot instances for peak load. You are asked with designing a cost effective architecture to allow the application to recover quickly in the event that an availability zone is unavailable during peak load. Which option provides the most cost effective high availability architectural design for this application?  
    **\[PROFESSIONAL\]**  
    1. **Increase auto scaling capacity and scaling thresholds to allow the web-front to cost-effectively scale across all availability zones to lower aggregate utilization levels that will allow an availability zone to fail during peak load without affecting the applications availability.**  
       \(Ideal for HA to reduce and distribute load\)  
@@ -65,16 +65,31 @@
    4. RAID 0 only scales linearly to about 4 devices, use RAID 0 with 4 EBS Provisioned IOPS volumes but increase each Provisioned IOPS EBS volume to 6.000 IOPS.  
    5. The standard EBS instance root volume limits the total IOPS rate, change the instant root volume to also be a 500GB 4,000 Provisioned IOPS volume
 
-9. You are tasked with moving a legacy application from a virtual machine running inside your datacenter to an Amazon VPC. Unfortunately this app requires access to a number of on-premises services and no one who configured the app still works for your company. Even worse there’s no documentation for it. What will allow the application running inside the VPC to reach back and access its internal dependencies without being reconfigured? \(Choose 3 answers\)
-   1. **An AWS Direct Connect link between the VPC and the network housing the internal services**
-      \(VPN or a DX for communication\)
-   2. An Internet Gateway to allow a VPN connection. \(Virtual and Customer gateway is needed\)
-   3. An Elastic IP address on the VPC instance \(Don’t need a EIP as private subnets can also interact with on-premises network\)
-   4. **An IP address space that does not conflict with the one on-premises**
-      \(IP address cannot conflict\)
-   5. Entries in Amazon Route 53 that allow the Instance to resolve its dependencies’ IP addresses \(Route 53 is not required\)
-   6. **A VM Import of the current virtual machine**
+9. You are tasked with moving a legacy application from a virtual machine running inside your datacenter to an Amazon VPC. Unfortunately this app requires access to a number of on-premises services and no one who configured the app still works for your company. Even worse there’s no documentation for it. What will allow the application running inside the VPC to reach back and access its internal dependencies without being reconfigured? \(Choose 3 answers\)  
+   1. **An AWS Direct Connect link between the VPC and the network housing the internal services**  
+      \(VPN or a DX for communication\)  
+   2. An Internet Gateway to allow a VPN connection. \(Virtual and Customer gateway is needed\)  
+   3. An Elastic IP address on the VPC instance \(Don’t need a EIP as private subnets can also interact with on-premises network\)  
+   4. **An IP address space that does not conflict with the one on-premises**  
+      \(IP address cannot conflict\)  
+   5. Entries in Amazon Route 53 that allow the Instance to resolve its dependencies’ IP addresses \(Route 53 is not required\)  
+   6. **A VM Import of the current virtual machine**  
       \(VM Import to copy the VM to AWS as there is no documentation it can’t be configured from scratch\)
+
+
+
+**Questions 10**
+
+Your customer needs to create an application to allow contractors to upload videos to Amazon Simple Storage Service \(S3\) so they can be transcoded into a different format. She creates AWS Identity and Access Management \(IAM\) users for her application developers, and in just one week, they have the application hosted on a fleet of Amazon Elastic Compute Cloud \(EC2\) instances. The attached IAM role is assigned to the instances. As expected, a contractor who authenticates to the application is given a pre-signed URL that points to the location for video upload. However, contractors are reporting that they cannot upload their videos. Which of the following are valid reasons for this behavior? Choose 2 answers { “Version”: “2012-10-17”, “Statement”: \[ { “Effect”: “Allow”, “Action”: “s3:\*”, “Resource”: “\*” } \] }
+
+1. The IAM role does not explicitly grant permission to upload the object. \(The role has all permissions for all activities on S3\)
+2. The contractorsˈ accounts have not been granted “write” access to the S3 bucket. \(using pre-signed urls the contractors account don’t need to have access but only the creator of the pre-signed urls\)
+3. **The application is not using valid security credentials to generate the pre-signed URL.**
+4. The developers do not have access to upload objects to the S3 bucket. \(developers are not uploading the objects but its using pre-signed urls\)
+5. The S3 bucket still has the associated default permissions. \(does not matter as long as the user has permission to upload\)
+6. **The pre-signed URL has expired.**
+
+
 
 
 
