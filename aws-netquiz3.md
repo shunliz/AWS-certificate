@@ -52,3 +52,15 @@ Which of the following are valid statements about Amazon S3? Choose 2 answers
 
 
 
+**Question 6**
+
+A user has an S3 object in the US Standard region with the content “color=red”. The user updates the object with the content as “color=”white”. If the user tries to read the value 1 minute after it was uploaded, what will S3 return?
+
+1. It will return “color=white”
+2. It will return “color=red”
+3. It will return an error saying that the object was not found
+4. **It may return either “color=red” or “color=white” i.e. any of the value**
+   \(Eventual Consistency\)
+
+
+
