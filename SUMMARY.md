@@ -44,6 +44,8 @@
     * [S3 Object Versioning](s3/s3-object-versioning.md)
     * [S3 Object Lifecycle Overview](s3/s3-object-lifecycle-overview.md)
     * [S3 Permissions Overview](s3/s3-permissions-overview.md)
+    * [AWS S3 Data Protection Overview](s3/aws-s3-data-protection-overview.md)
+    * [S3 Best Practices](s3/s3-best-practices.md)
   * [CloudFormation](cloudformation.md)
   * [IAM](iam.md)
   * [Lambda](lambda.md)
@@ -84,6 +86,7 @@
     * [solution architect4](solution-architect4.md)
   * AWS developer professional quiz
     * [quiz1](quiz1.md)
+    * [quiz2](quiz2.md)
 * AWS FAQS
   * [EC2](ec2-faq.md)
   * [RDS](rds-faq.md)
