@@ -8,9 +8,15 @@ You are designing a personal document-archiving solution for your global enterpr
    \(with CSE-KMS the encryption happens at client side before the object is upload to S3 and KMS is cost effective as well\)
 4. Manage encryption keys in an AWS CloudHSM appliance. Encrypt files prior to uploading on the employee desktop and then upload directly into amazon glacier \(Not cost effective\)
 
+**Questions 2**
 
+Your company host a social media website for storing and sharing documents. the web application allow users to upload large files while resuming and pausing the upload as needed. Currently, files are uploaded to your php front end backed by Elastic Load Balancing and an autoscaling fleet of amazon elastic compute cloud \(EC2\) instances that scale upon average of bytes received \(NetworkIn\) After a file has been uploaded. it is copied to amazon simple storage service\(S3\). Amazon Ec2 instances use an AWS Identity and Access Management \(AMI\) role that allows Amazon s3 uploads. Over the last six months, your user base and scale have increased significantly, forcing you to increase the auto scaling groups Max parameter a few times. Your CFO is concerned about the rising costs and has asked you to adjust the architecture where needed to better optimize costs. Which architecture change could you introduce to reduce cost and still keep your web application secure and scalable?
 
-
+1. Replace the Autoscaling launch Configuration to include c3.8xlarge instances; those instances can potentially yield a network throughput of 10gbps. \(no info of current size and might increase cost\)
+2. Re-architect your ingest pattern, have the app authenticate against your identity provider as a broker fetching temporary AWS credentials from AWS Secure token service \(GetFederation Token\). Securely pass the credentials and s3 endpoint/prefix to your app. Implement client-side logic to directly upload the file to amazon s3 using the given credentials and S3 Prefix. \(will not provide the ability to handle pause and restarts\)
+3. Re-architect your ingest pattern, and move your web application instances into a VPC public subnet. Attach a public IP address for each EC2 instance \(using the auto scaling launch configuration settings\). Use Amazon Route 53 round robin records set and http health check to DNS load balance the app request this approach will significantly reduce the cost by bypassing elastic load balancing. \(ELB is not the bottleneck\)
+4. **Re-architect your ingest pattern, have the app authenticate against your identity provider as a broker fetching temporary AWS credentials from AWS Secure token service \(GetFederation Token\). Securely pass the credentials and s3 endpoint/prefix to your app. Implement client-side logic that used the S3 multipart upload API to directly upload the file to Amazon s3 using the given credentials and s3 Prefix.**
+   \(multipart allows one to start uploading directly to S3 before the actual size is known or complete data is downloaded\)
 
 
 
