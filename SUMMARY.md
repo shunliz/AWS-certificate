@@ -38,6 +38,7 @@
   * [VPC](vpc.md)
   * [EBS](ebs.md)
   * [S3](s3.md)
+    * [AWS S3 Data Consistency Model](s3/aws-s3-data-consistency-model.md)
   * [CloudFormation](cloudformation.md)
   * [IAM](iam.md)
   * [Lambda](lambda.md)
