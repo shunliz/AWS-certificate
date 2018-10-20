@@ -50,8 +50,6 @@ Which of the following are valid statements about Amazon S3? Choose 2 answers
 4. Partially saved objects are immediately readable with a GET after an overwrite PUT.
 5. **S3 provides eventual consistency for overwrite PUTS and DELETES**
 
-
-
 **Question 6**
 
 A user has an S3 object in the US Standard region with the content “color=red”. The user updates the object with the content as “color=”white”. If the user tries to read the value 1 minute after it was uploaded, what will S3 return?
@@ -61,6 +59,40 @@ A user has an S3 object in the US Standard region with the content “color=red�
 3. It will return an error saying that the object was not found
 4. **It may return either “color=red” or “color=white” i.e. any of the value**
    \(Eventual Consistency\)
+
+**Question 7**
+
+A user has not enabled versioning on an S3 bucket. What will be the version ID of the object inside that bucket?
+
+1. 0
+2. There will be no version attached
+3. **Null**
+4. Blank
+
+**Question 8**
+
+Which set of Amazon S3 features helps to prevent and recover from accidental data loss?
+
+1. Object lifecycle and service access logging
+2. **Object versioning and Multi-factor authentication**
+3. Access controls and server-side encryption
+4. Website hosting and Amazon S3 policies
+
+
+
+**Question 9**
+
+If an object is stored in the Standard S3 storage class and you want to move it to Glacier, what must you do in order to properly migrate it?
+
+1. Change the storage class directly on the object.
+2. Delete the object and re-upload it, selecting Glacier as the storage class.
+3. None of the above.
+4. **Create a lifecycle policy that will migrate it after a minimum of 30 days.**
+   \(Any object uploaded to S3 must first be placed into either the Standard, Reduced Redundancy, or Infrequent Access storage class. Once in S3 the only way to move the object to glacier is through a lifecycle policy\)
+
+
+
+
 
 
 

@@ -76,8 +76,6 @@
    6. **A VM Import of the current virtual machine**  
       \(VM Import to copy the VM to AWS as there is no documentation it can’t be configured from scratch\)
 
-
-
 **Questions 10**
 
 Your customer needs to create an application to allow contractors to upload videos to Amazon Simple Storage Service \(S3\) so they can be transcoded into a different format. She creates AWS Identity and Access Management \(IAM\) users for her application developers, and in just one week, they have the application hosted on a fleet of Amazon Elastic Compute Cloud \(EC2\) instances. The attached IAM role is assigned to the instances. As expected, a contractor who authenticates to the application is given a pre-signed URL that points to the location for video upload. However, contractors are reporting that they cannot upload their videos. Which of the following are valid reasons for this behavior? Choose 2 answers { “Version”: “2012-10-17”, “Statement”: \[ { “Effect”: “Allow”, “Action”: “s3:\*”, “Resource”: “\*” } \] }
@@ -89,7 +87,26 @@ Your customer needs to create an application to allow contractors to upload vide
 5. The S3 bucket still has the associated default permissions. \(does not matter as long as the user has permission to upload\)
 6. **The pre-signed URL has expired.**
 
+**Questions 11**
 
+Company ABCD is currently hosting their corporate site in an Amazon S3 bucket with Static Website Hosting enabled. Currently, when visitors go to [http://www.companyabcd.com](http://www.companyabcd.com) the index.html page is returned. Company C now would like a new page welcome.html to be returned when a visitor enters [http://www.companyabcd.com](http://www.companyabcd.com) in the browser. Which of the following steps will allow Company ABCD to meet this requirement? Choose 2 answers.
+
+1. **Upload an html page named welcome.html to their S3 bucket**
+2. Create a welcome subfolder in their S3 bucket
+3. **Set the Index Document property to welcome.html**
+4. Move the index.html page to a welcome subfolder
+5. Set the Error Document property to welcome.html
+
+
+
+**Questions 12**
+
+ou have a proprietary data store on-premises that must be backed up daily by dumping the data store contents to a single compressed 50GB file and sending the file to AWS. Your SLAs state that any dump file backed up within the past 7 days can be retrieved within 2 hours. Your compliance department has stated that all data must be held indefinitely. The time required to restore the data store from a backup is approximately 1 hour. Your on-premise network connection is capable of sustaining 1gbps to AWS. Which backup methods to AWS would be most cost-effective while still meeting all of your requirements?
+
+1. Send the daily backup files to Glacier immediately after being generated \(will not meet the RTO\)
+2. Transfer the daily backup files to an EBS volume in AWS and take daily snapshots of the volume \(Not cost effective\)
+3. Transfer the daily backup files to S3 and use appropriate bucket lifecycle policies to send to Glacier \(Store in S3 for seven days and then archive to Glacier\)
+4. Host the backup files on a Storage Gateway with Gateway-Cached Volumes and take daily snapshots \(Not Cost effective as local storage as well as S3 storage\)
 
 
 
