@@ -43,6 +43,7 @@
     * [AWS S3 Storage Classes Overview](s3/aws-s3-storage-classes-overview.md)
     * [S3 Object Versioning](s3/s3-object-versioning.md)
     * [S3 Object Lifecycle Overview](s3/s3-object-lifecycle-overview.md)
+    * [S3 Permissions Overview](s3/s3-permissions-overview.md)
   * [CloudFormation](cloudformation.md)
   * [IAM](iam.md)
   * [Lambda](lambda.md)
