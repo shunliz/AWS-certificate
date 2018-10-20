@@ -39,6 +39,7 @@
   * [EBS](ebs.md)
   * [S3](s3.md)
     * [AWS S3 Data Consistency Model](s3/aws-s3-data-consistency-model.md)
+    * [S3 subresources](s3/s3-subresources.md)
   * [CloudFormation](cloudformation.md)
   * [IAM](iam.md)
   * [Lambda](lambda.md)
