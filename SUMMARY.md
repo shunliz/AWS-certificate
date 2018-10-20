@@ -36,6 +36,8 @@
   * [RDS](rds.md)
     * [DS Multi-AZ & Read Replica Overview](rds/ds-multi-az-and-read-replica-overview.md)
     * [AWS RDS Storage](rds/aws-rds-storage.md)
+    * [RDS Back Up, Restore and Snapshots](rds/rds-back-up-restore-and-snapshots.md)
+    * [AWS RDS Security](rds/aws-rds-security.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)
   * [EBS](ebs.md)
