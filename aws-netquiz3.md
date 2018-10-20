@@ -21,8 +21,6 @@ What are characteristics of Amazon S3? Choose 2 answers
 4. **S3 allows you to store virtually unlimited amounts of data**
 5. S3 offers Provisioned IOPS
 
-
-
 **Question 3**
 
 When you put objects in Amazon S3, what is the indication that an object was successfully stored?
@@ -41,6 +39,16 @@ What is the maximum number of S3 buckets available per AWS Account?
 3. **100 Per Account**\(Refer[documentation](http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html)\)
 4. 500 Per Account
 5. 100 Per IAM User
+
+**Question 5**
+
+Which of the following are valid statements about Amazon S3? Choose 2 answers
+
+1. S3 provides read-after-write consistency for any type of PUT or DELETE.
+2. Consistency is not guaranteed for any type of PUT or DELETE.
+3. **A successful response to a PUT request only occurs when a complete object is saved**
+4. Partially saved objects are immediately readable with a GET after an overwrite PUT.
+5. **S3 provides eventual consistency for overwrite PUTS and DELETES**
 
 
 
