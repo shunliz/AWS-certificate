@@ -35,6 +35,7 @@
     * [Troubleshooting Connecting to an Instance](ec2/troubleshooting-connecting-to-an-instance.md)
   * [RDS](rds.md)
     * [DS Multi-AZ & Read Replica Overview](rds/ds-multi-az-and-read-replica-overview.md)
+    * [AWS RDS Storage](rds/aws-rds-storage.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)
   * [EBS](ebs.md)
