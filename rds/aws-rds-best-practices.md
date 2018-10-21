@@ -21,9 +21,7 @@ AWS recommends RDS best practices in terms of Monitoring, Performance and securi
     * Migrate to a DB instance class with High I/O capacity.
     * Convert from standard storage to Provisioned IOPS storage, and use a DB instance class that is optimized for Provisioned IOPS.
     * if using Provisioned IOPS storage, provision additional throughput capacity.
-* **Multi-AZ **
-  **&**
-  ** Failover**
+* **Multi-AZ & Failover**
   * Deploy applications in all Availability Zones, so if an AZ goes down, applications in other AZs will still be available.
   * Use Amazon RDS DB events to monitor failovers.
   * Set a TTL of less than 30 seconds, if the client application is caching the DNS data of the DB instances. As the underlying IP address of a DB instance can change after a failover, caching the DNS data for an extended time can lead to connection failures if the application tries to connect to an IP address that no longer is in service.
@@ -56,7 +54,7 @@ AWS recommends RDS best practices in terms of Monitoring, Performance and securi
 ### Using Metrics to Identify Performance Issues
 
 * To identify performance issues caused by insufficient resources and other common bottlenecks, you can monitor the metrics available for your Amazon RDS DB instance
-* Performance metrics should be monitored on a regular basis to benchmark  the average, maximum, and minimum values for a variety of time ranges. to help identify performance degradation.
+* Performance metrics should be monitored on a regular basis to benchmark  the average, maximum, and minimum values for a variety of time ranges. to help identify performance degradation.
 * Amazon CloudWatch alarms can be set for particular metric thresholds to be alerted when they are reached or breached
 * A DB instance has a number of different categories of metrics which includes CPU, memory, disk space, IOPS, db connections and network traffic, and how to determine acceptable values depends on the metric.
 * One of the best ways to improve DB instance performance is to tune the most commonly used and most resource-intensive queries to make them less expensive to run.
@@ -70,11 +68,13 @@ AWS recommends RDS best practices in terms of Monitoring, Performance and securi
   * Although MySQL supports multiple storage engines with varying capabilities, not all of them are optimized for crash recovery and data durability.
   * MyISAM storage engine does not support reliable crash recovery and might prevent a Point-In-Time Restore or snapshot restore from working as intended which might result in lost or corrupt data when MySQL is restarted after a crash.
 * **MariaDB**
+
   * XtraDB is the recommended and supported storage engine for MariaDB DB instances on Amazon RDS.
   * Point-In-Time Restore and snapshot restore features of Amazon RDS for MariaDB require a crash-recoverable storage engine and are supported for the XtraDB storage engine only.
   * Although MariaDB supports multiple storage engines with varying capabilities, not all of them are optimized for crash recovery
- 
+
     and data durability.
+
   * _For e.g although Aria is a crash-safe replacement for MyISAM, it might still prevent a Point-In-Time Restore or snapshot restore from working as intended. This might result in lost or corrupt data when MariaDB is restarted after a crash._
 
 
