@@ -133,22 +133,12 @@ Termination policy helps the Auto Scaling to decide which instances it should te
 Default termination policy is designed to help ensure that the network architecture spans Availability Zones evenly and instances are selected for termination as follows :-
 
 1. Selection of Availability Zone
-   * selects the AZ, in multiple AZs environment, with the
-     **most instances**
-     and at least one instance that is not protected from scale in.
-   * selects the AZ with instances that use the
-     **oldest launch configuration**
-     , if there are more than one AZ with same number of instances
+   * selects the AZ, in multiple AZs environment, with the **most instances **and at least one instance that is not protected from scale in.
+   * selects the AZ with instances that use the **oldest launch configuration**, if there are more than one AZ with same number of instances
 2. Selection of an Instance in the Availability Zone
-   * terminates the
-     **unprotected instance using the oldest launch configuration**
-     , if one exists.
-   * terminates unprotected instances
-     **closest to the next billing hour,**
-     If multiple instances with oldest launch configuration. This helps in maximizing the use of the EC2 instances while minimizing the number of hours billed for EC2 usage.
-   * terminates instances at
-     **random**
-     , if more than one unprotected instance closest to the next billing hour
+   * terminates the **unprotected instance using the oldest launch configuration **, if one exists.
+   * terminates unprotected instances **closest to the next billing hour, **If multiple instances with oldest launch configuration. This helps in maximizing the use of the EC2 instances while minimizing the number of hours billed for EC2 usage.
+   * terminates instances at **random**, if more than one unprotected instance closest to the next billing hour
 
 ### Customized Termination Policy
 
@@ -208,8 +198,7 @@ Auto Scaling allows you to put the InService instance in the Standby state durin
     – Performs scheduled actions that you create.
   * **AddToLoadBalancer**
     – Adds instances to the load balancer when they are launched.
-  * **AZ**
-    **Rebalance**
+  * **AZ Rebalance**
     – Balances the number of EC2 instances in the group across the Availability Zones in the region.
     * If an AZ either is removed from the ASG or becomes unhealthy or unavailable, Auto Scaling launches new instances in an unaffected AZ before terminating the unhealthy or unavailable instances
     * When the unhealthy AZ returns to a healthy state, Auto Scaling automatically redistributes the instances evenly across the Availability Zones for the group.
