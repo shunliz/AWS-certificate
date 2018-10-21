@@ -264,8 +264,6 @@ A user has hosted a website on AWS and uses ELB to load balance the multiple ins
 3. Use session synchronization with ELB
 4. **Let ELB generate a cookie for a specified duration**
 
-
-
 **Question 30**
 
 Which of the following statements are true about Amazon Route 53 resource records? Choose 2 answers
@@ -275,6 +273,25 @@ Which of the following statements are true about Amazon Route 53 resource record
 3. **An Amazon Route 53 CNAME record can point to any DNS record hosted anywhere.**
 4. TTL can be set for an Alias record in Amazon Route 53.
 5. An Amazon Route 53 Alias record can point to any DNS record hosted anywhere.
+
+
+
+
+
+**Question 31**
+
+Which of the following are valid arguments for an SNS Publish request? Choose 3 answers.
+
+1. **TopicAm**
+2. **Subject**
+3. Destination
+4. Format
+5. **Message**
+6. Language
+
+
+
+
 
 
 
