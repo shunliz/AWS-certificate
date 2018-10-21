@@ -39,6 +39,8 @@
     * [RDS Back Up, Restore and Snapshots](rds/rds-back-up-restore-and-snapshots.md)
     * [AWS RDS Security](rds/aws-rds-security.md)
     * [RDS DB Instance Maintenance and Upgrades](rds/rds-db-instance-maintenance-and-upgrades.md)
+    * [AWS RDS Monitoring & Notification](rds/aws-rds-monitoring-and-notification.md)
+    * [AWS RDS Best Practices](rds/aws-rds-best-practices.md)
   * [SNS](sns.md)
   * [VPC](vpc.md)
   * [EBS](ebs.md)
