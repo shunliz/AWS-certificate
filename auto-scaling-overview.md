@@ -33,9 +33,7 @@
     * An Auto Scaling group’s desired capacity is the default number of instances that should be running. A group’s minimum capacity is the fewest number of instances the group can have running
   * **Availability Zones or Subnets**
     in which the instances will be launched.
-  * **Metrics **
-    **&**
-    ** Health Checks**
+  * **Metrics & Health Checks**
     – metrics to determine when it should launch or terminate instances and health checks to determine if the instance is healthy or not
 * Auto Scaling group starts by launching a desired capacity of instances and maintains this number by performing periodic health checks.
 * If an instance becomes unhealthy, it terminates and launches a new instance
