@@ -72,6 +72,7 @@
   * [AWS-SQS](bigdata-specialty/sqs.md)
   * [AWS-visualization](bigdata-specialty/visualization.md)
   * [AWS Direct Connect – DX](aws-direct-connect-dx.md)
+  * [AWS Storage Gateway](aws-storage-gateway.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
