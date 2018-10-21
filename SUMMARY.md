@@ -60,6 +60,8 @@
   * [Glacier](glacier.md)
   * [cloudfront](cloudfront.md)
   * [ELB](elb.md)
+    * [Cloud Watch Metrics](elb/cloud-watch-metrics.md)
+    * [AWS ELB Application Load Balancer](elb/aws-elb-application-load-balancer.md)
   * [ElasticCache](elasticcache.md)
   * [DynamoDB](bigdata-specialty/dynamodb.md)
   * [AWS-data-pipeline](bigdata-specialty/aws_data_pipeline.md)

@@ -246,8 +246,6 @@ What is the charge for the data transfer incurred in replicating data between yo
 3. Same as the standard data transfer charge
 4. Half of the standard data transfer charge
 
-
-
 **Question 28**
 
 A user has created an ELB with three instances. How many security groups will ELB create by default?
@@ -257,9 +255,14 @@ A user has created an ELB with three instances. How many security groups will EL
 3. **2 **\(One for ELB to allow inbound and Outbound to listener and health check port of instances and One for the Instances to allow inbound from ELB\)
 4. 1
 
+**Question 29**
 
+A user has hosted a website on AWS and uses ELB to load balance the multiple instances. The user application does not have any cookie management. How can the user bind the session of the requestor with a particular instance?
 
-
+1. Bind the IP address with a sticky cookie
+2. Create a cookie at the application level to set at ELB
+3. Use session synchronization with ELB
+4. **Let ELB generate a cookie for a specified duration**
 
 
 
