@@ -38,18 +38,14 @@ A company is running a batch analysis every hour on their main transactional DB 
 3. **Create an RDS Read Replica for the batch analysis and SNS to notify me on-premises system to update the dashboard**
 4. Create an RDS Read Replica for the batch analysis and SQS to send a message to the on-premises system to update the dashboard.
 
-
-
 **Questions 5**
 
 Which statement best describes an Amazon SQS use case?
 
 1. Automate the process of sending an email notification to administrators when the CPU utilization reaches 70% on production servers \(Amazon EC2 instances\) \(CloudWatch + SNS + SES\)
 2. **Create a video transcoding website where multiple components need to communicate with each other, but can’t all process the same amount of work simultaneously**\(SQS provides loose coupling\)
-3. Coordinate work across distributed web services to process employee’s expense reports \(SWF – Steps in order and might need manual steps\)
+3. Coordinate work across distributed web services to process employee’s expense reports \(SWF – Steps in order and might need manual steps\)
 4. Distribute static web content to end users with low latency across multiple countries \(CloudFront + S3\)
-
-
 
 **Questions 6**
 
@@ -60,9 +56,36 @@ Your application provides data transformation services. Files containing data to
 3. **Use two SQS queues, one for high priority messages, and the other for default priority. Transformation instances first poll the high priority queue; if there is no message, they poll the default priority queue**
 4. Use a single SQS queue. Each message contains the priority level. Transformation instances poll high-priority messages first.
 
+**Questions 7**
+
+A customer has a web application that uses cookie Based sessions to track logged in users. It is deployed on AWS using ELB and Auto Scaling. The customer observes that when load increases Auto Scaling launches new Instances but the load on the existing Instances does not decrease, causing all existing users to have a sluggish experience. Which two answer choices independently describe a behavior that could be the cause of the sluggish user experience?
+
+1. ELB’s normal behavior sends requests from the same user to the same backend instance \(its not by default\)
+2. **ELB’s behavior when sticky sessions are enabled causes ELB to send requests in the same session to the same backend **
+3. A faulty browser is not honoring the TTL of the ELB DNS name \(DNS TTL would only impact the ELB instances if scaled and not the EC2 instances to which the traffic is routed\)
+4. **The web application uses long polling such as comet or websockets. Thereby keeping a connection open to a web server tor a long time**
 
 
 
+**Questions 8**
+
+You are designing a multi-platform web application for AWS. The application will run on EC2 instances and will be accessed from PCs, tablets and smart phones. Supported accessing platforms are Windows, MACOS, IOS and Android. Separate sticky session and SSL certificate setups are required for different platform types. Which of the following describes the most cost effective and performance efficient architecture setup?
+
+1. Setup a hybrid architecture to handle session state and SSL certificates on-prem and separate EC2 Instance groups running web applications for different platform types running in a VPC.
+2. Set up one ELB for all platforms to distribute load among multiple instance under it. Each EC2 instance implements all functionality for a particular platform.
+3. Set up two ELBs. The first ELB handles SSL certificates for all platforms and the second ELB handles session stickiness for all platforms for each ELB run separate EC2 instance groups to handle the web application for each platform.
+4. **Assign multiple ELBs to an EC2 instance or group of EC2 instances running the common components of the web application, one ELB for each platform type. Session stickiness and SSL termination are done at the ELBs.**
+   \(Session stickiness requires HTTPS listener with SSL termination on the ELB and ELB does not support multiple SSL certs so one is required for each cert\)
+
+**Questions 9**
+
+You are migrating a legacy client-server application to AWS. The application responds to a specific DNS domain \(e.g. www.example.com\) and has a 2-tier architecture, with multiple application servers and a database server. Remote clients use TCP to connect to the application servers. The application servers need to know the IP address of the clients in order to function properly and are currently taking that information from the TCP socket. A Multi-AZ RDS MySQL instance will be used for the database. During the migration you can change the application code but you have to file a change request. How would you implement the architecture on AWS in order to maximize scalability and high availability?
+
+1. **File a change request to implement Proxy Protocol support In the application. Use an ELB with a TCP Listener and Proxy Protocol enabled to distribute load on two application servers in different AZs.**
+   \(ELB with TCP listener and proxy protocol will allow IP to be passed \)
+2. File a change request to Implement Cross-Zone support in the application. Use an ELB with a TCP Listener and Cross-Zone Load Balancing enabled, two application servers in different AZs.
+3. File a change request to implement Latency Based Routing support in the application. Use Route 53 with Latency Based Routing enabled to distribute load on two application servers in different AZs.
+4. File a change request to implement Alias Resource support in the application Use Route 53 Alias Resource Record to distribute load on two application servers in different AZs.
 
 
 

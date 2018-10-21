@@ -190,8 +190,6 @@ When uploading an object, what request header can be explicitly specified in a r
 3. x-amz-security-token
 4. **x-amz-server-side-encryption**
 
-
-
 **Question 22**
 
 Your company is getting ready to do a major public announcement of a social media site on AWS. The website is running on EC2 instances deployed across multiple Availability Zones with a Multi-AZ RDS MySQL Extra Large DB Instance. The site performs a high number of small reads and writes per second and relies on an eventual consistency model. After comprehensive tests you discover that there is read contention on RDS MySQL. Which are the best approaches to meet these requirements? \(Choose 2 answers\)
@@ -199,11 +197,9 @@ Your company is getting ready to do a major public announcement of a social medi
 1. **Deploy ElastiCache in-memory cache running in each availability zone**
 2. Implement sharding to distribute load to multiple RDS MySQL instances \(
    this is only a read contention, the writes work fine\)
-3. Increase the RDS MySQL Instance size and Implement provisioned IOPS \(
-   not scalable, this is only a read contention, the writes work fine\)
+3. Increase the RDS MySQL Instance size and Implement provisioned IOPS \(
+   not scalable, this is only a read contention, the writes work fine\)
 4. **Add an RDS MySQL read replica in each availability zone**
-
-
 
 **Question 23**
 
@@ -213,8 +209,6 @@ What would happen to an RDS \(Relational Database Service\) multi-Availability Z
 2. A new DB instance is created in the standby availability zone.
 3. **The canonical name record \(CNAME\) is changed from primary to standby.**
 4. The RDS \(Relational Database Service\) DB instance reboots.
-
-
 
 **Question 24**
 
@@ -251,6 +245,21 @@ What is the charge for the data transfer incurred in replicating data between yo
 2. Double the standard data transfer charge
 3. Same as the standard data transfer charge
 4. Half of the standard data transfer charge
+
+
+
+**Question 28**
+
+A user has created an ELB with three instances. How many security groups will ELB create by default?
+
+1. 3
+2. 5
+3. **2 **\(One for ELB to allow inbound and Outbound to listener and health check port of instances and One for the Instances to allow inbound from ELB\)
+4. 1
+
+
+
+
 
 
 
