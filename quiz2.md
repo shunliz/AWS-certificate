@@ -40,3 +40,29 @@ A company is running a batch analysis every hour on their main transactional DB 
 
 
 
+**Questions 5**
+
+Which statement best describes an Amazon SQS use case?
+
+1. Automate the process of sending an email notification to administrators when the CPU utilization reaches 70% on production servers \(Amazon EC2 instances\) \(CloudWatch + SNS + SES\)
+2. **Create a video transcoding website where multiple components need to communicate with each other, but can’t all process the same amount of work simultaneously**\(SQS provides loose coupling\)
+3. Coordinate work across distributed web services to process employee’s expense reports \(SWF – Steps in order and might need manual steps\)
+4. Distribute static web content to end users with low latency across multiple countries \(CloudFront + S3\)
+
+
+
+**Questions 6**
+
+Your application provides data transformation services. Files containing data to be transformed are first uploaded to Amazon S3 and then transformed by a fleet of spot EC2 instances. Files submitted by your premium customers must be transformed with the highest priority. How should you implement such a system?
+
+1. Use a DynamoDB table with an attribute defining the priority level. Transformation instances will scan the table for tasks, sorting the results by priority level.
+2. Use Route 53 latency based-routing to send high priority tasks to the closest transformation instances.
+3. **Use two SQS queues, one for high priority messages, and the other for default priority. Transformation instances first poll the high priority queue; if there is no message, they poll the default priority queue**
+4. Use a single SQS queue. Each message contains the priority level. Transformation instances poll high-priority messages first.
+
+
+
+
+
+
+
