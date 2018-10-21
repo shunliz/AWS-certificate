@@ -266,3 +266,15 @@ A user has hosted a website on AWS and uses ELB to load balance the multiple ins
 
 
 
+**Question 30**
+
+Which of the following statements are true about Amazon Route 53 resource records? Choose 2 answers
+
+1. **An Alias record can map one DNS name to another Amazon Route 53 DNS name.**
+2. A CNAME record can be created for your zone apex.
+3. **An Amazon Route 53 CNAME record can point to any DNS record hosted anywhere.**
+4. TTL can be set for an Alias record in Amazon Route 53.
+5. An Amazon Route 53 Alias record can point to any DNS record hosted anywhere.
+
+
+

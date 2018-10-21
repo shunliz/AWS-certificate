@@ -97,11 +97,9 @@ You have a web-style application with a stateless but CPU and memory-intensive w
 4. Move the database from DynamoDB to RDS MySQL in scale-out read-replica configuration \(
    Data tier is responding fast\)
 
-
-
 **Questions 11**
 
-An organization has configured a VPC with an Internet Gateway \(IGW\). pairs of public and private subnets \(each with one subnet per Availability Zone\), and an Elastic Load Balancer \(ELB\) configured to use the public subnets. The applications web tier leverages the ELB, Auto Scaling and a Multi-AZ RDS database instance. The organization would like to eliminate any potential single points of failure in this design. What step should you take to achieve this organization’s objective?
+An organization has configured a VPC with an Internet Gateway \(IGW\). pairs of public and private subnets \(each with one subnet per Availability Zone\), and an Elastic Load Balancer \(ELB\) configured to use the public subnets. The applications web tier leverages the ELB, Auto Scaling and a Multi-AZ RDS database instance. The organization would like to eliminate any potential single points of failure in this design. What step should you take to achieve this organization’s objective?
 
 1. **Nothing, there are no single points of failure in this architecture.**
 2. Create and attach a second IGW to provide redundant internet connectivity. \(
@@ -111,14 +109,12 @@ An organization has configured a VPC with an Internet Gateway \(IGW\). pairs of 
 4. Create a second multi-AZ RDS instance in another Availability Zone and configure replication to provide a redundant database. \(
    Multi AZ requires 2 different AZ for setup and already has a standby\)
 
-
-
 **Questions 12**
 
 Your application currently leverages AWS Auto Scaling to grow and shrink as load Increases/ decreases and has been performing well. Your marketing team expects a steady ramp up in traffic to follow an upcoming campaign that will result in a 20x growth in traffic over 4 weeks. Your forecast for the approximate number of Amazon EC2 instances necessary to meet the peak demand is 175. What should you do to avoid potential service disruptions during the ramp up in traffic?
 
 1. Ensure that you have pre-allocated 175 Elastic IP addresses so that each server will be able to obtain one as it launches \(
-   max limit 5 EIP and a service request needs to be submitted\)
+   max limit 5 EIP and a service request needs to be submitted\)
 2. **Check the service limits in Trusted Advisor and adjust as necessary so the forecasted count remains within limits.**
 3. Change your Auto Scaling configuration to set a desired capacity of 175 prior to the launch of the marketing campaign \(
    Will cause 175 instances to be launched and running but not gradually scale\)
@@ -137,21 +133,17 @@ You have a web application running on six Amazon EC2 instances, consuming about 
 4. Deploy 2 EC2 instances in three regions and use Amazon Elastic Load Balancer. \(
    Different region, AMI would not be available unless copied\)
 
-
-
 **Questions 14**
 
 You are designing an SSL/TLS solution that requires HTTPS clients to be authenticated by the Web server using client certificate authentication. The solution must be resilient. Which of the following options would you consider for configuring the web server infrastructure? \(Choose 2 answers\)
 
 1. **Configure ELB with TCP listeners on TCP/443. And place the Web servers behind it.**
-   \(terminate SSL on the instance using client-side certificate\)
+   \(terminate SSL on the instance using client-side certificate\)
 2. **Configure your Web servers with EIPs. Place the Web servers in a Route53 Record Set and configure health checks against all Web servers.**
    \(Remove ELB and use Web Servers directly with Route 53\)
 3. Configure ELB with HTTPS listeners, and place the Web servers behind it. \(
    ELB with HTTPs does not support Client-Side certificates\)
 4. Configure your web servers as the origins for a CloudFront distribution. Use custom SSL certificates on your CloudFront distribution \(CloudFront [does not](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/RequestAndResponseBehaviorCustomOrigin.html#RequestCustomClientSideSslAuth) Client-Side ssl certificates\)
-
-
 
 **Questions 15**
 
@@ -163,27 +155,48 @@ You are designing an application that contains protected health information. Sec
 4. Use TCP load balancing on the load balancer, SSL termination on the Amazon EC2 instances, and Amazon S3 with server-side encryption. \(Does not mention EBS encryption\)
 5. **Use SSL termination on the load balancer, an SSL listener on the Amazon EC2 instances, Amazon EBS encryption on EBS volumes containing PHI, and Amazon S3 with server-side encryption.**
 
-
-
 **Questions 16**
 
 A startup deploys its photo-sharing site in a VPC. An elastic load balancer distributes web traffic across two subnets. The load balancer session stickiness is configured to use the AWS-generated session cookie, with a session TTL of 5 minutes. The web server Auto Scaling group is configured as min-size=4, max-size=4. The startup is preparing for a public launch, by running load-testing software installed on a single Amazon Elastic Compute Cloud \(EC2\) instance running in us-west-2a. After 60 minutes of load-testing, the web server logs show the following:WEBSERVER LOGS \| \# of HTTP requests from load-tester \| \# of HTTP requests from private beta users \|\| webserver \#1 \(subnet in us-west-2a\): \| 19,210 \| 434 \|\| webserver \#2 \(subnet in us-west-2a\): \| 21,790 \| 490 \|\| webserver \#3 \(subnet in us-west-2b\): \| 0 \| 410 \|\| webserver \#4 \(subnet in us-west-2b\): \| 0 \| 428 \|Which recommendations can help ensure that load-testing HTTP requests are evenly distributed across the four web servers? Choose 2 answers
 
-   1. Launch and run the load-tester Amazon EC2 instance from us-east-1 instead.
-   2. Configure Elastic Load Balancing session stickiness to use the app-specific session cookie.
-   3. **Re-configure the load-testing software to re-resolve DNS for each web request.**
-      \(Refer [link](https://aws.amazon.com/articles/1636185810492479) \)
-   4. Configure Elastic Load Balancing and Auto Scaling to distribute across us-west-2a and us-west-2b.
-   5. **Use a third-party load-testing service which offers globally distributed test clients. **
-      \(Refer [link](https://aws.amazon.com/articles/1636185810492479)\)
+1. Launch and run the load-tester Amazon EC2 instance from us-east-1 instead.
+2. Configure Elastic Load Balancing session stickiness to use the app-specific session cookie.
+3. **Re-configure the load-testing software to re-resolve DNS for each web request.**
+   \(Refer [link](https://aws.amazon.com/articles/1636185810492479) \)
+4. Configure Elastic Load Balancing and Auto Scaling to distribute across us-west-2a and us-west-2b.
+5. **Use a third-party load-testing service which offers globally distributed test clients. **
+   \(Refer [link](https://aws.amazon.com/articles/1636185810492479)\)
 
-
-**Questions 17**
-To serve Web traffic for a popular product your chief financial officer and IT director have purchased 10 m1.large heavy utilization Reserved Instances \(RIs\) evenly spread across two availability zones: Route 53 is used to deliver the traffic to an Elastic Load Balancer \(ELB\). After several months, the product grows even more popular and you need additional capacity As a result, your company purchases two c3.2xlarge medium utilization RIs You register the two c3.2xlarge instances with your ELB and quickly find that the ml large instances are at 100% of capacity and the c3.2xlarge instances have significant capacity that’s unused Which option is the most cost effective and uses EC2 capacity most effectively?
-   1. **Use a separate ELB for each instance type and distribute load to ELBs with Route 53 weighted round robin**
-   2. Configure Autoscaling group and Launch Configuration with ELB to add up to 10 more on-demand mi large instances when triggered by CloudWatch shut off c3.2xlarge instances \(increase cost as you still pay for the RI\)
-   3. Route traffic to EC2 m1.large and c3.2xlarge instances directly using Route 53 latency based routing and health checks shut off ELB \(will not still use the capacity effectively\)
+**Questions 17**  
+To serve Web traffic for a popular product your chief financial officer and IT director have purchased 10 m1.large heavy utilization Reserved Instances \(RIs\) evenly spread across two availability zones: Route 53 is used to deliver the traffic to an Elastic Load Balancer \(ELB\). After several months, the product grows even more popular and you need additional capacity As a result, your company purchases two c3.2xlarge medium utilization RIs You register the two c3.2xlarge instances with your ELB and quickly find that the ml large instances are at 100% of capacity and the c3.2xlarge instances have significant capacity that’s unused Which option is the most cost effective and uses EC2 capacity most effectively?  
+   1. **Use a separate ELB for each instance type and distribute load to ELBs with Route 53 weighted round robin**  
+   2. Configure Autoscaling group and Launch Configuration with ELB to add up to 10 more on-demand mi large instances when triggered by CloudWatch shut off c3.2xlarge instances \(increase cost as you still pay for the RI\)  
+   3. Route traffic to EC2 m1.large and c3.2xlarge instances directly using Route 53 latency based routing and health checks shut off ELB \(will not still use the capacity effectively\)  
    4. Configure ELB with two c3.2xlarge Instances and use on-demand Autoscailng group for up to two additional c3.2xlarge instances Shut on m1.large instances\(Increases cost, as you still pay for the 10 m1.large RI\)
+
+
+
+**Questions 18**
+
+You have deployed a web application targeting a global audience across multiple AWS Regions under the domain name example.com. You decide to use Route 53 Latency-Based Routing to serve web requests to users from the region closest to the user. To provide business continuity in the event of server downtime you configure weighted record sets associated with two web servers in separate Availability Zones per region. During a DR test you notice that when you disable all web servers in one of the regions Route 53 does not automatically direct all users to the other region. What could be happening? \(Choose 2 answers\)
+
+1. Latency resource record sets cannot be used in combination with weighted resource record sets.
+2. **You did not setup an http health check for one or more of the weighted resource record sets associated with the disabled web servers**
+3. The value of the weight associated with the latency alias resource record set in the region with the disabled servers is higher than the weight for the other region.
+4. One of the two working web servers in the other region did not pass its HTTP health check
+5. **You did not set “Evaluate Target Health” to “Yes” on the latency alias resource record set associated with example.com in the region where you disabled the servers.**
+
+
+
+**Questions 19**
+
+Your API requires the ability to stay online during AWS regional failures. Your API does not store any state, it only aggregates data from other sources – you do not have a database. What is a simple but effective way to achieve this uptime goal?
+
+1. Use a CloudFront distribution to serve up your API. Even if the region your API is in goes down, the edge locations CloudFront uses will be fine.
+2. Use an ELB and a cross-zone ELB deployment to create redundancy across datacenters. Even if a region fails, the other AZ will stay online.
+3. Create a Route53 Weighted Round Robin record, and if one region goes down, have that region redirect to the other region.
+4. **Create a Route53 Latency Based Routing Record with Failover and point it to two identical deployments of your stateless API in two different regions. Make sure both regions use Auto Scaling Groups behind ELBs.**
+   \(Refer [link](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html)\)
 
 
 

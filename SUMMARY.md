@@ -78,6 +78,8 @@
   * [AWS Direct Connect – DX](aws-direct-connect-dx.md)
   * [AWS Storage Gateway](aws-storage-gateway.md)
   * [AWS Billing and Cost Management](aws-billing-and-cost-management.md)
+  * [Route 53](route-53.md)
+  * [AWS CloudWatch](aws-cloudwatch.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
