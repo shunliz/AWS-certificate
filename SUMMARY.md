@@ -82,6 +82,7 @@
   * [AWS CloudWatch](aws-cloudwatch.md)
   * [AWS Intrusion Detection & Prevention System IDS/IPS](aws-intrusion-detection-and-prevention-system-idsips.md)
   * [Auto Scaling & ELB](auto-scaling-and-elb.md)
+  * [AWS Elastic Beanstalk](aws-elastic-beanstalk.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
