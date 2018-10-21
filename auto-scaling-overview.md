@@ -39,9 +39,7 @@
 * If an instance becomes unhealthy, it terminates and launches a new instance
 * Auto Scaling group can also use scaling policies to increase or decrease the number of instances automatically to meet changing demands
 * An Auto Scaling group can contain EC2 instances in one or more AZs within the same region.
-* Auto Scaling groups
-  **cannot**
-  span multiple regions.
+* Auto Scaling groups **cannot **span multiple regions.
 * To merge separate single-zone Auto Scaling groups into a single Auto Scaling group spanning multiple AZs, rezone one of the single-zone groups into a multi-zone group, and then delete the other groups. This process works for groups with or without a load balancer, as long as the new multi-zone group is in one of the same AZs as the original single-zone groups.
 * Auto Scaling group can be associated with a single launch configuration.
 * As the Launch Configuration can’t be modified once created, only way to update the Launch Configuration for an Auto Scaling group is to create a new one and associate it with the Auto Scaling group.
@@ -57,15 +55,9 @@
 * Auto Scaling group determines the health state of each instance by periodically checking the results of EC2 instance status checks
 * Auto Scaling group can be associated with a load balancer enabled to use the Elastic Load Balancing health check, Auto Scaling determines the health status of the instances by checking the results of both EC2 instance status and Elastic Load Balancing instance health.
 * Auto Scaling marks an instance unhealthy and launches a replacement if
-  * the instance is in a state other than
-    _running_
-    ,
-  * the system status is
-    _impaired_
-    , or
-  * Elastic Load Balancing reports the instance state as
-    _OutOfService_
-    .
+  * the instance is in a state other than _running_,
+  * the system status is _impaired_, or
+  * Elastic Load Balancing reports the instance state as _OutOfService_.
 * After an instance has been marked unhealthy as a result of an EC2 or ELB health check, it is almost immediately scheduled for replacement. It never automatically recovers its health.
 * For an unhealthy instance, the instance’s health check can be changed back to healthy manually but you will get an error if the instance is already terminating. Because the interval between marking an instance unhealthy and its actual termination is so small, attempting to set an instance’s health status back to healthy is probably useful only for a suspended group
 * When your instance is terminated, any associated Elastic IP addresses are disassociated and are not automatically associated with the new instance.
@@ -78,9 +70,7 @@
   * Changing the desired capacity limit of the Auto Scaling group
   * Attaching/Detaching instances to the Auto Scaling group
 * Attaching/Detaching of an EC2 instance can be done only if
-  * Instance is in the
-    running
-    state.
+  * Instance is in the running state.
   * AMI used to launch the instance must still exist.
   * Instance is not a member of another Auto Scaling group.
   * Instance is in the same Availability Zone as the Auto Scaling group.
@@ -91,25 +81,17 @@
 
 #### Scheduled scaling
 
-* Scaling based on a schedule allows you to scale your application in response to predictable load changes f
-  _or e.g. last day of the month, last day of an financial year_
+* Scaling based on a schedule allows you to scale your application in response to predictable load changes f_or e.g. last day of the month, last day of an financial year_
 * Scheduled scaling requires configuration of Scheduled actions, which tells Auto Scaling to perform a scaling action at certain time in future, with the start time at which the scaling action should take effect, and the new minimum, maximum, and desired size the group should have
 * Auto Scaling guarantees the order of execution for scheduled actions within the same group, but not for scheduled actions across groups
-* Multiple Scheduled Actions can be specified but should have
-  **unique**
-  time value and they
-  **cannot**
+* Multiple Scheduled Actions can be specified but should have **unique **time value and they **cannot**
   have overlapping time scheduled which will lead to its rejection
 
 #### Dynamic scaling
 
 * Allows you to scale automatically in response to the changing demand
   _for e.g. scale out in case CPU utilization of the instance goes above 70% and scale in when the CPU utilization goes below 30%_
-* Auto Scaling group uses a combination of
-  **alarms **
-  **&**
-  ** policies**
-  to determine when the conditions for scaling are met.
+* Auto Scaling group uses a combination of **alarms  & policies **to determine when the conditions for scaling are met.
   * An alarm is an object that watches over a single metric over a specified time period. When the value of the metric breaches the defined threshold, for the number of specified time periods the alarm performs one or more actions \(such as sending messages to Auto Scaling\).
   * A policy is a set of instructions that tells Auto Scaling how to respond to alarm messages.
 * Dynamic scaling process works as below
@@ -124,9 +106,7 @@
 * An Auto Scaling group can have more than one scaling policy attached to it any given time.
 * Each Auto Scaling group would have at least two policies: one to scale the architecture out and another to scale the architecture in.
 * If an Auto Scaling group has multiple policies, there is always a chance that both policies can instruct the Auto Scaling to Scale Out or Scale In at the same time.
-* When this situations occur, Auto Scaling chooses the policy that has the
-  **greatest impact**
-  on the Auto Scaling group
+* When this situations occur, Auto Scaling chooses the policy that has the **greatest impact **on the Auto Scaling group
   _for e.g. if two policies are triggered at the same time and Policy 1 instructs to scale out the instance by 1 while Policy 2 instructs to scale out the instances by 2, Auto Scaling will use the Policy 2 and scale out the instances by 2 as it has a greater impact_
 
 ### Auto Scaling Cooldown
@@ -142,9 +122,7 @@
   * After the cooldown period, Auto scaling resumes to act on the alarms
 * When manually scaling the Auto Scaling group, the default is not to wait for the cooldown period, but you can override the default and honor the cooldown period.
 * Note that if an instance becomes unhealthy, Auto Scaling does not wait for the cooldown period to complete before replacing the unhealthy instance.
-* Cooldown periods are automatically applied to dynamic scaling activities for simple scaling policies and is 
-  **not**
-  supported for step scaling policies.
+* Cooldown periods are automatically applied to dynamic scaling activities for simple scaling policies and is  **not **supported for step scaling policies.
 
 ## Termination Policy
 
