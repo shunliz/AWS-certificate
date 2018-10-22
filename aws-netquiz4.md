@@ -16,8 +16,6 @@ A customer has a website which shows all the deals available across the market. 
 3. During the pre-vacation period setup a scenario where the organization has 15 instances running and 5 instances to scale up and down using Auto Scaling based on the network I/O policy.
 4. During the pre-vacation period setup 20 instances to run continuously.
 
-
-
 **Qeustion 3**
 
 For AWS Auto Scaling, what is the first transition state an existing instance enters after leaving steady state in Standby mode?
@@ -28,8 +26,6 @@ For AWS Auto Scaling, what is the first transition state an existing instance en
    \(You can put any instance that is in an InService state into a Standby state. This enables you to remove the instance from service, troubleshoot or make changes to it, and then put it back into service. Instances in a Standby state continue to be managed by the Auto Scaling group. However, they are not an active part of your application until you put them back into service. Refer [link](http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/AutoScalingGroupLifecycle.html)\)
 4. EnteringStandby
 
-
-
 **Qeustion 4**
 
 For AWS Auto Scaling, what is the first transition state an instance enters after leaving steady state when scaling in due to health check failure or decreased load?
@@ -39,6 +35,20 @@ For AWS Auto Scaling, what is the first transition state an instance enters afte
 2. Detaching
 3. Terminating:Wait
 4. EnteringStandby
+
+
+
+**Qeustion 5**
+
+Which for the services provide root access
+
+1. **Elastic Beanstalk**
+2. **EC2**
+3. **Opswork**
+4. **EC2**
+5. DynamoDb
+6. RDS
+7. S3
 
 
 
