@@ -107,6 +107,7 @@
   * AWS developer professional quiz
     * [quiz1](quiz1.md)
     * [quiz2](quiz2.md)
+    * [quiz3](quiz3.md)
 * AWS FAQS
   * [EC2](ec2-faq.md)
   * [RDS](rds-faq.md)

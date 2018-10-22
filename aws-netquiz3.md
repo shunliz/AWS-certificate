@@ -301,3 +301,19 @@ A user has configured Auto Scaling with the minimum capacity as 2 and the desire
    3. Terminates the instance and updates the desired capacity & minimum size to 1  
    4. **Throws an error**
 
+**Question 34**
+
+In reviewing the auto scaling events for your application you notice that your application is scaling up and down multiple times in the same hour. What design choice could you make to optimize for the cost while preserving elasticity? Choose 2 answers.
+
+1. **Modify the Amazon CloudWatch alarm period that triggers your auto scaling scale down policy.**
+2. Modify the Auto scaling group termination policy to terminate the oldest instance first.
+3. Modify the Auto scaling policy to use scheduled scaling actions.
+4. **Modify the Auto scaling group cool down timers.**
+5. Modify the Auto scaling group termination policy to terminate newest instance first.
+
+
+
+
+
+
+
