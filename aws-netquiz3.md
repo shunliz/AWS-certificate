@@ -274,10 +274,6 @@ Which of the following statements are true about Amazon Route 53 resource record
 4. TTL can be set for an Alias record in Amazon Route 53.
 5. An Amazon Route 53 Alias record can point to any DNS record hosted anywhere.
 
-
-
-
-
 **Question 31**
 
 Which of the following are valid arguments for an SNS Publish request? Choose 3 answers.
@@ -289,9 +285,19 @@ Which of the following are valid arguments for an SNS Publish request? Choose 3 
 5. **Message**
 6. Language
 
+**Question 32**
 
+An organization has setup Auto Scaling with ELB. Due to some manual error, one of the instances got rebooted. Thus, it failed the Auto Scaling health check. Auto Scaling has marked it for replacement. How can the system admin ensure that the instance does not get terminated?
 
+1. Update the Auto Scaling group to ignore the instance reboot event
+2. It is not possible to change the status once it is marked for replacement
+3. Manually add that instance to the Auto Scaling group after reboot to avoid replacement
+4. **Change the health of the instance to healthy using the Auto Scaling commands**
 
-
-
+**Question 33**  
+A user has configured Auto Scaling with the minimum capacity as 2 and the desired capacity as 2. The user is trying to terminate one of the existing instance with the command: as-terminate-instance-in-auto-scaling-group &lt;Instance ID&gt;  –decrement-desired-capacity. What will Auto Scaling do in this scenario?  
+   1. Terminates the instance and does not launch a new instance  
+   2. Terminates the instance and updates the desired capacity to 1  
+   3. Terminates the instance and updates the desired capacity & minimum size to 1  
+   4. **Throws an error**
 
