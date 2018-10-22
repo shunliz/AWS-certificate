@@ -215,13 +215,9 @@ Refer to blog post @[Auto Scaling Lifecycle](http://jayendrapatil.com/aws-auto-s
 
 Refer to blog post @[Autoscaling & ELB](http://jayendrapatil.com/aws-auto-scaling-elb/)
 
-
-
-
-
 # AWS Autoscaling Troubleshooting
 
-**Exam Question Scenario :- **  
+**Exam Question Scenario :- **  
 EC2 instances fail to launch with Autoscaling configuration
 
 **Description :-**  
