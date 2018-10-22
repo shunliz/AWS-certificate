@@ -215,3 +215,40 @@ Refer to blog post @[Auto Scaling Lifecycle](http://jayendrapatil.com/aws-auto-s
 
 Refer to blog post @[Autoscaling & ELB](http://jayendrapatil.com/aws-auto-scaling-elb/)
 
+
+
+
+
+# AWS Autoscaling Troubleshooting
+
+**Exam Question Scenario :- **  
+EC2 instances fail to launch with Autoscaling configuration
+
+**Description :-**  
+Autoscaling configuration requires the following :-
+
+Autoscaling launch configuration which allows you to select an
+
+1. * AMI
+   * Instance type
+   * IAM role \(optional\)
+   * Security group
+   * Key pair file
+
+Autoscaling group configuration allows you to select AZ to be used to launch the EC2 instances with the selected launch configuration
+
+**Troubleshooting key points :-**
+
+1. AMI id does not exist or is still pending and cannot be used to launch instances
+2. Security group provided in the launch configuration does not exist
+3. Key pair associated with the EC2 instance does not exist
+4. Autoscaling group not found or is incorrectly configured
+5. AZ configured with the Autoscaling group is no longer supported cause it might not be available
+6. Invalid EBS block device mappings
+7. Instance type is not supported in the AZ
+8. Capacity limits reached either cause of the
+   [restriction](https://aws.amazon.com/ec2/faqs/)
+   on the number of instance type that can be launched in a region or cause AWS is not able to provision the specified instance type in the AZ \(for e.g. no more spot instances or On-demand instances availability\)
+
+
+
