@@ -39,11 +39,9 @@ A large enterprise wants to adopt CloudFormation to automate administrative task
 5. Nesting network stacks within application stacks simplifies management and debugging, but requires resource level permissions in the IAM policy of the network group \(
    Although stacks can be nested, Network group will need to have all the application group permissions\)
 
-
-
 **Qestion 4**
 
-A marketing research company has developed a tracking system that collects user behavior during web marketing campaigns on behalf of their customers all over the world. The tracking system consists of an auto-scaled group of Amazon Elastic Compute Cloud \(EC2\) instances behind an elastic load balancer \(ELB\), and the collected data is stored in Amazon DynamoDB. After the campaign is terminated, the tracking system is torn down and the data is moved to Amazon Redshift, where it is aggregated, analyzed and used to generate detailed reports. The company wants to be able to instantiate new tracking systems in any region without any manual intervention and therefore adopted AWS CloudFormation. What needs to be done to make sure that the AWS CloudFormation template works in every AWS region? Choose 2 answers 
+A marketing research company has developed a tracking system that collects user behavior during web marketing campaigns on behalf of their customers all over the world. The tracking system consists of an auto-scaled group of Amazon Elastic Compute Cloud \(EC2\) instances behind an elastic load balancer \(ELB\), and the collected data is stored in Amazon DynamoDB. After the campaign is terminated, the tracking system is torn down and the data is moved to Amazon Redshift, where it is aggregated, analyzed and used to generate detailed reports. The company wants to be able to instantiate new tracking systems in any region without any manual intervention and therefore adopted AWS CloudFormation. What needs to be done to make sure that the AWS CloudFormation template works in every AWS region? Choose 2 answers
 
 **\[PROFESSIONAL\]**
 
@@ -55,6 +53,21 @@ A marketing research company has developed a tracking system that collects user 
 4. Avoid using DeletionPolicies for EBS snapshots. \(
    Don’t want the data to be retained\)
 5. **Use the built-in Mappings and FindInMap functions of AWS CloudFormation to refer to the AMI ID set in the ImageId attribute of the Auto Scaling::LaunchConfiguration resource.**
+
+**Qestion 5**
+
+A gaming company adopted AWS CloudFormation to automate load -testing of their games. They have created an AWS CloudFormation template for each gaming environment and one for the load -testing stack. The load – testing stack creates an Amazon Relational Database Service \(RDS\) Postgres database and two web servers running on Amazon Elastic Compute Cloud \(EC2\) that send HTTP requests, measure response times, and write the results into the database. A test run usually takes between 15 and 30 minutes. Once the tests are done, the AWS CloudFormation stacks are torn down immediately. The test results written to the Amazon RDS database must remain accessible for visualization and analysis. Select possible solutions that allow access to the test results after the AWS CloudFormation load -testing stack is deleted. Choose 2 answers. 
+
+**\[PROFESSIONAL\]**
+
+1. **Define a deletion policy of type Retain for the Amazon QDS resource to assure that the RDS database is not deleted with the AWS CloudFormation stack.**
+2. **Define a deletion policy of type Snapshot for the Amazon RDS resource to assure that the RDS database can be restored after the AWS CloudFormation stack is deleted.**
+3. Define automated backups with a backup retention period of 30 days for the Amazon RDS database and perform point -in -time recovery of the database after the AWS CloudFormation stack is deleted. \(
+   as the environment is required for limited time the automated backup will not serve the purpose\)
+4. Define an Amazon RDS Read-Replica in the load-testing AWS CloudFormation stack and define a dependency relation between master and replica via the DependsOn attribute. \(
+   read replica not needed and will be deleted when the stack is deleted\)
+5. Define an update policy to prevent deletion of the Amazon RDS database after the AWS CloudFormation stack is deleted. \(
+   UpdatePolicy does not apply to RDS\)
 
 
 
