@@ -64,8 +64,7 @@ DynamoDB Partitions
 
   * When capacity is exceeded a new partition is added automatically and data is spread between them over time.
   * There is no automatic decrease in number of partitions
-    * This can cause performance issues whereby a low WCU/RCU is divided among many partitions, which means the actual
-      WCU and RCU limit for a given partition is even lower.
+    * This can cause performance issues whereby a low WCU/RCU is divided among many partitions, which means the actual WCU and RCU limit for a given partition is even lower.
   * in other words, table capacity is divided across partitions!
 
 * Calculating the minimum number of partitions:
