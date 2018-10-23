@@ -56,7 +56,7 @@ A marketing research company has developed a tracking system that collects user 
 
 **Qestion 5**
 
-A gaming company adopted AWS CloudFormation to automate load -testing of their games. They have created an AWS CloudFormation template for each gaming environment and one for the load -testing stack. The load – testing stack creates an Amazon Relational Database Service \(RDS\) Postgres database and two web servers running on Amazon Elastic Compute Cloud \(EC2\) that send HTTP requests, measure response times, and write the results into the database. A test run usually takes between 15 and 30 minutes. Once the tests are done, the AWS CloudFormation stacks are torn down immediately. The test results written to the Amazon RDS database must remain accessible for visualization and analysis. Select possible solutions that allow access to the test results after the AWS CloudFormation load -testing stack is deleted. Choose 2 answers. 
+A gaming company adopted AWS CloudFormation to automate load -testing of their games. They have created an AWS CloudFormation template for each gaming environment and one for the load -testing stack. The load – testing stack creates an Amazon Relational Database Service \(RDS\) Postgres database and two web servers running on Amazon Elastic Compute Cloud \(EC2\) that send HTTP requests, measure response times, and write the results into the database. A test run usually takes between 15 and 30 minutes. Once the tests are done, the AWS CloudFormation stacks are torn down immediately. The test results written to the Amazon RDS database must remain accessible for visualization and analysis. Select possible solutions that allow access to the test results after the AWS CloudFormation load -testing stack is deleted. Choose 2 answers.
 
 **\[PROFESSIONAL\]**
 
@@ -68,6 +68,46 @@ A gaming company adopted AWS CloudFormation to automate load -testing of their g
    read replica not needed and will be deleted when the stack is deleted\)
 5. Define an update policy to prevent deletion of the Amazon RDS database after the AWS CloudFormation stack is deleted. \(
    UpdatePolicy does not apply to RDS\)
+
+
+
+**Qestion 6**
+
+ou need to deploy an AWS stack in a repeatable manner across multiple environments. You have selected CloudFormation as the right tool to accomplish this, but have found that there is a resource type you need to create and model, but is unsupported by CloudFormation. How should you overcome this challenge? 
+
+**\[PROFESSIONAL\]**
+
+1. Use a CloudFormation Custom Resource Template by selecting an API call to proxy for create, update, and delete actions. CloudFormation will use the AWS SDK, CLI, or API method of your choosing as the state transition function for the resource type you are modeling.
+2. Submit a ticket to the AWS Forums. AWS extends CloudFormation Resource Types by releasing tooling to the AWS Labs organization on GitHub. Their response time is usually 1 day, and they complete requests within a week or two.
+3. Instead of depending on CloudFormation, use Chef, Puppet, or Ansible to author Heat templates, which are declarative stack resource definitions that operate over the OpenStack hypervisor and cloud environment.
+4. **Create a CloudFormation Custom Resource Type by implementing create, update, and delete functionality, either by subscribing a Custom Resource Provider to an SNS topic, or by implementing the logic in AWS Lambda.**
+   \(Refer [link](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) \)
+
+**Qestion 7**
+
+Your company needs to automate 3 layers of a large cloud deployment. You want to be able to track this deployment’s evolution as it changes over time, and carefully control any alterations. What is a good way to automate a stack to meet these requirements? 
+
+**\[PROFESSIONAL\]**
+
+1. Use OpsWorks Stacks with three layers to model the layering in your stack.
+2. **Use CloudFormation Nested Stack Templates, with three child stacks to represent the three logical layers of your cloud.**
+   \(CloudFormation allows source controlled, declarative templates as the basis for stack automation and Nested Stacks help achieve clean separation of layers while simultaneously providing a method to control all layers at once when needed\)
+3. Use AWS Config to declare a configuration set that AWS should roll out to your cloud.
+4. Use Elastic Beanstalk Linked Applications, passing the important DNS entries between layers using the metadata interface.
+
+
+
+**Qestion 8**
+
+You have been asked to de-risk deployments at your company. Specifically, the CEO is concerned about outages that occur because of accidental inconsistencies between Staging and Production, which sometimes cause unexpected behaviors in Production even when Staging tests pass. You already use Docker to get high consistency between Staging and Production for the application environment on your EC2 instances. How do you further de-risk the rest of the execution environment, since in AWS, there are many service components you may use beyond EC2 virtual machines? 
+
+**\[PROFESSIONAL\]**
+
+1. **Develop models of your entire cloud system in CloudFormation. Use this model in Staging and Production to achieve greater parity.**
+   \(Only CloudFormation’s JSON Templates allow declarative version control of repeatedly deployable models of entire AWS clouds. Refer [link](https://blogs.aws.amazon.com/application-management/blog/category/Best+practices)\)
+2. Use AWS Config to force the Staging and Production stacks to have configuration parity. Any differences will be detected for you so you are aware of risks.
+3. Use AMIs to ensure the whole machine, including the kernel of the virual machines, is consistent, since Docker uses Linux Container \(LXC\) technology, and we need to make sure the container environment is consistent.
+4. Use AWS ECS and Docker clustering. This will make sure that the AMIs and machine sizes are the same across both environments.
 
 
 
