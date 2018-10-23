@@ -85,6 +85,7 @@
   * [AWS Elastic Beanstalk](aws-elastic-beanstalk.md)
   * [Auto Scaling Overview](auto-scaling-overview.md)
   * [AWS SWF – Simple Workflow Overview](aws-swf-simple-workflow-overview.md)
+  * [AWS OpsWorks](aws-opsworks.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
