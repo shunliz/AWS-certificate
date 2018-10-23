@@ -171,18 +171,12 @@ DynamoDB stream
       * when new user is added to the users table
       * when items are added, for performing analytics 
 
-
-
-
-
-
-
 # AWS DynamoDB
 
 * Amazon DynamoDB is a fully managed NoSQL database service that
   * makes it simple and cost-effective to store and retrieve any amount of data and serve any level of request traffic.
   * provides fast and predictable performance with seamless scalability
-* DynamoDB enables customers to offload the administrative burdens of operating and scaling distributed databases to AWS, without having to worry about hardware provisioning, setup and configuration, replication, software patching, or cluster scaling.
+* DynamoDB enables customers to offload the administrative burdens of operating and scaling distributed databases to AWS, without having to worry about hardware provisioning, setup and configuration, replication, software patching, or cluster scaling.
 * DynamoDB tables do not have fixed schemas, and table consists of items and each item may have a different number of attributes.
 * DynamoDB synchronously replicates data across three facilities in an AWS Region, giving high availability and data durability.
 * DynamoDB supports fast in-place updates. A numeric attribute can be incremented or decremented in a row using a single API call
@@ -200,20 +194,20 @@ DynamoDB stream
     * It is possible for two items to have the same partition key value, but those two items must have different sort key values.
 * DynamoDB Secondary indexes
   * add flexibility to the queries, without impacting performance.
-  * are automatically maintained as sparse objects, items will only appear in an index if they exist in the table on which the index is defined making queries against an index very efficient
-* DynamoDB throughput and single-digit millisecond latency makes it a great fit for gaming, ad tech, mobile, and many other applications
+  * are automatically maintained as sparse objects, items will only appear in an index if they exist in the table on which the index is defined making queries against an index very efficient
+* DynamoDB throughput and single-digit millisecond latency makes it a great fit for gaming, ad tech, mobile, and many other applications
 * ElastiCache can be used in front of DynamoDB in order to offload high amount of reads for non frequently changed data
 
 ## DynamoDB Performance
 
 * Automatically scales horizontally
 * runs exclusively on Solid State Drives \(SSDs\).
-  * SSDs help achieve the design goals of predictable low-latency response times for storing and accessing data at any scale.
+  * SSDs help achieve the design goals of predictable low-latency response times for storing and accessing data at any scale.
   * SSDs High I/O performance enables it to serve high-scale request workloads cost efficiently, and to pass this efficiency along in low request pricing
 * allows provisioned table reads and writes
   * Scale up throughput when needed
   * Scale down throughput four times per UTC calendar day
-* automatically partitions, reallocates and re-partitions the data and provisions additional server capacity as the
+* automatically partitions, reallocates and re-partitions the data and provisions additional server capacity as the
   * table size grows or
   * provisioned throughput is increased
 * Global Secondary indexes \(GSI\)
@@ -226,7 +220,7 @@ DynamoDB stream
 * DynamoDB allows user to specify whether the read should be eventually consistent or strongly consistent at the time of the request
   * **Eventually Consistent Reads**
     \(Default\)
-    * Eventual consistency option maximizes the read throughput.
+    * Eventual consistency option maximizes the read throughput.
     * Consistency across all copies is usually reached within a second
     * However, an eventually consistent read might not reflect the results of a recently completed write.
     * Repeating a read after a short time should return the updated data.
@@ -240,12 +234,12 @@ DynamoDB stream
 ## DynamoDB Security
 
 * Fine Grained Access Control \(FGAC\) gives a high degree of control over data in the table
-* FGAC helps control who \(caller\) can access which items or attributes of the table and perform what actions \(read/write capability\).
+* FGAC helps control who \(caller\) can access which items or attributes of the table and perform what actions \(read/write capability\).
 * FGAC is integrated with IAM, which manages the security credentials and the associated permissions.
 
 ## DynamoDB Advanced Topics
 
-Refer to[DynamoDB Advanced](http://jayendrapatil.com/aws-dynamodb-advanced/) post, which covers DynamoDB Streams, Triggers, Cross Region Replication, DAX, VPC Endpoints etc.
+Refer to[DynamoDB Advanced](http://jayendrapatil.com/aws-dynamodb-advanced/) post, which covers DynamoDB Streams, Triggers, Cross Region Replication, DAX, VPC Endpoints etc.
 
 ## DynamoDB Encryption
 
@@ -267,8 +261,8 @@ Refer to[DynamoDB Advanced](http://jayendrapatil.com/aws-dynamodb-advanced/) po
   * DynamoDB is an indexed data store
     * Billable Data = Raw byte data size + 100 byte per-item storage indexing overhead
 * Provisioned throughput
-  * Pay flat, hourly rate based on the capacity reserved as the throughput provisioned for the table
-  * one Write Capacity Unit provides one write per second for items &lt;1KB in size.
+  * Pay flat, hourly rate based on the capacity reserved as the throughput provisioned for the table
+  * one Write Capacity Unit provides one write per second for items &lt;1KB in size.
   * one Read Capacity Unit provides one strongly consistent read \(or two eventually consistent reads\) per second for items 
     &lt;4KB in size.
   * Provisioned throughput charges for every 10 units of Write Capacity and every 50 units of Read Capacity.
