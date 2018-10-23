@@ -86,6 +86,7 @@
   * [Auto Scaling Overview](auto-scaling-overview.md)
   * [AWS SWF – Simple Workflow Overview](aws-swf-simple-workflow-overview.md)
   * [AWS OpsWorks](aws-opsworks.md)
+  * [AWS Web Application Firewall – WAF](aws-web-application-firewall-waf.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
