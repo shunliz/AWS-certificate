@@ -105,11 +105,9 @@ You have been asked to de-risk deployments at your company. Specifically, the CE
 3. Use AMIs to ensure the whole machine, including the kernel of the virual machines, is consistent, since Docker uses Linux Container \(LXC\) technology, and we need to make sure the container environment is consistent.
 4. Use AWS ECS and Docker clustering. This will make sure that the AMIs and machine sizes are the same across both environments.
 
-
-
 **Qestion 9**
 
-You require the ability to analyze a large amount of data, which is stored on Amazon S3 using Amazon Elastic Map Reduce. You are using the cc2.8xlarge instance type, who’s CPUs are mostly idle during processing. Which of the below would be the most cost efficient way to reduce the runtime of the job? 
+You require the ability to analyze a large amount of data, which is stored on Amazon S3 using Amazon Elastic Map Reduce. You are using the cc2.8xlarge instance type, who’s CPUs are mostly idle during processing. Which of the below would be the most cost efficient way to reduce the runtime of the job?
 
 **\[PROFESSIONAL\]**
 
@@ -117,8 +115,6 @@ You require the ability to analyze a large amount of data, which is stored on Am
 2. Add additional cc2.8xlarge instances by introducing a task group.
 3. **Use smaller instances that have higher aggregate I/O performance.**
 4. Create fewer, larger files on Amazon S3.
-
-
 
 **Qestion 10**
 
@@ -131,18 +127,16 @@ A customer’s nightly EMR job processes a single 2-TB data file stored on Amazo
 5. **Adjust the number of simultaneous mapper tasks.**
 6. Enable termination protection for the job flow.
 
-
-
 **Qestion 11**
 
-Your department creates regular analytics reports from your company’s log files. All log data is collected in Amazon S3 and processed by daily Amazon Elastic Map Reduce \(EMR\) jobs that generate daily PDF reports and aggregated tables in CSV format for an Amazon Redshift data warehouse. Your CFO requests that you optimize the cost structure for this system. Which of the following alternatives will lower costs without compromising average performance of the system or data integrity for the raw data? 
+Your department creates regular analytics reports from your company’s log files. All log data is collected in Amazon S3 and processed by daily Amazon Elastic Map Reduce \(EMR\) jobs that generate daily PDF reports and aggregated tables in CSV format for an Amazon Redshift data warehouse. Your CFO requests that you optimize the cost structure for this system. Which of the following alternatives will lower costs without compromising average performance of the system or data integrity for the raw data?
 
 **\[PROFESSIONAL\]**
 
-1. Use reduced redundancy storage \(RRS\) for PDF and CSV data in Amazon S3. Add Spot instances to Amazon EMR jobs. Use Reserved Instances for Amazon Redshift. \(Only Spot instances impacts performance\)
+1. Use reduced redundancy storage \(RRS\) for PDF and CSV data in Amazon S3. Add Spot instances to Amazon EMR jobs. Use Reserved Instances for Amazon Redshift. \(Only Spot instances impacts performance\)
 2. **Use reduced redundancy storage \(RRS\) for all data in S3. Use a combination of Spot instances and Reserved Instances for Amazon EMR jobs. Use Reserved instances for Amazon Redshift**
    \(Combination of the Spot and reserved with guarantee performance and help reduce cost. Also, RRS would reduce cost and guarantee data integrity, which is different from data durability\)
-3. Use reduced redundancy storage \(RRS\) for all data in Amazon S3. Add Spot Instances to Amazon EMR jobs. Use Reserved Instances for Amazon Redshift \(Only Spot instances impacts performance\)
+3. Use reduced redundancy storage \(RRS\) for all data in Amazon S3. Add Spot Instances to Amazon EMR jobs. Use Reserved Instances for Amazon Redshift \(Only Spot instances impacts performance\)
 4. Use reduced redundancy storage \(RRS\) for PDF and CSV data in S3. Add Spot Instances to EMR jobs. Use Spot Instances for Amazon Redshift. \(Spot instances impacts performance and Spot instance not available for Redshift\)
 
 **Qestion 12**
@@ -155,11 +149,7 @@ A research scientist is planning for the one-time launch of an Elastic MapReduce
 2. Optimize by deploying a combination of on-demand, RI and spot-pricing models for the master, core and task nodes. Store ingest and output files in Amazon S3 with a lifecycle policy that archives them to Amazon Glacier. \(Master and Core must be RI or On Demand. Cannot be Spot\)
 3. Store the ingest files in Amazon S3 RRS and store the output files in S3. Deploy Reserved Instances for the master and core nodes and on-demand for the task nodes. \(Need better durability for ingest file. Spot instances can be used for task nodes for cost saving. RI will not provide cost saving in this case\)
 4. Deploy on-demand master, core and task nodes and store ingest and output files in Amazon S3 RRS \(
-   Input should be in S3 standard, as re-ingesting the input data might end up being more costly then holding the data for limited time in standard S3\)
-
-
-
-
+   Input should be in S3 standard, as re-ingesting the input data might end up being more costly then holding the data for limited time in standard S3\)
 
 **Qestion 13**
 
