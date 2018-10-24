@@ -92,6 +92,7 @@
   * [AWS Elastic Beanstalk vs OpsWorks vs CloudFormation](aws-elastic-beanstalk-vs-opsworks-vs-cloudformation.md)
   * [AWS Trusted Advisor](aws-trusted-advisor.md)
   * [AWS Directory Services](aws-directory-services.md)
+  * [AWS Support Tiers Plan](aws-support-tiers-plan.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
