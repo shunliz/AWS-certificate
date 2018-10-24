@@ -90,6 +90,7 @@
   * [AWS ElastiCache](aws-elasticache.md)
   * [AWS EMR](aws-emr.md)
   * [AWS Elastic Beanstalk vs OpsWorks vs CloudFormation](aws-elastic-beanstalk-vs-opsworks-vs-cloudformation.md)
+  * [AWS Trusted Advisor](aws-trusted-advisor.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
