@@ -95,6 +95,7 @@
   * [AWS Support Tiers Plan](aws-support-tiers-plan.md)
   * [AWS Cloud Migration Services](aws-cloud-migration-services.md)
   * [AWS KMS](aws-kms.md)
+  * [AWS Import/Export](aws-importexport.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
