@@ -88,6 +88,7 @@
   * [AWS OpsWorks](aws-opsworks.md)
   * [AWS Web Application Firewall – WAF](aws-web-application-firewall-waf.md)
   * [AWS ElastiCache](aws-elasticache.md)
+  * [AWS EMR](aws-emr.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
