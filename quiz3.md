@@ -164,3 +164,31 @@ Your company sells consumer devices and needs to record the first activation of 
 
 
 
+**Qestion 14**
+
+You currently operate a web application in the AWS US-East region. The application runs on an auto-scaled layer of EC2 instances and an RDS Multi-AZ database. Your IT security compliance officer has tasked you to develop a reliable and durable logging solution to track changes made to your EC2, IAM and RDS resources. The solution must ensure the integrity and confidentiality of your log data. Which of these solutions would you recommend?
+
+1. **Create a new CloudTrail trail with one new S3 bucket to store the logs and with the global services option selected. Use IAM roles, S3 bucket policies and Multi Factor Authentication \(MFA\) Delete on the S3 bucket that stores your logs. \(**
+   Single New bucket with global services option for IAM and MFA delete for confidentiality**\)**
+2. Create a new CloudTrail with one new S3 bucket to store the logs. Configure SNS to send log file delivery notifications to your management system. Use IAM roles and S3 bucket policies on the S3 bucket that stores your logs. \(Missing Global Services for IAM\)
+3. Create a new CloudTrail trail with an existing S3 bucket to store the logs and with the global services option selected Use S3 ACLs and Multi Factor Authentication \(MFA\) Delete on the S3 bucket that stores your logs. \(Existing bucket prevents confidentiality\)
+4. Create three new CloudTrail trails with three new S3 buckets to store the logs one for the AWS Management console, one for AWS SDKs and one for command line tools. Use IAM roles and S3 bucket policies on the S3 buckets that store your logs \(
+   3 buckets not needed, Missing Global services options\)
+
+
+
+**Qestion 15**
+
+Which of the following are true regarding AWS CloudTrail? Choose 3 answers
+
+1. **CloudTrail is enabled globally**\(it can be enabled for all regions and also per region basis\)
+2. CloudTrail is enabled by default \(
+   **was not enabled by default, however, it is enabled by default as per the latest **[**AWS enhancements**](https://aws.amazon.com/blogs/aws/new-amazon-web-services-extends-cloudtrail-to-all-aws-customers/)\)
+3. **CloudTrail is enabled on a per-region basis**\(it can be enabled for all regions and also per region basis\)
+4. CloudTrail is enabled on a per-service basis \(once enabled it is applicable for all the supported services, service can’t be selected\)
+5. **Logs can be delivered to a single Amazon S3 bucket for aggregation**
+6. CloudTrail is enabled for all available services within a region. \(is enabled only for CloudTrail supported services\)
+7. Logs can only be processed and delivered to the region in which they are generated. \(can be logged to bucket in any region\)
+
+
+
