@@ -69,11 +69,9 @@ A gaming company adopted AWS CloudFormation to automate load -testing of their g
 5. Define an update policy to prevent deletion of the Amazon RDS database after the AWS CloudFormation stack is deleted. \(
    UpdatePolicy does not apply to RDS\)
 
-
-
 **Qestion 6**
 
-ou need to deploy an AWS stack in a repeatable manner across multiple environments. You have selected CloudFormation as the right tool to accomplish this, but have found that there is a resource type you need to create and model, but is unsupported by CloudFormation. How should you overcome this challenge? 
+ou need to deploy an AWS stack in a repeatable manner across multiple environments. You have selected CloudFormation as the right tool to accomplish this, but have found that there is a resource type you need to create and model, but is unsupported by CloudFormation. How should you overcome this challenge?
 
 **\[PROFESSIONAL\]**
 
@@ -85,7 +83,7 @@ ou need to deploy an AWS stack in a repeatable manner across multiple environmen
 
 **Qestion 7**
 
-Your company needs to automate 3 layers of a large cloud deployment. You want to be able to track this deployment’s evolution as it changes over time, and carefully control any alterations. What is a good way to automate a stack to meet these requirements? 
+Your company needs to automate 3 layers of a large cloud deployment. You want to be able to track this deployment’s evolution as it changes over time, and carefully control any alterations. What is a good way to automate a stack to meet these requirements?
 
 **\[PROFESSIONAL\]**
 
@@ -95,11 +93,9 @@ Your company needs to automate 3 layers of a large cloud deployment. You want to
 3. Use AWS Config to declare a configuration set that AWS should roll out to your cloud.
 4. Use Elastic Beanstalk Linked Applications, passing the important DNS entries between layers using the metadata interface.
 
-
-
 **Qestion 8**
 
-You have been asked to de-risk deployments at your company. Specifically, the CEO is concerned about outages that occur because of accidental inconsistencies between Staging and Production, which sometimes cause unexpected behaviors in Production even when Staging tests pass. You already use Docker to get high consistency between Staging and Production for the application environment on your EC2 instances. How do you further de-risk the rest of the execution environment, since in AWS, there are many service components you may use beyond EC2 virtual machines? 
+You have been asked to de-risk deployments at your company. Specifically, the CEO is concerned about outages that occur because of accidental inconsistencies between Staging and Production, which sometimes cause unexpected behaviors in Production even when Staging tests pass. You already use Docker to get high consistency between Staging and Production for the application environment on your EC2 instances. How do you further de-risk the rest of the execution environment, since in AWS, there are many service components you may use beyond EC2 virtual machines?
 
 **\[PROFESSIONAL\]**
 
@@ -108,6 +104,73 @@ You have been asked to de-risk deployments at your company. Specifically, the CE
 2. Use AWS Config to force the Staging and Production stacks to have configuration parity. Any differences will be detected for you so you are aware of risks.
 3. Use AMIs to ensure the whole machine, including the kernel of the virual machines, is consistent, since Docker uses Linux Container \(LXC\) technology, and we need to make sure the container environment is consistent.
 4. Use AWS ECS and Docker clustering. This will make sure that the AMIs and machine sizes are the same across both environments.
+
+
+
+**Qestion 9**
+
+You require the ability to analyze a large amount of data, which is stored on Amazon S3 using Amazon Elastic Map Reduce. You are using the cc2.8xlarge instance type, who’s CPUs are mostly idle during processing. Which of the below would be the most cost efficient way to reduce the runtime of the job? 
+
+**\[PROFESSIONAL\]**
+
+1. Create smaller files on Amazon S3.
+2. Add additional cc2.8xlarge instances by introducing a task group.
+3. **Use smaller instances that have higher aggregate I/O performance.**
+4. Create fewer, larger files on Amazon S3.
+
+
+
+**Qestion 10**
+
+A customer’s nightly EMR job processes a single 2-TB data file stored on Amazon Simple Storage Service \(S3\). The Amazon Elastic Map Reduce \(EMR\) job runs on two On-Demand core nodes and three On-Demand task nodes. Which of the following may help reduce the EMR job completion time? Choose 2 answers
+
+1. Use three Spot Instances rather than three On-Demand instances for the task nodes.
+2. **Change the input split size in the MapReduce job configuration.**
+3. Use a bootstrap action to present the S3 bucket as a local filesystem.
+4. Launch the core nodes and task nodes within an Amazon Virtual Cloud.
+5. **Adjust the number of simultaneous mapper tasks.**
+6. Enable termination protection for the job flow.
+
+
+
+**Qestion 11**
+
+Your department creates regular analytics reports from your company’s log files. All log data is collected in Amazon S3 and processed by daily Amazon Elastic Map Reduce \(EMR\) jobs that generate daily PDF reports and aggregated tables in CSV format for an Amazon Redshift data warehouse. Your CFO requests that you optimize the cost structure for this system. Which of the following alternatives will lower costs without compromising average performance of the system or data integrity for the raw data? 
+
+**\[PROFESSIONAL\]**
+
+1. Use reduced redundancy storage \(RRS\) for PDF and CSV data in Amazon S3. Add Spot instances to Amazon EMR jobs. Use Reserved Instances for Amazon Redshift. \(Only Spot instances impacts performance\)
+2. **Use reduced redundancy storage \(RRS\) for all data in S3. Use a combination of Spot instances and Reserved Instances for Amazon EMR jobs. Use Reserved instances for Amazon Redshift**
+   \(Combination of the Spot and reserved with guarantee performance and help reduce cost. Also, RRS would reduce cost and guarantee data integrity, which is different from data durability\)
+3. Use reduced redundancy storage \(RRS\) for all data in Amazon S3. Add Spot Instances to Amazon EMR jobs. Use Reserved Instances for Amazon Redshift \(Only Spot instances impacts performance\)
+4. Use reduced redundancy storage \(RRS\) for PDF and CSV data in S3. Add Spot Instances to EMR jobs. Use Spot Instances for Amazon Redshift. \(Spot instances impacts performance and Spot instance not available for Redshift\)
+
+**Qestion 12**
+
+A research scientist is planning for the one-time launch of an Elastic MapReduce cluster and is encouraged by her manager to minimize the costs. The cluster is designed to ingest 200TB of genomics data with a total of 100 Amazon EC2 instances and is expected to run for around four hours. The resulting data set must be stored temporarily until archived into an Amazon RDS Oracle instance. Which option will help save the most money while meeting requirements?
+
+**\[PROFESSIONAL\]**
+
+1. **Store ingest and output files in Amazon S3. Deploy on-demand for the master and core nodes and spot for the task nodes.**
+2. Optimize by deploying a combination of on-demand, RI and spot-pricing models for the master, core and task nodes. Store ingest and output files in Amazon S3 with a lifecycle policy that archives them to Amazon Glacier. \(Master and Core must be RI or On Demand. Cannot be Spot\)
+3. Store the ingest files in Amazon S3 RRS and store the output files in S3. Deploy Reserved Instances for the master and core nodes and on-demand for the task nodes. \(Need better durability for ingest file. Spot instances can be used for task nodes for cost saving. RI will not provide cost saving in this case\)
+4. Deploy on-demand master, core and task nodes and store ingest and output files in Amazon S3 RRS \(
+   Input should be in S3 standard, as re-ingesting the input data might end up being more costly then holding the data for limited time in standard S3\)
+
+
+
+
+
+**Qestion 13**
+
+Your company sells consumer devices and needs to record the first activation of all sold devices. Devices are not activated until the information is written on a persistent database. Activation data is very important for your company and must be analyzed daily with a MapReduce job. The execution time of the data analysis process must be less than three hours per day. Devices are usually sold evenly during the year, but when a new device model is out, there is a predictable peak in activation’s, that is, for a few days there are 10 times or even 100 times more activation’s than in average day. Which of the following databases and analysis framework would you implement to better optimize costs and performance for this workload?
+
+**\[PROFESSIONAL\]**
+
+1. Amazon RDS and Amazon Elastic MapReduce with Spot instances.
+2. **Amazon DynamoDB and Amazon Elastic MapReduce with Spot instances.**
+3. Amazon RDS and Amazon Elastic MapReduce with Reserved instances.
+4. Amazon DynamoDB and Amazon Elastic MapReduce with Reserved instances
 
 
 
