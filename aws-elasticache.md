@@ -12,7 +12,7 @@
   * code, applications, and popular tools already using Memcached or Redis environments work seamlessly, with being protocol- compliant with Memcached and Redis environments
 * ElastiCache provides in-memory caching which can
   * significantly lower latency and improve throughput for many
-    * read-heavy application workloads _for e.g. social networking, gaming, media sharing and Q & A portals _or
+    * read-heavy application workloads \_for e.g. social networking, gaming, media sharing and Q & A portals \_or
     * compute-intensive workloads such as a recommendation engine
   * improve application performance by storing critical pieces of data in memory for low-latency access.
   * be used to cache results of I/O-intensive database queries or the results of computationally-intensive calculations.
@@ -80,7 +80,7 @@
 * [Memcached](http://memcached.org/) is an in-memory key-value store for small chunks or arbitrary data
 * ElastiCache for Memcached can be used to cache a variety of objects
   * from the content in persistent data stores such as RDS, DynamoDB, or self-managed databases hosted on EC2\) to
-  * dynamically generated web pages _for e.g. with Nginx _or
+  * dynamically generated web pages \_for e.g. with Nginx \_or
   * transient session data that may not require a persistent backing store
 * ElastiCache for Memcached
   * can be scaled Vertically by increasing the node type size
