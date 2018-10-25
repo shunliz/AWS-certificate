@@ -100,6 +100,7 @@
   * [AWS CloudSearch](aws-cloudsearch.md)
   * [AWS Config](aws-config.md)
   * [AWS WorkSpace](aws-workspace.md)
+  * [AWS CloudHSM](aws-cloudhsm.md)
 * [AWS quiz](aws-quiz.md)
   * [AWS developer Quiz](aws-developer-quiz.md)
     * [AWS developer associate](aws-developer-associate.md)
