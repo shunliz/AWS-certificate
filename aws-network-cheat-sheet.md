@@ -52,11 +52,13 @@
       – no outbound connectivity and used for regulated workloads
 
 * **Elastic Network Interface \(ENI\)**
+
   * a default ENI, eth0, is attached to an instance which cannot be detached with one or more secondary detachable ENIs \(eth1-ethn\)
   * has primary private, one or more secondary private, public, Elastic IP address, security groups, MAC address and source/destination check flag attributes associated
   * AN ENI in one subnet can be attached to an instance in the same or another subnet, in the same AZ and the same VPC
   * Security group membership of an ENI can be changed
   * with pre allocated Mac Address can be used for applications with special licensing requirements
+
 * **Security Groups vs Network Access Control Lists**
   * Stateful **vs **Stateless
   * At instance level **vs **At subnet level

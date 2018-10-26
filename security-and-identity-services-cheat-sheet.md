@@ -15,8 +15,7 @@
   * needs Trust policy to define who and Permission policy to define what the user or service can access
   * used with Security Token Service \(STS\), a lightweight web service that provides temporary, limited privilege credentials for IAM users or for authenticated federated users
   * IAM role scenarios
-    * Service access
-      _for e.g. EC2 to access S3 or DynamoDB_
+    * Service access _for e.g. EC2 to access S3 or DynamoDB_
     * Cross Account access for users
       * with user within the same account
       * with user within an AWS account owned the same owner
