@@ -475,8 +475,6 @@ There is a very serious outage at AWS. EC2 is not affected, but your EC2 instanc
 3. AWS turns off the DeployCode API call when there are major outages, to protect from system floods.
 4. None of the other answers make sense. If EC2 is not affected, it must be some other issue.
 
-
-
 **Question 52**
 
 A user has created an EBS volume of 10 GB and attached it to a running instance. The user is trying to access EBS for first time. Which of the below mentioned options is the correct statement with respect to a first time EBS access?
@@ -486,10 +484,6 @@ A user has created an EBS volume of 10 GB and attached it to a running instance.
    \(the volume needed to be wiped cleaned before for new volumes, however pre warming is not needed any more\)
 3. The volume will be blank
 4. If the EBS is mounted it will ask the user to create a file system
-
-
-
-
 
 
 
