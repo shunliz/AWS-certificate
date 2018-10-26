@@ -38,6 +38,7 @@
   * Route priority is decided by matching the most specific route in the route table that matches the traffic
 
 * **Subnets**
+
   * **map to AZs **and do not span across AZs
   * have a CIDR range that is a portion of the whole VPC.
   * **CIDR ranges cannot overlap **between subnets within the VPC.
@@ -49,6 +50,7 @@
       – outbound Internet connectivity via an NAT or VGW
     * **Protected subnets**
       – no outbound connectivity and used for regulated workloads
+
 * **Elastic Network Interface \(ENI\)**
   * a default ENI, eth0, is attached to an instance which cannot be detached with one or more secondary detachable ENIs \(eth1-ethn\)
   * has primary private, one or more secondary private, public, Elastic IP address, security groups, MAC address and source/destination check flag attributes associated
