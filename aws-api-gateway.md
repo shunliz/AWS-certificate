@@ -14,7 +14,7 @@
   * **Non AWS hosted HTTP based operations accessible via public Internet**
 * API Gateway endpoints are always public to the Internet and does not run within an VPC. Proxy requests to backend operations also need to be publicly accessible on the Internet.
 
-![](https://i0.wp.com/d0.awsstatic.com/product-marketing/API%20Gateway/APIGateway_Diagram.png?zoom=1.25&resize=656%2C241&ssl=1 "API Gateway")
+![](https://i0.wp.com/d0.awsstatic.com/product-marketing/API Gateway/APIGateway_Diagram.png?zoom=1.25&resize=656%2C241&ssl=1 "API Gateway")
 
 API Gateway helps with several aspects of creating and managing APIs
 
@@ -23,9 +23,7 @@ API Gateway helps with several aspects of creating and managing APIs
   * define plans that meter, restrict third-party developer access, configure throttling, and quota limits on a per API key basis
 * **Security**
   * helps removing authorization concerns from the backend code
-  * allows leveraging of AWS administration and security tools,
-    _such as IAM and Cognito_
-    , to authorize access to APIs
+  * allows leveraging of AWS administration and security tools, _such as IAM and Cognito_, to authorize access to APIs
   * can verify signed API calls on your behalf using the same methodology AWS uses for its own APIs
   * supports custom authorizers written as Lambda functions and verify incoming bearer tokens
   * automatically protects the backend systems from distributed denial-of-service \(DDoS\) attacks, whether attacked with counterfeit requests \(Layer 7\) or SYN floods \(Layer 3\).
@@ -52,12 +50,12 @@ API Gateway helps with several aspects of creating and managing APIs
   * It tracks the number of requests per second. Any requests over the limit will receive a 429 HTTP response
   * Throttling ensures that API traffic is controlled to help the backend services maintain performance and availability.
 * **Caching**
-  * API Gateway provides API result caching by provisioning an API Gateway cache and specifying its size in gigabytes
-  * Caching helps improve performance and reduces the traffic sent to the back end
+  * API Gateway provides API result caching by provisioning an API Gateway cache and specifying its size in gigabytes
+  * Caching helps improve performance and reduces the traffic sent to the back end
   * API Gateway handles the request in the following manner
     * If caching is not enabled and throttling limits have not been applied, then all requests pass through to the backend service until the account level throttling limits are reached.
     * If throttling limits specified, then API Gateway will shed necessary amount of requests and send only the defined limit to the back-end
-    * If a cache is configured, then API Gateway will return a cached response for duplicate requests for a customizable time, but only if under configured throttling limits
+    * If a cache is configured, then API Gateway will return a cached response for duplicate requests for a customizable time, but only if under configured throttling limits
 * API Gateway does not arbitrarily limit or throttle invocations to the backend operations and all requests that are not intercepted by throttling and caching settings are sent to your backend operations.
 
 
