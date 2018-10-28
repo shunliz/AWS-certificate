@@ -18,11 +18,9 @@
 
 ### Containers and Images {#w2ab1b5c11b9}
 
-* Applications deployed on ECS must be architected to run in _**docker containers**, _which is a standardized unit of software development, containing everything that the software application needs to run: code, runtime, system tools, system libraries, etc.
-* Containers are created from a read-only template called an _**image**_
-* Images are typically built from a Dockerfile, and stored in a
-  _**registry**_
-   from which they can be downloaded and run on your container instances.
+* Applications deployed on ECS must be architected to run in \_**docker containers**, \_which is a standardized unit of software development, containing everything that the software application needs to run: code, runtime, system tools, system libraries, etc.
+* Containers are created from a read-only template called an _**image**_
+* Images are typically built from a Dockerfile, and stored in a _**registry**_ from which they can be downloaded and run on your container instances.
 * ECS can be configured to access a private Docker image registry within a VPC, Docker Hub or is integrated with EC2 Container Registry \(ECR\)
 
 ### Clusters {#w2ab1b5c11c15}
@@ -41,7 +39,7 @@
 
 ### **Tasks and Scheduling**
 
-* A task is the instantiation of a task definition on a container instance within the cluster.
+* A task is the instantiation of a task definition on a container instance within the cluster.
 * After a task definition is created for the application within ECS, you can specify the number of tasks that will run on the cluster.
 * ECS task scheduler is responsible for placing tasks on container instances, with several different scheduling options available
 
@@ -53,7 +51,7 @@
 
 ### Container Agent {#w2ab1b5c11c17}
 
-* Container agent runs on each instance within an ECS cluster
+* Container agent runs on each instance within an ECS cluster
 * Container Agent sends information about the instance’s current running tasks and resource utilization to ECS, and starts and stops tasks whenever it receives a request from ECS
 
 ![](https://i2.wp.com/docs.aws.amazon.com/AmazonECS/latest/developerguide/images/overview-clusteragent.png?zoom=1.25&w=656)
