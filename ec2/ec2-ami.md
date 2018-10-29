@@ -4,11 +4,12 @@
 * An AMI is basically an template and can be used to launch as many instances as needed
 * Within an VPC, instances can be launched from as many different AMIs
 * An AMI includes the following:
-  * A template for the root volume for the instance
-    _for e.g. an operating system, an application server, and applications_
-  * Launch permissions that control which AWS accounts can use the AMI to launch instances  _for e.g. AWS account ids with whom the AMI is shared_
+
+  * A template for the root volume for the instance，_for e.g. an operating system, an application server, and applications_
+  * Launch permissions that control which AWS accounts can use the AMI to launch instances ，_for e.g. AWS account ids with whom the AMI is shared_
 
   * A block device mapping that specifies the volumes to attach to the instance when it’s launched
+
 * AMIs can be either
   * AWS managed, provided and published AMIs
   * Third party or Community provided public custom AMIs
