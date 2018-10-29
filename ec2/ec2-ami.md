@@ -6,8 +6,8 @@
 * An AMI includes the following:
   * A template for the root volume for the instance
     _for e.g. an operating system, an application server, and applications_
-  * Launch permissions that control which AWS accounts can use the AMI to launch instances
-    _for e.g. AWS account ids with whom the AMI is shared_
+  * Launch permissions that control which AWS accounts can use the AMI to launch instances  _for e.g. AWS account ids with whom the AMI is shared_
+
   * A block device mapping that specifies the volumes to attach to the instance when it’s launched
 * AMIs can be either
   * AWS managed, provided and published AMIs
@@ -99,7 +99,7 @@ Amazon Linux AMI is a supported and maintained Linux image provided by AWS with 
 * Shared AMI is an AMI that can be created and shared with others for use
 * a Shared AMI with all the components needed can be used to get started and then add custom components as and when needed
 * Shared AMI can be risky as Amazon does not perform an detailed checks and vouch for the integrity and security of these AMIs
-* Before using a Shared AMI, check for any pre-installed credentials that would allow unwanted access to the instance by a third party and no pre-configured remote logging that could transmit sensitive data to a third party
+* Before using a Shared AMI, check for any pre-installed credentials that would allow unwanted access to the instance by a third party and no pre-configured remote logging that could transmit sensitive data to a third party
 * Amazon allows you to share an AMI, by defining launch permissions, to all \(making it public\) or only to a specific AWS accounts
 * Launch permissions work at the AWS account level only; and can’t be used to restrict specific users within an AWS account.
 * Guidelines for Shared Linux AMIs
